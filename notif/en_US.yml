@@ -1,0 +1,5 @@
+lazerutils:
+  traduction:
+    log: Chargement de {number} traductions
+  langage:
+    log: Chargement de {number} clefs de langues

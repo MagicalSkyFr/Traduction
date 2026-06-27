@@ -1,0 +1,2053 @@
+magicalsky:
+  Event:
+    message:
+      chat:
+        global:
+          message: '{playername} >> {message}'
+    template:
+      message: '{msg}'
+  default:
+    bossbar:
+      challenge:
+        progress: <white>Challenge {challenge} | Complétion <bold>{progress}</bold>/{max}
+      classe:
+        bossbar:
+          level: <white>Classe {class} | Niveau <bold>{level}</bold>
+      jobs:
+        bar: <white>Jobs {jobs} | Niveau <bold>{level}</bold>
+    error:
+      badge:
+        unknown: Le badge {badgename} n'existe pas
+      command:
+        badcommand: 'Commande incorrecte, la commande à utiliser est : {command}'
+        cannot_use: Tu ne peux pas utiliser cette commande !
+        cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau
+          cette commande
+        error: Une erreur est survenu lors de l'utilisation de la commande, merci
+          d'ouvrir un ticket
+        player_only: Cette commande est réservée aux joueurs
+      cooking:
+        not_owner: Tu n'es pas le propriétaire de cette plante, reviens quand le joueur
+          n'y sera plus !
+      crate:
+        already:
+          open:
+            other: Quelqu'un est déjà dans l'animation d'ouverture de cette box, reviens
+              plus tard ou utilise le shift clic pour ne pas avoir d'animation
+            you: Tu ouvres déjà une box
+        givecrate:
+          unknown: La crate {crate} n'existe pas
+        keyinvalid: Tu n'as pas de {key} pour ouvrir la box
+        not:
+          found: La box {crate} n'a pas été trouvé
+      daily:
+        already_claimed: Tu as déjà récupéré ton cadeau du jour, effectue à nouveau
+          la commande /daily demain !
+        already_opening: Tu es déjà en ouverture de daily !
+      dimensionbeacon:
+        portail_dimensionbeacons: 'Tu dois posséder un multiblock portail de Qetzir
+          sur ton île pour te téléporter dans la dimension {dim}.
+
+          <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir
+          comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
+
+          '
+        terrainchasse: 'Tu dois posséder un multiblock portail du terrain de chasse
+          sur ton île pour te téléporter dans la dimension {dim}.
+
+          <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir
+          comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
+
+          '
+      discord:
+        reward:
+          claimed: Tu as déjà récupéré tes récompenses !
+        unlinked: Ton compte Discord est déjà délié
+      donjon:
+        classe_level_required: Tu dois avoir le niveau de classe <white>{level}</white>
+          pour rejoindre ce donjon
+        command_forbidden: Tu ne peux pas utiliser cette commande en donjon
+        cooldown: Tu dois encore attendre <white>{cooldown}</white> avant de pouvoir
+          rejoindre un nouveau donjon
+        daily_limit_reached: Tu as atteint la limite journalière de <white>{current}</white>/<white>{max}</white>
+          donjons
+        failed: Tu viens d'échouer dans le donjon !
+        invite:
+          leave_required: Tu dois quitter ton donjon pour accepter une invitation
+          none: Tu n'as pas d'invitation de donjon active
+          player_level_insufficient: Le joueur invité n'a pas un niveau de classe
+            suffisant pour te rejoindre dans le donjon
+        max_players: Vous ne pouvez être plus de <white>{max}</white> joueurs dans
+          le donjon
+        no_instance_available: Aucune instance de donjon n'est actuellement disponible
+          pour accueillir ton groupe
+        not_in_dungeon: Tu n'es pas en donjon
+        old_portal_forbidden: Tu ne peux pas traverser un ancien portail
+        player_left_cancelled: '{player} vient de quitter le donjon et il a donc été
+          annulé'
+        projectile_returned: Ton projectile a traversé le portail et t'a été retourné
+          !
+        session:
+          already_exists: Tu as déjà une session
+      emoji:
+        notfound: L'émoji n'existe pas
+      enchant:
+        cannot_enchant: Tu ne peux pas enchanter cet objet. Tu peux obtenir des enchantements
+          dans l'arbre de compétences d'outil ou de classe !
+      event:
+        already_in_event: Tu es déjà dans un événement
+        already_in_queue: L'événement <white>{event}</white> est déjà en attente de
+          joueurs
+        already_joined: Tu es déjà dans cet événement
+        already_spectator: Tu regardes déjà l'événement <white>{event}</white>
+        already_started: L'événement <white>{event}</white> est déjà lancé
+        command_only_event: Tu ne peux utiliser que la commande <white>/event</white>
+          pendant l'événement
+        full: Tu ne peux pas rejoindre l'événement car il est plein
+        no_saved_inventory: Tu n'as pas d'inventaire sauvegardé à récupérer ! (et
+          c'est tant mieux)
+        none_running: Aucun événement n'est actuellement en cours
+        not_accepting_players: L'événement n'accepte pas de joueur pour l'instant
+        not_enough_players: L'événement <white>{event}</white> n'a pas atteint le
+          nombre minimum de joueurs
+        not_found: L'événement <white>{event}</white> n'a pas été trouvé
+        not_started: L'événement <white>{event}</white> n'est pas lancé
+        player_not_in_event: Le joueur <white>{player}</white> n'est pas dans l'événement
+        specify_id: Tu dois spécifier un événement
+      fishing:
+        only_insects_bait: Tu ne peux utiliser que des insectes comme appât !
+      fly:
+        cannot_in_world: Tu ne peux pas voler dans ce monde
+        disabled: Le mode fly est désactivé !
+        no_fly: Tu n'as pas de temps de fly !
+      gift:
+        already_claimed: Tu as déjà récupéré ton cadeau, refais la commande demain
+          !
+        already_opening: Tu es déjà en ouverture !
+      hdv:
+        inventory_full: Ton inventaire est plein
+        item_no_longer_available: L'objet n'est plus disponible
+        no_price_specified: Tu n'as pas indiqué de prix de vente
+        not_enough_mcoins: Tu n'as pas assez de <white><glyph:mcoin></white> pour
+          faire ceci
+      heal:
+        cooldown: Tu ne peux pas encore te soigner ! Le délai de récupération du soin
+          est de 5 minutes
+      home:
+        already_exists: Tu as déjà un home nommé <white>{home}</white> ! Utilise un
+          autre nom
+        invalid_name: 'Ton nom de home n''est pas valide. Exemple de nom valide :
+          home1'
+        invalid_world: Tu ne peux pas créer de home en dehors du monde de ton île
+          !
+        not_found: Tu n'as pas été téléporté car tu n'as pas de home nommé <white>{home}</white>
+        specify_name: Tu dois spécifier un nom de home pour être téléporté
+      hopper:
+        chunk_attached_required: Le Chunk Hopper doit être rattaché à un coffre
+      ignore:
+        cannot_ignore_player: Tu ne peux pas ignorer ce joueur (bien tenté !)
+        not_available: <white>{name}</white> n'est pas disponible en message privé
+          pour le moment. Passe plutôt par un ticket si tu as un problème !
+      inventory:
+        full: Ton inventaire est plein
+      island:
+        already_have_island: Tu possèdes déjà une île !
+        blueprint_invalid: Mauvaise utilisation
+        coop:
+          already_in_team: Le joueur <white>{player}</white> est déjà en coop avec
+            ton île
+          cannot_self: Tu ne peux pas te mettre en coop avec toi-même !
+          cannot_self_uncoop: Tu ne peux pas t'enlever du coop avec toi-même !
+          max_reached: L'île a déjà atteint le nombre maximum de coop
+        demote:
+          cannot_demote: Le joueur ne peut plus être rétrogradé
+          cannot_higher_rank: Tu ne peux pas rétrograder des joueurs d'un rang supérieur
+            au tiens
+          cannot_self: Tu ne peux pas te rétrograder toi même
+        full_cannot_join: L'île que tu veux rejoindre a atteint le nombre de joueurs
+          maximum. Tu ne peux donc pas la rejoindre
+        invite:
+          already_on_island: Ce joueur est déjà sur ton île… Tu veux vraiment l'avoir
+            en double ?
+          max_members_reached: Tu as atteint le nombre maximum de personnes sur ton
+            île
+          only_leader: Seul le chef de l'île peut inviter des joueurs sur son île
+          owner_must_receive_invite: En tant que propriétaire, tu dois recevoir une
+            invitation pour rejoindre une autre île
+        level:
+          required: Ton île doit être <white>au niveau {level}</white> pour faire
+            ceci
+        location:
+          notfound: Tu n'es pas sur ton île
+        not_owner: Tu n'es pas le propriétaire de l'île
+        not_your_island: Tu dois appartenir à cette île pour faire cela
+        notfound: Tu n'as pas d'île
+        notyourisland: Tu n'es pas un membre de l'île <white>{islandname}</white>
+        player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre
+          de ton île
+        promote:
+          above_your_rank: Tu ne peux pas vous promouvoir un joueur au-dessus de ton
+            propre rang d'île
+          cannot_promote: Le joueur <white>{player}</white> ne peut pas être promu
+          cannot_self: Tu ne peux pas te promouvoir toi-même ! (Pas de dictature ici)
+        rank_required: Tu dois avoir le rang <white>{rank}</white> pour utiliser cette
+          commande
+        reset_kick: Tu viens d'être supprimé de l'île car le propriétaire l'a réinitialisée
+        reset_limit_reached: Tu as atteint ta limite de resets
+        sorcier_required: \nTu dois avoir le grade <white><glyph:sorcier></white>
+          pour utiliser cet île. \n<click:run_command:'/boutique'><white><glyph:left_click>
+          Clique ici pour accéder à </white>[<color:#ffc933>notre boutique</color>]</click><white>
+          et l'obtenir</white>\n
+        too_many_islands: Il y a trop d'île pour en créer une nouvelle. Contacte Lazerstricks
+          en créant un ticket sur notre discord pour qu'il règle cette situation
+        transfer:
+          cannot_self: Tu ne peux pas te transférer l'île à toi même car cela ne servirait
+            à rien !
+          player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre
+            de ton île
+        usage_limit_reached: Tu as atteint le nombre de fois maximum où tu pouvais
+          utiliser cette île !
+      item:
+        cannot_remove_class_or_job: Tu ne peux retirer de cette façon un objet
+          de métier ou de classe
+        cuisinier_shears_required: Tu dois utiliser la cisaille du métier de Cuisinier
+          pour récupérer ces ingrédients
+        hatnommoitem: Tu ne peux pas mettre en chapeau un objet de Métier ou de Classe
+        noitem: Tu n'as aucun objet dans la main
+        nommoitem: Tu ne peux pas envoyer un objet de Métier ou de Classe
+      jobs:
+        cooldown_remove: <color:#ff383b>Tu ne peux pas encore changer de métier, tu
+          pourras changer de métier le {date} !</color>
+        not_found: Ce métier n'existe pas. {job}
+        skill_competences_required: Tu dois avoir au moins <white>{nb}</white> compétences
+          débloquées pour pouvoir débloquer cette compétence
+        skill_level_required: Tu dois avoir au moins le niveau <white>{level}</white>
+          de métier pour débloquer cette compétence
+        skill_prerequisites: Tu dois avoir d'abord débloquer les prérequis de cette
+          compétence pour l'obtenir
+        skill_pts_required: Tu dois avoir au moins <white>{pts}</white> de points
+          de compétence pour débloquer cette compétence
+        skill_rarity_required: Tu dois avoir un objet tribal de la rareté <white>{rarity}</white>
+          pour débloquer cette compétence
+        slot_removed: Un de tes métiers a été désactivé car ta limite de métier a
+          été diminuée
+      kits:
+        already_claimed: Tu as déjà récupéré ce kit ! Tu pourras le récupérer à nouveau
+          demain
+        not_found: Le kit <white>{kit}</white> n'existe pas
+        once_only: Tu as déjà récupéré ce kit et tu ne peux pas le récupérer à nouveau
+      leaderboard:
+        not_found: Ce classement n'existe pas
+      mail:
+        norecipient: Tu n'as pas indiqué de destinataire
+      multiblocks:
+        cannot_interact_outside_island: Tu ne peux pas intéragir avec les multiblocks
+          placés en dehors des îles
+        insufficient_rank: Ton grade d'île n'est pas assez élevé pour interagir avec
+          le multiblock
+        no_upgrade_available: Il n'y a pas d'amélioration disponible pour ton multiblock
+        no_useful_item: Tu n'as pas d'objets requis à donner pour améliorer ton multiblock
+        upgrade_air_required: Les blocs autour doivent être de l'air pour que le multiblock
+          puisse être amélioré
+      niveau:
+        notinteger: 'Le niveau doit être un nombre entier (valeur donnée : {value})'
+      number:
+        not:
+          negative: <dark_gray>[<red>✖<dark_gray>] La commande n'accepte pas de valeur
+            négative ({number})
+          number: <dark_gray>[<red>✖<dark_gray>] La commande n'accepte que des nombres
+            ({number})
+      parrainage:
+        accept:
+          denied: <white>{playername}</white> ne t’a pas invité
+        already:
+          has_sponsor: <white>{playername}</white> a déjà un parrain
+          invited: Tu as déjà envoyé une invitation à <white>{playername}</white>
+        decline:
+          denied: <white>{playername}</white> ne t’a pas invité
+        invite:
+          self: Tu ne peux pas t’inviter toi-même
+        reward:
+          none: Aucune récompense disponible
+      photo:
+        invalid_nexo: L'id nexo est invalide
+        usage_add: 'Usage: /photo add <id nexo>'
+      player:
+        notfound: Le joueur <white>{player}</white> n'existe pas !
+        notplayer: Vous devez être un joueur pour utiliser cette commande !
+        offline: <white>{playername}</white> n'est pas en ligne
+        player_required: Un joueur est requis en paramètre
+        unknown: <white>{playername}</white> est introuvable
+      propulsion:
+        missing_power: Tu dois spécifier une valeur pour la propulsion
+      pub:
+        forbidden: Tu ne peux pas utiliser le /pub
+      quest:
+        already_completed: Tu as déjà fini la quête !
+        not_started: Tu dois avoir commencé la quête pour pouvoir la suivre !
+      regen:
+        cooldown: Tu es en cooldown, tu pourras te régénérer dans <white>{time}</white>
+          secondes
+      sellchest:
+        near_error: Tu ne peux pas placer de coffre à côté d'un coffre automatique
+          de vente
+        place_error: Tu ne peux pas placer de coffre automatique à côté d'autres coffres
+      shop:
+        grade:
+          alchemist_only: La commande est réservée au grade <white><glyph:alchimiste></white>.
+        no_item: Tu n'as pas l'objet correspondant
+        no_quantity: Tu n'as aucune quantité
+        not_enough_credits: Tu n'as pas assez d'argent pour faire ceci
+        not_enough_space: Tu n'as pas assez de place dans ton inventaire
+        sell_all_requires_grade: Tu dois être <white><glyph:archimage></white> pour
+          vendre tous tes objets d'un coup !
+      shopjoueur:
+        cannot_double_chest: Tu ne peux pas transformer un shop joueur en double coffre
+        cannot_edit_sign: Tu ne peux pas modifier la pancarte d'un shop, fait un clic
+          droit pour acheter ou vendre
+        cannot_trade_own_items: Tu ne peux pas acheter ou vendre tes propres objets
+        chest_empty: Le coffre est vide, reviens plus tard !
+        chest_items_identical: Les objets dans le coffre de vente doivent être identiques
+          pour que le coffre de vente fonctionne
+        not_enough_items: Tu n'as pas assez d'objets pour faire cela, tu en as actuellement
+          <white>{nb}</white>
+        not_enough_space: Il n'y a pas assez de place dans le coffre
+        not_enough_stock: Il n'y a pas assez d'items en stock
+        not_your_island: Ce n'est pas ton île. Tu ne peux créer un shop de joueur
+          que sur ton île
+        owner_not_enough_money: Le propriétaire n'a pas assez d'argent
+        response_timeout: Tu as pris trop de temps à répondre
+        took_too_long: Tu as pris trop de temps pour répondre
+      slots:
+        noempty: Des emplacements d’objets ne sont pas vides
+      spawners:
+        block_conflict: Tu ne peux pas placer ce bloc ici car il entre en conflit
+          avec un spawner
+        break_only_with_tool: Tu ne peux casser que des spawners avec la pioche à
+          spawners !
+        cannot_capture: Tu ne peux pas capturer un monstre dans un spawner ou un multiblock
+        cannot_place_offhand: Tu ne peux pas poser de spawner avec ta seconde main
+        does_not_exist: Cela n'existe plus actuellement, ouvre un ticket si tu en
+          as besoin !
+        mob_cannot_be_captured: Ce monstre ne peut pas être capturé dans cette orbe
+          pour faire ceci
+        need_spawner_in_hand: Tu dois avoir un spawner dans ta main
+        not_enough_crystal: Tu n'as pas assez de cristaux pour créer le spawner
+        not_enough_hearts: Tu n'as pas assez de coeurs de spawner pour créer le spawner
+        not_enough_money: 'Tu n''as pas assez de <white><glyph:mcoin></white> dans
+          ta banque d''île pour cela, il te faut : <white>{cost} <glyph:mcoin></white>'
+        not_found: Spawner introuvable
+        not_spawner_orb: Ce n'est pas une orbe à spawner
+        orb_already_linked: Ton orbe à spawner est déjà associée à un monstre
+        orb_mob_mismatch: L'orbe à spawner ne correspond pas au monstre
+        orb_required: Tu dois avoir une orbe à spawner dans ta main
+        spawner_level: Ton spawner est au niveau {level}
+        upgrade_max: Cette amélioration est déjà au niveau maximum
+      tag:
+        title_limit_reached: \nTu as atteint la limite de titre équipable !\n<click:run_command:'/boutique'><white><glyph:left_click>
+          Clique ici pour accéder à [</white><color:#ffc933>notre boutique</color>]</click><white>
+          et en obtenir davantage</white>\n
+      teleport:
+        already_in_progress: Tu as déjà une téléportation en cours
+      teleportation:
+        cannot_be_teleported_here: Tu ne peux pas être téléporté ici
+        cannot_request_self: Tu ne peux pas t'envoyer une demande à toi-même
+        cannot_teleport_here: Tu ne peux pas téléporter quelqu'un ici
+        cannot_teleport_others: Tu ne peux pas téléporter d'autres joueurs
+        invalid_coords: Les coordonnées spécifiées sont invalides
+        no_pending_request: Tu n'as aucune demande en attente
+        no_permission: Tu n'as pas la permission d'effectuer cette action
+        no_request: Tu n'as aucune demande de téléportation
+        player_not_connected: Ce joueur n'est pas connecté
+        request_cancelled: Ta demande de téléportation a été annulée
+        request_cancelled_by_sender: <white>{player}</white> a annulé sa demande de
+          téléportation
+        request_denied: Demande de téléportation refusée
+        request_expired: Ta demande de téléportation a expiré
+        request_refused_by: <white>{target}</white> a refusé ta demande
+        self_request: Tu ne peux pas t'envoyer une demande à toi-même
+        to_spawn_no_island: Tu as été téléporté au spawn car tu n'as pas d'île
+      tutoriel:
+        notedit: Ton scoreboard de tutoriel est déjà dans cet état
+      upgradeisland:
+        cannot_interact_minecart: Tu ne peux pas interagir avec les minecarts sur
+          MagicalSky
+        cobblegen_limit_reached: Tu as atteint le maximum de <white>Multiblocks Générateur
+          à cobble</white> sur ton île
+        composter_limit_reached: Tu as atteint le maximum de <white>Multiblocks Composteur</white>
+          sur ton île
+        crusher_limit_reached: Tu as atteint le maximum de <white>Multiblocks Broyeur</white>
+          sur ton île
+        forge_limit_reached: Tu as atteint le maximum de <white>Multiblocks Forge</white>
+          sur ton île
+        furnace_limit_reached: Tu as atteint le maximum de <white>Multiblocks Haut
+          fourneau</white> sur ton île
+        limit_reached_entity: Tu as atteint le maximum de <white>{entity}</white>
+          sur ton île
+        max:
+          cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île ({value}/{value}
+        max_observers: Tu as atteint le maximum <white>d'Observateurs</white> sur
+          ton île
+        minecart_limit_reached: Tu as atteint la limite de <white>{max} minecarts</white>
+          sur ton île
+        no_offerings: Tu n'as pas de bloc de niveau ou de bloc de niveau d'île incomplet
+          dans ton inventaire
+        piston_limit_reached: Tu as atteint le maximum de <white>Pistons</white> sur
+          ton île
+        required_island_level: Ton île doit avoir au moins le niveau <white>{level}</white>
+        required_message: 'Tu dois avoir les débloqué améliorations suivantes :'
+        sellchest_limit_reached: Tu as atteint le maximum de <white>Coffres de vente</white>
+          sur ton île
+        shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white>
+          sur ton île
+        sniffer_limit_reached: Tu as atteint la limite de <white>Reniffleurs</white>
+          sur ton île
+        upgrade_max_level: Tu as atteint le niveau maximum de <white>{name}</white>
+        upgrade_not_enough_money: Tu dois avoir <white>{cost} <glyph:mcoin></white>
+          pour acheter cette amélioration
+        villager_limit_reached: Tu as atteint la limite de <white>Villageois</white>
+          sur ton île
+      warp:
+        already_exists: Le warp nommé <white>{warp}</white> existe déjà
+        delete_name_required: Tu dois indiquer le nom du warp que tu veux supprimer
+        description:
+          timeout: Le temps est écoulé, la description du warp n'a pas été modifiée
+        max_reached: Tu as atteint le nombre maximum de warps (<white>{max}</white>)
+        no_color_allowed: \nPour ajouter des couleurs dans ton nom de warp tu dois
+          avoir le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click>
+          Clique ici pour accéder à [</white><color:#ffc933>notre boutique</color><white>]</click>
+          et l'obtenir</white>\n
+        not_found: Le warp spécifié n'existe pas
+        notfound: Tu n'as pas de warp
+        rank_required: Tu n'as pas le rang d'île requis pour créer un warp
+        rename:
+          timeout: Le temps est écoulé, le nom du warp n'a pas été modifié
+        set_name_required: Tu dois spécifier un nom pour retrouver ton warp
+        unsafe_location: La localisation de ton warp est trop dangereuse
+      zone:
+        class_stuff_forbidden: Tu ne peux pas rejoindre cette zone avec ton stuff
+          de classe pour que le combat soit équitable
+        level_required: 'Tu n''as pas le niveau requis pour rejoindre cette zone.
+          Niveau requis : <white>{level}</white>'
+    gift:
+      daily:
+        claimed: Félicitations, tu viens de récupérer ton Daily !
+      gift:
+        claimed: Tu viens de récupérer ton cadeau !
+      parrainage:
+        reward:
+          success: '&aRécompense obtenue : <white>{reward}</white>'
+    info:
+      badge:
+        edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color>
+          a été modifié
+      boutique:
+        buy_credits: <sound:ENTITY_PLAYER_LEVELUP[volume=1.0,pitch=1.0,source=MASTER]>
+          <white>{player}</white> vient d’acheter <color:#ffc933>{amount}</color>
+          SkyGems <glyph:skygem> sur <click:open_url:'https://www.magicalsky.fr/boutique'><hover:show_text:'Ouvrir
+          la boutique'><color:#ffc933>la boutique</color></hover></click>
+      cooking:
+        regen: Il reste {time} avant la regénération !
+      discord:
+        code: '\n Pour associer <color:#ffc933>ton compte Discord</color> à <color:#ffc933>ton
+          compte Minecraft</color>, envoie <color:#ffc933>le code</color> au bot <color:#ffc933>{botname}</color>\nCode
+          de vérification : <color:#ffc933>{code}</color>\n'
+        nolink: Connecte toi avec <color:#ffc933>/discord link</color> pour récupérer
+          des <color:#ffc933>récompenses uniques</color> !
+      donjon:
+        invite:
+          sent: <color:#ffc933>Ton invitation de donjon</color> a bien été envoyée
+        life_lost: Tu viens de perdre une vie. Il t'en reste <color:#ffc933>{lives}</color>
+        must_cross_portal: Tu dois encore traverser <color:#ffc933>le portail</color>
+        must_cross_second_portal: Tu dois encore traverser <color:#ffc933>le second
+          portail</color>
+        player_left: <color:#ffc933>{player}</color> vient de quitter le donjon
+        teleported: Tu viens d'être <color:#ffc933>téléporté</color>
+        you_left: Tu viens de <color:#ffc933>quitter le donjon</color>
+      effect:
+        nightvision_removed: Tu as <color:#ffc933>désactivé</color> l'effet Vision
+          Nocturne
+      event:
+        eliminated: <color:#ffc933>{player}</color> a été éliminé de l'événement
+        finished: L'événement <color:#ffc933>{event}</color> est terminé, les gagnants
+          sont <color:#ffc933>{winners}</color>
+        finished_single_winner: L'événement <color:#ffc933>{event}</color> est terminé,
+          le gagnant est <color:#ffc933>{winner}</color>
+        gained_life: <color:#ffc933>{player}</color> a gagné une vie
+        joined: Tu viens de rejoindre l'événement <color:#ffc933>{event}</color>
+        left: Tu as quitté l'événement <color:#ffc933>{event}</color>
+        lost_life: <color:#ffc933>{player}</color> a perdu une vie
+        no_longer_spectator: Tu n'es plus spectateur de l'événement <color:#ffc933>{event}</color>
+        now_spectator: Tu es maintenant spectateur de l'événement <color:#ffc933>{event}</color>
+        pitchout:
+          knockback_set: Le bâton est maintenant enchanté avec <color:#ffc933>recul
+            {knockback}</color>
+          knockback_will_upgrade: Le bâton sera enchanté <color:#ffc933>recul {knockback}</color>
+            dans <color:#ffc933>{time}</color> secondes
+        quit_command: Tu peux quitter l'événement en faisant <color:#ffc933>/event
+          quit <white>{id}</color>
+        start_countdown: 'L''événement <color:#ffc933>{event}</color> débutera dans
+          <color:#ffc933>{time}</color> secondes, fais la commande <color:#ffc933>/event
+          join {id}</color> pour le rejoindre.
+
+          <glyph:validation_tchat>Nombre de joueurs : {current}/<color:#40ff70>{max}</color>'
+        started: L'événement <color:#ffc933>{event}</color> a commencé
+        thimble:
+          rolled_dice: <color:#ffc933>{player}</color> vient de faire un dé à coudre
+            !
+          too_slow_eliminated: <color:#ffc933>{player}</color a pris trop de temps
+            pour jouer, il est éliminé !
+          your_turn: C'est à ton tour de <color:#ffc933>jouer</color>
+      hdv:
+        average_price_last_7_days: 'Le <color:#ffc933>prix moyen</color> de cet objet
+          au cours des 7 derniers jours est de : <color:#ffc933>{price}</color> <glyph:mcoin>
+          par unité'
+        log:
+          additem: Tu viens de mettre en vente pour {price} <glyph:mcoin> l'article
+            {itemstack}
+          buyitem: Tu as acheté à {seller} pour {price} <glyph:mcoin> à {time} l'article
+            {itemstack}
+          cancel: Tu as annulé le {time} la vente de l'article {itemstack}
+          expireitem: La vente a expiré le {time} pour l'article {itemstack}
+          sellitem: Tu as vendu à {target} pour {price} <glyph:mcoin> à {time} l'article
+            {itemstack}
+      ignore:
+        ignored_by: <color:#ffc933>{name}</color> ignore tes messages à partir de
+          maintenant
+      information:
+        accidental_obsidian: <color:#ffc933>Bloc d’obsidienne</color> créé sans faire
+          exprès ? Fais un clic avec ton seau <color:#ffc933>sur l'obsidienne</color>
+          pour obtenir à nouveau la lave !
+        catch_insects: Tu peux obtenir <color:#ffc933>des insectes</color> en cassant
+          des feuilles avec une <color:#ffc933>hache tribale</color>
+        clickable_message: '{message} <color:#ffc933>[Clique ici]</color>'
+        combine_gem: Combine <color:#ffc933>9 fragment</color> dans un multiblock
+          établi pour créer une <color:#ffc933>gemme magique</color>. C’est une ressource
+          utilisée pour créer de nombreux <color:#ffc933>objets magiques !</color>
+        create_bolder_item: Tu veux créer un objet <color:#ffc933>encore plus puissant</color>
+          ?
+        create_stronger_item: Tu veux créer un objet encore plus puissant ?
+        discover_potions: Fais <color:#ffc933>/crafts</color> pour les découvrir !
+        gem_fragment_obtained: Tu viens d’obtenir un <color:#ffc933>fragment de gemme
+          magique</color> !
+        improve_generator: Tu peux obtenir de <color:#ffc933>meilleurs minerais</color>
+          dans ton générateur en utilisant la commande <color:#ffc933>/is gen</color>
+          !
+        improvement_reward: <color:#ffc933>Tu t’améliores</color> ! Pour célébrer
+          cela une récompense t’attend, tu peux l'obtenir en utilisant la commande
+          <color:#ffc933>/recompense</color> !
+        island_leader_reward: Ton île a gagné un niveau ! Si tu es le chef de l'île
+          <color:#ffc933>une récompense t’attend</color>. Tu peux l'obtenir grâce
+          à la commande <color:#ffc933>/recompense</color>
+        kill_dimension_monsters: Tu veux tuer des <color:#ffc933>monstres de dimension</color>
+          directement sur ton île ?
+        level_5_reached: <color:#ffc933>Niveau 5</color> atteint ! Et ils en sont
+          où les autres ? Va jeter un oeil en faisant la commande <color:#ffc933>/classement</color>
+        multiblock_info: Pour obtenir d’autres informations sur la création des <color:#ffc933>multiblock</color>
+          tu peux utiliser la commande <color:#ffc933>/multiblock</color> !
+        rare_item_found: C’est quoi ça ? On dirait que c’est <color:#ffc933>rare</color>,
+          je suis sûr que ça se vend bien !
+        reset_island_command: Tu peux <color:#ffc933>remettre à zéro ton île</color>
+          à tout moment en utilisant la commande <color:#ffc933>/is reset</color>
+        sneak_help: Tu veux que tes arbres poussent plus vite ? Utilise le <color:#ffc933>sneak
+          - desneak</color> à côté d’eux pour les aider à pousser !
+        spawner_instructions: Tu peux créer <color:#ffc933>un spawner</color> qui
+          les fait apparaître !
+        spawner_multiblock_bonus: Tu peux bénéficier de <color:#ffc933>plus d’améliorations</color>
+          en plaçant ton spawner dans un <color:#ffc933>multiblock à spawner</color>
+          ! <click:run_command:'/multiblocks'><glyph:left_click> Clique ici pour voir
+          [<color:#ffc933>les multiblocks</color>]</click>
+        spawner_open_chest: Tu peux faire un clic droit sur ton spawner pour ouvrir
+          <color:#ffc933>son stockage</color>
+        special_crafts_intro: Il existe de nombreux <color:#ffc933>crafts spéciaux</color>
+          sur le serveur.
+        special_fish_intro: Tu peux pêcher des <color:#ffc933>poissons spéciaux</color>
+          qui rapportent beaucoup d’argent !
+        special_potions_intro: Il existe dans notre monde <color:#ffc933>des potions
+          spéciales</color>.
+        trees_dance: Les arbres adorent la danse.
+        tribal_fishing_instructions: Il te suffit d'obtenir <color:#ffc933>une canne
+          à pêche tribale</color>,de faire un <color:#ffc933>clic droit dessus</color>
+          quand tu es dans ton inventaire et de glisser dedans des insectes. Super
+          facile !
+        tribal_item_instructions: Crée un objet tribal en suivant les consignes dans
+          le <color:#ffc933>/crafts</color>
+        tutorial_quest_jobs: Avance dans la <color:#ffc933>quête de tutoriel de tous
+          les métiers</color> pour voir celui qui te correspond le plus !
+        unsure_which_job: Tu ne sais pas quel <color:#ffc933>métier choisir</color>
+          ?
+        view_crafts_command: <click:run_command:'/crafts'><glyph:left_click> Tu peux
+          les retrouver en [<color:#ffc933>cliquant ici</color>]</click>
+        wiki_click: <click:open_url:'https://www.magicalsky.fr/wiki'><glyph:left_click>
+          Clique ici pour accéder au [<color:#ffc933>wiki du serveur</color>]</click>
+      island:
+        bank:
+          deposit: Indique <color:#ffc933>le montant</color> que tu souhaites déposer
+            en banque dans le chat. Tu as <color:#ffc933>1 minute</color> pour le
+            faire
+        coop:
+          player_not_coop: Le joueur <white>{player}</white> n'est pas coop de ton
+            île
+          removed_broadcast: <white>{player}</white> n'est plus coop de ton île
+          removed_self: Tu n'êtes plus coop de l'île
+        deleted: L'île a été supprimée ! Par conséquence, tu as été téléporté au spawn
+        demote:
+          broadcast: <color:#ffc933>{player}</color> a maintenant le rang <color:#ffc933>{rank}</color>
+        invite:
+          broadcast: <color:#ffc933>{inviter}</color> vient d'inviter <color:#ffc933>{invitee}</color>
+            à rejoindre l'île
+          declined_broadcast: <color:#ffc933>{player}</color> a décliné ton invitation
+            à rejoindre l'île
+          received: <color:#ffc933>{inviter}</color> vient de t'inviter à rejoindre
+            son île
+          remaining: Tu peux inviter encore <color:#ffc933>{count} joueur{plural}</color>
+            sur ton île
+          view_command: Tu peux voir tes invitations en cours en faisant la commande
+            <color:#ffc933>/is invite</color> ou en <click:run_command:'/is invite'><glyph:left_click>
+            [<color:#ffc933>cliquant ici</color>]</click>
+      item:
+
+        drop: <gray>・ <white>{name} x {amount}
+        fullinventory: Ton inventaire est rempli, des objets ont été mis dans<color:#ffc933>
+          ta boite au lettre</color>
+        join:
+          broadcast: <color:#ffc933>{player}</color> vient de rejoindre l'île
+        kick:
+          broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color>
+            de l'île
+          kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
+        leave:
+          broadcast: <color:#ffc933>{player}</color> a quitté l'île
+        player_is_member: Le joueur <white>{player}</white> est membre de ton île
+        player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre
+          de ton île
+        promote:
+          broadcast: <white>{player}</white> a maintenant le rang de <white>{rank}</white>
+        transfer:
+          broadcast: <color:#ffc933>{player}</color> est le nouveau propriétaire de
+            l'île
+      jobs:
+        can_add_job: Tu peux ajouter un autre métier !
+        level_set: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Ton niveau de <white>{job}</white>
+          a été modifié au niveau <white>{level}</white>
+        next_remove_in: Tu pourras retirer un autre métier dans <color:#ffc933>{days}
+          jours</color>
+        slot_added_target: Tu as <white>{slots}</white> emplacements de métier
+        slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>Il te reste <white>{slots}</white>
+          emplacements de métier vide
+        xp_received: Tu as reçu <white>{xp}</white> expérience du métier <white>{job}</white>
+      mail:
+        item: \nTu as reçu un objet de <color:#ffc933>{playername}</color> dans <color:#ffc933>ta
+          boîte mail</color>.\n<click:run_command:'/mail'><glyph:left_click> Tu peux
+          cliquer ici pour ouvrir [<color:#ffc933>ta boîte mail</color>]</click>\n
+      parrainage:
+        accept:
+          success: <color:#ffc933>{playername}</color> a accepté ton invitation
+        decline:
+          success: <color:#ffc933>{playername}</color> a refusé ton invitation
+        invite:
+          hint: <white>/parrainage accept {parrain} ou /parrainage decline {parrain}</white>
+          received: Invitation reçue de <color:#ffc933>{parrain}</color>
+        join: Tu peux être <color:#ffc933>parrainé</color> par un joueur
+        main:
+          referrals:
+            empty: Aucun objectif en cours
+        objective:
+          completed: '<color:#ffc933>Objectif terminé : {objectif}</color>'
+          completed_by_referral: <color:#ffc933>{playername}</color> a terminé l’objectif
+            <color:#ffc933>{objectif}</color>
+        reward:
+          header: '<white>Récompense : {objectif}</white>'
+      quest:
+        info: 'Info de la quête <color:#ffc933>{quest}</color> pour <color:#ffc933>{player}</color>
+          : Complété : <color:#ffc933>{completed}</color> / État : <color:#ffc933>{state}</color>'
+      sellchest:
+        profit: Tes <color:#ffc933>coffres automatiques</color> t'ont rapportés <color:#ffc933>{amount}</color>
+          <glyph:mcoin> au cours des 10 dernières minutes
+      shopjoueur:
+        ask_price: Quel est le prix {type} que tu souhaites définir pour l'objet ?
+        chest_transaction: 'Récapitulatif de ton shop joueur : {location}{action}
+          {amount} objets'
+        enter_amount: Indique dans le chat combien d'objets tu souhaites <color:#ffc933>{action}</color>
+        sell_chest_remove: Ce coffre est <color:#ffc933>un coffre de vente</color>.
+          Pour le retirer, casse-le de nouveau <color:#ffc933>dans les 5 secondes</color>
+        sold_items: Tu viens de vendre <white>{amount} objets</white>
+      spawners:
+        inventory_taken: <color:#ffc933>{player}</color> est dans l'inventaire du
+          spawner. Plus qu'à attendre...
+        must_use_hunter_weapon: <red>Tu dois utiliser l'arme du métier <white>chasseur</white>
+          pour faire ceci
+        orb_full: <color:#ffc933>Ton orbe à spawner est pleine</color> ! Fais <color:#ffc933>un
+          clic droit en tenant l'orbe à spawner</color> et en ayant dans ton inventaire
+          <color:#ffc933>{nb} coeurs de spawner, 1 {name} et 1 orbe à spawner remplie</color>
+        other_in_inventory: <white>{player}</white> est dans l'inventaire du spawner
+        spawner_in_use: Le spawner est actuellement utilisé par <color:#ffc933>{player}</color>
+        used_by: Le spawner est utilisé par <color:#ffc933>{player}</color>
+      teleport:
+        starting: Ne bouge pas pendant <color:#ffc933>{time} secondes</color> pour
+          être téléporté
+      teleportation:
+        request_received: Tu as reçu une demande de téléportation de <color:#ffc933>{sender}</color>
+      warp:
+        description:
+          prompt: Tu as <color:#ffc933>1 minute</wolor> pour entrer la nouvelle description
+            du warp dans le tchat
+        rename:
+          prompt: Tu as <color:#ffc933>1 minute</color> pour entrer le nouveau nom
+            du warp dans le tchat
+    logger:
+      chat:
+        log:
+          send: <color:#ffc933>{sender}</color> → <white>{target}</white> <gray>»</gray>
+            <white>{message}</white>
+      classe:
+        competence: Enregistrement de {nb} compétences
+      langage:
+        log: Chargement de {number} langues
+      lazerutils:
+        server: Chargement du serveur {serverName}
+      traduction:
+        log: Chargement de {number} traductions
+    message:
+      afk:
+        teleport:
+          teleport: <glyph:warning_tchat> <color:#ff383b>Tu as été téléporté au spawn
+            car tu étais AFK</color>
+          warning: <glyph:warning_tchat> <color:#ff383b>Tu es considéré comme AFK.
+            Clique ou bouge dans moins de 60 secondes pour ne pas être téléporté</color>
+      arrive:
+        join_message: <glyph:plus_tchat> <color:#40ff70>{message}</color>
+      badge:
+        equippable:
+          max: <glyph:warning_tchat> <color:#ff383b>Tu as atteint la limite de badges
+            équipables</color>
+        upgrade: \n<glyph:up_tchat> <color:#40ff70>Ton badge a été modifié :</color>
+          {previousglyph} ➔ {nextglyph}\n<click:run_command:'/badge'><glyph:left_click>
+          Clique ici pour voir [<color:#ffc933>tes badges</color>]</click>\n
+      bienvenue:
+        emptynewplayer: <glyph:cross_tchat> <color:#ff383b>Il n'y a aucun nouveau
+          joueur à accueillir pour le moment</color>
+        newplayer: '
+
+          ꗉ <b><color:#00c1b7>Bienvenue</color> </b><white>! Voici nos conseils</white>
+          <color:#00c1b7>pour bien débuter</color> :
+
+          ꖰ <white>- Progresser dans le tutoriel.</white>
+
+          ꖰ <white>- Accéder aux challenges tuto en <click:run_command:''/challenge''><white>[</white><color:#ffc933>cliquant
+          ici</color>]</click>
+
+          ꖰ <white>- Découvrir les infos du serveur en</white> <click:open_url:''https://www.magicalsky.fr/wiki''><white>[<color:#ffc933>cliquant
+          ici</color>]</click></white>
+
+          ꖰ <white>- Rejoindre <click:run_command:''/discord''><white>[</white><color:#ffc933>notre
+          discord</color>]</click> pour rien louper !</white>
+
+          '
+        send: <glyph:plus_tchat> <color:#40ff70>{playername} te souhaite la bienvenue
+          !</color>
+        view: <glyph:information_tchat> Tu as souhaité la bienvenue à <color:#ffc933>{playername}</color>
+          !
+      biome:
+        change: <glyph:validation_tchat> <color:#40ff70>Le biome de ton île est désormais
+          {biomename}</color>
+        cooldown: <glyph:cross_tchat> <color:#ff383b>Tu ne peux pas changer de biome
+          actuellement, tu pourras le changer le {time}</color>
+        timeout: <glyph:cross_tchat> <color:#ff383b>Le changement du biome a pris
+          trop de temps et a donc été annulé</color>
+      boss:
+        damage: '<glyph:information_tchat> Vie actuelle du boss : <color:#ff383b>{health}</color>
+          / <color:#ff383b>{maxhealth}</color>'
+        defeated: <glyph:validation_tchat> <color:#40ff70>Le boss a été vaincu ! Voici
+          les meilleurs joueurs :</color>
+        position: '<color:#ffc933>#{position}</color> : <color:#ffc933>{playername}</color>
+          ayant infligé {damage} points de dégats'
+        spawn: '<glyph:information_tchat> Un boss est apparu à cet endroit : <color:#ffc933>{localisation}</color>'
+      bossbar:
+        showboss: '<dark_gray>[<gold>✔<dark_gray>] Boss : {bossname} - Vie actuelle
+          : {health} / {maxhealth}'
+      boutique:
+        already_has_pass: <yellow>Tu possèdes déjà le pass de Noël
+        already_has_sorcerer: <glyph:cross_tchat> <color:#ff383b>Tu possèdes déjà
+          le grade</color> <glyph:sorcier>
+        bought_archmage_pack: <green>Tu as acheté le pack Grade Archimage et le pass
+          de Noël
+        bought_pass_keys_pack: <green>Tu as acheté le pack Pass et Clés
+        bought_sorcerer_keys_pack: <green>Tu as acheté le pack Sorcier et Clés
+        credits_remaining: <glyph:information_tchat> Il te reste <color:#ffc933>{credits}</color>
+          <glyph:skygem>
+        give_credits: <green>Tu as donné <white>{amount}</white> à <white>{player}</white>
+          !
+        lose_credits: Tu as perdu <white>{amount}</white> SkyGem !
+        not_enough_credits: \n<glyph:cross_tchat> <color:#ff383b>Tu n'as pas assez
+          de</color> <glyph:skygem> <color:#ff383b>pour obtenir cet objet</color>\n<click:open_url:'https://www.magicalsky.fr/boutique'><glyph:left_click>
+          Clique ici pour en obtenir sur [<color:#ffc933>notre boutique en ligne</color>]</click>\n
+        pass_bought: <green>Tu as acheté le pass de Noël
+        receive_credits: \n<glyph:gift_tchat> <color:#40ff70>Tu as reçu</color> <color:#ffc933>{amount}</color>
+          <glyph:skygem>\n<click:run_command:'/boutique'><glyph:left_click> Clique
+          ici pour accéder à [<color:#ffc933>notre boutique</color>]</click> et les
+          utiliser !\n
+        set_credits: Tu as défini <white>{amount}</white> à <white>{target}</white>
+        take_credits: Tu as retiré <white>{amount}</white> à {player}
+      calendar:
+        already_available: <yellow>Tu peux déjà récupérer ce cadeau
+        already_claimed: <yellow>Le cadeau a déjà été récupéré !
+        bonus_already_claimed: <yellow>Le cadeau bonus a déjà été récupéré !
+        bonus_claimed: <green>Tu as récupéré le cadeau bonus
+        cadeaubonus:
+          already: <dark_gray>[<red>✖<dark_gray>] Tu as déjà un cadeau bonus
+        cannot_unlock: <red>Le cadeau ne peut pas être déverrouillé car le jour n’est
+          pas encore arrivé ou tu n’as pas interagi avec le chiffre dans le monde
+        daily_claimed: <green>Tu as récupéré le cadeau du jour <white>{day}</white>.
+          Reviens demain sur le bon chiffre pour obtenir une nouvelle récompense !
+        day:
+          claimed: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} a déjà été
+            récupéré
+          notclaim: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} n'a pas
+            été récupérer à temps. Tu peux l’obtenir en utilisant un Dégriseur de
+            cadeau
+          notunlock: <dark_gray>[<red>✖<dark_gray>] Le jour {day} n'est pas passé
+          unlock: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé
+            {command command=
+          unlocked: <dark_gray>[<red>✖<dark_gray>] Le jour {day} est déjà déverrouillé
+        degriseur:
+          unlock: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé
+          use: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé pour
+            {playername}
+        not_enough_space: <red>Tu n’as pas assez de place dans ton inventaire pour
+          recevoir la récompense
+        sober_fail: <red>Le dégrisement n’a pas fonctionné, ton objet n’a pas été
+          consommé
+      challenge:
+        almost_finished: <glyph:warning_tchat> <color:#ff383b> Tu as presque complété
+          un challenge, assure-toi d'avoir assez d'espace dans ton inventaire pour
+          obtenir tes récompenses !</color>
+        completed: <sound:achievement.complete><glyph:gift_tchat> <color:#40ff70>Tu
+          viens de compléter le challenge :</color> <color:#ffc933>{challenge}</color>
+      chat:
+        already_in_chat: <glyph:cross_tchat> <color:#ff383b>Tu es déjà dans un autre
+          tchat !</color>
+        global:
+          console: <gold>{playername}</gold><gray> »</gray><white> {message}</white>
+          message: '<click:run_command:''/badge {playername}''><hover:show_text:"<white><glyph:left_click>・<gold>Ouvrir
+            le menu des badges de {playername} !<newline>%badge_prefix%">%badge_badge%</hover></click>
+            <click:run_command:''/boutique''><hover:show_text:''<white><glyph:left_click>・<gold>Ouvrir
+            la boutique !''><white>%profil_prefix%</hover></click> <click:suggest_command:''/msg
+            {playername} ''><hover:show_text:"<gold><bold>Ile :</gold> <newline><gold>
+            - Nom : <white>%bskyblock_island_name%<newline><gold> - Niveau : <white>%upgradeisland_islandlevel%<newline>%profil_prefix%
+            <color:%profil_color%><bold>{playername}</bold><reset> :<newline><gold>
+            - Argent : <white>%vault_eco_balance% <glyph:mcoin><newline>%tags_description%<newline><glyph:left_click>・<gray>Discuter
+            avec {playername}"><color:%profil_color%>{playername}</color></hover></click><gray>
+            »</gray><white> {message}</white>'
+        join: <glyph:validation_tchat> <color:#40ff70>Tu as rejoins le tchat</color>
+          <color:#ffc933>{id}</color>
+        leave: <glyph:validation_tchat> <color:#40ff70>Tu as quitté le tchat</color>
+          <color:#ffc933>{id}</color>
+        mp:
+          no_one: <glyph:cross_tchat> <color:#ff383b>Personne ne t'as parlé (triste
+            :c)</color>
+          receive: <sound:BLOCK_NOTE_BLOCK_IRON_XYLOPHONE[volume=1.0,pitch=1.0,source=PLAYER]>
+            <color:#308fcf> De <bold>{playername}</bold> </color><gray>»</gray> <white>{message}</white>
+          send: <sound:BLOCK_NOTE_BLOCK_IRON_XYLOPHONE[volume=1.0,pitch=1.0,source=PLAYER]>
+            <color:#308fcf> Pour <bold>{playername}</bold> </color><gray>»</gray>
+            <white>{message}</white>
+      classe:
+        change_cooldown: <glyph:information_tchat> Tu pourras toujours <color:#ffc933>changer
+          de classe</color> après un cooldown !
+        change_cooldown_active: <glyph:cross_tchat> <color:#ff383b>Tu ne peux pas
+          encore changer de classe, tu pourras changer de classe le {date} !</color>
+        change_timer: <glyph:information_tchat> Tu pourras changer de classe le <color:#ffc933>{time}</color>
+        item_rarity_required: <glyph:cross_tchat> <color:#ff383b>Tes objets de classe
+          doivent avoir la rareté {rarity} pour débloquer cette compétence</color>
+        none: <glyph:cross_tchat> \n<color:#ff383b>Tu n'as pas de classe active</color>\n<click:run_command:'/classe'><glyph:left_click>
+          Clique ici pour choisir [<color:#ffc933>une classe</color>]</click>\n
+        rune:
+          classe_level_required: <glyph:cross_tchat> <color:#ff383b>Tu n'as pas le
+            niveau de classe requis pour utiliser une rune de niveau {level}) !</color>
+          points_added: <glyph:validation_tchat> <color:#40ff70>Tu as transformé tes
+            runes en</color> <color:#ffc933>{amount}</color> <color:#40ff70>points
+            de compétences</color>
+        selected: <glyph:validation_tchat> <color:#40ff70>Tu viens de choisir la classe</color>
+          <white>{class}</white>
+        skill:
+          gourmand: Tu n'as pas la compétence Gourmand
+          gourmand_level: Tu n'as pas le bon niveau de la compétence Gourmand
+        skill_level_required: <glyph:cross_tchat> <color:#ff383b>Tu dois avoir au
+          moins le niveau {level} de classe pour débloquer cette compétence</color>
+        skill_points_required: <glyph:cross_tchat> <color:#ff383b>Tu dois avoir déposé
+          au moins {cost} points de compétence pour débloquer cette compétence</color>
+        skill_prerequisites_required: <glyph:cross_tchat> <color:#ff383b>Tu dois avoir
+          débloqué les prérequis de cette compétence pour pouvoir la débloquer !</color>
+        skill_unlocked_required: <glyph:cross_tchat> <color:#ff383b>Tu dois avoir
+          au moins {unlocked} compétences débloquées pour pouvoir débloquer cette
+          compétence</color>
+      collection:
+        added: \n<glyph:validation_tchat> <color:#40ff70>L'objet a été ajouté à ta
+          collection</color>\n<click:run_command:'/collection'><glyph:left_click>
+          Clique ici pour voir [<color:#ffc933>tes collections</color>]</click>\n
+        already_exists: <glyph:cross_tchat> <color:#ff383b>L’objet n’a pas été ajouté
+          dans ta collection car un exemplaire y est déjà</color>
+        cannot_add: <glyph:cross_tchat> <color:#ff383b>L’objet n’a pas été ajouté
+          dans ta collection car il ne peut pas être ajouté dans une collection</color>
+        item_removed: <glyph:validation_tchat> <color:#40ff70>Tu as supprimé l'objet
+          {item} de la collection {collection} de </color><white>{owner}</white>
+        load_error: <glyph:cross_tchat> <color:#ff383b>Impossible de charger ton profil
+          de collection !</color>
+        owner_forbidden: <glyph:cross_tchat> <color:#ff383b>Tu ne peux pas ajouter
+          cet objet car il est dans la collection de </color> {owner}
+      command:
+        archimage_required: <glyph:cross_tchat> <color:#ff383b>Tu dois avoir le grade</color>
+          <glyph:archimage> <color:#ff383b>pour utiliser cette commande !</color>
+          <click:run_command:'/boutique'><glyph:left_click> Clique ici pour l'obtenir
+          [<color:#ffc933>dans la boutique</color>]</click>
+        help_line: <gold>{usage} <yellow>{params}</yellow> <dark_gray>| <gray>{desc}</gray>
+        help_title: <gold>Aide de la commande /<yellow>{command}</yellow>
+      discord:
+        link: \n<click:open_url:'https://discord.gg/wntmDV6UV7'><glyph:left_click>
+          Clique ici pour accéder à notre [<color:#ffc933>serveur discord</color>]</click>\n
+        linked: \n<glyph:information_tchat> Tes comptes en jeu et discord <color:#ffc933>sont
+          liés</color> !\nTu peux les délier en <click:run_command:'/discord unlink'>[<color:#ffc933>cliquant
+          ici</color>]</click>\n
+        reward:
+          claim: \n<glyph:gift_tchat> <color:#40ff70>Tu viens de récupérer tes récompenses
+            !</color>\n・Tag {tag}\n・Peluche de Wumpus\n
+      donjon:
+        admin:
+          not_in_session: \n<glyph:cross_tchat> <color:#ff383b>Le joueur</color> <white>{player}</white>
+            <color:#ff383b>n'est pas dans une session ou n'est pas le propriétaire
+            du donjon.</color>\n<glyph:left_click>Tu peux voir la liste des sessions
+            actives en <click:run_command:'/donjon admin list'>[cliquant ici]</click>\n
+        finished_forced_teleport: \n<glyph:validation_tchat> <color:#40ff70>Félicitations,
+          tu as complété le donjon ! La session expirera dans deux minutes maximum</color>\n<glyph:left_click>Tu
+          peux quitter le donjon en <click:run_command:'/donjon leave'>[<color:#ffc933>cliquant
+          ici</color>]</click>
+      emoji:
+        click_to_copy: '<click:copy_to_clipboard:{text}><gray>Clique ici pour copier
+          : <green>Copier</green></click>'
+      event:
+        already_has_inventory: <glyph:information_tchat> Tu possèdes <color:#ffc933>un
+          inventaire sauvegardé</color>. <color:#ff383b>Ton inventaire doit être vide
+          ou tes objets seront supprimés. Aucun remboursement ne sera effectué</color><glpyh:left_click>
+          Tu peux récupérer ton inventaire en <click:run_command:'/event inventory'>[<color:#ffc933>cliquant
+          ici</color>]</click>
+        queue_list: <color:#ffc933>{events}</color>
+      fishing:
+        new_fish_caught: 'Félicitations, tu viens de pêcher quelque chose de nouveau
+          : <color:#ffc933>{fish}</color>\n<click:run_command:''/fishdex''><glyph:left_click>
+          Clique ici pour voir l''entrée dans [<color:#ffc933>dans ton fishdex</color>]</click>'
+      fly:
+        added_time: <green>Tu as ajouté <white>{time}</white> secondes de fly !
+      hdv:
+        max_history_reached: \n<glyph:cross_tchat><color:#ff383b>Tu as atteint le
+          nombre maximum d'objets que peut contenir ton historique </color><white>({max})</white>\n<click:run_command:'/ah
+          history'><glyph:left_click> Clique ici pour [<color:#ffc933>récupérer tes
+          objets expirés</color>]</click>\n
+        message: '{text}'
+      home:
+        max_reached: \n<glyph:cross_tchat><color:#ff383b>Tu as atteint le nombre maximum
+          de homes !</color>\n<click:run_command:'/boutique'><glyph:left_click> Tu
+          peux en obtenir davantage en achetant un grade [<color:#ffc933>dans la boutique</color>]</click>\n
+      information:
+        msg: <white>{msg}</white>
+      island:
+        creation_in_progress: <glyph:validation_tchat> <color:#40ff70>Création de
+          l'île...</color> <click:run_command:'/is reset'><glyph:left_click> Tu peux
+          remettre à zéro ton île avec un certain délai en [<color:#ffc933>cliquant
+          ici</color>]</click>\n
+        invite:
+          no_invitations: \n<glyph:cross_tchat> <color:#ff383b>Tu n'as pas reçu d'invitation
+            d'île.</color>\n<click:run_command:'/is invite'><glyph:left_click> Pour
+            inviter un joueur sur ton île tu peux [<color:#ffc933>cliquer ici</color>]</click>
+            ou faire la commande <color:#ffc933>/is invite</color>\n
+      jobs:
+        archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1
+          supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la
+          boutique</color>]</click>\n
+        level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white>
+          sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click>
+          Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n
+        limit_reached: \n<glyph:cross_tchat><color:#ff383b>Tu as atteint le nombre
+          maximum de métiers que tu peux équiper en même temps.</color>\n
+        staff:
+          lookup:
+            1: Jobs de {player}
+            2: 'Job : {job}, Level : {level}, xp : {xp}, status : {status}'
+      multiblock:
+        portal_notfound: <glyph:cross_tchat> <color:#ff383b>Tu dois posséder un multiblock
+          portail pour te téléporter dans la dimension {dim}.</color>\n<click:run_command:'/multiblocks'><glyph:left_click>
+          Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>\n
+      multiblocks:
+        invalid_center: <glyph:cross_tchat> <color:#ff383b>Tu ne peux placer un bloc
+          central de multiblock qu'à l'emplacement prévu dans le multiblock.</color>\n<click:run_command:'/multiblocks'><glyph:left_click>
+          Tu peux [<color:#ffc933>cliquer ici</color>]</click> pour vérifier que ton
+          multiblock est correct\n
+      mythicspawner:
+        broadcast: <color:#ffc933>{msgSpawn}</color>
+      noel:
+        already_given_candy: <yellow>Tu as déjà donné <white>{max}</white> sucres
+          d'orge
+        candy_deposited: <green>Tu as déposé <white>{amount}</white> sucres d'orge
+        tier_rewards_received: <green>Tu as reçu les récompenses du palier <white>{tier}</white>
+          !
+      parrainage:
+        inspect:
+          completed:
+            objective: <color:#40ff70>✓ {objectif}</color>
+            title: <color:#40ff70>Parrainages terminés ({count})</color>
+          header: '<color:#ffc933>Inspection : {playername}</color>'
+          objectives:
+            done: <color:#40ff70>✓ Tous les objectifs sont terminés</color>
+            header: <color:#ffc933>Objectifs en cours</bold></color>
+            progress: '<gray>- {objectif}: {progress}</gray>'
+          referrals:
+            empty: <color:#40ff70>Aucun objectif en cours</color>
+            header: <color:#ffc933>Filleuls</color>
+            objective: <gray>- </gray><color:#ffc933>{objectif}</color> <gray>(&b{progress}</gray>)
+            player: <color:#ffc933>▶ </color><white>{player}<white>
+          rewards:
+            objective: <white>- </white><color:#ffc933>{objectif}</color>
+            title: <color:#40ff70>{count} récompense(s) disponible(s)</color>
+          sponsor:
+            false: <color:#ff383b>Aucun parrain</color>
+            true: '<color:#40ff70> Parrain : {parrainname}</color>'
+        main:
+          claim_all: <click:run_command:/parrainage reward><hover:show_text:"<color:#ffc933>Récupère
+            toutes les récompenses</color>">[<color:#ffc933>Tout récupérer</color>]</hover></click>
+          completed:
+            objective: '{objectif}'
+            title: Parrainages terminés ({count})
+          objectives:
+            header: <color:#ffc933>Objectifs en cours</color>
+            progress: '<white>- {objectif}: {progress}</white>'
+          referrals:
+            header: <color:#ffc933>Filleuls</color>
+            objective: <white>-</white> <color:#ffc933>{objectif}</color> ({progress})
+            player: <color:#ffc933>▶</color> <white>{player}</white>
+          rewards:
+            objective: <white>-</white> <color:#ffc933>{objectif}</color>
+            title: <color:#40ff70>{count} récompense(s) disponible(s)</color>
+          sponsor: '<white>Ton parrain : {parrainname}</white>'
+      plugin:
+        version: '<dark_gray>[<gold>{plugin}</gold><dark_gray>] <yellow>Version du
+          plugin : <gold>{version}</gold>'
+      pub:
+        message: '{message}'
+        separator: <dark_gray><strikethrough>------------------------------
+        title: <color:#ffc933>Pub de {player} :</color>
+      reload:
+        success: <dark_gray>[<color:#ff9f0f>Rechargement</color>] Les fichiers de
+          configurations sont rechargés
+      sentinelle:
+        ban:
+          ip_ban:
+            by: '•  Par: {staff}'
+            reason: '•  Motif: {reason}'
+            title: L'ip de {player} a été banni
+          never_played: Le joueur {player} n'a jamais été sur le serveur.
+          player_ban:
+            by: '•  Par: {staff}'
+            reason: '•  Motif: {reason}'
+            title: '{player} a été banni'
+          reason_required: Le motif est requis.
+          temp_ban:
+            by: '<white>•  Par: </white><gold>{staff}</gold>'
+            expire: '<white>•  Fin du ban: </white><gray>{expire}</gray>'
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>{player}</aqua><white> a été temporairement banni</white>
+          usage: 'Usage: /staff ban <joueur> <raison>'
+        banip:
+          never_played: Le joueur {player} n'a jamais été sur le serveur.
+          reason_required: Le motif est requis.
+          usage: 'Usage: /staff banip <joueur> <raison>'
+        freeze:
+          cant_move: Vous êtes freeze, par conséquence, vous ne pouvez vous déplacer
+          message:
+            by: '•  Par: {staff}'
+            player: '{player} a été freeze'
+            reason: '•  Motif: {reason}'
+          not_connected: Le joueur spécifié n'est pas connecté.
+          player_freeze:
+            reason: '•  Motif: {reason}'
+            title: Tu as été freeze
+          reason_required: Le motif est requis.
+          unfrozen: Le joueur {player} a été unfreeze par {staff}
+          usage: 'Usage: /staff freeze <joueur> <raison>'
+        history:
+          never_played: Le joueur n'a jamais été sur le serveur
+          usage: 'Usage: /staff history <joueur> [sanction]'
+        kick:
+          not_connected: Le joueur spécifié n'est pas connecté.
+          reason_required: Le motif est requis.
+          staff_kick:
+            by: '•  Par: {staff}'
+            reason: '•  Motif: {reason}'
+            title: '{player} a été expulsé'
+        lookup:
+          never_played: Le joueur {player} n'a jamais été sur le serveur.
+          usage: 'Usage: /staff lookup <joueur>'
+        mute:
+          not_connected: Le joueur spécifié n'est pas connecté.
+          player_mute:
+            reason: '•  Motif: {reason}'
+            title: Tu as été mute
+          reason_required: Le motif est requis.
+          staff_mute:
+            by: '•  Par: {staff}'
+            reason: '•  Motif: {reason}'
+            title: '{player} a été mute'
+          temp_mute:
+            expire: '<white>•  Vous serez démute le: </white><gray>{expire}</gray>'
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            staff:
+              by: '<white>•  Par: </white><gold>{staff}</gold>'
+              expire: '<white>•  Fin du mute: </white><gray>{expire}</gray>'
+              reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+              title: <aqua>{player}</aqua><white> a été temporairement mute</white>
+            title: <aqua>Vous</aqua><white> avez été temporairement mute</white>
+          usage: 'Usage: /staff mute <joueur> <raison>'
+        noclip:
+          enter: Vous êtes maintenant en mode no clip
+          exit: Tu as quitté le mode noclip
+          must_be_player: Vous devez être un joueur pour utiliser cette commande
+          visible_warning: Attention, vous êtes toujours visible dans le TAB (/staff
+            v)
+        report:
+          header: '----------------------------------------------------'
+          message1: Shadow {id} a détecté un problème. Faites un ticket sur le serveur
+            Discord
+          message2: Et montrez ce message dans le ticket
+          staff_message: '[Shadow {id}] {text}'
+        sanction:
+          never_played: Le joueur {player} n'a jamais été sur le serveur.
+          reason_required: Le motif est requis.
+        spawn:
+          cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur au
+            spawn.
+          not_connected: Le joueur spécifié n'est pas connecté.
+          player_required: <joueur> est requis
+          teleported: Le joueur {player} a été téléporté au spawn.
+        staff:
+          hidden: Tu ne vois plus les messages Staff
+          visible: Tu vois désormais les messages Staff
+        staff_chat:
+          message: '{message}'
+        stats:
+          integer: Un nombre est requis
+          noarg: Un argument est requis
+          notfound: Cette stat n'existe pas
+        tempban:
+          invalid_duration: 'Durée invalide ({duration}), Formats valides : s=seconde,
+            m=minute, h=heure, d=jour, w=semaine'
+          never_played: Le joueur {player} n'a jamais été sur le serveur.
+          reason_required: Le motif est requis.
+          usage: 'Usage: /staff tempban <joueur> <durée> <raison>'
+        tempmute:
+          invalid_duration: 'Durée invalide ({duration}), Formats valides : s=seconde,
+            m=minute, h=heure, d=jour, w=semaine'
+          not_connected: Le joueur spécifié n'est pas connecté.
+          reason_required: Le motif est requis.
+          usage: 'Usage: /staff tempmute <joueur> <durée> <raison>'
+        title:
+          cannot_send_admin: Vous ne pouvez pas envoyer de title à un administrateur.
+          custom_format: 'Format attendu: /staff title <joueur> custom <titre> <sous-titre>'
+          not_connected: Le joueur spécifié n'est pas connecté.
+          sent: Title envoyé à {player} ({type})
+          usage: 'Usage: /staff title <joueur> <type|custom> [titre] [sous-titre]'
+        tp:
+          cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur.
+          not_connected: Le joueur spécifié n'est pas connecté.
+          player_required: <joueur> est requis
+          teleported_to: Tu as été téléporté à {player}
+        tp_here:
+          cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur.
+          not_connected: Le joueur spécifié n'est pas connecté.
+          player_required: <joueur> est requis
+          teleported_to_you: Le joueur {player} a été téléporté à vous
+          you_teleported_to: Tu as été téléporté à {player}
+        unban:
+          ip_unban:
+            by: '<white>•  Par: </white><gold>{staff}</gold>'
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>L'ip de {player}</aqua><white> a été débanni</white>
+          never_played: Le joueur n'a jamais été sur le serveur
+          not_banned: Le joueur spécifié n'est pas banni.
+          player_unban:
+            by: '<white>•  Par: </white><gold>{staff}</gold>'
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>{player}</aqua><white> a été débanni</white>
+          reason_required: Le motif est requis.
+          usage: 'Usage: /staff unban <joueur> <raison>'
+        unbanip:
+          never_played: Le joueur n'a jamais été sur le serveur
+          not_banned: L'ip du joueur spécifié n'est pas banni.
+          reason_required: Le motif est requis.
+          usage: 'Usage: /staff unbanip <joueur> <raison>'
+        unmute:
+          never_played: Le joueur n'a jamais été sur le serveur
+          not_muted: Le joueur spécifié n'est pas mute.
+          player_unmute:
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>Vous</aqua><white> avez été démute</white>
+          reason_required: Le motif est requis.
+          staff_unmute:
+            by: '<white>•  Par: </white><gold>{staff}</gold>'
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>{player}</aqua><white> a été démute</white>
+          usage: 'Usage: /staff unmute <joueur> <raison>'
+        vanish:
+          now_invisible: Vous êtes maintenant invisible
+          now_visible: Vous êtes maintenant visible
+        warn:
+          player_warn:
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>Vous</aqua><white> avez été averti</white>
+          staff_warn:
+            by: '<white>•  Par: </white><gold>{staff}</gold>'
+            reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+            title: <aqua>{player}</aqua><white> a été averti</white>
+      spawners:
+        break_warning: <glyph:warning_tchat><color:#ff383b>Attention, si tu casses un spawner sans pioche à spawner, celui-ci
+          va disparaître ! Si tu souhaites tout de même continuer, recasse ce bloc</color>
+        upgrade_success: <glyph:up_tchat><color:#40ff70> Tu as amélioré </color><white>{type}</white><color:#40ff70> au niveau </color><white>{level}</white>
+      tag:
+        tag_added: \n<glyph:gift_tchat> Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click> <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des tags</color><white>]</white></click>
+      teleport:
+        cancelled: \n<glyph:cross_tchat> <color:#ff383b>Tu as bougé et cela a annulé
+          te téléportation.</color> Tu peux être <color:#ffc933>téléporté directement</color>
+          en possédant le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click>
+          Tu peux l'obtenir en </white>[<color:#ffc933>cliquant ici</color>]</click><white>\n
+      teleportation:
+        request_with_buttons: <glyph:information_tchat> <color:#ffc933>{sender}</color>
+          souhaite que tu te téléportes vers lui.\n<color:#40ff70>[ACCEPTER]</color><click:run_command:'/tpaccept'><hover:show_text:'Clique
+          pour accepter la téléportation'/></click> <color:#ff383b>[REFUSER]</color><click:run_command:'/tpdeny'><hover:show_text:'Clique
+          pour refuser la téléportation'/></click>\n
+      upgradeisland:
+        upgrade_success: <glyph:up_tchat><color:#40ff70>Tu viens d'améliorer:</color><white>
+          {name} (Lvl.{current} -> Lvl.{next})</white>
+      warp:
+        created: Le warp nommé <white>{warp}</white> a été créé
+    template:
+      bossbar: '{msg}'
+      error: <glyph:cross_tchat> <color:#ff383b>{msg} </color>
+      gift: <glyph:gift_tchat> <color:#40ff70>{msg} </color>
+      info: <glyph:information_tchat> {msg}
+      logger: '{msg}'
+      message: '{msg}'
+      todo: '{msg}'
+      validation: <glyph:validation_tchat> <color:#40ff70>{msg} </color>
+      warning: <glyph:warning_tchat> <color:#ff383b>{msg} </color>
+    todo:
+      classe:
+        armor_complete:
+          noskill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement
+            équipée
+          skill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement
+            équipée, tu bénéficies de la compétence {skill} en bonus !</color>
+        armor_full_required: <glyph:warning_tchat> <color:#ff383b>Tu dois porter une
+          armure intégrale pour profiter de la compétence bonus !</color>
+        armor_missing: <glyph:warning_tchat> <color:#ff383b>Ton armure n'est pas intégralement
+          équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur
+          ton armure</color>
+        notskilloffhand: <glyph:warning_tchat> <color:#ff383b> Tu ne peux lancer de
+          sort si ton item de la deuxième main est aussi un item avec des compétences
+        skill:
+          active: <green><bold> Compétence activée </bold>pour {name}</green>
+          inactive: <red><bold> Compétence désactivé </bold>pour {name}</red>
+        sort:
+          add: <glyph:validation_tchat> <color:#40ff70> Tu viens d'ajouter le sort
+            {skillname} sur ta baguette !
+          max: <glyph:warning_tchat> <color:#ff383b> Tu as déjà le nombre maximal
+            de sort sur ta baguette !
+          notremove: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas retiré ce
+            sort
+          remove: <glyph:validation_tchat> <color:#40ff70> Tu viens de retiré le sort
+            de ta baguette !
+        sound:
+          active: <green><bold> Son activée </bold>pour {name}</green>
+          inactive: <red><bold> Son désactivé </bold>pour {name}</red>
+      dungeon:
+        already:
+          builder: Tu es déjà dans un session de donjon en création
+          in: Tu es déjà dans un donjon
+        build: La session du donjon a été créer
+        builderror: 'Une erreur est survenir lors de la création du donjon : {error},
+          par prévention, celui çi a été annulé'
+        death: '{playername} a perdu une vie dans le donjon'
+        global:
+          end: Le donjon de {owner} vient de se finir !
+        invite:
+          accept: Tu as rejoins le donjon !
+          acceptall: '{playername} a rejoint le donjon'
+          edit: Modification de la session détecté, le cooldown de création de la
+            session est reinitialisé
+          refuse: Tu as refusé l'invitation au donjon
+          refuseall: '{playername} a refusé l''invitation au donjon'
+          remove: Tu as été éjecté du donjon
+          removeall: '{playername} a été éjecté du donjon'
+          removeinvited: Ton invitation au donjon est révolu
+          send: Tu as été invité à rejoindre le donjon de {ownername}, fais /donjon
+            pour accepter ou refuser
+          sendall: '{playername} a été invité à rejoindre le donjon'
+        notifwhenstart: La session a été mis dans la queue, une notification te sera
+          envoyé quand la session sera presque créer. Tu peux toujours ajouter des
+          membres pendant ce temps.
+        retarded: Toutes les instances de ce donjon sont prise, vous serez téléporter
+          lorsqu'une place sera disponible, place {place}
+        startbuild: La session du donjon sera créer dans 30 secondes
+      tutoriel:
+        add_sort:
+          astuce:
+            1: COMMENT CONFIGURER
+          message: ꗎ
+          objectif:
+            1: Ajoute le sort X à ta baguette
+        ahdeposit:
+          astuce:
+            1: '<color:#ffc933>Vendre dans l''hôtel des ventes :'
+            2: /ah sell
+            3: <color:#ffc933>Plus d'informations :</color> <color:white>/wiki ah
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Chasséros est... motivé on va dire. Combattre\nꖰ en donjon et ailleurs\
+            \ peut donner des ressources\nꖰ invendables dans l'adminshop. Mets les\
+            \ en vente\nꖰ dans <color:#ffc933>l'hôtel des ventes</color> !\n\n"
+          objectif:
+            1: Mettre en vente un objet dans
+            2: <color:#ffc933>l'hôtel des ventes</color> <color:white>(/ah)
+        bestiaireunlock:
+          astuce:
+            1: '<color:#ffc933>Ouvrir le bestiaire : </color><color:white>/bestiaire'
+            2: '<color:#ffc933>Plus d''infos : </color><color:white>/wiki bestiaire'
+          message: "\nꗊ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Oui, tu es enfin prêt pour venir semer le carnage\nꖰ avec moi !\
+            \ <color:#ffc933>Complète ton bestiaire</color> en tuant\nꖰ tous animaux\
+            \ qui existent dans cette dimension !\n\n"
+          objectif:
+            1: Tue les 16 animaux différents
+            2: <color:#ffc933>du terrain de chasse </color><color:white>(%tutoriel_shadow%/16)
+        challenge_1:
+          astuce:
+            1: '<color:#ffc933>Voir les challenges </color><color:white>: /challenge'
+            2: '<color:#ffc933>Plus d''informations </color><color:white>: /wiki challenge'
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Les challenges que tu as complété te font avancer
+
+            ꖰ dans <color:#ffc933>le challenge de tutoriel</color>. Il est très utile
+            car
+
+            ꖰ il te donna des récompenses utiles, avec
+
+            ꖰ par exemples <color:#ffc933>de nouveaux outils magiques</color> !
+
+
+            '
+          objectif:
+            1: Complète l'étape 1 du <color:white>challenge tuto
+        challenge_2:
+          astuce:
+            1: '<color:#ffc933>Voir les challenges </color><color:white>: /challenge'
+            2: '<color:#ffc933>Plus d''informations </color><color:white>: /wiki challenge'
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ On va sortir de l''île et découvrir les incroyables
+
+            ꖰ <color:#ffc933>dimensions </color>! Pour cela on aura besoin d''objets
+
+            ꖰ que tu peux obtenir en complétant
+
+            ꖰ <color:#ffc933>le challenge de tutoriel 2</color>.
+
+
+            '
+          objectif:
+            1: Complète l'étape 1 du <color:white>challenge tuto
+        challengepierre:
+          astuce:
+            1: <color:#ffc933>/wiki collection
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Tu as complété un challenge ! Fais <color:#ffc933>/challenge</color>
+
+            ꖰ pour tous les voir. Les <color:#ffc933>challenges de collection</color>
+
+            ꖰ donnent des récompenses utiles pour progresser.
+
+            ꖰ Complètes-en un !
+
+
+            '
+          objectif:
+            1: Complète le challenge
+            2: <color:white>Mineur Marchand 1
+        chapanda:
+          astuce:
+            1: '<color:#ffc933>Voir comment le créer : </color><color:white>/crafts'
+            2: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki stuff'
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Ce n'est pas la seule chose utile en combat que\nꖰ tu peux trouver\
+            \ dans la dimension. Tu peux\nꖰ aussi créer <color:#ffc933>des équipements\
+            \ très puissants</color>\nꖰ grâce aux ressources des monstres. Essaie\
+            \ !\n\n"
+          objectif:
+            1: Crée 1 Chapanda
+        chene:
+          astuce:
+            1: <color:#ffc933>Info sur le bûcheronage :</color>
+            2: /wiki bucheron
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Tu apprends vite ! Commençons par découvrir
+
+            ꖰ <color:#ffc933>la hache</color>. Essaie la sur un arbre et <color:#ffc933>casse</color>
+
+            ꖰ <color:#ffc933>les feuilles avec</color>, cela te donnera <color:#ffc933>des
+            insectes</color>
+
+            ꖰ grâce à la compétence débloquée !
+
+
+            '
+          objectif:
+            1: Casse 8 bûches de chêne <color:white>(%tutoriel_OAK_LOG_value%/%tutoriel_OAK_LOG_max%)
+            2: <color:#ffc933>et 4 feuilles de chêne</color> <color:white>(%tutoriel_OAK_LEAVES_value%/%tutoriel_OAK_LEAVES_max%)
+        choose_jobs:
+          astuce:
+            1: <color:#ffc933>/wiki metier
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Nous allons maintenant améliorer ton île.
+
+            ꖰ Pour cela il nous faut des <color:#ffc933>MCoins</color>, notre
+
+            ꖰ monnaie locale. <color:#ffc933>Choisis un métier</color> et vend
+
+            ꖰ des objets <color:#ffc933>dans l''adminshop</color> pour en obtenir.
+
+
+            '
+          objectif:
+            1: Choisis un métier <color:white>(/jobs)
+        cinema:
+          astuce:
+            1: <color:#ffc933>Tu peux trouver des tutoriels pour
+            2: <color:#ffc933>créer un générateur sur internet.
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Ton générateur est bien mais ce sera insuffisant
+
+            ꖰ pour agrandir ton île. Crée un générateur
+
+            ꖰ <color:#ffc933>plus performant</color> et utilise le pour
+
+            ꖰ miner plus de blocs !
+
+
+            '
+          objectif:
+            1: Casse 50 blocs de pierre <color:white>(%tutoriel_COBBLESTONE_value%/%tutoriel_COBBLESTONE_max%)
+        claim_axe_pickaxe:
+          astuce:
+            1: <color:#ffc933>/wiki outil
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Sur ton île il y a <color:#ffc933>une hache et une pioche magique</color>
+
+            ꖰ qui vont t''aider. Récupère les ! Et si des amis
+
+            ꖰ t''attendent c''est le moment d''accepter leur
+
+            ꖰ invitation en faisant <color:#ffc933>/is invite</color>.
+
+
+            '
+          objectif:
+            1: 'Récupère la hache et la pioche magique  '
+        classe5:
+          astuce:
+            1: <color:#ffc933>/wiki classe
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ La zone où on se situe n'est qu'une petite partie\nꖰ de la dimension.\
+            \ Passe à l'étape supérieure\nꖰ en atteignant <color:#ffc933>le niveau\
+            \ 5 de classe</color><color:white> !</color>\n\n"
+          objectif:
+            1: Atteindre le niveau
+            2: <color:#ffc933>de classe 5
+        compost:
+          astuce:
+            1: <color:#ffc933>/wiki mbcompost
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Combattre ici permet d'accéder à des ressources\nꖰ aux usages exceptionnels,\
+            \ comme par exemple\nꖰ <color:#ffc933>améliorer tes multiblocks</color>.\
+            \ Combat des monstres\nꖰ pour obtenir de quoi <color:#ffc933>améliorer\
+            \ ton compost</color>. \n\n"
+          objectif:
+            1: <color:#ffc933>Améliore 1 multiblock
+            2: <color:#ffc933>compost sur ton île
+        compostcreate:
+          astuce:
+            1: <color:#ffc933>Tu as obtenu de quoi compléter le multiblock
+            2: <color:#ffc933>en complétant</color><color:white> le challenge de tutoriel
+              1
+          message: '
+
+            ꗍ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Bzzt, je suis Mecanicus et voici mon enseignement.
+
+            ꖰ Crée <color:#ffc933>un coeur de multiblock compost</color> dans
+
+            ꖰ l''établi et <color:#ffc933>complète le compost</color> que j''ai laissé
+
+            ꖰ sur ton île pour me prouver ta valeur.
+
+
+            '
+          objectif:
+            1: Crée un multiblock compost <color:white>(/multiblocks)
+        consumeregen:
+          astuce:
+            1: <color:#ffc933>Le plat se crée dans un multiblock établi
+            2: '<color:#ffc933>Plus d''infos : </color><color:white>/information cuisine'
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Ces vanilles vont nous servir à <color:#ffc933>créer des sorbets</color>.\n\
+            ꖰ Rafraichissant mais en plus ils te rendent\nꖰ <color:#ffc933>des points\
+            \ de vie quand tu les manges</color> !\n\n"
+          objectif:
+            1: <color:#ffc933>Consomme 4 milkshakes
+            2: <color:#ffc933>à la vanille </color><color:white>(%tutoriel_shadow%/4)
+        cookingbreak:
+          astuce:
+            1: <color:#ffc933>La vanille de trouve dans la
+            2: <color:#ffc933>dimension jungle
+            3: '<color:#ffc933>Plus d''infos : </color><color:white>/information cuisine'
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ C'est l'heure de l'exploration ! Ces terres\nꖰ regorgent <color:#ffc933>d'ingrédients\
+            \ utiles</color>. Utilise <color:#ffc933>les cisailles</color>\nꖰ obtenues\
+            \ dans le challenge de tutoriel\nꖰ pour en récupérer !\n\n"
+          objectif:
+            1: Récupère 16 vanilles </color><color:white>(%tutoriel_shadow%/16)
+        createisland:
+          astuce:
+            1: '<color:#ffc933>Réinitialisation de l''île</color> <color:white>: /is
+              reset</color>'
+            2: '<color:#ffc933>Voir les îles</color> <color:white>: /warp is</color>'
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Dans notre monde l'accès à la propriété est gratuit.\nꖰ Chacun peut\
+            \ avoir <color:#ffc933>une île</color> dès le début !\nꖰ <click:run_command:'/warp\
+            \ is'><color:#ffc933>[Clique ici]</color></click> pour être téléporté\
+            \ au <color:#ffc933>warp des îles</color>\nꖰ pour les voir et en choisir\
+            \ une.\n\n"
+          objectif:
+            1: Crée une île <color:white>(/is)</color>
+        daily:
+          astuce:
+            1: '<color:#ffc933>Ouvrir la récompense</color><color:white>: /daily'
+            2: '<color:#ffc933>Plus d''infos </color><color:white>: /information daily'
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Super, tu as obtenu les récompenses du challenge !\nꖰ Tu en veux\
+            \ d'autres ? Tu peux faire <color:#ffc933>/daily</color>\nꖰ <color:#ffc933>chaque\
+            \ jour</color> pour obtenir des récompenses !\n\n"
+          objectif:
+            1: Ouvrir une récompense de daily
+        discovery_skip:
+          astuce:
+            1: '<color:#ffc933>Autre commande de tutoriel : </color>'
+            2: <color:white>/tuto help</color>
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Bienvenue ! Je vais t'aider à découvrir notre monde.\nꖰ <color:#ffc933>Complète\
+            \ les objectifs</color> à droite de ton écran pour\nꖰ progresser. Et si\
+            \ un objectif ne te semble pas utile\nꖰ fais <color:#ffc933>/tutoriel\
+            \ skip</color> pour passer à la suite. Essaie !\n\n"
+          objectif:
+            1: Utilise la commande <color:white>/tuto skip</color>
+        dungeoneasy:
+          astuce:
+            1: <color:#ffc933>/wiki dj
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Maintenant que tu es niveau 5 tu vas pouvoir\nꖰ affronter <color:#ffc933>le\
+            \ donjon de cette dimension</color>.\nꖰ Traverse le portail <color:#ffc933>sur\
+            \ l'île tout au sud</color>\nꖰ de la dimension ou fait <color:#ffc933>/donjon</color>.\n\
+            \n"
+          objectif:
+            1: <color:#ffc933>Terminer le donjon de la
+            2: <color:#ffc933>jungle - facile </color><color:white>(/donjon)
+        equip_tunic_noob:
+          astuce:
+            1: <color:#ffc933>Tu peux obtenir la tunique du débutant
+            2: <color:#ffc933>en complétant</color><color:white> le challenge de tutoriel
+              3
+          message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Tu connais désormais tes premiers ennemis.\nꖰ Mais d'autres plus\
+            \ puissants t'attendent !\nꖰ <color:#ffc933>Equipe une tunique du débutant</color>\
+            \ pour\nꖰ être suffisament protégé.\n\n"
+          objectif:
+            1: Equipe une tunique du débutant
+        error:
+          no_active_step: Tu as déjà fini le tutoriel !
+        finish:
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color>\
+            \ </b>\nꖰ Bien, que de chemin parcourus. Tu es devenu \nꖰ assez renseigné\
+            \ pour te débrouiller tout seul.\nꖰ J'espère que tu auras beaucoup appris.\
+            \ \n\n \nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Si tu as peur de t'ennuyer sans mon super tuto\nꖰ tu peux faire\
+            \ la commande <color:#ffc933>/wiki objectif</color>.\nꖰ J'ai écris un\
+            \ guide avec de nombreux objectifs\nꖰ à accomplir ! Profite bien de cette\
+            \ aventure. \n\n"
+          objectif:
+            1: Fin
+        finish_dungeon:
+          astuce:
+            1: <color:#ffc933>/wiki donjon
+          message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Tu sembles avoir du potentiel. Tu es près pour\nꖰ un nouveau défi.\
+            \ Traverse <color:#ffc933>le portail dans</color>\nꖰ <color:#ffc933>la\
+            \ grotte du terrain de chasse</color> ou utilise\nꖰ la commande <color:#ffc933>/donjon</color>.\
+            \ \n\n"
+          objectif:
+            1: Termine le donjon de
+            2: <color:#ffc933>l'apprenti chasseur
+        fishing:
+          astuce:
+            1: <color:#ffc933>/wiki peche
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Il existe ici un grand lac. Fait un clic droit sur\nꖰ <color:#ffc933>la\
+            \ canne à pêche magique</color> dans ton inventaire\nꖰ et <color:#ffc933>mets\
+            \ dedans des insectes</color>. Tu pourras ensuite\nꖰ pêcher <color:#ffc933>des\
+            \ poissons spéciaux</color> !\n\n"
+          objectif:
+            1: Pêche 8 poissons
+            2: <color:#ffc933>magiques </color><color:white>(%tutoriel_shadow%/8)
+        islandlevel2:
+          astuce:
+            1: '<color:#ffc933>Déposer le bloc : <color:white>/is offrande'
+            2: '<color:#ffc933>Voir comment créer le bloc : </color><color:white>/crafts'
+            3: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki offrande'
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Pour améliorer ton île, elle doit être du bon
+
+            ꖰ niveau. On va donner un <color:#ffc933>bloc de niveau végétal</color>
+
+            ꖰ pour gagner de l''expérience et faire passer
+
+            ꖰ ton île <color:#ffc933>au niveau 2</color> !
+
+
+            '
+          objectif:
+            1: Etre sur une île de niveau 2
+        islandupgradecobblegen:
+          astuce:
+            1: <color:#ffc933>/wiki isupgrade
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Parfait, commence par mettre 15725 Mcoins dans
+
+            ꖰ <color:#ffc933>la banque d''île</color>. Ensuite fais <color:#ffc933>/is
+            upgrade</color> pour
+
+            ꖰ ouvrir le menu d''amélioration et améliorer
+
+            ꖰ <color:#ffc933>ta génération de minerais</color>.
+
+
+            '
+          objectif:
+            1: <color:#ffc933>Améliore la génération de minerais
+            2: <color:#ffc933>de ton île au niveau 2</color><color:white> (/is upgrade)
+        ismenu:
+          astuce:
+            1: <color:#ffc933>/wiki ile
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Félicitations, tu possèdes une super île !
+
+            ꖰ Découvre ses fonctionnalités en faisant <color:#ffc933>/ismenu</color>.
+
+            ꖰ Tu peux aussi retourner au point d''apparition
+
+            ꖰ avec la commande <color:#ffc933>/spawn</color>.
+
+
+            '
+          objectif:
+            1: Ouvrir le menu d'île <color:white>(/ismenu)</color>
+        jungleportail:
+          astuce:
+            1: '<color:#ffc933>Voir comment le construire :'
+            2: /multiblocks
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Je crois qu'on va repartir à l'aventure !\nꖰ Mais pour cela il nous\
+            \ faut <color:#ffc933>un nouveau portail</color>.\nꖰ <color:#ffc933>L'étape\
+            \ 4 du challenge de tutoriel</color> peut te donner\nꖰ les éléments nécessaires.\n\
+            \n"
+          objectif:
+            1: <color:#ffc933>Crée un multiblock portail de
+            2: <color:#ffc933>la jungle sur ton île
+        mailbox:
+          astuce:
+            1: '<color:#ffc933>Recettes dans le multiblock</color> :'
+            2: /crafts
+            3: '<color:#ffc933>Infos sur le multiblock établi</color> :'
+            4: <color:#ffc933>/wiki mbetabli
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\n\
+            ꖰ On peut désormais tester de créer une <color:#ffc933>boîte</color>\n\
+            ꖰ <color:#ffc933>aux lettres</color>. Tu peux voir comment les créer\n\
+            ꖰ dans <color:#ffc933>le livre de recette dans le multiblock</color>.\n\
+            \n"
+          objectif:
+            1: 'Crée 1 boîte aux lettres '
+        mailboxopen:
+          astuce:
+            1: <color:#ffc933>/wiki boitelettre
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ <color:#ffc933>Clique</color> sur ta boîte aux lettres pour l''ouvrir,
+
+            ꖰ il y aura régulièrement des récompense dedans ! Tu peux
+
+            ꖰ aussi faire la commande <color:#ffc933>/mail</color> si tu possèdes
+
+            ꖰ le grade enchanteur.
+
+
+            '
+          objectif:
+            1: Ouvre ta boîte aux lettres
+        mobkill:
+          astuce:
+            1: <color:#ffc933>/wiki element
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Cette baguette a des statistiques élevées\nꖰ <color:#ffc933>en élément\
+            \ eau</color>. Cela signifie qu'elle fera\nꖰ <color:#ffc933>plus de dégâts\
+            \ aux monstres de cet élément</color>.\nꖰ Essaie de tuer quelques rainettes\
+            \ avec !\n\n"
+          objectif:
+            1: Tue 16 rainettes vertes </color><color:white>(%tutoriel_shadow%/16)
+        orangeblock:
+          astuce:
+            1: '<color:#ffc933>Voir comment créer le bloc : </color><color:white>/crafts'
+            2: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki islevel'
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Avant de faire une nouvelle visite nous devons\nꖰ <color:#ffc933>améliorer\
+            \ le bloc de niveau</color> que tu as donné.\nꖰ Dépose un <color:#ffc933>bloc\
+            \ de niveau orangé incomplet</color>\nꖰ en offrande pour voir le résultat\
+            \ !\n\n"
+          objectif:
+            1: <color:#ffc933>Dépose 1 bloc de niveau orangé
+            2: <color:#ffc933>incomplet dans l'île </color><color:white>(/is offrande)
+        portailcreate:
+          astuce:
+            1: <color:#ffc933>Tu as obtenu de quoi compléter le multiblock
+            2: <color:#ffc933>en complétant</color><color:white> le challenge de tutoriel
+              2
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Bien, tu as obtenu en récompense de ce challenge\nꖰ <color:#ffc933>une\
+            \ super épée</color> et de quoi créer <color:#ffc933>un multiblock</color>\n\
+            ꖰ <color:#ffc933>portail</color>. Crée le et découvrons ce nouveau monde\
+            \ !\n\n"
+          objectif:
+            1: Avoir un multiblock portail du terrain
+            2: <color:#ffc933>de chasse sur l'île </color><color:white>(/multiblocks)</color>
+        reset: La progression du tutoriel de {name} a été réinitialiser
+        shopcreate:
+          astuce:
+            1: <color:#ffc933>/wiki shopjoueur
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Maintenant on va remplir ce warp de <color:#ffc933>shops</color>\n\
+            ꖰ <color:#ffc933>de joueur</color> ! Pose une pancarte sur\nꖰ un coffre\
+            \ et suit les instructions.\n\n"
+          objectif:
+            1: Crée un shop joueur
+            2: <color:#ffc933>sur ton île
+        spawnercreate:
+          astuce:
+            1: <color:#ffc933>/wiki spawner
+          message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Bien, excellent ! Les <color:#ffc933>coffres des donjons</color>\n\
+            ꖰ te donneront de quoi <color:#ffc933>créer des spawners</color>.\nꖰ Je\
+            \ te donne quelques objets utiles,\nꖰ crée en un et MASSACRE LES MONSTRES.\n\
+            \n"
+          objectif:
+            1: Crée 1 spawner
+        terrainchasse:
+          astuce:
+            1: '<color:#ffc933>Voir les challenges : </color><color:white>/challenge'
+            2: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki challenge'
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ On va sortir de l''île et découvrir les incroyables
+
+            ꖰ <color:#ffc933>dimensions</color> ! Pour cela on aura besoin d''objets
+
+            ꖰ que tu peux obtenir en complétant <color:#ffc933>le challenge</color>
+
+            ꖰ <color:#ffc933>de tutoriel 2</color>. Termine-le !
+
+
+            '
+          objectif:
+            1: Complète le challenge de tutoriel 2
+        tinker:
+          astuce:
+            1: '<color:#ffc933>Voir la création des multiblock : </color><color:white>/multiblocks'
+            2: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki etabli'
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\n\
+            ꖰ Il nous faut maintenant <color:#ffc933>une machine</color> pour créer\n\
+            ꖰ des objets spéciaux : un <color:#ffc933>multiblock établi</color>. Fais\n\
+            ꖰ <color:#ffc933>/multiblocks</color> pour voir comment le créer !\n\n"
+          objectif:
+            1: Construis un multiblock établi sur ton île
+        unlock_skill:
+          message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Bien. Améliore ton équipement et ton épée\nꖰ en débloquant <color:#ffc933>tes\
+            \ premières compétences</color>\nꖰ avec la commande <color:#ffc933>/classe</color>.\
+            \ Il te faut\nꖰ PLUS DE PUISSANCE.\n\n"
+          objectif:
+            1: Débloque les compétences x (/classe)
+        unlock_skill_axe_pickaxe:
+          astuce:
+            1: <color:#ffc933>/wiki competence
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ On dirait que tu intéresses les Dieux ! Chacun
+
+            ꖰ t''expliquera des choses sur sa spécialité
+
+            ꖰ pendant le tutoriel. Fais maintenant <color:#ffc933>/jobs</color>
+
+            ꖰ pour débloquer les compétences.
+
+
+            '
+          objectif:
+            1: <color:#ffc933>Débloque une compétence pour ta pioche</color>
+            2: <color:#ffc933>et pour ta hache magique</color> (/jobs)
+        upgradestuff:
+          astuce:
+            1: '<color:#ffc933>Voir comment le construire :'
+            2: /multiblocks
+            3: '<color:#ffc933>Plus d''informations :'
+            4: /wiki mbameliorateur
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Tu es devenu très fort. Cependant créer\nꖰ tout le temps de nouveaux\
+            \ équipements\nꖰ cela coûte cher. Crée <color:#ffc933>un multiblock</color>\n\
+            ꖰ <color:#ffc933>améliorateur</color> et améliore ton équipement !\n\n"
+          objectif:
+            1: Améliorer 1 équipement
+            2: <color:#ffc933>dans l'améliorateur
+        warpcreate:
+          astuce:
+            1: '<color:#ffc933>Créer un warp : </color><color:white>/is setwarp nom'
+            2: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki iswarp'
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ L'hôtel des ventes est utile pour vendre\nꖰ des objets rares mais\
+            \ pas pour vendre\nꖰ en grande quantité. On va remédier à cela\nꖰ en créeant\
+            \ <color:#ffc933>un warp directement sur ton île</color> !\n\n"
+          objectif:
+            1: Crée un warp d'île
+        warpunlock:
+          astuce:
+            1: <color:#ffc933>/wiki warps
+          message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ En explorant ce nouveau monde, fait un <color:#ffc933>clic droit</color>\n\
+            ꖰ sur les balises pour les débloquer. Tu pourras\nꖰ ensuite t'y téléporter\
+            \ avec la commande <color:#ffc933>/warps</color>.\n\n"
+          objectif:
+            1: Débloque une balise <color:white>(/warps)
+        water_stick:
+          astuce:
+            1: <color:#ffc933>/wiki magie
+          message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>\
+            \ \nꖰ Il existe en plus <color:#ffc933>des armes et des baguettes</color>\n\
+            ꖰ <color:#ffc933>magiques</color> pour attaquer les monstres. J'en ai\n\
+            ꖰ repéré une <color:#ffc933>près des maisons qui sont</color>\nꖰ <color:#ffc933>sur\
+            \ le lac</color>. Récupère-là !\n\n"
+          objectif:
+            1: Obtiens 1 Baguette d'eau
+        wikimineur:
+          astuce:
+            1: <color:#ffc933>/wiki mineur
+          message: '
+
+            ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
+
+            ꖰ Notre hache est désormais bien affutée,
+
+            ꖰ on peut tester <color:#ffc933>ta nouvelle pioche</color> !
+
+            ꖰ Utilise la pour casser
+
+            ꖰ <color:#ffc933>quelques pierres</color>.
+
+
+            '
+          objectif:
+            1: Casse 16 blocs de pierre <color:white>(%tutoriel_COBBLESTONE_value%/%tutoriel_COBBLESTONE_max%)</color>
+    validation:
+      cooldown:
+        reset: Le cooldown de {player} a été reset
+      crate:
+        givecrate:
+          success: Tu as reçu une crate !
+        queue:
+          add: Tu as été ajouté à la file d'attente d'ouverture de la box
+        removed: La box {crate} a été supprimée
+        reward:
+          gain: Tu as gagné <white>x{amount}</color> de {name}
+      discord:
+        sync: Ton compte Discord est maintenant synchronisé
+        unlink: Ton compte Discord est maintenant délié
+      donjon:
+        admin:
+          forced_player: Le joueur <white>{player}</white> a été téléporté de force
+            dans la salle
+        invite:
+          accepted: Tu viens d'accepter l'invitation, tu seras téléporté bientôt
+          accepted_other: <white>{player}</white> vient d'accepter ton invitation
+        received: <white>{player}</white> a reçu <white>{amount}</white> donjons
+      effect:
+        nightvision_added: Tu as activé l'effet Vision Nocturne
+      emoji:
+        added_to_player: L'émoji <white>{emogi}</white> a été ajouté au joueur <white>{player}</white>
+        removed_from_player: L'émoji <white>{emogi}</white> a été retiré au joueur
+          <white>{player}</white>
+      event:
+        removed_life: Tu as retiré une vie à <white>{player}</white>
+      fly:
+        enabled: <green>Tu as activé le mode fly !
+      heal:
+        success: Tu as été soigné
+      home:
+        added: Ton home <white>{home}</white> a été ajouté !
+        deleted: Ton home a été supprimé !
+        teleported: Tu as été téléporté à ton home <white>{home}</white> !
+      ignore:
+        ignore_all_disabled: Tu n'ignores plus tous les joueurs
+        ignore_all_enabled: Tu ignores maintenant tous les joueurs
+        no_longer_ignoring: Tu n'ignores plus <color:#ffc933>{player}</color>
+        now_ignoring: Tu ignores désormais <white>{player}</white>
+      island:
+        coop:
+          added: Tu es désormais en coop sur l'île de <color:#ffc933>{island}</color>
+          added_broadcast: <white>{player}</white> est maintenant en coop sur ton
+            île
+        reset_success: L'île a été réinitialisée
+      item:
+        on_head: L'objet est désormais sur ta tête !
+      jobs:
+        cooldown_reset: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le cooldown de <white>{player}</white>
+          a été reset
+        level_set_broadcast: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le joueur <white>{player}</white>
+          a été mis au niveau <white>{level}</white> du métier <white>{job}</white>
+        points_added: <sound:BLOCK_NOTE_BLOCK_BASS>Tu as ajouté <white>{points}</white>
+          points de compétences
+        slot_added_sender: Tu as ajouté un emplacement de métier au joueur <white>{player}</white>
+        slot_removed_target: Tu as retiré un emplacement de métier à <white>{player}</white>
+        xp_received_broadcast: Le joueur <white>{player}</white> a reçu <white>{xp}</white>
+          expérience du métier <white>{job}</white>
+      leaderboard:
+        refreshed: Le classement a été rafraîchi
+      mail:
+        received: Tu as récupérer l'objet envoyé par <white>{playername}</white>
+        sent: Tu as envoyé un objet dans la boîte mail de <white>{playername}</white>
+      multiblocks:
+        created: Félicitation, tu viens de créer un multiblock !
+      objet:
+        transformed: Tes objets ont été transformés
+      parrainage:
+        accept:
+          confirm: Tu as accepté l’invitation de <white>{playername}</white>
+        decline:
+          confirm: Tu as refusé l’invitation de <white>{playername}</white>
+        force:
+          set: <white>{parrain}</white> est maintenant le parrain de <white>{target}</white>
+          sponsor: Tu es désormais le parrain de <color:#ffc933>{playername}</color>
+          target: <white>{playername}</white> est maintenant ton parrain
+        invite:
+          accepted: <color:#ffc933>{playername}</color> a accepté ton invitation
+          sent: Invitation envoyée à <color:#ffc933>{playername}</color>
+        reset: Parrainage <color:#ffc933>réinitialisé</color>
+      photo:
+        added: Tu viens d'ajouter une photo à ton livre photo
+        taken: <sound:BLOCK_TRIPWIRE_ATTACH[volume=1.0,pitch=1.0,source=MASTER]>Tu viens de prendre une photo
+      pub:
+        disabled: Tu as désactivé le canal de pub
+        enabled: Tu as activé le canal pub
+      quest:
+        quest_item_found: Tu as trouvé l'objet de quête !
+      regen:
+        healed: Tu as été régénéré de <white>{amount}</white> cœurs
+      shop:
+        buy_success: Tu as acheté <white>{amount} {item}</white> pour <white>{total}
+          <glyph:mcoin></white>
+        sell_success: <green>Tu as vendu <white>{amount} {item} </white>pour <white>{total}
+          <glyph:mcoin></white>
+      shopjoueur:
+        bought_items: Tu viens d'acheter <white>{amount} objets</white> à <white>{owner}</white>
+        shop_created: Le <white>{type}</white> a bien été créé
+      spawners:
+        broken_with_tool: Tu as cassé un <white>{type}</white> avec ta pioche à spawner
+        multiblock_action: Tu as {action} le multiblock
+        orb_linked: Tu as associé ton orbe à spawner au monstre {mob} ! Place-la dans
+          ta main secondaire et tue le monstre choisi pour la remplir
+        took_control: Tu as pris le contrôle du spawner. L'ancien propriétaire était
+          <white>{owner}</white>
+        upgrade_activated: Tu as activé l'amélioration <white>{type}</white> de ton
+          multiblock
+        upgrade_deactivated: Tu as désactivé l'amélioration <white>{type}</white>
+          de ton multiblock
+      profile:
+        tag_added: Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click>
+          <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des
+          tags</color><white>] et le sélectionner</white></click>
+        tag_removed: Le tag {tag} <color:#40ff70>a été retiré de tes tags équipés</color>
+      teleport:
+        beacon_teleported: Tu as été téléporté à la balise <white>{beacon}</white>
+          de la dimension <white>{dimension}</white>
+        beacon_unlocked: 'Tu as débloqué la balise de dimension : <white>{beacon}</white>'
+      teleportation:
+        request_accepted_requester: <white>{player}</white> a accepté ta demande
+        request_accepted_target: Tu as accepté la demande de <white>{player}</white>
+        request_sent: Demande de téléportation envoyée à <white>{target}</white>
+        teleport_from_to: Téléportation de <white>{from}</white> vers <white>{to}</white>
+        teleport_to: Tu as été téléporté vers <white>{to}</white>
+        teleported_to_player: Tu as été téléporté vers <white>{player}</white>
+        teleported_to_you: Tu as téléporté <white>{player}</white> à toi
+        to_island: Tu as été téléporté à ton île
+        tp_to_coords: Tu as été téléporté aux coordonnées <white>{x} {y} {z}</white>
+        tp_to_player: Tu as été téléporté vers <white>{target}</white>
+      upgradeisland:
+        offering_done: Les ressources données ont été converties en <white>{xp} expérience</white>
+          pour ton île
+      warp:
+        deleted: Le warp <white>{warp}</white> a été supprimé
+        teleported: Tu as été téléporté au warp <white>{warp}</white>
+      xp:
+        added: Tu as ajouté <white>{xp}</white> xp à <white>{player}</white>
