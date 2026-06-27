@@ -1,0 +1,59 @@
+name: Deploy to Dev
+run-name: Deploy Dev — ${{ gitea.actor }} sur ${{ gitea.ref_name }}
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  SSH_HOST: ${{ secrets.SSH_HOST }}
+  SSH_PORT: ${{ secrets.SSH_PORT }}
+  SSH_USER: ${{ secrets.SSH_USER_DEV }}
+  REMOTE_PLUGIN_DIR: ${{ secrets.REMOTE_PLUGIN_DIR_DEV }}
+  REMOTE_SUBDIR: ${{ secrets.REMOTE_SUBDIR_DEV }}
+  TMUX_SESSION: ${{ secrets.TMUX_SESSION }}
+  RELOAD_COMMAND: ${{ secrets.RELOAD_COMMAND }}
+
+jobs:
+  deploy_dev:
+    runs-on: debian
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure repository is up to date
+        run: |
+          git config pull.rebase true
+          git pull origin ${{ gitea.ref_name }}
+
+      - name: Validate
+        run: |
+          echo "Init terminé sur la branche : ${{ gitea.ref_name }}"
+          echo "Commit : ${{ gitea.sha }}"
+          echo "Auteur : ${{ gitea.actor }}"
+
+      - name: Ensure remote directory exists
+        run: |
+          ssh -p "${{ secrets.SSH_PORT }}" \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+            "mkdir -p ${{ secrets.REMOTE_PLUGIN_DIR }}/${{ secrets.REMOTE_SUBDIR }}/"
+
+      - name: Sync notif directory
+        run: |
+          rsync -avz --delete \
+            -e "ssh -p ${{ secrets.SSH_PORT }}" \
+            notif/ \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PLUGIN_DIR }}/${{ secrets.REMOTE_SUBDIR }}/"
+
+      - name: Reload plugin
+        run: |
+          ssh -p "${{ secrets.SSH_PORT }}" \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+            "tmux send-keys -t '${{ secrets.TMUX_SESSION }}' '${{ secrets.RELOAD_COMMAND }}' C-m"
+
+      - name: Done
+        run: |
+          echo "Deploy Dev terminé avec succès"
