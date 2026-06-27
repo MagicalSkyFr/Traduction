@@ -20,6 +20,7 @@ env:
 jobs:
   deploy_prod:
     runs-on: ubuntu-latest
+    environment: MagicalSky
 
     steps:
       - uses: actions/checkout@v4
