@@ -1,5 +1,5 @@
 name: Deploy to Dev
-run-name: Deploy Dev — ${{ gitea.actor }} sur ${{ gitea.ref_name }}
+run-name: Deploy Dev — ${{ github.actor }} sur ${{ github.ref_name }}
 
 on:
   push:
@@ -17,23 +17,31 @@ env:
 
 jobs:
   deploy_dev:
-    runs-on: debian
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+
       - name: Ensure repository is up to date
         run: |
           git config pull.rebase true
-          git pull origin ${{ gitea.ref_name }}
+          git pull origin ${{ github.ref_name }}
 
       - name: Validate
         run: |
-          echo "Init terminé sur la branche : ${{ gitea.ref_name }}"
-          echo "Commit : ${{ gitea.sha }}"
-          echo "Auteur : ${{ gitea.actor }}"
+          echo "Init terminé sur la branche : ${{ github.ref_name }}"
+          echo "Commit : ${{ github.sha }}"
+          echo "Auteur : ${{ github.actor }}"
 
       - name: Ensure remote directory exists
         run: |
@@ -44,13 +52,13 @@ jobs:
       - name: Sync notif directory
         run: |
           rsync -avz --delete \
-            -e "ssh -p ${{ secrets.SSH_PORT }}" \
+            -e "ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }}" \
             notif/ \
             "${{ secrets.SSH_USER_DEV }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PLUGIN_DIR }}/${{ secrets.REMOTE_SUBDIR }}/"
 
       - name: Reload plugin
         run: |
-          ssh -p "${{ secrets.SSH_PORT }}" \
+          ssh -i ~/.ssh/id_rsa -p "${{ secrets.SSH_PORT }}" \
             "${{ secrets.SSH_USER_DEV }}@${{ secrets.SSH_HOST }}" \
             "tmux send-keys -t '${{ secrets.TMUX_SESSION }}' '${{ secrets.RELOAD_COMMAND }}' C-m"
 

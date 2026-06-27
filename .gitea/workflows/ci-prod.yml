@@ -1,5 +1,5 @@
 name: Deploy to Prod
-run-name: Deploy Prod — ${{ gitea.actor }}
+run-name: Deploy Prod — ${{ github.actor }}
 
 on:
   push:
@@ -7,24 +7,36 @@ on:
       - prod
 
 env:
-  SSH_HOST_PROD: ${{ secrets.SSH_HOST_PROD }}
-  SSH_PORT_PROD: ${{ secrets.SSH_PORT_PROD }}
+  SSH_HOST_PROD: ${{ secrets.SSH_HOST }}
+  SSH_PORT_PROD: ${{ secrets.SSH_PORT }}
   SSH_USER_PROD: ${{ secrets.SSH_USER_PROD }}
   REMOTE_PLUGIN_DIR_PROD: ${{ secrets.REMOTE_PLUGIN_DIR_PROD }}
 
-  SSH_HOST_EVENT: ${{ secrets.SSH_HOST_EVENT }}
-  SSH_PORT_EVENT: ${{ secrets.SSH_PORT_EVENT }}
-  SSH_USER_EVENT: ${{ secrets.SSH_USER_EVENT }}
+  SSH_HOST_EVENT: ${{ secrets.SSH_HOST }}
+  SSH_PORT_EVENT: ${{ secrets.SSH_PORT }}
+  SSH_USER_EVENT: ${{ secrets.SSH_USER_PROD }}
   REMOTE_PLUGIN_DIR_EVENT: ${{ secrets.REMOTE_PLUGIN_DIR_EVENT }}
 
 jobs:
   deploy_prod:
-    runs-on: debian
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add known hosts
+        run: |
+          mkdir -p ~/.ssh
+
+          ssh-keyscan -p "${{ secrets.SSH_PORT_PROD }}" "${{ secrets.SSH_HOST_PROD }}" >> ~/.ssh/known_hosts
+          ssh-keyscan -p "${{ secrets.SSH_PORT_EVENT }}" "${{ secrets.SSH_HOST_EVENT }}" >> ~/.ssh/known_hosts
 
       - name: Ensure repository is up to date
         run: |
@@ -33,9 +45,9 @@ jobs:
 
       - name: Validate
         run: |
-          echo "Init terminé sur la branche : ${{ gitea.ref_name }}"
-          echo "Commit : ${{ gitea.sha }}"
-          echo "Auteur : ${{ gitea.actor }}"
+          echo "Init terminé sur la branche : ${{ github.ref_name }}"
+          echo "Commit : ${{ github.sha }}"
+          echo "Auteur : ${{ github.actor }}"
           echo "DEPLOIEMENT PRODUCTION + EVENT"
 
       # =========================
