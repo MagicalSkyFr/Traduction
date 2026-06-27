@@ -38,7 +38,7 @@ jobs:
       - name: Ensure remote directory exists
         run: |
           ssh -p "${{ secrets.SSH_PORT }}" \
-            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+            "${{ secrets.SSH_USER_DEV }}@${{ secrets.SSH_HOST }}" \
             "mkdir -p ${{ secrets.REMOTE_PLUGIN_DIR }}/${{ secrets.REMOTE_SUBDIR }}/"
 
       - name: Sync notif directory
@@ -46,12 +46,12 @@ jobs:
           rsync -avz --delete \
             -e "ssh -p ${{ secrets.SSH_PORT }}" \
             notif/ \
-            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PLUGIN_DIR }}/${{ secrets.REMOTE_SUBDIR }}/"
+            "${{ secrets.SSH_USER_DEV }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PLUGIN_DIR }}/${{ secrets.REMOTE_SUBDIR }}/"
 
       - name: Reload plugin
         run: |
           ssh -p "${{ secrets.SSH_PORT }}" \
-            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+            "${{ secrets.SSH_USER_DEV }}@${{ secrets.SSH_HOST }}" \
             "tmux send-keys -t '${{ secrets.TMUX_SESSION }}' '${{ secrets.RELOAD_COMMAND }}' C-m"
 
       - name: Done
