@@ -1,0 +1,41 @@
+name: Deploy Traduction
+run-name: ${{ github.actor }} is deploying Traduction
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target:
+          - name: "Test"
+            user_secret: SSH_USER_TEST
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      - name: Pull Traduction on ${{ matrix.target.name }}
+        env:
+          DEPLOY_USER: ${{ secrets[matrix.target.user_secret] }}
+        run: |
+          if [ -z "$DEPLOY_USER" ]; then
+            echo "❌ DEPLOY_USER manquant pour ${{ matrix.target.name }}, abandon."
+            exit 1
+          fi
+          ssh -p "${{ secrets.SSH_PORT }}" \
+            "${DEPLOY_USER}@${{ secrets.SSH_HOST }}" \
+            "~/scripts/deploy-traduction.sh ${{ github.ref_name }}"
