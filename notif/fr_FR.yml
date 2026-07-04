@@ -468,6 +468,7 @@ magicalsky:
         nightvision_removed: Tu as <color:#ffc933>désactivé</color> l'effet Vision
           Nocturne
       event:
+        last_two: "Il y a 2 joueurs restants, la mort subite est activé !"
         eliminated: <color:#ffc933>{player}</color> a été éliminé de l'événement
         finished: L'événement <color:#ffc933>{event}</color> est terminé, les gagnants
           sont <color:#ffc933>{winners}</color>
@@ -480,6 +481,7 @@ magicalsky:
         no_longer_spectator: Tu n'es plus spectateur de l'événement <color:#ffc933>{event}</color>
         now_spectator: Tu es maintenant spectateur de l'événement <color:#ffc933>{event}</color>
         pitchout:
+          arrow_give: "Tu as gagné une flèche"
           knockback_set: Le bâton est maintenant enchanté avec <color:#ffc933>recul
             {knockback}</color>
           knockback_will_upgrade: Le bâton sera enchanté <color:#ffc933>recul {knockback}</color>
@@ -690,7 +692,7 @@ magicalsky:
         request_received: Tu as reçu une demande de téléportation de <color:#ffc933>{sender}</color>
       warp:
         description:
-          prompt: Tu as <color:#ffc933>1 minute</wolor> pour entrer la nouvelle description
+          prompt: Tu as <color:#ffc933>1 minute</color> pour entrer la nouvelle description
             du warp dans le tchat
         rename:
           prompt: Tu as <color:#ffc933>1 minute</color> pour entrer le nouveau nom
