@@ -1,5 +1,7 @@
-lazerutils:
-  traduction:
-    log: Chargement de {number} traductions
-  langage:
-    log: Chargement de {number} clefs de langues
+magicalsky:
+  default:
+    lazerutils:
+      traduction:
+        log: Loading {number} translations
+      langage:
+        log: Loading {number} language keys
