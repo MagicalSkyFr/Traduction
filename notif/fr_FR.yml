@@ -208,8 +208,8 @@ magicalsky:
         usage_limit_reached: Tu as atteint le nombre de fois maximum où tu pouvais
           utiliser cette île !
       item:
-        cannot_remove_class_or_job: Tu ne peux retirer de cette façon un objet
-          de métier ou de classe
+        cannot_remove_class_or_job: Tu ne peux retirer de cette façon un objet de
+          métier ou de classe
         cuisinier_shears_required: Tu dois utiliser la cisaille du métier de Cuisinier
           pour récupérer ces ingrédients
         hatnommoitem: Tu ne peux pas mettre en chapeau un objet de Métier ou de Classe
@@ -468,7 +468,6 @@ magicalsky:
         nightvision_removed: Tu as <color:#ffc933>désactivé</color> l'effet Vision
           Nocturne
       event:
-        last_two: "Il y a 2 joueurs restants, la mort subite est activé !"
         eliminated: <color:#ffc933>{player}</color> a été éliminé de l'événement
         finished: L'événement <color:#ffc933>{event}</color> est terminé, les gagnants
           sont <color:#ffc933>{winners}</color>
@@ -476,12 +475,13 @@ magicalsky:
           le gagnant est <color:#ffc933>{winner}</color>
         gained_life: <color:#ffc933>{player}</color> a gagné une vie
         joined: Tu viens de rejoindre l'événement <color:#ffc933>{event}</color>
+        last_two: Il y a 2 joueurs restants, la mort subite est activé !
         left: Tu as quitté l'événement <color:#ffc933>{event}</color>
         lost_life: <color:#ffc933>{player}</color> a perdu une vie
         no_longer_spectator: Tu n'es plus spectateur de l'événement <color:#ffc933>{event}</color>
         now_spectator: Tu es maintenant spectateur de l'événement <color:#ffc933>{event}</color>
         pitchout:
-          arrow_give: "Tu as gagné une flèche"
+          arrow_give: Tu as gagné une flèche
           knockback_set: Le bâton est maintenant enchanté avec <color:#ffc933>recul
             {knockback}</color>
           knockback_will_upgrade: Le bâton sera enchanté <color:#ffc933>recul {knockback}</color>
@@ -608,7 +608,6 @@ magicalsky:
             <color:#ffc933>/is invite</color> ou en <click:run_command:'/is invite'><glyph:left_click>
             [<color:#ffc933>cliquant ici</color>]</click>
       item:
-
         drop: <gray>・ <white>{name} x {amount}
         fullinventory: Ton inventaire est rempli, des objets ont été mis dans<color:#ffc933>
           ta boite au lettre</color>
@@ -638,10 +637,16 @@ magicalsky:
         slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>Il te reste <white>{slots}</white>
           emplacements de métier vide
         xp_received: Tu as reçu <white>{xp}</white> expérience du métier <white>{job}</white>
+      kick:
+        broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color>
+          de l'île
+        kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
       mail:
         item: \nTu as reçu un objet de <color:#ffc933>{playername}</color> dans <color:#ffc933>ta
           boîte mail</color>.\n<click:run_command:'/mail'><glyph:left_click> Tu peux
           cliquer ici pour ouvrir [<color:#ffc933>ta boîte mail</color>]</click>\n
+      multiblocks:
+        destroyed: Tu as détruit ton multiblock
       parrainage:
         accept:
           success: <color:#ffc933>{playername}</color> a accepté ton invitation
@@ -1208,11 +1213,15 @@ magicalsky:
             reason: '<white>•  Motif: </white><gold>{reason}</gold>'
             title: <aqua>{player}</aqua><white> a été averti</white>
       spawners:
-        break_warning: <glyph:warning_tchat><color:#ff383b>Attention, si tu casses un spawner sans pioche à spawner, celui-ci
-          va disparaître ! Si tu souhaites tout de même continuer, recasse ce bloc</color>
-        upgrade_success: <glyph:up_tchat><color:#40ff70> Tu as amélioré </color><white>{type}</white><color:#40ff70> au niveau </color><white>{level}</white>
+        break_warning: <glyph:warning_tchat><color:#ff383b>Attention, si tu casses
+          un spawner sans pioche à spawner, celui-ci va disparaître ! Si tu souhaites
+          tout de même continuer, recasse ce bloc</color>
+        upgrade_success: <glyph:up_tchat><color:#40ff70> Tu as amélioré </color><white>{type}</white><color:#40ff70>
+          au niveau </color><white>{level}</white>
       tag:
-        tag_added: \n<glyph:gift_tchat> Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click> <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des tags</color><white>]</white></click>
+        tag_added: \n<glyph:gift_tchat> Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click>
+          <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des
+          tags</color><white>]</white></click>
       teleport:
         cancelled: \n<glyph:cross_tchat> <color:#ff383b>Tu as bougé et cela a annulé
           te téléportation.</color> Tu peux être <color:#ffc933>téléporté directement</color>
@@ -1998,7 +2007,13 @@ magicalsky:
         reset: Parrainage <color:#ffc933>réinitialisé</color>
       photo:
         added: Tu viens d'ajouter une photo à ton livre photo
-        taken: <sound:BLOCK_TRIPWIRE_ATTACH[volume=1.0,pitch=1.0,source=MASTER]>Tu viens de prendre une photo
+        taken: <sound:BLOCK_TRIPWIRE_ATTACH[volume=1.0,pitch=1.0,source=MASTER]>Tu
+          viens de prendre une photo
+      profile:
+        tag_added: Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click>
+          <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des
+          tags</color><white>] et le sélectionner</white></click>
+        tag_removed: Le tag {tag} <color:#40ff70>a été retiré de tes tags équipés</color>
       pub:
         disabled: Tu as désactivé le canal de pub
         enabled: Tu as activé le canal pub
@@ -2025,11 +2040,6 @@ magicalsky:
           multiblock
         upgrade_deactivated: Tu as désactivé l'amélioration <white>{type}</white>
           de ton multiblock
-      profile:
-        tag_added: Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click>
-          <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des
-          tags</color><white>] et le sélectionner</white></click>
-        tag_removed: Le tag {tag} <color:#40ff70>a été retiré de tes tags équipés</color>
       teleport:
         beacon_teleported: Tu as été téléporté à la balise <white>{beacon}</white>
           de la dimension <white>{dimension}</white>
