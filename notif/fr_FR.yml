@@ -934,7 +934,7 @@ magicalsky:
       event:
         already_has_inventory: <glyph:information_tchat> Tu possèdes <color:#ffc933>un
           inventaire sauvegardé</color>. <color:#ff383b>Ton inventaire doit être vide
-          ou tes objets seront supprimés. Aucun remboursement ne sera effectué</color><glpyh:left_click>
+          ou tes objets seront supprimés. Aucun remboursement ne sera effectué</color><glyph:left_click>
           Tu peux récupérer ton inventaire en <click:run_command:'/event inventory'>[<color:#ffc933>cliquant
           ici</color>]</click>
         queue_list: <color:#ffc933>{events}</color>
@@ -1061,11 +1061,11 @@ magicalsky:
             expire: '<white>•  Fin du ban: </white><gray>{expire}</gray>'
             reason: '<white>•  Motif: </white><gold>{reason}</gold>'
             title: <aqua>{player}</aqua><white> a été temporairement banni</white>
-          usage: 'Usage: /staff ban <joueur> <raison>'
+          usage: 'Usage: /staff ban  {joueur}  {raison}'
         banip:
           never_played: Le joueur {player} n'a jamais été sur le serveur.
           reason_required: Le motif est requis.
-          usage: 'Usage: /staff banip <joueur> <raison>'
+          usage: 'Usage: /staff banip  {joueur}  {raison}'
         freeze:
           cant_move: Vous êtes freeze, par conséquence, vous ne pouvez vous déplacer
           message:
@@ -1078,10 +1078,10 @@ magicalsky:
             title: Tu as été freeze
           reason_required: Le motif est requis.
           unfrozen: Le joueur {player} a été unfreeze par {staff}
-          usage: 'Usage: /staff freeze <joueur> <raison>'
+          usage: 'Usage: /staff freeze  {joueur}  {raison}'
         history:
           never_played: Le joueur n'a jamais été sur le serveur
-          usage: 'Usage: /staff history <joueur> [sanction]'
+          usage: 'Usage: /staff history  {joueur} [sanction]'
         kick:
           not_connected: Le joueur spécifié n'est pas connecté.
           reason_required: Le motif est requis.
@@ -1091,7 +1091,7 @@ magicalsky:
             title: '{player} a été expulsé'
         lookup:
           never_played: Le joueur {player} n'a jamais été sur le serveur.
-          usage: 'Usage: /staff lookup <joueur>'
+          usage: 'Usage: /staff lookup  {joueur}'
         mute:
           not_connected: Le joueur spécifié n'est pas connecté.
           player_mute:
@@ -1111,7 +1111,7 @@ magicalsky:
               reason: '<white>•  Motif: </white><gold>{reason}</gold>'
               title: <aqua>{player}</aqua><white> a été temporairement mute</white>
             title: <aqua>Vous</aqua><white> avez été temporairement mute</white>
-          usage: 'Usage: /staff mute <joueur> <raison>'
+          usage: 'Usage: /staff mute  {joueur}  {raison}'
         noclip:
           enter: Vous êtes maintenant en mode no clip
           exit: Tu as quitté le mode noclip
@@ -1131,7 +1131,7 @@ magicalsky:
           cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur au
             spawn.
           not_connected: Le joueur spécifié n'est pas connecté.
-          player_required: <joueur> est requis
+          player_required:  "{joueur} est requis"
           teleported: Le joueur {player} a été téléporté au spawn.
         staff:
           hidden: Tu ne vois plus les messages Staff
@@ -1147,28 +1147,28 @@ magicalsky:
             m=minute, h=heure, d=jour, w=semaine'
           never_played: Le joueur {player} n'a jamais été sur le serveur.
           reason_required: Le motif est requis.
-          usage: 'Usage: /staff tempban <joueur> <durée> <raison>'
+          usage: 'Usage: /staff tempban  {joueur} {durée}  {raison}'
         tempmute:
           invalid_duration: 'Durée invalide ({duration}), Formats valides : s=seconde,
             m=minute, h=heure, d=jour, w=semaine'
           not_connected: Le joueur spécifié n'est pas connecté.
           reason_required: Le motif est requis.
-          usage: 'Usage: /staff tempmute <joueur> <durée> <raison>'
+          usage: 'Usage: /staff tempmute  {joueur} {durée}  {raison}'
         title:
           cannot_send_admin: Vous ne pouvez pas envoyer de title à un administrateur.
-          custom_format: 'Format attendu: /staff title <joueur> custom <titre> <sous-titre>'
+          custom_format: 'Format attendu: /staff title  {joueur} custom [titre} [sous-titre]'
           not_connected: Le joueur spécifié n'est pas connecté.
           sent: Title envoyé à {player} ({type})
-          usage: 'Usage: /staff title <joueur> <type|custom> [titre] [sous-titre]'
+          usage: 'Usage: /staff title  {joueur} <type|custom> [titre] [sous-titre]'
         tp:
           cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur.
           not_connected: Le joueur spécifié n'est pas connecté.
-          player_required: <joueur> est requis
+          player_required:  "{joueur} est requis"
           teleported_to: Tu as été téléporté à {player}
         tp_here:
           cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur.
           not_connected: Le joueur spécifié n'est pas connecté.
-          player_required: <joueur> est requis
+          player_required:  "{joueur} est requis"
           teleported_to_you: Le joueur {player} a été téléporté à vous
           you_teleported_to: Tu as été téléporté à {player}
         unban:
@@ -1183,12 +1183,12 @@ magicalsky:
             reason: '<white>•  Motif: </white><gold>{reason}</gold>'
             title: <aqua>{player}</aqua><white> a été débanni</white>
           reason_required: Le motif est requis.
-          usage: 'Usage: /staff unban <joueur> <raison>'
+          usage: 'Usage: /staff unban  {joueur}  {raison}'
         unbanip:
           never_played: Le joueur n'a jamais été sur le serveur
           not_banned: L'ip du joueur spécifié n'est pas banni.
           reason_required: Le motif est requis.
-          usage: 'Usage: /staff unbanip <joueur> <raison>'
+          usage: 'Usage: /staff unbanip  {joueur}  {raison}'
         unmute:
           never_played: Le joueur n'a jamais été sur le serveur
           not_muted: Le joueur spécifié n'est pas mute.
@@ -1200,7 +1200,7 @@ magicalsky:
             by: '<white>•  Par: </white><gold>{staff}</gold>'
             reason: '<white>•  Motif: </white><gold>{reason}</gold>'
             title: <aqua>{player}</aqua><white> a été démute</white>
-          usage: 'Usage: /staff unmute <joueur> <raison>'
+          usage: 'Usage: /staff unmute  {joueur}  {raison}'
         vanish:
           now_invisible: Vous êtes maintenant invisible
           now_visible: Vous êtes maintenant visible

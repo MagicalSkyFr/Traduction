@@ -92,7 +92,7 @@ magicalsky:
         cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
 ```
 
-Version anglaise correspondante (même clés, texte traduit) :
+Version anglaise correspondante (mêmes clés, texte traduit) :
 
 ```yaml
 magicalsky:
