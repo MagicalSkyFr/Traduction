@@ -151,6 +151,9 @@ magicalsky:
       inventory:
         full: Ton inventaire est plein
       island:
+        kick:
+          kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
+          broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color> de l'île
         already_have_island: Tu possèdes déjà une île !
         blueprint_invalid: Mauvaise utilisation
         coop:
