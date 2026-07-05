@@ -30,7 +30,8 @@ Les mots entre accolades (`{player}`, `{time}`, `{amount}`, etc.) sont injectés
 ```yaml
 # Français
 kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
-
+```
+```yaml
 # Anglais — {player} déplacé, mais toujours présent
 kicked: You were kicked from the island by <color:#ffc933>{player}</color>
 ```
