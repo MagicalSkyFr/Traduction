@@ -645,6 +645,8 @@ magicalsky:
         item: \nTu as reçu un objet de <color:#ffc933>{playername}</color> dans <color:#ffc933>ta
           boîte mail</color>.\n<click:run_command:'/mail'><glyph:left_click> Tu peux
           cliquer ici pour ouvrir [<color:#ffc933>ta boîte mail</color>]</click>\n
+      multiblocks:
+        destroyed: Tu as détruit ton multiblock
       parrainage:
         accept:
           success: <color:#ffc933>{playername}</color> a accepté ton invitation
