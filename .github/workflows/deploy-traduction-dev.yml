@@ -1,0 +1,37 @@
+name: Deploy Traduction - Dev
+run-name: ${{ github.actor }} is deploying Traduction to Dev
+
+on:
+  workflow_run:
+    workflows: ["Deploy Traduction - Test"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+          fetch-depth: 0
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      - name: Pull Traduction on Dev
+        env:
+          DEPLOY_USER: ${{ secrets.SSH_USER_DEV }}
+        run: |
+          if [ -z "$DEPLOY_USER" ]; then
+            echo "❌ DEPLOY_USER manquant pour Dev, abandon."
+            exit 1
+          fi
+          ssh -p "${{ secrets.SSH_PORT }}" \
+            "${DEPLOY_USER}@${{ secrets.SSH_HOST }}" \
+            "~/scripts/deploy-traduction.sh ${{ github.event.workflow_run.head_branch }}"
