@@ -2,12 +2,15 @@ name: Deploy Traduction
 run-name: ${{ github.actor }} is deploying Traduction
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - main
 
 jobs:
   deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -21,6 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.base.ref }}
           fetch-depth: 0
 
       - name: Setup SSH
@@ -40,4 +44,4 @@ jobs:
           fi
           ssh -p "${{ secrets.SSH_PORT }}" \
             "${DEPLOY_USER}@${{ secrets.SSH_HOST }}" \
-            "~/scripts/deploy-traduction.sh ${{ github.ref_name }}"
+            "~/scripts/deploy-traduction.sh ${{ github.event.pull_request.base.ref }}"
