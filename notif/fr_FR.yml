@@ -647,6 +647,7 @@ magicalsky:
           cliquer ici pour ouvrir [<color:#ffc933>ta boîte mail</color>]</click>\n
       multiblocks:
         destroyed: Tu as détruit ton multiblock
+        upgrade_progress: 'Progression de l''amélioration : {current}/{total}'
       parrainage:
         accept:
           success: <color:#ffc933>{playername}</color> a accepté ton invitation
@@ -1131,7 +1132,7 @@ magicalsky:
           cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur au
             spawn.
           not_connected: Le joueur spécifié n'est pas connecté.
-          player_required:  "{joueur} est requis"
+          player_required: '{joueur} est requis'
           teleported: Le joueur {player} a été téléporté au spawn.
         staff:
           hidden: Tu ne vois plus les messages Staff
@@ -1163,12 +1164,12 @@ magicalsky:
         tp:
           cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur.
           not_connected: Le joueur spécifié n'est pas connecté.
-          player_required:  "{joueur} est requis"
+          player_required: '{joueur} est requis'
           teleported_to: Tu as été téléporté à {player}
         tp_here:
           cannot_teleport_admin: Vous ne pouvez pas téléporter un administrateur.
           not_connected: Le joueur spécifié n'est pas connecté.
-          player_required:  "{joueur} est requis"
+          player_required: '{joueur} est requis'
           teleported_to_you: Le joueur {player} a été téléporté à vous
           you_teleported_to: Tu as été téléporté à {player}
         unban:
