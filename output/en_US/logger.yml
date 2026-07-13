@@ -1,0 +1,4 @@
+langage:
+  log: Loading {number} language keys
+traduction:
+  log: Loading {number} translations
