@@ -429,6 +429,8 @@ magicalsky:
           et l'obtenir</white>\n
         not_found: Le warp spécifié n'existe pas
         notfound: Tu n'as pas de warp
+        owner_not_found: Ce joueur n'est pas propriétaire d'une île
+        owner_no_warp: Ce joueur n'a pas de warp sur son île
         rank_required: Tu n'as pas le rang d'île requis pour créer un warp
         rename:
           timeout: Le temps est écoulé, le nom du warp n'a pas été modifié
