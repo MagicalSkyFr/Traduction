@@ -1,4 +1,6 @@
 classe:
+  stats:
+    apply: Les statistiques de ta classe ont été appliquées
   armor_complete:
     noskill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée
     skill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !</color>
