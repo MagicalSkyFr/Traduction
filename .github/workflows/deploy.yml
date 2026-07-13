@@ -17,6 +17,8 @@ jobs:
             user_secret: SSH_USER_TEST
           - name: "Dev"
             user_secret: SSH_USER_DEV
+          - name: "Production"
+            user_secret: SSH_USER_PROD
 
     steps:
       - uses: actions/checkout@v4
