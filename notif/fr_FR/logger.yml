@@ -6,6 +6,6 @@ classe:
 langage:
   log: Chargement de {number} langues
 lazerutils:
-  server: Chargement du serveur {serverName}
+  server: Chargement du serveur nommé {serverName}
 traduction:
   log: Chargement de {number} traductions
