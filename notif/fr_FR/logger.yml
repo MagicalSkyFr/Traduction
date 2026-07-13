@@ -1,0 +1,11 @@
+chat:
+  log:
+    send: <color:#ffc933>{sender}</color> → <white>{target}</white> <gray>»</gray> <white>{message}</white>
+classe:
+  competence: Enregistrement de {nb} compétences
+langage:
+  log: Chargement de {number} langues
+lazerutils:
+  server: Chargement du serveur {serverName}
+traduction:
+  log: Chargement de {number} traductions
