@@ -1,0 +1,7 @@
+challenge:
+  progress: <white>Challenge {challenge} | Complétion <bold>{progress}</bold>/{max}
+classe:
+  bossbar:
+    level: <white>Classe {class} | Niveau <bold>{level}</bold>
+jobs:
+  bar: <white>Jobs {jobs} | Niveau <bold>{level}</bold>

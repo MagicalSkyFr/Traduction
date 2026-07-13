@@ -1,0 +1,123 @@
+cooldown:
+  reset: Le cooldown de {player} a été reset
+crate:
+  givecrate:
+    success: Tu as reçu une crate !
+  queue:
+    add: Tu as été ajouté à la file d'attente d'ouverture de la box
+  removed: La box {crate} a été supprimée
+  reward:
+    gain: Tu as gagné <white>x{amount}</color> de {name}
+discord:
+  sync: Ton compte Discord est maintenant synchronisé
+  unlink: Ton compte Discord est maintenant délié
+donjon:
+  admin:
+    forced_player: Le joueur <white>{player}</white> a été téléporté de force dans la salle
+  invite:
+    accepted: Tu viens d'accepter l'invitation, tu seras téléporté bientôt
+    accepted_other: <white>{player}</white> vient d'accepter ton invitation
+  received: <white>{player}</white> a reçu <white>{amount}</white> donjons
+effect:
+  nightvision_added: Tu as activé l'effet Vision Nocturne
+emoji:
+  added_to_player: L'émoji <white>{emogi}</white> a été ajouté au joueur <white>{player}</white>
+  removed_from_player: L'émoji <white>{emogi}</white> a été retiré au joueur <white>{player}</white>
+event:
+  removed_life: Tu as retiré une vie à <white>{player}</white>
+fly:
+  enabled: <green>Tu as activé le mode fly !
+heal:
+  success: Tu as été soigné
+home:
+  added: Ton home <white>{home}</white> a été ajouté !
+  deleted: Ton home a été supprimé !
+  teleported: Tu as été téléporté à ton home <white>{home}</white> !
+ignore:
+  ignore_all_disabled: Tu n'ignores plus tous les joueurs
+  ignore_all_enabled: Tu ignores maintenant tous les joueurs
+  no_longer_ignoring: Tu n'ignores plus <color:#ffc933>{player}</color>
+  now_ignoring: Tu ignores désormais <white>{player}</white>
+island:
+  coop:
+    added: Tu es désormais en coop sur l'île de <color:#ffc933>{island}</color>
+    added_broadcast: <white>{player}</white> est maintenant en coop sur ton île
+  reset_success: L'île a été réinitialisée
+item:
+  on_head: L'objet est désormais sur ta tête !
+jobs:
+  cooldown_reset: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le cooldown de <white>{player}</white> a été reset
+  level_set_broadcast: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le joueur <white>{player}</white> a été mis au niveau <white>{level}</white> du métier <white>{job}</white>
+  points_added: <sound:BLOCK_NOTE_BLOCK_BASS>Tu as ajouté <white>{points}</white> points de compétences
+  slot_added_sender: Tu as ajouté un emplacement de métier au joueur <white>{player}</white>
+  slot_removed_target: Tu as retiré un emplacement de métier à <white>{player}</white>
+  xp_received_broadcast: Le joueur <white>{player}</white> a reçu <white>{xp}</white> expérience du métier <white>{job}</white>
+leaderboard:
+  refreshed: Le classement a été rafraîchi
+mail:
+  received: Tu as récupérer l'objet envoyé par <white>{playername}</white>
+  sent: Tu as envoyé un objet dans la boîte mail de <white>{playername}</white>
+multiblocks:
+  created: Félicitation, tu viens de créer un multiblock !
+objet:
+  transformed: Tes objets ont été transformés
+parrainage:
+  accept:
+    confirm: Tu as accepté l’invitation de <white>{playername}</white>
+  decline:
+    confirm: Tu as refusé l’invitation de <white>{playername}</white>
+  force:
+    set: <white>{parrain}</white> est maintenant le parrain de <white>{target}</white>
+    sponsor: Tu es désormais le parrain de <color:#ffc933>{playername}</color>
+    target: <white>{playername}</white> est maintenant ton parrain
+  invite:
+    accepted: <color:#ffc933>{playername}</color> a accepté ton invitation
+    sent: Invitation envoyée à <color:#ffc933>{playername}</color>
+  reset: Parrainage <color:#ffc933>réinitialisé</color>
+photo:
+  added: Tu viens d'ajouter une photo à ton livre photo
+  taken: <sound:BLOCK_TRIPWIRE_ATTACH[volume=1.0,pitch=1.0,source=MASTER]>Tu viens de prendre une photo
+profile:
+  tag_added: Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click> <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des tags</color><white>] et le sélectionner</white></click>
+  tag_removed: Le tag {tag} <color:#40ff70>a été retiré de tes tags équipés</color>
+pub:
+  disabled: Tu as désactivé le canal de pub
+  enabled: Tu as activé le canal pub
+quest:
+  quest_item_found: Tu as trouvé l'objet de quête !
+regen:
+  healed: Tu as été régénéré de <white>{amount}</white> cœurs
+shop:
+  buy_success: Tu as acheté <white>{amount} {item}</white> pour <white>{total} <glyph:mcoin></white>
+  sell_success: <green>Tu as vendu <white>{amount} {item} </white>pour <white>{total} <glyph:mcoin></white>
+shopjoueur:
+  bought_items: Tu viens d'acheter <white>{amount} objets</white> à <white>{owner}</white>
+  shop_created: Le <white>{type}</white> a bien été créé
+spawners:
+  broken_with_tool: Tu as cassé un <white>{type}</white> avec ta pioche à spawner
+  multiblock_action: Tu as {action} le multiblock
+  orb_linked: Tu as associé ton orbe à spawner au monstre {mob} ! Place-la dans ta main secondaire et tue le monstre choisi pour la remplir
+  took_control: Tu as pris le contrôle du spawner. L'ancien propriétaire était <white>{owner}</white>
+  upgrade_activated: Tu as activé l'amélioration <white>{type}</white> de ton multiblock
+  upgrade_deactivated: Tu as désactivé l'amélioration <white>{type}</white> de ton multiblock
+teleport:
+  beacon_teleported: Tu as été téléporté à la balise <white>{beacon}</white> de la dimension <white>{dimension}</white>
+  beacon_unlocked: 'Tu as débloqué la balise de dimension : <white>{beacon}</white>'
+teleportation:
+  request_accepted_requester: <white>{player}</white> a accepté ta demande
+  request_accepted_target: Tu as accepté la demande de <white>{player}</white>
+  request_sent: Demande de téléportation envoyée à <white>{target}</white>
+  teleport_from_to: Téléportation de <white>{from}</white> vers <white>{to}</white>
+  teleport_to: Tu as été téléporté vers <white>{to}</white>
+  teleported_to_player: Tu as été téléporté vers <white>{player}</white>
+  teleported_to_you: Tu as téléporté <white>{player}</white> à toi
+  to_island: Tu as été téléporté à ton île
+  tp_to_coords: Tu as été téléporté aux coordonnées <white>{x} {y} {z}</white>
+  tp_to_player: Tu as été téléporté vers <white>{target}</white>
+upgradeisland:
+  offering_done: Les ressources données ont été converties en <white>{xp} expérience</white> pour ton île
+warp:
+  deleted: Le warp <white>{warp}</white> a été supprimé
+  teleported: Tu as été téléporté au warp <white>{warp}</white>
+xp:
+  added: Tu as ajouté <white>{xp}</white> xp à <white>{player}</white>

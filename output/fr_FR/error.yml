@@ -1,0 +1,318 @@
+badge:
+  unknown: Le badge {badgename} n'existe pas
+command:
+  badcommand: 'Commande incorrecte, la commande à utiliser est : {command}'
+  cannot_use: Tu ne peux pas utiliser cette commande !
+  cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
+  error: Une erreur est survenu lors de l'utilisation de la commande, merci d'ouvrir un ticket
+  player_only: Cette commande est réservée aux joueurs
+cooking:
+  not_owner: Tu n'es pas le propriétaire de cette plante, reviens quand le joueur n'y sera plus !
+crate:
+  already:
+    open:
+      other: Quelqu'un est déjà dans l'animation d'ouverture de cette box, reviens plus tard ou utilise le shift clic pour ne pas avoir d'animation
+      you: Tu ouvres déjà une box
+  givecrate:
+    unknown: La crate {crate} n'existe pas
+  keyinvalid: Tu n'as pas de {key} pour ouvrir la box
+  not:
+    found: La box {crate} n'a pas été trouvé
+daily:
+  already_claimed: Tu as déjà récupéré ton cadeau du jour, effectue à nouveau la commande /daily demain !
+  already_opening: Tu es déjà en ouverture de daily !
+dimensionbeacon:
+  portail_dimensionbeacons: 'Tu dois posséder un multiblock portail de Qetzir sur ton île pour te téléporter dans la dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
+
+    '
+  terrainchasse: 'Tu dois posséder un multiblock portail du terrain de chasse sur ton île pour te téléporter dans la dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
+
+    '
+discord:
+  reward:
+    claimed: Tu as déjà récupéré tes récompenses !
+  unlinked: Ton compte Discord est déjà délié
+donjon:
+  classe_level_required: Tu dois avoir le niveau de classe <white>{level}</white> pour rejoindre ce donjon
+  command_forbidden: Tu ne peux pas utiliser cette commande en donjon
+  cooldown: Tu dois encore attendre <white>{cooldown}</white> avant de pouvoir rejoindre un nouveau donjon
+  daily_limit_reached: Tu as atteint la limite journalière de <white>{current}</white>/<white>{max}</white> donjons
+  failed: Tu viens d'échouer dans le donjon !
+  invite:
+    leave_required: Tu dois quitter ton donjon pour accepter une invitation
+    none: Tu n'as pas d'invitation de donjon active
+    player_level_insufficient: Le joueur invité n'a pas un niveau de classe suffisant pour te rejoindre dans le donjon
+  max_players: Vous ne pouvez être plus de <white>{max}</white> joueurs dans le donjon
+  no_instance_available: Aucune instance de donjon n'est actuellement disponible pour accueillir ton groupe
+  not_in_dungeon: Tu n'es pas en donjon
+  old_portal_forbidden: Tu ne peux pas traverser un ancien portail
+  player_left_cancelled: '{player} vient de quitter le donjon et il a donc été annulé'
+  projectile_returned: Ton projectile a traversé le portail et t'a été retourné !
+  session:
+    already_exists: Tu as déjà une session
+emoji:
+  notfound: L'émoji n'existe pas
+enchant:
+  cannot_enchant: Tu ne peux pas enchanter cet objet. Tu peux obtenir des enchantements dans l'arbre de compétences d'outil ou de classe !
+event:
+  already_in_event: Tu es déjà dans un événement
+  already_in_queue: L'événement <white>{event}</white> est déjà en attente de joueurs
+  already_joined: Tu es déjà dans cet événement
+  already_spectator: Tu regardes déjà l'événement <white>{event}</white>
+  already_started: L'événement <white>{event}</white> est déjà lancé
+  command_only_event: Tu ne peux utiliser que la commande <white>/event</white> pendant l'événement
+  full: Tu ne peux pas rejoindre l'événement car il est plein
+  no_saved_inventory: Tu n'as pas d'inventaire sauvegardé à récupérer ! (et c'est tant mieux)
+  none_running: Aucun événement n'est actuellement en cours
+  not_accepting_players: L'événement n'accepte pas de joueur pour l'instant
+  not_enough_players: L'événement <white>{event}</white> n'a pas atteint le nombre minimum de joueurs
+  not_found: L'événement <white>{event}</white> n'a pas été trouvé
+  not_started: L'événement <white>{event}</white> n'est pas lancé
+  player_not_in_event: Le joueur <white>{player}</white> n'est pas dans l'événement
+  specify_id: Tu dois spécifier un événement
+fishing:
+  only_insects_bait: Tu ne peux utiliser que des insectes comme appât !
+fly:
+  cannot_in_world: Tu ne peux pas voler dans ce monde
+  disabled: Le mode fly est désactivé !
+  no_fly: Tu n'as pas de temps de fly !
+gift:
+  already_claimed: Tu as déjà récupéré ton cadeau, refais la commande demain !
+  already_opening: Tu es déjà en ouverture !
+hdv:
+  inventory_full: Ton inventaire est plein
+  item_no_longer_available: L'objet n'est plus disponible
+  no_price_specified: Tu n'as pas indiqué de prix de vente
+  not_enough_mcoins: Tu n'as pas assez de <white><glyph:mcoin></white> pour faire ceci
+heal:
+  cooldown: Tu ne peux pas encore te soigner ! Le délai de récupération du soin est de 5 minutes
+home:
+  already_exists: Tu as déjà un home nommé <white>{home}</white> ! Utilise un autre nom
+  invalid_name: 'Ton nom de home n''est pas valide. Exemple de nom valide : home1'
+  invalid_world: Tu ne peux pas créer de home en dehors du monde de ton île !
+  not_found: Tu n'as pas été téléporté car tu n'as pas de home nommé <white>{home}</white>
+  specify_name: Tu dois spécifier un nom de home pour être téléporté
+hopper:
+  chunk_attached_required: Le Chunk Hopper doit être rattaché à un coffre
+ignore:
+  cannot_ignore_player: Tu ne peux pas ignorer ce joueur (bien tenté !)
+  not_available: <white>{name}</white> n'est pas disponible en message privé pour le moment. Passe plutôt par un ticket si tu as un problème !
+inventory:
+  full: Ton inventaire est plein
+island:
+  already_have_island: Tu possèdes déjà une île !
+  blueprint_invalid: Mauvaise utilisation
+  coop:
+    already_in_team: Le joueur <white>{player}</white> est déjà en coop avec ton île
+    cannot_self: Tu ne peux pas te mettre en coop avec toi-même !
+    cannot_self_uncoop: Tu ne peux pas t'enlever du coop avec toi-même !
+    max_reached: L'île a déjà atteint le nombre maximum de coop
+  demote:
+    cannot_demote: Le joueur ne peut plus être rétrogradé
+    cannot_higher_rank: Tu ne peux pas rétrograder des joueurs d'un rang supérieur au tiens
+    cannot_self: Tu ne peux pas te rétrograder toi même
+  full_cannot_join: L'île que tu veux rejoindre a atteint le nombre de joueurs maximum. Tu ne peux donc pas la rejoindre
+  invite:
+    already_on_island: Ce joueur est déjà sur ton île… Tu veux vraiment l'avoir en double ?
+    max_members_reached: Tu as atteint le nombre maximum de personnes sur ton île
+    only_leader: Seul le chef de l'île peut inviter des joueurs sur son île
+    owner_must_receive_invite: En tant que propriétaire, tu dois recevoir une invitation pour rejoindre une autre île
+  level:
+    required: Ton île doit être <white>au niveau {level}</white> pour faire ceci
+  location:
+    notfound: Tu n'es pas sur ton île
+  not_owner: Tu n'es pas le propriétaire de l'île
+  not_your_island: Tu dois appartenir à cette île pour faire cela
+  notfound: Tu n'as pas d'île
+  notyourisland: Tu n'es pas un membre de l'île <white>{islandname}</white>
+  player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre de ton île
+  promote:
+    above_your_rank: Tu ne peux pas vous promouvoir un joueur au-dessus de ton propre rang d'île
+    cannot_promote: Le joueur <white>{player}</white> ne peut pas être promu
+    cannot_self: Tu ne peux pas te promouvoir toi-même ! (Pas de dictature ici)
+  rank_required: Tu dois avoir le rang <white>{rank}</white> pour utiliser cette commande
+  reset_kick: Tu viens d'être supprimé de l'île car le propriétaire l'a réinitialisée
+  reset_limit_reached: Tu as atteint ta limite de resets
+  sorcier_required: \nTu dois avoir le grade <white><glyph:sorcier></white> pour utiliser cet île. \n<click:run_command:'/boutique'><white><glyph:left_click> Clique ici pour accéder à </white>[<color:#ffc933>notre boutique</color>]</click><white> et l'obtenir</white>\n
+  too_many_islands: Il y a trop d'île pour en créer une nouvelle. Contacte Lazerstricks en créant un ticket sur notre discord pour qu'il règle cette situation
+  transfer:
+    cannot_self: Tu ne peux pas te transférer l'île à toi même car cela ne servirait à rien !
+    player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre de ton île
+  usage_limit_reached: Tu as atteint le nombre de fois maximum où tu pouvais utiliser cette île !
+item:
+  cannot_remove_class_or_job: Tu ne peux retirer de cette façon un objet de métier ou de classe
+  cuisinier_shears_required: Tu dois utiliser la cisaille du métier de Cuisinier pour récupérer ces ingrédients
+  hatnommoitem: Tu ne peux pas mettre en chapeau un objet de Métier ou de Classe
+  noitem: Tu n'as aucun objet dans la main
+  nommoitem: Tu ne peux pas envoyer un objet de Métier ou de Classe
+jobs:
+  cooldown_remove: <color:#ff383b>Tu ne peux pas encore changer de métier, tu pourras changer de métier le {date} !</color>
+  not_found: Ce métier n'existe pas. {job}
+  skill_competences_required: Tu dois avoir au moins <white>{nb}</white> compétences débloquées pour pouvoir débloquer cette compétence
+  skill_level_required: Tu dois avoir au moins le niveau <white>{level}</white> de métier pour débloquer cette compétence
+  skill_prerequisites: Tu dois avoir d'abord débloquer les prérequis de cette compétence pour l'obtenir
+  skill_pts_required: Tu dois avoir au moins <white>{pts}</white> de points de compétence pour débloquer cette compétence
+  skill_rarity_required: Tu dois avoir un objet tribal de la rareté <white>{rarity}</white> pour débloquer cette compétence
+  slot_removed: Un de tes métiers a été désactivé car ta limite de métier a été diminuée
+kits:
+  already_claimed: Tu as déjà récupéré ce kit ! Tu pourras le récupérer à nouveau demain
+  not_found: Le kit <white>{kit}</white> n'existe pas
+  once_only: Tu as déjà récupéré ce kit et tu ne peux pas le récupérer à nouveau
+leaderboard:
+  not_found: Ce classement n'existe pas
+mail:
+  norecipient: Tu n'as pas indiqué de destinataire
+multiblocks:
+  cannot_interact_outside_island: Tu ne peux pas intéragir avec les multiblocks placés en dehors des îles
+  insufficient_rank: Ton grade d'île n'est pas assez élevé pour interagir avec le multiblock
+  no_upgrade_available: Il n'y a pas d'amélioration disponible pour ton multiblock
+  no_useful_item: Tu n'as pas d'objets requis à donner pour améliorer ton multiblock
+  upgrade_air_required: Les blocs autour doivent être de l'air pour que le multiblock puisse être amélioré
+niveau:
+  notinteger: 'Le niveau doit être un nombre entier (valeur donnée : {value})'
+number:
+  not:
+    negative: <dark_gray>[<red>✖<dark_gray>] La commande n'accepte pas de valeur négative ({number})
+    number: <dark_gray>[<red>✖<dark_gray>] La commande n'accepte que des nombres ({number})
+parrainage:
+  accept:
+    denied: <white>{playername}</white> ne t’a pas invité
+  already:
+    has_sponsor: <white>{playername}</white> a déjà un parrain
+    invited: Tu as déjà envoyé une invitation à <white>{playername}</white>
+  decline:
+    denied: <white>{playername}</white> ne t’a pas invité
+  invite:
+    self: Tu ne peux pas t’inviter toi-même
+  reward:
+    none: Aucune récompense disponible
+photo:
+  invalid_nexo: L'id nexo est invalide
+  usage_add: 'Usage: /photo add <id nexo>'
+player:
+  notfound: Le joueur <white>{player}</white> n'existe pas !
+  notplayer: Vous devez être un joueur pour utiliser cette commande !
+  offline: <white>{playername}</white> n'est pas en ligne
+  player_required: Un joueur est requis en paramètre
+  unknown: <white>{playername}</white> est introuvable
+propulsion:
+  missing_power: Tu dois spécifier une valeur pour la propulsion
+pub:
+  forbidden: Tu ne peux pas utiliser le /pub
+quest:
+  already_completed: Tu as déjà fini la quête !
+  not_started: Tu dois avoir commencé la quête pour pouvoir la suivre !
+regen:
+  cooldown: Tu es en cooldown, tu pourras te régénérer dans <white>{time}</white> secondes
+sellchest:
+  near_error: Tu ne peux pas placer de coffre à côté d'un coffre automatique de vente
+  place_error: Tu ne peux pas placer de coffre automatique à côté d'autres coffres
+shop:
+  grade:
+    alchemist_only: La commande est réservée au grade <white><glyph:alchimiste></white>.
+  no_item: Tu n'as pas l'objet correspondant
+  no_quantity: Tu n'as aucune quantité
+  not_enough_credits: Tu n'as pas assez d'argent pour faire ceci
+  not_enough_space: Tu n'as pas assez de place dans ton inventaire
+  sell_all_requires_grade: Tu dois être <white><glyph:archimage></white> pour vendre tous tes objets d'un coup !
+shopjoueur:
+  cannot_double_chest: Tu ne peux pas transformer un shop joueur en double coffre
+  cannot_edit_sign: Tu ne peux pas modifier la pancarte d'un shop, fait un clic droit pour acheter ou vendre
+  cannot_trade_own_items: Tu ne peux pas acheter ou vendre tes propres objets
+  chest_empty: Le coffre est vide, reviens plus tard !
+  chest_items_identical: Les objets dans le coffre de vente doivent être identiques pour que le coffre de vente fonctionne
+  not_enough_items: Tu n'as pas assez d'objets pour faire cela, tu en as actuellement <white>{nb}</white>
+  not_enough_space: Il n'y a pas assez de place dans le coffre
+  not_enough_stock: Il n'y a pas assez d'items en stock
+  not_your_island: Ce n'est pas ton île. Tu ne peux créer un shop de joueur que sur ton île
+  owner_not_enough_money: Le propriétaire n'a pas assez d'argent
+  response_timeout: Tu as pris trop de temps à répondre
+  took_too_long: Tu as pris trop de temps pour répondre
+slots:
+  noempty: Des emplacements d’objets ne sont pas vides
+spawners:
+  block_conflict: Tu ne peux pas placer ce bloc ici car il entre en conflit avec un spawner
+  break_only_with_tool: Tu ne peux casser que des spawners avec la pioche à spawners !
+  cannot_capture: Tu ne peux pas capturer un monstre dans un spawner ou un multiblock
+  cannot_place_offhand: Tu ne peux pas poser de spawner avec ta seconde main
+  does_not_exist: Cela n'existe plus actuellement, ouvre un ticket si tu en as besoin !
+  mob_cannot_be_captured: Ce monstre ne peut pas être capturé dans cette orbe pour faire ceci
+  need_spawner_in_hand: Tu dois avoir un spawner dans ta main
+  not_enough_crystal: Tu n'as pas assez de cristaux pour créer le spawner
+  not_enough_hearts: Tu n'as pas assez de coeurs de spawner pour créer le spawner
+  not_enough_money: 'Tu n''as pas assez de <white><glyph:mcoin></white> dans ta banque d''île pour cela, il te faut : <white>{cost} <glyph:mcoin></white>'
+  not_found: Spawner introuvable
+  not_spawner_orb: Ce n'est pas une orbe à spawner
+  orb_already_linked: Ton orbe à spawner est déjà associée à un monstre
+  orb_mob_mismatch: L'orbe à spawner ne correspond pas au monstre
+  orb_required: Tu dois avoir une orbe à spawner dans ta main
+  spawner_level: Ton spawner est au niveau {level}
+  upgrade_max: Cette amélioration est déjà au niveau maximum
+tag:
+  title_limit_reached: \nTu as atteint la limite de titre équipable !\n<click:run_command:'/boutique'><white><glyph:left_click> Clique ici pour accéder à [</white><color:#ffc933>notre boutique</color>]</click><white> et en obtenir davantage</white>\n
+teleport:
+  already_in_progress: Tu as déjà une téléportation en cours
+teleportation:
+  cannot_be_teleported_here: Tu ne peux pas être téléporté ici
+  cannot_request_self: Tu ne peux pas t'envoyer une demande à toi-même
+  cannot_teleport_here: Tu ne peux pas téléporter quelqu'un ici
+  cannot_teleport_others: Tu ne peux pas téléporter d'autres joueurs
+  invalid_coords: Les coordonnées spécifiées sont invalides
+  no_pending_request: Tu n'as aucune demande en attente
+  no_permission: Tu n'as pas la permission d'effectuer cette action
+  no_request: Tu n'as aucune demande de téléportation
+  player_not_connected: Ce joueur n'est pas connecté
+  request_cancelled: Ta demande de téléportation a été annulée
+  request_cancelled_by_sender: <white>{player}</white> a annulé sa demande de téléportation
+  request_denied: Demande de téléportation refusée
+  request_expired: Ta demande de téléportation a expiré
+  request_refused_by: <white>{target}</white> a refusé ta demande
+  self_request: Tu ne peux pas t'envoyer une demande à toi-même
+  to_spawn_no_island: Tu as été téléporté au spawn car tu n'as pas d'île
+tutoriel:
+  notedit: Ton scoreboard de tutoriel est déjà dans cet état
+upgradeisland:
+  cannot_interact_minecart: Tu ne peux pas interagir avec les minecarts sur MagicalSky
+  cobblegen_limit_reached: Tu as atteint le maximum de <white>Multiblocks Générateur à cobble</white> sur ton île
+  composter_limit_reached: Tu as atteint le maximum de <white>Multiblocks Composteur</white> sur ton île
+  crusher_limit_reached: Tu as atteint le maximum de <white>Multiblocks Broyeur</white> sur ton île
+  forge_limit_reached: Tu as atteint le maximum de <white>Multiblocks Forge</white> sur ton île
+  furnace_limit_reached: Tu as atteint le maximum de <white>Multiblocks Haut fourneau</white> sur ton île
+  limit_reached_entity: Tu as atteint le maximum de <white>{entity}</white> sur ton île
+  max:
+    cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île ({value}/{value}
+  max_observers: Tu as atteint le maximum <white>d'Observateurs</white> sur ton île
+  minecart_limit_reached: Tu as atteint la limite de <white>{max} minecarts</white> sur ton île
+  no_offerings: Tu n'as pas de bloc de niveau ou de bloc de niveau d'île incomplet dans ton inventaire
+  piston_limit_reached: Tu as atteint le maximum de <white>Pistons</white> sur ton île
+  required_island_level: Ton île doit avoir au moins le niveau <white>{level}</white>
+  required_message: 'Tu dois avoir les débloqué améliorations suivantes :'
+  sellchest_limit_reached: Tu as atteint le maximum de <white>Coffres de vente</white> sur ton île
+  shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white> sur ton île
+  sniffer_limit_reached: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île
+  upgrade_max_level: Tu as atteint le niveau maximum de <white>{name}</white>
+  upgrade_not_enough_money: Tu dois avoir <white>{cost} <glyph:mcoin></white> pour acheter cette amélioration
+  villager_limit_reached: Tu as atteint la limite de <white>Villageois</white> sur ton île
+warp:
+  already_exists: Le warp nommé <white>{warp}</white> existe déjà
+  delete_name_required: Tu dois indiquer le nom du warp que tu veux supprimer
+  description:
+    timeout: Le temps est écoulé, la description du warp n'a pas été modifiée
+  max_reached: Tu as atteint le nombre maximum de warps (<white>{max}</white>)
+  no_color_allowed: \nPour ajouter des couleurs dans ton nom de warp tu dois avoir le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click> Clique ici pour accéder à [</white><color:#ffc933>notre boutique</color><white>]</click> et l'obtenir</white>\n
+  not_found: Le warp spécifié n'existe pas
+  notfound: Tu n'as pas de warp
+  owner_not_found: Ce joueur n'est pas propriétaire d'une île
+  owner_no_warp: Ce joueur n'a pas de warp sur son île
+  rank_required: Tu n'as pas le rang d'île requis pour créer un warp
+  rename:
+    timeout: Le temps est écoulé, le nom du warp n'a pas été modifié
+  set_name_required: Tu dois spécifier un nom pour retrouver ton warp
+  unsafe_location: La localisation de ton warp est trop dangereuse
+zone:
+  class_stuff_forbidden: Tu ne peux pas rejoindre cette zone avec ton stuff de classe pour que le combat soit équitable
+  level_required: 'Tu n''as pas le niveau requis pour rejoindre cette zone. Niveau requis : <white>{level}</white>'

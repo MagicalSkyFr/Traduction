@@ -1,0 +1,9 @@
+bossbar: '{msg}'
+error: <sound:BLOCK_NOTE_BLOCK_BASS[volume=1.0,pitch=1.0,source=MASTER]><glyph:cross_tchat> <color:#ff383b>{msg} </color>
+gift: <glyph:gift_tchat> <color:#40ff70>{msg} </color>
+info: <glyph:information_tchat> {msg}
+logger: '{msg}'
+message: '{msg}'
+todo: '{msg}'
+validation: <sound:ENTITY_EXPERIENCE_ORB_PICKUP[volume=1.0,pitch=1.0,source=MASTER]><glyph:validation_tchat> <color:#40ff70>{msg} </color>
+warning: <sound:BLOCK_NOTE_BLOCK_PLING[volume=1.0,pitch=1.0,source=MASTER]><glyph:warning_tchat> <color:#ff383b>{msg} </color>

@@ -1,0 +1,7 @@
+daily:
+  claimed: Félicitations, tu viens de récupérer ton Daily !
+gift:
+  claimed: Tu viens de récupérer ton cadeau !
+parrainage:
+  reward:
+    success: '&aRécompense obtenue : <white>{reward}</white>'
