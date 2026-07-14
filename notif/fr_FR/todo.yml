@@ -1,5 +1,6 @@
 classe:
   upgrade_station:
+    add_points: "Tu as ajouté {points} points d'amélioration à ton item"
     no_item: "Tu n'as aucun item améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un item de classe ou de métier"
   stats:
