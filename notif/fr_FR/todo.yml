@@ -1,5 +1,8 @@
 classe:
   upgrade_station:
+    stat_added: "Ton arme à gagné +{value} de {stat}"
+    config:
+      error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"
     add_points: "Tu as ajouté {points} points d'amélioration à ton item"
     no_item: "Tu n'as aucun item améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un item de classe ou de métier"
