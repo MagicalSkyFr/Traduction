@@ -1,4 +1,7 @@
 classe:
+  upgrade_station:
+    no_item: "Tu n'as aucun item améliorable dans ta main principale"
+    no_nbt: "Ce n'est pas un item de classe ou de métier"
   stats:
     apply: Les statistiques de ta classe ont été appliquées
   armor_complete:
