@@ -77,7 +77,7 @@ chat:
   already_in_chat: <glyph:cross_tchat> <color:#ff383b>Tu es déjà dans un autre tchat !</color>
   island:
     console: <green>{playername}</green><gray> »</gray><white> {message}</white>
-    message: <gold>{playername}</gold><gray> »</gray><white> {message}</white>
+    message: <gray>[</gray><white>%bskyblock_rank%</white><gray>]</gray> <gold>{playername}</gold><gray> »</gray><white> {message}</white>
   global:
     console: <gold>{playername}</gold><gray> »</gray><white> {message}</white>
     message: '<click:run_command:''/badge {playername}''><hover:show_text:"<white><glyph:left_click>・<gold>Ouvrir le menu des badges de {playername} !<newline>%badge_prefix%">%badge_badge%</hover></click> <click:run_command:''/boutique''><hover:show_text:''<white><glyph:left_click>・<gold>Ouvrir la boutique !''><white>%profil_prefix%</hover></click> <click:suggest_command:''/msg {playername} ''><hover:show_text:"<gold><bold>Ile :</gold> <newline><gold> - Nom : <white>%bskyblock_island_name%<newline><gold> - Niveau : <white>%upgradeisland_islandlevel%<newline>%profil_prefix% <color:%profil_color%><bold>{playername}</bold><reset> :<newline><gold> - Argent : <white>%vault_eco_balance% <glyph:mcoin><newline>%tags_description%<newline><glyph:left_click>・<gray>Discuter avec {playername}"><color:%profil_color%>{playername}</color></hover></click><gray> »</gray><white> {message}</white>'
