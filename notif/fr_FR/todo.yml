@@ -7,6 +7,8 @@ classe:
     no_item: "Tu n'as aucun item améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un item de classe ou de métier"
   stats:
+    armor:
+      change: "{slot} a changé, par conséquent tes points de vie a été mise à jour : {amount}"
     hp:
       change: "Ton arme en main a changé, par conséquent tes points de vies max ont été mis à jour : {amount}"
       remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vies maximal"
