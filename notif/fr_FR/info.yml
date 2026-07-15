@@ -1,7 +1,7 @@
 badge:
   edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color> a été modifié
 money:
-  info: "Tu possèdes {money} <glyph:mcoins>"
+  info: "Tu possèdes {money} <glyph:mcoin>"
 boutique:
   buy_credits: <sound:ENTITY_PLAYER_LEVELUP[volume=1.0,pitch=1.0,source=MASTER]> <white>{player}</white> vient d’acheter <color:#ffc933>{amount}</color> SkyGems <glyph:skygem> sur <click:open_url:'https://www.magicalsky.fr/boutique'><hover:show_text:'Ouvrir la boutique'><color:#ffc933>la boutique</color></hover></click>
 cooking:
