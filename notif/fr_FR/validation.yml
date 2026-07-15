@@ -43,6 +43,8 @@ ignore:
   no_longer_ignoring: Tu n'ignores plus <color:#ffc933>{player}</color>
   now_ignoring: Tu ignores désormais <white>{player}</white>
 island:
+  join:
+    broadcast: <color:#ffc933>{player}</color> a rejoint l'île
   coop:
     added: Tu es désormais en coop sur l'île de <color:#ffc933>{island}</color>
     added_broadcast: <white>{player}</white> est maintenant en coop sur ton île
