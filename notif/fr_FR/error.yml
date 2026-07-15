@@ -1,5 +1,10 @@
 badge:
   unknown: Le badge {badgename} n'existe pas
+money:
+  pay:
+    self: "Tu ne peux pas t'envoyer de l'argent à toi-même"
+    invalid-amount: "Le montant que tu as entré est invalide"
+    insufficient-funds: "Tu n'as pas assez d'argent. Solde actuel : <gold>{money}</gold>"
 command:
   badcommand: 'Commande incorrecte, la commande à utiliser est : {command}'
   cannot_use: Tu ne peux pas utiliser cette commande !
