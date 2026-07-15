@@ -7,6 +7,9 @@ classe:
     no_item: "Tu n'as aucun item améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un item de classe ou de métier"
   stats:
+    hp:
+      change: "Ton arme en main a changé, par conséquent tes points de vies max ont été mis à jour : {amount}"
+      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vies maximal"
     apply: Les statistiques de ta classe ont été appliquées
   armor_complete:
     noskill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée
