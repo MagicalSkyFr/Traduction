@@ -1,5 +1,9 @@
 cooldown:
   reset: Le cooldown de {player} a été reset
+money:
+  pay:
+    sent: "Tu as envoyé <gold>{amount}</gold> à <gold>{player}</gold>."
+    received: "Tu as reçu <gold>{amount}</gold> de la part de <gold>{player}</gold>."
 crate:
   givecrate:
     success: Tu as reçu une crate !
