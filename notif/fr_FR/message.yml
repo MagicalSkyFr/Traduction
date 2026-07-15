@@ -75,7 +75,7 @@ challenge:
   completed: <sound:achievement.complete><glyph:gift_tchat> <color:#40ff70>Tu viens de compléter le challenge :</color> <color:#ffc933>{challenge}</color>
 chat:
   already_in_chat: <glyph:cross_tchat> <color:#ff383b>Tu es déjà dans un autre tchat !</color>
-  island:
+  île:
     console: <white>%bskyblock_island_name%</white> <green>{playername}</green><gray> »</gray><white> {message}</white>
     message: <gray>[</gray><white>%bskyblock_rank%</white><gray>]</gray> <gold>{playername}</gold><gray> »</gray><white> {message}</white>
   global:
