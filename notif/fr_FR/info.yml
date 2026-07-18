@@ -169,6 +169,7 @@ spawners:
 teleport:
   starting: Ne bouge pas pendant <color:#ffc933>{time} secondes</color> pour être téléporté
 teleportation:
+  request_replaced: "Ta demande de téléportation envoyée à <color:#ffc933>{player}</color> a été annulée car une autre demande a été envoyée entre-temps"
   request_received: Tu as reçu une demande de téléportation de <color:#ffc933>{sender}</color>
 warp:
   description:
