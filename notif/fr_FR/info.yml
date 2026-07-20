@@ -107,6 +107,7 @@ island:
     broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color> de l'île
     kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
   leave:
+    self: Tu as quitté l'île
     broadcast: <color:#ffc933>{player}</color> a quitté l'île
   player_is_member: Le joueur <white>{player}</white> est membre de ton île
   player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre de ton île
