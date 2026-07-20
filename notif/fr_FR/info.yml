@@ -101,9 +101,6 @@ island:
     received: <color:#ffc933>{inviter}</color> vient de t'inviter à rejoindre son île
     remaining: Tu peux inviter encore <color:#ffc933>{count} joueur{plural}</color> sur ton île
     view_command: Tu peux voir tes invitations en cours en faisant la commande <color:#ffc933>/is invite</color> ou en <click:run_command:'/is invite'><glyph:left_click> [<color:#ffc933>cliquant ici</color>]</click>
-item:
-  drop: <gray>・ <white>{name} x {amount}
-  fullinventory: Ton inventaire est rempli, des objets ont été mis dans<color:#ffc933> ta boite au lettre</color>
   join:
     broadcast: <color:#ffc933>{player}</color> vient de rejoindre l'île
   kick:
@@ -117,6 +114,9 @@ item:
     broadcast: <white>{player}</white> a maintenant le rang de <white>{rank}</white>
   transfer:
     broadcast: <color:#ffc933>{player}</color> est le nouveau propriétaire de l'île
+item:
+  drop: <gray>・ <white>{name} x {amount}
+  fullinventory: Ton inventaire est rempli, des objets ont été mis dans<color:#ffc933> ta boite au lettre</color>
 jobs:
   can_add_job: Tu peux ajouter un autre métier !
   level_set: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Ton niveau de <white>{job}</white> a été modifié au niveau <white>{level}</white>
