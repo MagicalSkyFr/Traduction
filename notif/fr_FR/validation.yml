@@ -1,3 +1,5 @@
+chunk:
+  finish: "L'analyse des chunks est terminée"
 cooldown:
   reset: Le cooldown de {player} a été reset
 money:
