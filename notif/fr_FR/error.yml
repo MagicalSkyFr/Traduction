@@ -1,5 +1,8 @@
 badge:
   unknown: Le badge {badgename} n'existe pas
+chunk:
+  error: Une erreur est survenu lors de l'analyse des chunks
+  locked: Ce chunk est en cours d'analyse, réessaie dans un instant
 money:
   pay:
     self: "Tu ne peux pas t'envoyer de l'argent à toi-même"

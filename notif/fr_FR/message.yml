@@ -87,6 +87,9 @@ chat:
     no_one: <glyph:cross_tchat> <color:#ff383b>Personne ne t'as parlé (triste :c)</color>
     receive: <sound:BLOCK_NOTE_BLOCK_IRON_XYLOPHONE[volume=1.0,pitch=1.0,source=PLAYER]> <color:#308fcf> De <bold>{playername}</bold> </color><gray>»</gray> <white>{message}</white>
     send: <sound:BLOCK_NOTE_BLOCK_IRON_XYLOPHONE[volume=1.0,pitch=1.0,source=PLAYER]> <color:#308fcf> Pour <bold>{playername}</bold> </color><gray>»</gray> <white>{message}</white>
+chunk:
+  queue: "Les chunks a été ajoutée à la file d'attente (position {position})"
+  start: "L'analyse de {chunks} chunks commence"
 classe:
   change_cooldown: <glyph:information_tchat> Tu pourras toujours <color:#ffc933>changer de classe</color> après un cooldown !
   change_cooldown_active: <glyph:cross_tchat> <color:#ff383b>Tu ne peux pas encore changer de classe, tu pourras changer de classe le {date} !</color>
