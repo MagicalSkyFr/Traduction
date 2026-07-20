@@ -1,7 +1,7 @@
 badge:
   unknown: Le badge {badgename} n'existe pas
 chunk:
-  lock: Ce chunk est en cours d'analyse, réessaie dans un instant
+  locked: Ce chunk est en cours d'analyse, réessaie dans un instant
 money:
   pay:
     self: "Tu ne peux pas t'envoyer de l'argent à toi-même"
