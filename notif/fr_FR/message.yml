@@ -30,6 +30,8 @@ biome:
   cooldown: <glyph:cross_tchat> <color:#ff383b>Tu ne peux pas changer de biome actuellement, tu pourras le changer le {time}</color>
   timeout: <glyph:cross_tchat> <color:#ff383b>Le changement du biome a pris trop de temps et a donc été annulé</color>
 boss:
+  mini:
+    defeated: <glyph:validation_tchat> <color:#40ff70>Le boss {boss} a été vaincu !</color>
   damage: '<glyph:information_tchat> Vie actuelle du boss : <color:#ff383b>{health}</color> / <color:#ff383b>{maxhealth}</color>'
   defeated: <glyph:validation_tchat> <color:#40ff70>Le boss a été vaincu ! Voici les meilleurs joueurs :</color>
   position: '<color:#ffc933>#{position}</color> : <color:#ffc933>{player}</color> ayant infligé {damage} points de dégats'
