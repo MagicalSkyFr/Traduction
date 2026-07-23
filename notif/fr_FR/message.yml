@@ -32,7 +32,7 @@ biome:
 boss:
   damage: '<glyph:information_tchat> Vie actuelle du boss : <color:#ff383b>{health}</color> / <color:#ff383b>{maxhealth}</color>'
   defeated: <glyph:validation_tchat> <color:#40ff70>Le boss a été vaincu ! Voici les meilleurs joueurs :</color>
-  position: '<color:#ffc933>#{position}</color> : <color:#ffc933>{playername}</color> ayant infligé {damage} points de dégats'
+  position: '<color:#ffc933>#{position}</color> : <color:#ffc933>{player}</color> ayant infligé {damage} points de dégats'
   spawn: '<glyph:information_tchat> Un boss est apparu à cet endroit : <color:#ffc933>{localisation}</color>'
 bossbar:
   showboss: '<dark_gray>[<gold>✔<dark_gray>] Boss : {bossname} - Vie actuelle : {health} / {maxhealth}'
