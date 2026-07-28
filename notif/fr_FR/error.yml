@@ -1,3 +1,5 @@
+profil:
+  loading: "Le profil est en chargement, réessaie dans quelques instants"
 badge:
   unknown: Le badge {badgename} n'existe pas
 chunk:
