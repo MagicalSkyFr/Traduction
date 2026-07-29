@@ -114,6 +114,8 @@ ignore:
 inventory:
   full: Ton inventaire est plein
 island:
+  recalc:
+    success: L'île a été recalculée avec succès
   already_have_island: Tu possèdes déjà une île !
   blueprint_invalid: Mauvaise utilisation
   coop:
@@ -297,7 +299,7 @@ upgradeisland:
     cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île ({value}/{value}
   max_observers: Tu as atteint le maximum <white>d'Observateurs</white> sur ton île
   minecart_limit_reached: Tu as atteint la limite de <white>{max} minecarts</white> sur ton île
-  no_offerings: Tu n'as pas de bloc de niveau ou de bloc de niveau d'île incomplet dans ton inventaire
+  no_offerings: Tu n'as pas d'item à donner en offrande à l'île dans ton inventaire
   piston_limit_reached: Tu as atteint le maximum de <white>Pistons</white> sur ton île
   required_island_level: Ton île doit avoir au moins le niveau <white>{level}</white>
   required_message: 'Tu dois avoir les débloqué améliorations suivantes :'
