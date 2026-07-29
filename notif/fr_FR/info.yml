@@ -18,6 +18,9 @@ donjon:
   player_left: <color:#ffc933>{player}</color> vient de quitter le donjon
   teleported: Tu viens d'être <color:#ffc933>téléporté</color>
   you_left: Tu viens de <color:#ffc933>quitter le donjon</color>
+chunk:
+  queue: "Les chunks a été ajoutée à la file d'attente (position {position})"
+  start: "L'analyse de {chunks} chunks commence"
 effect:
   nightvision_removed: Tu as <color:#ffc933>désactivé</color> l'effet Vision Nocturne
 event:
