@@ -2,21 +2,41 @@
 
 Ce guide explique comment modifier ou ajouter des traductions dans les fichiers de langue.
 
-## Structure du fichier
+## Structure du dépôt
 
-```yaml
-magicalsky:
-  <serveur>:
-    <template>:
-      <chemin>: "Message"
+```
+notif/
+├── fr_FR/
+│   ├── bossbar.yml
+│   ├── error.yml
+│   ├── event.yml
+│   ├── gift.yml
+│   ├── info.yml
+│   ├── logger.yml
+│   ├── message.yml
+│   ├── todo.yml
+│   └── validation.yml
+└── en_US/
+    └── ...  (même arborescence de fichiers)
 ```
 
-- **`magicalsky`** : clé racine, fixe, ne jamais y toucher.
-- **`<serveur>`** : `default` pour les notifications communes à tous les serveurs, ou le nom d'un serveur spécifique (ex: `Event`) pour une notif qui ne concerne que celui-ci.
-- **`<template>`** : catégorie du message (`error`, `validation`, `info`, `gift`, `warning`, `message`, `logger`, `todo`, `bossbar`...). Ne pas déplacer une clé d'un template à un autre sans raison : ça changerait sa présentation (couleur, icône, son).
+- Chaque **langue** a son propre dossier (`fr_FR/`, `en_US/`, ...).
+- Chaque dossier contient **un fichier par catégorie** (`template`) : `error`, `validation`, `info`, `gift`, `warning`, `message`, `logger`, `todo`, `bossbar`...
+- Un fichier ne contient **aucune clé englobante** : `error.yml` commence directement par ses sous-clés (ex: `command:`), pas par `error:` ni `magicalsky:`. Le préfixe complet est réinjecté par le loader du jeu à partir du nom du fichier et du dossier de langue.
+
+## Structure à l'intérieur d'un fichier
+
+```yaml
+<chemin>: "Message"
+```
+
 - **`<chemin>`** : l'identifiant unique du message. **Ne jamais renommer ou déplacer ces clés** — seule la valeur (le texte) doit être modifiée.
 
 ## Ce qu'il ne faut jamais modifier
+
+### Les fichiers et dossiers
+- Ne renomme pas un dossier de langue (`fr_FR`, `en_US`, ...).
+- Ne renomme pas un fichier de catégorie (`error.yml`, `message.yml`, ...) et n'y déplace pas une clé venant d'un autre fichier sans raison : ça changerait sa présentation (couleur, icône, son).
 
 ### Les clés
 Seule la **valeur** (le texte après `:`) doit être traduite/modifiée. Ne touche jamais :
@@ -68,41 +88,36 @@ Si une traduction est manquante dans un fichier de langue, le **chemin brut** de
 
 ## Support multi-langue
 
-Chaque langue a son propre fichier avec **exactement la même arborescence de clés** :
-
-```
-notif/
-├── fr_FR.yml
-├── en_US.yml
-└── es_ES.yml
-```
+Chaque langue a son propre dossier avec **exactement les mêmes fichiers et la même arborescence de clés** à l'intérieur de chacun.
 
 ## Exemple
 
+`notif/fr_FR/message.yml` :
 ```yaml
-magicalsky:
-  default:
-    message:
-      island:
-        kick:
-          broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color> de l'île
-          kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
-    error:
-      command:
-        cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
+island:
+  kick:
+    broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color> de l'île
+    kicked: <color:#ffc933>{player}</color> vient de t'expulser de l'île
 ```
 
-Version anglaise correspondante (mêmes clés, texte traduit) :
-
+`notif/fr_FR/error.yml` :
 ```yaml
-magicalsky:
-  default:
-    message:
-      island:
-        kick:
-          broadcast: <color:#ffc933>{player}</color> just kicked <color:#ffc933>{target}</color> from the island
-          kicked: You were kicked from the island by <color:#ffc933>{player}</color>
-    error:
-      command:
-        cooldown: You must wait {time} before using this command again
+command:
+  cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
+```
+
+Versions anglaises correspondantes (mêmes chemins de fichiers et de clés, texte traduit) :
+
+`notif/en_US/message.yml` :
+```yaml
+island:
+  kick:
+    broadcast: <color:#ffc933>{player}</color> just kicked <color:#ffc933>{target}</color> from the island
+    kicked: You were kicked from the island by <color:#ffc933>{player}</color>
+```
+
+`notif/en_US/error.yml` :
+```yaml
+command:
+  cooldown: You must wait {time} before using this command again
 ```
