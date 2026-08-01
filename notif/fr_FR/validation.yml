@@ -1,3 +1,19 @@
+biome:
+  change: Le biome de ton île est désormais {biomename}
+boss:
+  mini:
+    defeated: Le boss {boss} a été vaincu !
+  defeated: 'Le boss a été vaincu ! Voici les meilleurs joueurs :'
+chat:
+  join: Tu as rejoins le tchat <color:#ffc933>{id}</color>
+  leave: Tu as quitté le tchat <color:#ffc933>{id}</color>
+classe:
+  rune:
+    points_added: Tu as transformé tes runes en <color:#ffc933>{amount}</color> <color:#40ff70>points de compétences</color>
+  selected: Tu viens de choisir la classe <white>{class}</white>
+collection:
+  added: \nL'objet a été ajouté à ta collection\n<click:run_command:'/collection'><glyph:left_click> Clique ici pour voir [<color:#ffc933>tes collections</color>]</click>\n
+  item_removed: Tu as supprimé l'objet {item} de la collection {collection} de <white>{owner}</white>
 chunk:
   finish: "L'analyse des chunks est terminée ({time})"
 cooldown:
@@ -18,6 +34,7 @@ discord:
   sync: Ton compte Discord est maintenant synchronisé
   unlink: Ton compte Discord est maintenant délié
 donjon:
+  finished_forced_teleport: \nFélicitations, tu as complété le donjon ! La session expirera dans deux minutes maximum\n<glyph:left_click>Tu peux quitter le donjon en <click:run_command:'/donjon leave'>[<color:#ffc933>cliquant ici</color>]</click>
   admin:
     forced_player: Le joueur <white>{player}</white> a été téléporté de force dans la salle
   invite:
@@ -45,6 +62,7 @@ ignore:
   no_longer_ignoring: Tu n'ignores plus <color:#ffc933>{player}</color>
   now_ignoring: Tu ignores désormais <white>{player}</white>
 island:
+  creation_in_progress: Création de l'île... <click:run_command:'/is reset'><glyph:left_click> Tu peux remettre à zéro ton île avec un certain délai en [<color:#ffc933>cliquant ici</color>]</click>\n
   join:
     broadcast: <color:#ffc933>{player}</color> a rejoint l'île
   coop:

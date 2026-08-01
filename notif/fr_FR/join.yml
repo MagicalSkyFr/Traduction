@@ -1,0 +1,4 @@
+arrive:
+  join_message: '{message}'
+bienvenue:
+  send: '{playername} te souhaite la bienvenue !'

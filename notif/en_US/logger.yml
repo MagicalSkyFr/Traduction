@@ -1,4 +1,11 @@
+chat:
+  log:
+    send: <color:#ffc933>{sender}</color> → <white>{target}</white> <gray>»</gray> <white>{message}</white>
+classe:
+  competence: Registering {nb} skills
 langage:
-  log: Loading {number} language keys
+  log: Loading {number} languages
+lazerutils:
+  server: Loading server {serverName}
 traduction:
   log: Loading {number} translations

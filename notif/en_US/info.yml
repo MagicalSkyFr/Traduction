@@ -1,0 +1,194 @@
+badge:
+  edit: <color:#ffc933>{playername}</color>'s badge <color:#ffc933>{badgename}</color> has been changed
+bienvenue:
+  view: You welcomed <color:#ffc933>{playername}</color>!
+boss:
+  damage: 'Current boss health: <color:#ff383b>{health}</color> / <color:#ff383b>{maxhealth}</color>'
+  spawn: 'A boss has appeared at this location: <color:#ffc933>{localisation}</color>'
+classe:
+  change_cooldown: You will still be able to <color:#ffc933>change class</color> after a cooldown!
+  change_timer: You will be able to change class on <color:#ffc933>{time}</color>
+money:
+  info: "You have <gold>{money}</gold> <glyph:mcoin>"
+boutique:
+  credits_remaining: You have <color:#ffc933>{credits}</color> <glyph:skygem> left
+  buy_credits: <sound:ENTITY_PLAYER_LEVELUP[volume=1.0,pitch=1.0,source=MASTER]> <white>{player}</white> just bought <color:#ffc933>{amount}</color> SkyGems <glyph:skygem> on <click:open_url:'https://www.magicalsky.fr/boutique'><hover:show_text:'Open the shop'><color:#ffc933>the shop</color></hover></click>
+cooking:
+  regen: "{time} left before regeneration!"
+discord:
+  linked: \nYour game and Discord accounts <color:#ffc933>are now linked</color>!\nYou can unlink them by <click:run_command:'/discord unlink'>[<color:#ffc933>clicking here</color>]</click>\n
+  code: '\n To link <color:#ffc933>your Discord account</color> to <color:#ffc933>your Minecraft account</color>, send <color:#ffc933>the code</color> to the bot <color:#ffc933>{botname}</color>\nVerification code: <color:#ffc933>{code}</color>\n'
+  nolink: Log in with <color:#ffc933>/discord link</color> to get <color:#ffc933>unique rewards</color>!
+donjon:
+  invite:
+    sent: <color:#ffc933>Your dungeon invitation</color> has been sent
+  life_lost: You just lost a life. You have <color:#ffc933>{lives}</color> left
+  must_cross_portal: You still need to cross <color:#ffc933>the portal</color>
+  must_cross_second_portal: You still need to cross <color:#ffc933>the second portal</color>
+  player_left: <color:#ffc933>{player}</color> just left the dungeon
+  teleported: You have just been <color:#ffc933>teleported</color>
+  you_left: You just <color:#ffc933>left the dungeon</color>
+chunk:
+  queue: "The chunks have been added to the queue (position {position})"
+  start: "Analysis of {chunks} chunks is starting"
+effect:
+  nightvision_removed: You <color:#ffc933>deactivated</color> the Night Vision effect
+event:
+  already_has_inventory: You have <color:#ffc933>a saved inventory</color>. <color:#ff383b>Your inventory must be empty or your items will be deleted. No refund will be given</color><glyph:left_click> You can retrieve your inventory by <click:run_command:'/event inventory'>[<color:#ffc933>clicking here</color>]</click>
+  eliminated: <color:#ffc933>{player}</color> has been eliminated from the event
+  finished: The event <color:#ffc933>{event}</color> is over, the winners are <color:#ffc933>{winners}</color>
+  finished_single_winner: The event <color:#ffc933>{event}</color> is over, the winner is <color:#ffc933>{winner}</color>
+  gained_life: <color:#ffc933>{player}</color> gained a life
+  joined: You just joined the event <color:#ffc933>{event}</color>
+  last_two: There are 2 players remaining, sudden death is activated!
+  left: You left the event <color:#ffc933>{event}</color>
+  lost_life: <color:#ffc933>{player}</color> lost a life
+  no_longer_spectator: You are no longer a spectator of the event <color:#ffc933>{event}</color>
+  now_spectator: You are now a spectator of the event <color:#ffc933>{event}</color>
+  pitchout:
+    arrow_give: You gained an arrow
+    knockback_set: The stick is now enchanted with <color:#ffc933>knockback {knockback}</color>
+    knockback_will_upgrade: The stick will be enchanted with <color:#ffc933>knockback {knockback}</color> in <color:#ffc933>{time}</color> seconds
+  quit_command: You can leave the event by doing <color:#ffc933>/event quit <white>{id}</color>
+  start_countdown: 'The event <color:#ffc933>{event}</color> will start in <color:#ffc933>{time}</color> seconds, use the command <color:#ffc933>/event join {id}</color> to join it.
+
+    <glyph:validation_tchat>Number of players: {current}/<color:#40ff70>{max}</color>'
+  started: The event <color:#ffc933>{event}</color> has started
+  thimble:
+    rolled_dice: <color:#ffc933>{player}</color> just rolled the dice!
+    too_slow_eliminated: <color:#ffc933>{player}</color> took too long to play, they are eliminated!
+    your_turn: It's your turn to <color:#ffc933>play</color>
+hdv:
+  average_price_last_7_days: 'The <color:#ffc933>average price</color> of this item over the last 7 days is: <color:#ffc933>{price}</color> <glyph:mcoin> per unit'
+  log:
+    additem: You just listed the item {itemstack} for {price} <glyph:mcoin>
+    buyitem: You bought from {seller} for {price} <glyph:mcoin> at {time} the item {itemstack}
+    cancel: You cancelled the sale of the item {itemstack} on {time}
+    expireitem: The sale expired on {time} for the item {itemstack}
+    sellitem: You sold to {target} for {price} <glyph:mcoin> at {time} the item {itemstack}
+ignore:
+  ignored_by: <color:#ffc933>{name}</color> is now ignoring your messages
+information:
+  accidental_obsidian: Created an <color:#ffc933>obsidian block</color> by accident? Right-click <color:#ffc933>on the obsidian</color> with your bucket to get the lava back!
+  catch_insects: You can get <color:#ffc933>insects</color> by breaking leaves with a <color:#ffc933>tribal axe</color>
+  clickable_message: '{message} <color:#ffc933>[Click here]</color>'
+  combine_gem: Combine <color:#ffc933>9 fragments</color> in an established multiblock to create a <color:#ffc933>magic gem</color>. It's a resource used to craft many <color:#ffc933>magic items!</color>
+  create_bolder_item: Want to create an <color:#ffc933>even more powerful</color> item?
+  create_stronger_item: Want to create an even more powerful item?
+  discover_potions: Do <color:#ffc933>/crafts</color> to discover them!
+  gem_fragment_obtained: You just got a <color:#ffc933>magic gem fragment</color>!
+  improve_generator: You can get <color:#ffc933>better ores</color> from your generator by using the command <color:#ffc933>/is gen</color>!
+  improvement_reward: <color:#ffc933>You're improving</color>! A reward awaits you to celebrate, you can claim it using the command <color:#ffc933>/recompense</color>!
+  island_leader_reward: Your island gained a level! If you're the island leader, <color:#ffc933>a reward awaits you</color>. You can claim it with the command <color:#ffc933>/recompense</color>
+  kill_dimension_monsters: Want to kill <color:#ffc933>dimension monsters</color> directly on your island?
+  level_5_reached: <color:#ffc933>Level 5</color> reached! How are the others doing? Go check with the command <color:#ffc933>/classement</color>
+  multiblock_info: For more information on creating <color:#ffc933>multiblocks</color> you can use the command <color:#ffc933>/multiblock</color>!
+  rare_item_found: What's that? Looks like it's <color:#ffc933>rare</color>, I'm sure it sells well!
+  reset_island_command: You can <color:#ffc933>reset your island</color> at any time using the command <color:#ffc933>/is reset</color>
+  sneak_help: Want your trees to grow faster? Use <color:#ffc933>sneak - unsneak</color> next to them to help them grow!
+  spawner_instructions: You can create <color:#ffc933>a spawner</color> that makes them appear!
+  spawner_multiblock_bonus: You can benefit from <color:#ffc933>more upgrades</color> by placing your spawner in a <color:#ffc933>spawner multiblock</color>! <click:run_command:'/multiblocks'><glyph:left_click> Click here to see [<color:#ffc933>the multiblocks</color>]</click>
+  spawner_open_chest: You can right-click your spawner to open <color:#ffc933>its storage</color>
+  special_crafts_intro: There are many <color:#ffc933>special crafts</color> on the server.
+  special_fish_intro: You can fish <color:#ffc933>special fish</color> that are worth a lot of money!
+  special_potions_intro: There are <color:#ffc933>special potions</color> in our world.
+  trees_dance: Trees love dancing.
+  tribal_fishing_instructions: Just get <color:#ffc933>a tribal fishing rod</color>, <color:#ffc933>right-click it</color> while in your inventory and drag insects into it. Super easy!
+  tribal_item_instructions: Create a tribal item by following the instructions in <color:#ffc933>/crafts</color>
+  tutorial_quest_jobs: Progress through the <color:#ffc933>tutorial quest for all jobs</color> to see which one suits you best!
+  unsure_which_job: Not sure which <color:#ffc933>job to choose</color>?
+  view_crafts_command: <click:run_command:'/crafts'><glyph:left_click> You can find them by [<color:#ffc933>clicking here</color>]</click>
+  wiki_click: <click:open_url:'https://www.magicalsky.fr/wiki'><glyph:left_click> Click here to access the [<color:#ffc933>server wiki</color>]</click>
+island:
+  bank:
+    deposit: Type <color:#ffc933>the amount</color> you want to deposit in the bank in chat. You have <color:#ffc933>1 minute</color> to do it
+  coop:
+    player_not_coop: The player <white>{player}</white> is not in coop on your island
+    removed_broadcast: <white>{player}</white> is no longer in coop on your island
+    removed_self: You are no longer in coop on the island
+  deleted: The island has been deleted! As a result, you have been teleported to spawn
+  demote:
+    broadcast: <color:#ffc933>{player}</color> now has the rank <color:#ffc933>{rank}</color>
+  invite:
+    broadcast: <color:#ffc933>{inviter}</color> just invited <color:#ffc933>{invitee}</color> to join the island
+    declined_broadcast: <color:#ffc933>{player}</color> declined your invitation to join the island
+    received: <color:#ffc933>{inviter}</color> just invited you to join their island
+    remaining: You can still invite <color:#ffc933>{count} player{plural}</color> to your island
+    view_command: You can view your current invitations by using the command <color:#ffc933>/is invite</color> or by <click:run_command:'/is invite'><glyph:left_click> [<color:#ffc933>clicking here</color>]</click>
+  join:
+    broadcast: <color:#ffc933>{player}</color> just joined the island
+  kick:
+    broadcast: <color:#ffc933>{player}</color> just kicked <color:#ffc933>{target}</color> from the island
+    kicked: <color:#ffc933>{player}</color> just kicked you from the island
+  leave:
+    self: You left the island
+    broadcast: <color:#ffc933>{player}</color> left the island
+  player_is_member: The player <white>{player}</white> is a member of your island
+  player_not_in_island: The player <white>{player}</white> is not a member of your island
+  promote:
+    broadcast: <white>{player}</white> now has the rank of <white>{rank}</white>
+  transfer:
+    broadcast: <color:#ffc933>{player}</color> is the new owner of the island
+item:
+  drop: <gray>・ <white>{name} x {amount}
+  fullinventory: Your inventory is full, items have been placed in <color:#ffc933> your mailbox</color>
+jobs:
+  can_add_job: You can add another job!
+  level_set: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Your <white>{job}</white> level has been changed to level <white>{level}</white>
+  next_remove_in: You will be able to remove another job in <color:#ffc933>{days} days</color>
+  slot_added_target: You have <white>{slots}</white> job slots
+  slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>You have <white>{slots}</white> empty job slots left
+  xp_received: You received <white>{xp}</white> experience from the job <white>{job}</white>
+kick:
+  broadcast: <color:#ffc933>{player}</color> just kicked <color:#ffc933>{target}</color> from the island
+  kicked: <color:#ffc933>{player}</color> just kicked you from the island
+mail:
+  item: \nYou received an item from <color:#ffc933>{playername}</color> in <color:#ffc933>your mailbox</color>.\n<click:run_command:'/mail'><glyph:left_click> You can click here to open [<color:#ffc933>your mailbox</color>]</click>\n
+multiblocks:
+  destroyed: You destroyed your multiblock
+  upgrade_progress: 'Upgrade progress: {current}/{total}'
+parrainage:
+  accept:
+    success: <color:#ffc933>{playername}</color> accepted your invitation
+  decline:
+    success: <color:#ffc933>{playername}</color> declined your invitation
+  invite:
+    hint: <white>/parrainage accept {parrain} or /parrainage decline {parrain}</white>
+    received: Invitation received from <color:#ffc933>{parrain}</color>
+  join: You can be <color:#ffc933>sponsored</color> by a player
+  main:
+    referrals:
+      empty: No objectives in progress
+  objective:
+    completed: '<color:#ffc933>Objective completed: {objectif}</color>'
+    completed_by_referral: <color:#ffc933>{playername}</color> completed the objective <color:#ffc933>{objectif}</color>
+  reward:
+    header: '<white>Reward: {objectif}</white>'
+quest:
+  info: 'Quest info <color:#ffc933>{quest}</color> for <color:#ffc933>{player}</color>: Completed: <color:#ffc933>{completed}</color> / State: <color:#ffc933>{state}</color>'
+sellchest:
+  profit: Your <color:#ffc933>automatic chests</color> earned you <color:#ffc933>{amount}</color> <glyph:mcoin> over the last 10 minutes
+shopjoueur:
+  ask_price: What {type} price do you want to set for the item?
+  chest_transaction: 'Summary of your player shop: {location}{action} {amount} items'
+  enter_amount: Type in chat how many items you want to <color:#ffc933>{action}</color>
+  sell_chest_remove: This chest is <color:#ffc933>a sell chest</color>. To remove it, break it again <color:#ffc933>within 5 seconds</color>
+  sold_items: You just sold <white>{amount} items</white>
+spawners:
+  inventory_taken: <color:#ffc933>{player}</color> is in the spawner's inventory. Just wait...
+  must_use_hunter_weapon: <red>You must use the <white>hunter</white> job's weapon to do this
+  orb_full: <color:#ffc933>Your spawner orb is full</color>! Right-click <color:#ffc933>while holding the spawner orb</color> and having in your inventory <color:#ffc933>{nb} spawner hearts, 1 {name} and 1 filled spawner orb</color>
+  other_in_inventory: <white>{player}</white> is in the spawner's inventory
+  spawner_in_use: The spawner is currently being used by <color:#ffc933>{player}</color>
+  used_by: The spawner is being used by <color:#ffc933>{player}</color>
+teleport:
+  starting: Don't move for <color:#ffc933>{time} seconds</color> to be teleported
+teleportation:
+  request_with_buttons: <color:#ffc933>{sender}</color> wants you to teleport to them.\n<color:#40ff70>[ACCEPT]</color><click:run_command:'/tpaccept'><hover:show_text:'Click to accept the teleport'/></click> <color:#ff383b>[DENY]</color><click:run_command:'/tpdeny'><hover:show_text:'Click to deny the teleport'/></click>\n
+  request_replaced: "Your teleport request sent to <color:#ffc933>{player}</color> was cancelled because another request was sent in the meantime"
+  request_received: You received a teleport request from <color:#ffc933>{sender}</color>
+warp:
+  description:
+    prompt: You have <color:#ffc933>1 minute</color> to type the new warp description in chat
+  rename:
+    prompt: You have <color:#ffc933>1 minute</color> to type the new warp name in chat

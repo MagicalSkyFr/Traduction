@@ -1,3 +1,8 @@
+boutique:
+  receive_credits: \nTu as reçu <color:#ffc933>{amount}</color> <glyph:skygem>\n<click:run_command:'/boutique'><glyph:left_click> Clique ici pour accéder à [<color:#ffc933>notre boutique</color>]</click> et les utiliser !\n
+discord:
+  reward:
+    claim: \nTu viens de récupérer tes récompenses !\n・Tag {tag}\n・Peluche de Wumpus\n
 daily:
   claimed: Félicitations, tu viens de récupérer ton Daily !
 gift:

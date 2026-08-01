@@ -1,0 +1,55 @@
+classe:
+  upgrade_station:
+    stat_added: "Your weapon gained +{value} {stat}"
+    config:
+      error: "An error occurred while configuring the upgrade station: {error}"
+    add_points: "You added {points} upgrade points to your item"
+    no_item: "You don't have any upgradeable item in your main hand"
+    no_nbt: "This isn't a class or job item"
+  stats:
+    armor:
+      change: "{slot} has changed, so your health points have been updated: {amount}"
+    hp:
+      change: "Your weapon in hand has changed, so your max health points have been updated: {amount}"
+      remove: "You no longer have a weapon with HP stats in your hand, so you lost {amount} max health points"
+    apply: Your class stats have been applied
+  armor_complete:
+    noskill: <glyph:validation_tchat> <color:#40ff70>Your armor is fully equipped
+    skill: <glyph:validation_tchat> <color:#40ff70>Your armor is fully equipped, you get the {skill} skill as a bonus!</color>
+  armor_full_required: <glyph:warning_tchat> <color:#ff383b>You must wear a full armor set to benefit from the bonus skill!</color>
+  armor_missing: <glyph:warning_tchat> <color:#ff383b>Your armor isn't fully equipped, equip a full armor set to benefit from your armor's skills</color>
+  notskilloffhand: <glyph:warning_tchat> <color:#ff383b> You can't cast a spell if the item in your off hand also has skills
+  skill:
+    active: <green><bold> Skill activated </bold>for {name}</green>
+    inactive: <red><bold> Skill deactivated </bold>for {name}</red>
+  sort:
+    add: <glyph:validation_tchat> <color:#40ff70> You just added the spell {skillname} to your wand!
+    max: <glyph:warning_tchat> <color:#ff383b> You already have the maximum number of spells on your wand!
+    notremove: <glyph:warning_tchat> <color:#ff383b> You can't remove this spell
+    remove: <glyph:validation_tchat> <color:#40ff70> You just removed the spell from your wand!
+  sound:
+    active: <green><bold> Sound activated </bold>for {name}</green>
+    inactive: <red><bold> Sound deactivated </bold>for {name}</red>
+dungeon:
+  already:
+    builder: You are already in a dungeon session being created
+    in: You are already in a dungeon
+  build: The dungeon session has been created
+  builderror: 'An error occurred while creating the dungeon: {error}, as a precaution, it has been cancelled'
+  death: '{playername} lost a life in the dungeon'
+  global:
+    end: "{owner}'s dungeon has just ended!"
+  invite:
+    accept: You joined the dungeon!
+    acceptall: '{playername} joined the dungeon'
+    edit: Session change detected, the session creation cooldown has been reset
+    refuse: You refused the dungeon invitation
+    refuseall: '{playername} refused the dungeon invitation'
+    remove: You have been kicked from the dungeon
+    removeall: '{playername} has been kicked from the dungeon'
+    removeinvited: Your dungeon invitation has expired
+    send: You have been invited to join {ownername}'s dungeon, do /donjon to accept or refuse
+    sendall: '{playername} has been invited to join the dungeon'
+  notifwhenstart: The session has been placed in the queue, you will be notified when the session is about to be created. You can still add members during this time.
+  retarded: All instances of this dungeon are taken, you will be teleported when a spot is available, spot {place}
+  startbuild: The dungeon session will be created in 30 seconds

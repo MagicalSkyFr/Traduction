@@ -1,0 +1,11 @@
+afk:
+  teleport:
+    teleport: You were teleported to spawn because you were AFK
+    warning: You are considered AFK. Click or move within 60 seconds to avoid being teleported
+badge:
+  equippable:
+    max: You have reached the equippable badge limit
+challenge:
+  almost_finished: You've almost completed a challenge, make sure you have enough inventory space to get your rewards!
+spawners:
+  break_warning: Warning, if you break a spawner without a spawner pickaxe, it will disappear! If you still want to continue, break this block again

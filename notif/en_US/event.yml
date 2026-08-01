@@ -1,0 +1,6 @@
+message:
+  chat:
+    global:
+      message: '{playername} >> {message}'
+template:
+  message: '{msg}'

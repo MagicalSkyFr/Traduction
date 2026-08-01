@@ -1,0 +1,149 @@
+biome:
+  change: Your island's biome is now {biomename}
+boss:
+  mini:
+    defeated: The boss {boss} has been defeated!
+  defeated: 'The boss has been defeated! Here are the best players:'
+chat:
+  join: You joined the chat <color:#ffc933>{id}</color>
+  leave: You left the chat <color:#ffc933>{id}</color>
+classe:
+  rune:
+    points_added: You turned your runes into <color:#ffc933>{amount}</color> <color:#40ff70>skill points</color>
+  selected: You just chose the class <white>{class}</white>
+collection:
+  added: \nThe item has been added to your collection\n<click:run_command:'/collection'><glyph:left_click> Click here to see [<color:#ffc933>your collections</color>]</click>\n
+  item_removed: You removed the item {item} from the collection {collection} of <white>{owner}</white>
+chunk:
+  finish: "Chunk analysis is complete ({time})"
+cooldown:
+  reset: "{player}'s cooldown has been reset"
+money:
+  pay:
+    sent: "You sent <gold>{amount} MCoins</gold> to <gold>{player}</gold>."
+    received: "You received <gold>{amount} MCoins</gold> from <gold>{player}</gold>."
+crate:
+  givecrate:
+    success: You received a crate!
+  queue:
+    add: You have been added to the box opening queue
+  removed: The crate {crate} has been removed
+  reward:
+    gain: You won <white>x{amount}</color> of {name}
+discord:
+  sync: Your Discord account is now synced
+  unlink: Your Discord account is now unlinked
+donjon:
+  finished_forced_teleport: \nCongratulations, you completed the dungeon! The session will expire in two minutes at most\n<glyph:left_click>You can leave the dungeon by <click:run_command:'/donjon leave'>[<color:#ffc933>clicking here</color>]</click>
+  admin:
+    forced_player: The player <white>{player}</white> has been forcefully teleported into the room
+  invite:
+    accepted: You just accepted the invitation, you will be teleported soon
+    accepted_other: <white>{player}</white> just accepted your invitation
+  received: <white>{player}</white> received <white>{amount}</white> dungeons
+effect:
+  nightvision_added: You activated the Night Vision effect
+emoji:
+  added_to_player: The emoji <white>{emogi}</white> has been added to the player <white>{player}</white>
+  removed_from_player: The emoji <white>{emogi}</white> has been removed from the player <white>{player}</white>
+event:
+  removed_life: You removed a life from <white>{player}</white>
+fly:
+  enabled: <green>You activated fly mode!
+heal:
+  success: You have been healed
+home:
+  added: Your home <white>{home}</white> has been added!
+  deleted: Your home has been deleted!
+  teleported: You have been teleported to your home <white>{home}</white>!
+ignore:
+  ignore_all_disabled: You no longer ignore all players
+  ignore_all_enabled: You are now ignoring all players
+  no_longer_ignoring: You no longer ignore <color:#ffc933>{player}</color>
+  now_ignoring: You are now ignoring <white>{player}</white>
+island:
+  creation_in_progress: Creating the island... <click:run_command:'/is reset'><glyph:left_click> You can reset your island, with a certain delay, by [<color:#ffc933>clicking here</color>]</click>\n
+  join:
+    broadcast: <color:#ffc933>{player}</color> joined the island
+  coop:
+    added: "You are now in coop on <color:#ffc933>{island}</color>'s island"
+    added_broadcast: <white>{player}</white> is now in coop on your island
+  reset_success: The island has been reset
+item:
+  on_head: The item is now on your head!
+jobs:
+  cooldown_reset: "<sound:ENTITY_EXPERIENCE_ORB_PICKUP><white>{player}</white>'s cooldown has been reset"
+  level_set_broadcast: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>The player <white>{player}</white> has been set to level <white>{level}</white> of the job <white>{job}</white>
+  points_added: <sound:BLOCK_NOTE_BLOCK_BASS>You added <white>{points}</white> skill points
+  slot_added_sender: You added a job slot to the player <white>{player}</white>
+  slot_removed_target: You removed a job slot from <white>{player}</white>
+  xp_received_broadcast: The player <white>{player}</white> received <white>{xp}</white> experience from the job <white>{job}</white>
+leaderboard:
+  refreshed: The leaderboard has been refreshed
+mail:
+  received: You retrieved the item sent by <white>{playername}</white>
+  sent: "You sent an item to <white>{playername}</white>'s mailbox"
+multiblocks:
+  created: Congratulations, you just created a multiblock!
+objet:
+  transformed: Your items have been transformed
+parrainage:
+  accept:
+    confirm: You accepted <white>{playername}</white>'s invitation
+  decline:
+    confirm: You declined <white>{playername}</white>'s invitation
+  force:
+    set: "<white>{parrain}</white> is now <white>{target}</white>'s sponsor"
+    sponsor: "You are now <color:#ffc933>{playername}</color>'s sponsor"
+    target: <white>{playername}</white> is now your sponsor
+  invite:
+    accepted: <color:#ffc933>{playername}</color> accepted your invitation
+    sent: Invitation sent to <color:#ffc933>{playername}</color>
+  reset: Sponsorship <color:#ffc933>reset</color>
+photo:
+  added: You just added a photo to your photo album
+  taken: <sound:BLOCK_TRIPWIRE_ATTACH[volume=1.0,pitch=1.0,source=MASTER]>You just took a photo
+profile:
+  tag_added: The tag {tag} <white>has been added to your profile.</white>\n<click:run_command:'/tag'><glyph:left_click> <white>Click here to open your [</white><color:#ffc933>tag inventory</color><white>] and select it</white></click>
+  tag_removed: The tag {tag} <color:#40ff70>has been removed from your equipped tags</color>
+pub:
+  disabled: You disabled the ads channel
+  enabled: You enabled the ads channel
+quest:
+  quest_item_found: You found the quest item!
+regen:
+  healed: You have been healed <white>{amount}</white> hearts
+shop:
+  buy_success: You bought <white>{amount} {item}</white> for <white>{total} <glyph:mcoin></white>
+  sell_success: <green>You sold <white>{amount} {item} </white>for <white>{total} <glyph:mcoin></white>
+shopjoueur:
+  bought_items: You just bought <white>{amount} items</white> from <white>{owner}</white>
+  shop_created: The <white>{type}</white> was successfully created
+spawners:
+  broken_with_tool: You broke a <white>{type}</white> with your spawner pickaxe
+  multiblock_action: You {action} the multiblock
+  orb_linked: You linked your spawner orb to the mob {mob}! Place it in your off hand and kill the chosen mob to fill it
+  took_control: You took control of the spawner. The previous owner was <white>{owner}</white>
+  upgrade_activated: You activated the <white>{type}</white> upgrade of your multiblock
+  upgrade_deactivated: You deactivated the <white>{type}</white> upgrade of your multiblock
+teleport:
+  beacon_teleported: You were teleported to the <white>{beacon}</white> beacon of the <white>{dimension}</white> dimension
+  beacon_unlocked: 'You unlocked the dimension beacon: <white>{beacon}</white>'
+teleportation:
+  request_accepted_requester: <white>{player}</white> accepted your request
+  request_accepted_target: You accepted <white>{player}</white>'s request
+  request_sent: Teleport request sent to <white>{target}</white>
+  teleport_from_to: Teleporting <white>{from}</white> to <white>{to}</white>
+  teleport_to: You were teleported to <white>{to}</white>
+  teleported_to_player: You were teleported to <white>{player}</white>
+  teleported_to_you: You teleported <white>{player}</white> to you
+  to_island: You were teleported to your island
+  tp_to_coords: You were teleported to coordinates <white>{x} {y} {z}</white>
+  tp_to_player: You were teleported to <white>{target}</white>
+upgradeisland:
+  offering_done: The given resources have been converted into <white>{xp} experience</white> for your island
+warp:
+  deleted: The warp <white>{warp}</white> has been deleted
+  teleported: You were teleported to the warp <white>{warp}</white>
+xp:
+  added: You added <white>{xp}</white> xp to <white>{player}</white>
