@@ -1,0 +1,12 @@
+boutique:
+  receive_credits: \nYou received <color:#ffc933>{amount}</color> <glyph:skygem>\n<click:run_command:'/boutique'><glyph:left_click> Click here to access [<color:#ffc933>our shop</color>]</click> and use them!\n
+discord:
+  reward:
+    claim: \nYou just claimed your rewards!\n・Tag {tag}\n・Wumpus plushie\n
+daily:
+  claimed: Congratulations, you just claimed your Daily!
+gift:
+  claimed: You just claimed your gift!
+parrainage:
+  reward:
+    success: '&aReward obtained: <white>{reward}</white>'

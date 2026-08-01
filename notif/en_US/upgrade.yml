@@ -1,0 +1,6 @@
+badge:
+  upgrade: 'Your badge has been changed: {previousglyph} ➔ {nextglyph}\n<click:run_command:''/badge''><glyph:left_click> Click here to see [<color:#ffc933>your badges</color>]</click>\n'
+spawners:
+  upgrade_success: 'You upgraded <white>{type}</white> to level <white>{level}</white>'
+upgradeisland:
+  upgrade_success: "You just upgraded: <white>{name} (Lvl.{current} -> Lvl.{next})</white>"

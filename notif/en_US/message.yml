@@ -1,0 +1,813 @@
+bienvenue:
+  newplayer: '
+
+    ꗉ <b><color:#00c1b7>Welcome</color> </b><white>! Here are our tips</white> <color:#00c1b7>to get started</color>:
+
+    ꖰ <white>- Progress through the tutorial.</white>
+
+    ꖰ <white>- Access the tutorial challenges by <click:run_command:''/challenge''><white>[</white><color:#ffc933>clicking here</color>]</click>
+
+    ꖰ <white>- Discover the server info by</white> <click:open_url:''https://www.magicalsky.fr/wiki''><white>[<color:#ffc933>clicking here</color>]</click></white>
+
+    ꖰ <white>- Join <click:run_command:''/discord''><white>[</white><color:#ffc933>our discord</color>]</click> so you don''t miss anything!</white>
+
+    '
+boss:
+  position: '<color:#ffc933>#{position}</color>: <color:#ffc933>{player}</color> having dealt {damage} damage'
+bossbar:
+  showboss: '<dark_gray>[<gold>✔<dark_gray>] Boss: {bossname} - Current health: {health} / {maxhealth}'
+boutique:
+  already_has_pass: <yellow>You already have the Christmas pass
+  bought_archmage_pack: <green>You bought the Archmage Rank Pack and the Christmas pass
+  bought_pass_keys_pack: <green>You bought the Pass and Keys Pack
+  bought_sorcerer_keys_pack: <green>You bought the Sorcerer and Keys Pack
+  give_credits: <green>You gave <white>{amount}</white> to <white>{player}</white>!
+  lose_credits: You lost <white>{amount}</white> SkyGem!
+  pass_bought: <green>You bought the Christmas pass
+  set_credits: You set <white>{amount}</white> for <white>{target}</white>
+  take_credits: You removed <white>{amount}</white> from {player}
+calendar:
+  already_available: <yellow>You can already claim this gift
+  already_claimed: <yellow>The gift has already been claimed!
+  bonus_already_claimed: <yellow>The bonus gift has already been claimed!
+  bonus_claimed: <green>You claimed the bonus gift
+  cadeaubonus:
+    already: <dark_gray>[<red>✖<dark_gray>] You already have a bonus gift
+  cannot_unlock: <red>The gift can't be unlocked because the day hasn't arrived yet or you haven't interacted with the number in the world
+  daily_claimed: <green>You claimed the gift for day <white>{day}</white>. Come back tomorrow on the right number to get a new reward!
+  day:
+    claimed: <dark_gray>[<red>✖<dark_gray>] The gift for day {day} has already been claimed
+    notclaim: <dark_gray>[<red>✖<dark_gray>] The gift for day {day} wasn't claimed in time. You can get it by using a Gift Unlocker
+    notunlock: <dark_gray>[<red>✖<dark_gray>] Day {day} hasn't passed yet
+    unlock: <dark_gray>[<gold>✔<dark_gray>] Day {day} has been unlocked
+    unlocked: <dark_gray>[<red>✖<dark_gray>] Day {day} is already unlocked
+  degriseur:
+    unlock: <dark_gray>[<gold>✔<dark_gray>] Day {day} has been unlocked
+    use: <dark_gray>[<gold>✔<dark_gray>] Day {day} has been unlocked for {playername}
+  not_enough_space: <red>You don't have enough space in your inventory to receive the reward
+  sober_fail: <red>The unlock failed, your item wasn't consumed
+challenge:
+  completed: <sound:achievement.complete><glyph:gift_tchat> <color:#40ff70>You just completed the challenge:</color> <color:#ffc933>{challenge}</color>
+chat:
+  île:
+    console: <white>%bskyblock_island_name%</white> <green>{playername}</green><gray> »</gray><white> {message}</white>
+    message: <gray>[</gray><white>%bskyblock_rank%</white><gray>]</gray> <gold>{playername}</gold><gray> »</gray><white> {message}</white>
+  global:
+    console: <gold>{playername}</gold><gray> »</gray><white> {message}</white>
+    message: '<click:run_command:''/badge {playername}''><hover:show_text:"<white><glyph:left_click>・<gold>Open {playername}''s badge menu!<newline>%badge_prefix%">%badge_badge%</hover></click> <click:run_command:''/boutique''><hover:show_text:''<white><glyph:left_click>・<gold>Open the shop!''><white>%profil_prefix%</hover></click> <click:suggest_command:''/msg {playername} ''><hover:show_text:"<gold><bold>Island:</gold> <newline><gold> - Name: <white>%bskyblock_island_name%<newline><gold> - Level: <white>%upgradeisland_islandlevel%<newline>%profil_prefix% <color:%profil_color%><bold>{playername}</bold><reset>:<newline><gold> - Money: <white>%vault_eco_balance% <glyph:mcoin><newline>%tags_description%<newline><glyph:left_click>・<gray>Chat with {playername}"><color:%profil_color%>{playername}</color></hover></click><gray> »</gray><white> {message}</white>'
+  mp:
+    receive: <sound:BLOCK_NOTE_BLOCK_IRON_XYLOPHONE[volume=1.0,pitch=1.0,source=PLAYER]> <color:#308fcf> From <bold>{playername}</bold> </color><gray>»</gray> <white>{message}</white>
+    send: <sound:BLOCK_NOTE_BLOCK_IRON_XYLOPHONE[volume=1.0,pitch=1.0,source=PLAYER]> <color:#308fcf> To <bold>{playername}</bold> </color><gray>»</gray> <white>{message}</white>
+classe:
+  none: <glyph:cross_tchat> \n<color:#ff383b>You don't have an active class</color>\n<click:run_command:'/classe'><glyph:left_click> Click here to choose [<color:#ffc933>a class</color>]</click>\n
+  skill:
+    gourmand: You don't have the Gourmet skill
+    gourmand_level: You don't have the right level of the Gourmet skill
+command:
+  help_line: <gold>{usage} <yellow>{params}</yellow> <dark_gray>| <gray>{desc}</gray>
+  help_title: <gold>Help for the command /<yellow>{command}</yellow>
+discord:
+  link: \n<click:open_url:'https://discord.gg/wntmDV6UV7'><glyph:left_click> Click here to access our [<color:#ffc933>discord server</color>]</click>\n
+emoji:
+  click_to_copy: '<click:copy_to_clipboard:{text}><gray>Click here to copy: <green>Copy</green></click>'
+event:
+  queue_list: <color:#ffc933>{events}</color>
+fishing:
+  new_fish_caught: 'Congratulations, you just caught something new: <color:#ffc933>{fish}</color>\n<click:run_command:''/fishdex''><glyph:left_click> Click here to see the entry in [<color:#ffc933>your fishdex</color>]</click>'
+fly:
+  added_time: <green>You added <white>{time}</white> seconds of fly!
+hdv:
+  message: '{text}'
+information:
+  msg: <white>{msg}</white>
+jobs:
+  archimage: <click:run_command:'/boutique'>You can get <color:#ffc933>1 more</color> by getting the <glyph:archimage> rank in [<color:#ffc933>the shop</color>]</click>\n
+  level_up: \n<glyph:up_tchat> You just reached level <white>{level}</white> in your job <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Click here to claim [<color:#ffc933>your reward</color>]</click>\n
+  staff:
+    lookup:
+      1: "{player}'s jobs"
+      2: 'Job: {job}, Level: {level}, xp: {xp}, status: {status}'
+mythicspawner:
+  broadcast: <color:#ffc933>{msgSpawn}</color>
+noel:
+  already_given_candy: <yellow>You already gave <white>{max}</white> candy canes
+  candy_deposited: <green>You deposited <white>{amount}</white> candy canes
+  tier_rewards_received: <green>You received the rewards for tier <white>{tier}</white>!
+parrainage:
+  inspect:
+    completed:
+      objective: <color:#40ff70>✓ {objectif}</color>
+      title: <color:#40ff70>Completed sponsorships ({count})</color>
+    header: '<color:#ffc933>Inspection: {playername}</color>'
+    objectives:
+      done: <color:#40ff70>✓ All objectives are completed</color>
+      header: <bold><color:#ffc933>Objectives in progress</color></bold>
+      progress: '<gray>- {objectif}: {progress}</gray>'
+    referrals:
+      empty: <color:#40ff70>No objectives in progress</color>
+      header: <color:#ffc933>Referrals</color>
+      objective: <gray>- </gray><color:#ffc933>{objectif}</color> <gray>({progress})</gray>
+      player: <color:#ffc933>▶ </color><white>{player}</white>
+    rewards:
+      objective: <white>- </white><color:#ffc933>{objectif}</color>
+      title: <color:#40ff70>{count} reward(s) available</color>
+    sponsor:
+      false: <color:#ff383b>No sponsor</color>
+      true: '<color:#40ff70> Sponsor: {parrainname}</color>'
+  main:
+    claim_all: <click:run_command:'/parrainage reward'><hover:show_text:"<color:#ffc933>Claim all rewards</color>">[<color:#ffc933>Claim all</color>]</hover></click>
+    completed:
+      objective: '{objectif}'
+      title: Completed sponsorships ({count})
+    objectives:
+      header: <color:#ffc933>Objectives in progress</color>
+      progress: '<white>- {objectif}: {progress}</white>'
+    referrals:
+      header: <color:#ffc933>Referrals</color>
+      objective: <white>-</white> <color:#ffc933>{objectif}</color> ({progress})
+      player: <color:#ffc933>▶</color> <white>{player}</white>
+    rewards:
+      objective: <white>-</white> <color:#ffc933>{objectif}</color>
+      title: <color:#40ff70>{count} reward(s) available</color>
+    sponsor: '<white>Your sponsor: {parrainname}</white>'
+plugin:
+  version: '<dark_gray>[<gold>{plugin}</gold><dark_gray>] <yellow>Plugin version: <gold>{version}</gold>'
+pub:
+  message: '{message}'
+  separator: <dark_gray><strikethrough>------------------------------
+  title: <color:#ffc933>Ad from {player}:</color>
+reload:
+  success: <dark_gray>[<color:#ff9f0f>Reload</color>] Configuration files have been reloaded
+sentinelle:
+  ban:
+    ip_ban:
+      by: '•  By: {staff}'
+      reason: '•  Reason: {reason}'
+      title: "{player}'s IP has been banned"
+    never_played: The player {player} has never played on the server.
+    player_ban:
+      by: '•  By: {staff}'
+      reason: '•  Reason: {reason}'
+      title: '{player} has been banned'
+    reason_required: A reason is required.
+    temp_ban:
+      by: '<white>•  By: </white><gold>{staff}</gold>'
+      expire: '<white>•  Ban ends: </white><gray>{expire}</gray>'
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>{player}</aqua><white> has been temporarily banned</white>
+    usage: 'Usage: /staff ban  {joueur}  {raison}'
+  banip:
+    never_played: The player {player} has never played on the server.
+    reason_required: A reason is required.
+    usage: 'Usage: /staff banip  {joueur}  {raison}'
+  freeze:
+    cant_move: You are frozen, so you can't move
+    message:
+      by: '•  By: {staff}'
+      player: '{player} has been frozen'
+      reason: '•  Reason: {reason}'
+    not_connected: The specified player is not connected.
+    player_freeze:
+      reason: '•  Reason: {reason}'
+      title: You have been frozen
+    reason_required: A reason is required.
+    unfrozen: The player {player} has been unfrozen by {staff}
+    usage: 'Usage: /staff freeze  {joueur}  {raison}'
+  history:
+    never_played: The player has never played on the server
+    usage: 'Usage: /staff history  {joueur} [sanction]'
+  kick:
+    not_connected: The specified player is not connected.
+    reason_required: A reason is required.
+    staff_kick:
+      by: '•  By: {staff}'
+      reason: '•  Reason: {reason}'
+      title: '{player} has been kicked'
+  lookup:
+    never_played: The player {player} has never played on the server.
+    usage: 'Usage: /staff lookup  {joueur}'
+  mute:
+    not_connected: The specified player is not connected.
+    player_mute:
+      reason: '•  Reason: {reason}'
+      title: You have been muted
+    reason_required: A reason is required.
+    staff_mute:
+      by: '•  By: {staff}'
+      reason: '•  Reason: {reason}'
+      title: '{player} has been muted'
+    temp_mute:
+      expire: '<white>•  You will be unmuted on: </white><gray>{expire}</gray>'
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      staff:
+        by: '<white>•  By: </white><gold>{staff}</gold>'
+        expire: '<white>•  Mute ends: </white><gray>{expire}</gray>'
+        reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+        title: <aqua>{player}</aqua><white> has been temporarily muted</white>
+      title: <aqua>You</aqua><white> have been temporarily muted</white>
+    usage: 'Usage: /staff mute  {joueur}  {raison}'
+  noclip:
+    enter: You are now in no clip mode
+    exit: You left noclip mode
+    must_be_player: You must be a player to use this command
+    visible_warning: Warning, you are still visible in the TAB list (/staff v)
+  report:
+    header: '----------------------------------------------------'
+    message1: Shadow {id} detected an issue. Open a ticket on the Discord server
+    message2: And show this message in the ticket
+    staff_message: '[Shadow {id}] {text}'
+  sanction:
+    never_played: The player {player} has never played on the server.
+    reason_required: A reason is required.
+  spawn:
+    cannot_teleport_admin: You cannot teleport an administrator to spawn.
+    not_connected: The specified player is not connected.
+    player_required: '{joueur} is required'
+    teleported: The player {player} has been teleported to spawn.
+  staff:
+    hidden: You no longer see Staff messages
+    visible: You now see Staff messages
+  staff_chat:
+    message: '{message}'
+  stats:
+    integer: A number is required
+    noarg: An argument is required
+    notfound: This stat doesn't exist
+  tempban:
+    invalid_duration: 'Invalid duration ({duration}), valid formats: s=second, m=minute, h=hour, d=day, w=week'
+    never_played: The player {player} has never played on the server.
+    reason_required: A reason is required.
+    usage: 'Usage: /staff tempban  {joueur} {durée}  {raison}'
+  tempmute:
+    invalid_duration: 'Invalid duration ({duration}), valid formats: s=second, m=minute, h=hour, d=day, w=week'
+    not_connected: The specified player is not connected.
+    reason_required: A reason is required.
+    usage: 'Usage: /staff tempmute  {joueur} {durée}  {raison}'
+  title:
+    cannot_send_admin: You cannot send a title to an administrator.
+    custom_format: 'Expected format: /staff title  {joueur} custom [titre} [sous-titre]'
+    not_connected: The specified player is not connected.
+    sent: Title sent to {player} ({type})
+    usage: 'Usage: /staff title  {joueur} <type|custom> [titre] [sous-titre]'
+  tp:
+    cannot_teleport_admin: You cannot teleport an administrator.
+    not_connected: The specified player is not connected.
+    player_required: '{joueur} is required'
+    teleported_to: You have been teleported to {player}
+  tp_here:
+    cannot_teleport_admin: You cannot teleport an administrator.
+    not_connected: The specified player is not connected.
+    player_required: '{joueur} is required'
+    teleported_to_you: The player {player} has been teleported to you
+    you_teleported_to: You have been teleported to {player}
+  unban:
+    ip_unban:
+      by: '<white>•  By: </white><gold>{staff}</gold>'
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>{player}''s IP</aqua><white> has been unbanned</white>
+    never_played: The player has never played on the server
+    not_banned: The specified player is not banned.
+    player_unban:
+      by: '<white>•  By: </white><gold>{staff}</gold>'
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>{player}</aqua><white> has been unbanned</white>
+    reason_required: A reason is required.
+    usage: 'Usage: /staff unban  {joueur}  {raison}'
+  unbanip:
+    never_played: The player has never played on the server
+    not_banned: The specified player's IP is not banned.
+    reason_required: A reason is required.
+    usage: 'Usage: /staff unbanip  {joueur}  {raison}'
+  unmute:
+    never_played: The player has never played on the server
+    not_muted: The specified player is not muted.
+    player_unmute:
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>You</aqua><white> have been unmuted</white>
+    reason_required: A reason is required.
+    staff_unmute:
+      by: '<white>•  By: </white><gold>{staff}</gold>'
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>{player}</aqua><white> has been unmuted</white>
+    usage: 'Usage: /staff unmute  {joueur}  {raison}'
+  vanish:
+    now_invisible: You are now invisible
+    now_visible: You are now visible
+  warn:
+    player_warn:
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>You</aqua><white> have been warned</white>
+    staff_warn:
+      by: '<white>•  By: </white><gold>{staff}</gold>'
+      reason: '<white>•  Reason: </white><gold>{reason}</gold>'
+      title: <aqua>{player}</aqua><white> has been warned</white>
+tag:
+  tag_added: \n<glyph:gift_tchat> The tag {tag} <white>has been added to your profile.</white>\n<click:run_command:'/tag'><glyph:left_click> <white>Click here to open your [</white><color:#ffc933>tag inventory</color><white>]</white></click>
+warp:
+  created: The warp named <white>{warp}</white> has been created
+tutoriel:
+  add_sort:
+    astuce:
+      1: HOW TO CONFIGURE
+    message: ꗎ
+    objectif:
+      1: Add spell X to your wand
+  ahdeposit:
+    astuce:
+      1: '<color:#ffc933>Sell in the auction house:'
+      2: /ah sell
+      3: <color:#ffc933>More information:</color> <color:white>/wiki ah
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Chasséros is... motivated, let's say. Fighting\nꖰ in dungeons and elsewhere can give resources\nꖰ unsellable at the adminshop. List them\nꖰ in <color:#ffc933>the auction house</color>!\n\n"
+    objectif:
+      1: List an item in
+      2: <color:#ffc933>the auction house</color> <color:white>(/ah)
+  bestiaireunlock:
+    astuce:
+      1: '<color:#ffc933>Open the bestiary: </color><color:white>/bestiaire'
+      2: '<color:#ffc933>More info: </color><color:white>/wiki bestiaire'
+    message: "\nꗊ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Yes, you're finally ready to come wreak havoc\nꖰ with me! <color:#ffc933>Complete your bestiary</color> by killing\nꖰ every animal that exists in this dimension!\n\n"
+    objectif:
+      1: Kill the 16 different animals
+      2: <color:#ffc933>of the hunting ground </color><color:white>(%tutoriel_shadow%/16)
+  challenge_1:
+    astuce:
+      1: '<color:#ffc933>See the challenges </color><color:white>: /challenge'
+      2: '<color:#ffc933>More information </color><color:white>: /wiki challenge'
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ The challenges you''ve completed help you progress
+
+      ꖰ in <color:#ffc933>the tutorial challenge</color>. It''s very useful because
+
+      ꖰ it will give you useful rewards, such
+
+      ꖰ as <color:#ffc933>new magic tools</color>!
+
+
+      '
+    objectif:
+      1: Complete step 1 of the <color:white>tutorial challenge
+  challenge_2:
+    astuce:
+      1: '<color:#ffc933>See the challenges </color><color:white>: /challenge'
+      2: '<color:#ffc933>More information </color><color:white>: /wiki challenge'
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ We''re going to leave the island and discover the incredible
+
+      ꖰ <color:#ffc933>dimensions</color>! For that we''ll need items
+
+      ꖰ that you can get by completing
+
+      ꖰ <color:#ffc933>tutorial challenge 2</color>.
+
+
+      '
+    objectif:
+      1: Complete step 1 of the <color:white>tutorial challenge
+  challengepierre:
+    astuce:
+      1: <color:#ffc933>/wiki collection
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ You completed a challenge! Do <color:#ffc933>/challenge</color>
+
+      ꖰ to see them all. <color:#ffc933>Collection challenges</color>
+
+      ꖰ give useful rewards to help you progress.
+
+      ꖰ Complete one!
+
+
+      '
+    objectif:
+      1: Complete the challenge
+      2: <color:white>Merchant Miner 1
+  chapanda:
+    astuce:
+      1: '<color:#ffc933>See how to create it: </color><color:white>/crafts'
+      2: '<color:#ffc933>More information: </color><color:white>/wiki stuff'
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ That's not the only useful thing in combat that\nꖰ you can find in the dimension. You can\nꖰ also create <color:#ffc933>very powerful equipment</color>\nꖰ thanks to resources from monsters. Try it!\n\n"
+    objectif:
+      1: Create 1 Chapanda
+  chene:
+    astuce:
+      1: <color:#ffc933>Info about woodcutting:</color>
+      2: /wiki bucheron
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ You learn fast! Let''s start by discovering
+
+      ꖰ <color:#ffc933>the axe</color>. Try it on a tree and <color:#ffc933>break</color>
+
+      ꖰ <color:#ffc933>the leaves with it</color>, this will give you <color:#ffc933>insects</color>
+
+      ꖰ thanks to the unlocked skill!
+
+
+      '
+    objectif:
+      1: Break 8 oak logs <color:white>(%tutoriel_OAK_LOG_value%/%tutoriel_OAK_LOG_max%)
+      2: <color:#ffc933>and 4 oak leaves</color> <color:white>(%tutoriel_OAK_LEAVES_value%/%tutoriel_OAK_LEAVES_max%)
+  choose_jobs:
+    astuce:
+      1: <color:#ffc933>/wiki metier
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ We''re now going to upgrade your island.
+
+      ꖰ For that we need <color:#ffc933>MCoins</color>, our
+
+      ꖰ local currency. <color:#ffc933>Choose a job</color> and sell
+
+      ꖰ items <color:#ffc933>at the adminshop</color> to get some.
+
+
+      '
+    objectif:
+      1: Choose a job <color:white>(/jobs)
+  cinema:
+    astuce:
+      1: <color:#ffc933>You can find tutorials to
+      2: <color:#ffc933>create a generator online.
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ Your generator is fine but it won''t be enough
+
+      ꖰ to grow your island. Create a
+
+      ꖰ <color:#ffc933>more efficient generator</color> and use it to
+
+      ꖰ mine more blocks!
+
+
+      '
+    objectif:
+      1: Break 50 stone blocks <color:white>(%tutoriel_COBBLESTONE_value%/%tutoriel_COBBLESTONE_max%)
+  claim_axe_pickaxe:
+    astuce:
+      1: <color:#ffc933>/wiki outil
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ On your island there is <color:#ffc933>a magic axe and pickaxe</color>
+
+      ꖰ that will help you. Get them! And if friends
+
+      ꖰ are waiting for you, now''s the time to accept their
+
+      ꖰ invitation by doing <color:#ffc933>/is invite</color>.
+
+
+      '
+    objectif:
+      1: 'Get the magic axe and pickaxe  '
+  classe5:
+    astuce:
+      1: <color:#ffc933>/wiki classe
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ The area we're in is only a small part\nꖰ of the dimension. Move up to the next step\nꖰ by reaching <color:#ffc933>class level 5</color><color:white>!</color>\n\n"
+    objectif:
+      1: Reach level
+      2: <color:#ffc933>class 5
+  compost:
+    astuce:
+      1: <color:#ffc933>/wiki mbcompost
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Fighting here gives access to resources\nꖰ with exceptional uses, such as\nꖰ <color:#ffc933>upgrading your multiblocks</color>. Fight monsters\nꖰ to get what you need to <color:#ffc933>upgrade your compost</color>. \n\n"
+    objectif:
+      1: <color:#ffc933>Upgrade 1 compost
+      2: <color:#ffc933>multiblock on your island
+  compostcreate:
+    astuce:
+      1: <color:#ffc933>You got what you need to complete the multiblock
+      2: <color:#ffc933>by completing</color><color:white> tutorial challenge 1
+    message: '
+
+      ꗍ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ Bzzt, I''m Mecanicus and here''s my teaching.
+
+      ꖰ Create <color:#ffc933>a compost multiblock core</color> in
+
+      ꖰ the workbench and <color:#ffc933>complete the compost</color> I left
+
+      ꖰ on your island to prove your worth to me.
+
+
+      '
+    objectif:
+      1: Create a compost multiblock <color:white>(/multiblocks)
+  consumeregen:
+    astuce:
+      1: <color:#ffc933>The dish is created in a workbench multiblock
+      2: '<color:#ffc933>More info: </color><color:white>/information cuisine'
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ These vanillas will help us <color:#ffc933>make sorbets</color>.\nꖰ Refreshing, and on top of that they give you back\nꖰ <color:#ffc933>health points when you eat them</color>!\n\n"
+    objectif:
+      1: <color:#ffc933>Consume 4 vanilla
+      2: <color:#ffc933>milkshakes </color><color:white>(%tutoriel_shadow%/4)
+  cookingbreak:
+    astuce:
+      1: <color:#ffc933>Vanilla is found in the
+      2: <color:#ffc933>jungle dimension
+      3: '<color:#ffc933>More info: </color><color:white>/information cuisine'
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ It's time to explore! These lands\nꖰ are full of <color:#ffc933>useful ingredients</color>. Use <color:#ffc933>the shears</color>\nꖰ obtained in the tutorial challenge\nꖰ to gather them!\n\n"
+    objectif:
+      1: Gather 16 vanillas </color><color:white>(%tutoriel_shadow%/16)
+  createisland:
+    astuce:
+      1: '<color:#ffc933>Island reset</color> <color:white>: /is reset</color>'
+      2: '<color:#ffc933>See the islands</color> <color:white>: /warp is</color>'
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ In our world, owning property is free.\nꖰ Everyone can have <color:#ffc933>an island</color> from the start!\nꖰ <click:run_command:'/warp is'><color:#ffc933>[Click here]</color></click> to be teleported to the <color:#ffc933>islands warp</color>\nꖰ to see them and choose one.\n\n"
+    objectif:
+      1: Create an island <color:white>(/is)</color>
+  daily:
+    astuce:
+      1: '<color:#ffc933>Open the reward</color><color:white>: /daily'
+      2: '<color:#ffc933>More info </color><color:white>: /information daily'
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Great, you got the challenge rewards!\nꖰ Want more? You can do <color:#ffc933>/daily</color>\nꖰ <color:#ffc933>every day</color> to get rewards!\n\n"
+    objectif:
+      1: Open a daily reward
+  discovery_skip:
+    astuce:
+      1: '<color:#ffc933>Other tutorial command: </color>'
+      2: <color:white>/tuto help</color>
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Welcome! I'll help you discover our world.\nꖰ <color:#ffc933>Complete the objectives</color> on the right of your screen to\nꖰ progress. And if an objective doesn't seem useful to you\nꖰ do <color:#ffc933>/tutoriel skip</color> to move on. Try it!\n\n"
+    objectif:
+      1: Use the command <color:white>/tuto skip</color>
+  dungeoneasy:
+    astuce:
+      1: <color:#ffc933>/wiki dj
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Now that you're level 5 you'll be able to\nꖰ face <color:#ffc933>this dimension's dungeon</color>.\nꖰ Cross the portal <color:#ffc933>on the island at the very south</color>\nꖰ of the dimension or do <color:#ffc933>/donjon</color>.\n\n"
+    objectif:
+      1: <color:#ffc933>Finish the jungle
+      2: <color:#ffc933>dungeon - easy </color><color:white>(/donjon)
+  equip_tunic_noob:
+    astuce:
+      1: <color:#ffc933>You can get the beginner tunic
+      2: <color:#ffc933>by completing</color><color:white> tutorial challenge 3
+    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ You now know your first enemies.\nꖰ But others, more powerful, await you!\nꖰ <color:#ffc933>Equip a beginner tunic</color> to\nꖰ be sufficiently protected.\n\n"
+    objectif:
+      1: Equip a beginner tunic
+  error:
+    no_active_step: You already finished the tutorial!
+  finish:
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color> </b>\nꖰ Well, what a journey. You've become \nꖰ knowledgeable enough to manage on your own.\nꖰ I hope you've learned a lot. \n\n \nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ If you're afraid of getting bored without my great tutorial\nꖰ you can do the command <color:#ffc933>/wiki objectif</color>.\nꖰ I wrote a guide with many objectives\nꖰ to accomplish! Enjoy this adventure. \n\n"
+    objectif:
+      1: End
+  finish_dungeon:
+    astuce:
+      1: <color:#ffc933>/wiki donjon
+    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ You seem to have potential. You're ready for\nꖰ a new challenge. Cross <color:#ffc933>the portal in</color>\nꖰ <color:#ffc933>the hunting ground cave</color> or use\nꖰ the command <color:#ffc933>/donjon</color>. \n\n"
+    objectif:
+      1: Finish the
+      2: <color:#ffc933>apprentice hunter dungeon
+  fishing:
+    astuce:
+      1: <color:#ffc933>/wiki peche
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ There's a big lake here. Right-click on\nꖰ <color:#ffc933>the magic fishing rod</color> in your inventory\nꖰ and <color:#ffc933>put insects in it</color>. You'll then be able to\nꖰ fish <color:#ffc933>special fish</color>!\n\n"
+    objectif:
+      1: Catch 8
+      2: <color:#ffc933>magic fish </color><color:white>(%tutoriel_shadow%/8)
+  islandlevel2:
+    astuce:
+      1: '<color:#ffc933>Deposit the block: <color:white>/is offrande'
+      2: '<color:#ffc933>See how to create the block: </color><color:white>/crafts'
+      3: '<color:#ffc933>More information: </color><color:white>/wiki offrande'
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ To upgrade your island, it needs to be at the right
+
+      ꖰ level. We''re going to give a <color:#ffc933>plant level block</color>
+
+      ꖰ to gain experience and bring
+
+      ꖰ your island <color:#ffc933>to level 2</color>!
+
+
+      '
+    objectif:
+      1: Be on a level 2 island
+  islandupgradecobblegen:
+    astuce:
+      1: <color:#ffc933>/wiki isupgrade
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ Perfect, start by putting 15725 Mcoins in
+
+      ꖰ <color:#ffc933>the island bank</color>. Then do <color:#ffc933>/is upgrade</color> to
+
+      ꖰ open the upgrade menu and upgrade
+
+      ꖰ <color:#ffc933>your ore generation</color>.
+
+
+      '
+    objectif:
+      1: <color:#ffc933>Upgrade your island's ore generation
+      2: <color:#ffc933>to level 2</color><color:white> (/is upgrade)
+  ismenu:
+    astuce:
+      1: <color:#ffc933>/wiki ile
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ Congratulations, you have a great island!
+
+      ꖰ Discover its features by doing <color:#ffc933>/ismenu</color>.
+
+      ꖰ You can also go back to the spawn point
+
+      ꖰ with the command <color:#ffc933>/spawn</color>.
+
+
+      '
+    objectif:
+      1: Open the island menu <color:white>(/ismenu)</color>
+  jungleportail:
+    astuce:
+      1: '<color:#ffc933>See how to build it:'
+      2: /multiblocks
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ I think we're going on an adventure again!\nꖰ But for that we need <color:#ffc933>a new portal</color>.\nꖰ <color:#ffc933>Step 4 of the tutorial challenge</color> can give you\nꖰ the necessary elements.\n\n"
+    objectif:
+      1: <color:#ffc933>Create a jungle portal
+      2: <color:#ffc933>multiblock on your island
+  mailbox:
+    astuce:
+      1: '<color:#ffc933>Recipes in the multiblock</color>:'
+      2: /crafts
+      3: '<color:#ffc933>Info about the workbench multiblock</color>:'
+      4: <color:#ffc933>/wiki mbetabli
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>\nꖰ We can now try to create a <color:#ffc933>mailbox</color>.\nꖰ You can see how to create them\nꖰ in <color:#ffc933>the recipe book in the multiblock</color>.\n\n"
+    objectif:
+      1: 'Create 1 mailbox '
+  mailboxopen:
+    astuce:
+      1: <color:#ffc933>/wiki boitelettre
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ <color:#ffc933>Click</color> on your mailbox to open it,
+
+      ꖰ there will regularly be rewards in it! You can
+
+      ꖰ also do the command <color:#ffc933>/mail</color> if you have
+
+      ꖰ the enchanter rank.
+
+
+      '
+    objectif:
+      1: Open your mailbox
+  mobkill:
+    astuce:
+      1: <color:#ffc933>/wiki element
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ This wand has high stats\nꖰ <color:#ffc933>in water element</color>. This means it will deal\nꖰ <color:#ffc933>more damage to monsters of this element</color>.\nꖰ Try killing some tree frogs with it!\n\n"
+    objectif:
+      1: Kill 16 green tree frogs </color><color:white>(%tutoriel_shadow%/16)
+  orangeblock:
+    astuce:
+      1: '<color:#ffc933>See how to create the block: </color><color:white>/crafts'
+      2: '<color:#ffc933>More information: </color><color:white>/wiki islevel'
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Before making a new visit we need to\nꖰ <color:#ffc933>upgrade the level block</color> that you gave.\nꖰ Deposit an <color:#ffc933>incomplete orange level block</color>\nꖰ as an offering to see the result!\n\n"
+    objectif:
+      1: <color:#ffc933>Deposit 1 incomplete orange
+      2: <color:#ffc933>level block on the island </color><color:white>(/is offrande)
+  portailcreate:
+    astuce:
+      1: <color:#ffc933>You got what you need to complete the multiblock
+      2: <color:#ffc933>by completing</color><color:white> tutorial challenge 2
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Great, as a reward for this challenge you got\nꖰ <color:#ffc933>a great sword</color> and what you need to create <color:#ffc933>a multiblock</color>\nꖰ <color:#ffc933>portal</color>. Create it and let's discover this new world!\n\n"
+    objectif:
+      1: Have a hunting ground
+      2: <color:#ffc933>portal multiblock on the island </color><color:white>(/multiblocks)</color>
+  reset: "{name}'s tutorial progress has been reset"
+  shopcreate:
+    astuce:
+      1: <color:#ffc933>/wiki shopjoueur
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Now we're going to fill this warp with <color:#ffc933>player</color>\nꖰ <color:#ffc933>shops</color>! Place a sign on\nꖰ a chest and follow the instructions.\n\n"
+    objectif:
+      1: Create a player shop
+      2: <color:#ffc933>on your island
+  spawnercreate:
+    astuce:
+      1: <color:#ffc933>/wiki spawner
+    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Good, excellent! <color:#ffc933>Dungeon chests</color>\nꖰ will give you what you need to <color:#ffc933>create spawners</color>.\nꖰ I'll give you some useful items,\nꖰ create one and MASSACRE THE MONSTERS.\n\n"
+    objectif:
+      1: Create 1 spawner
+  terrainchasse:
+    astuce:
+      1: '<color:#ffc933>See the challenges: </color><color:white>/challenge'
+      2: '<color:#ffc933>More information: </color><color:white>/wiki challenge'
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ We''re going to leave the island and discover the incredible
+
+      ꖰ <color:#ffc933>dimensions</color>! For that we''ll need items
+
+      ꖰ that you can get by completing <color:#ffc933>tutorial</color>
+
+      ꖰ <color:#ffc933>challenge 2</color>. Finish it!
+
+
+      '
+    objectif:
+      1: Complete tutorial challenge 2
+  tinker:
+    astuce:
+      1: '<color:#ffc933>See how multiblocks are created: </color><color:white>/multiblocks'
+      2: '<color:#ffc933>More information: </color><color:white>/wiki etabli'
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>\nꖰ We now need <color:#ffc933>a machine</color> to create\nꖰ special items: a <color:#ffc933>workbench multiblock</color>. Do\nꖰ <color:#ffc933>/multiblocks</color> to see how to create it!\n\n"
+    objectif:
+      1: Build a workbench multiblock on your island
+  unlock_skill:
+    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ Good. Upgrade your gear and your sword\nꖰ by unlocking <color:#ffc933>your first skills</color>\nꖰ with the command <color:#ffc933>/classe</color>. You need\nꖰ MORE POWER.\n\n"
+    objectif:
+      1: Unlock skills x (/classe)
+  unlock_skill_axe_pickaxe:
+    astuce:
+      1: <color:#ffc933>/wiki competence
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ Looks like you''ve caught the Gods'' interest! Each
+
+      ꖰ will explain things about their specialty
+
+      ꖰ during the tutorial. Now do <color:#ffc933>/jobs</color>
+
+      ꖰ to unlock skills.
+
+
+      '
+    objectif:
+      1: <color:#ffc933>Unlock a skill for your pickaxe</color>
+      2: <color:#ffc933>and for your magic axe</color> (/jobs)
+  upgradestuff:
+    astuce:
+      1: '<color:#ffc933>See how to build it:'
+      2: /multiblocks
+      3: '<color:#ffc933>More information:'
+      4: /wiki mbameliorateur
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ You've become very strong. However constantly\nꖰ creating new equipment\nꖰ is expensive. Create <color:#ffc933>an upgrade</color>\nꖰ <color:#ffc933>multiblock</color> and upgrade your equipment!\n\n"
+    objectif:
+      1: Upgrade 1 piece of equipment
+      2: <color:#ffc933>in the upgrader
+  warpcreate:
+    astuce:
+      1: '<color:#ffc933>Create a warp: </color><color:white>/is setwarp nom'
+      2: '<color:#ffc933>More information: </color><color:white>/wiki iswarp'
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ The auction house is useful for selling\nꖰ rare items but not for selling\nꖰ in large quantities. We'll fix that\nꖰ by creating <color:#ffc933>a warp directly on your island</color>!\n\n"
+    objectif:
+      1: Create an island warp
+  warpunlock:
+    astuce:
+      1: <color:#ffc933>/wiki warps
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ While exploring this new world, <color:#ffc933>right-click</color>\nꖰ on the beacons to unlock them. You'll then\nꖰ be able to teleport there with the command <color:#ffc933>/warps</color>.\n\n"
+    objectif:
+      1: Unlock a beacon <color:white>(/warps)
+  water_stick:
+    astuce:
+      1: <color:#ffc933>/wiki magie
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b> \nꖰ There are also <color:#ffc933>weapons and wands</color>\nꖰ <color:#ffc933>magic</color> to attack monsters. I've spotted one\nꖰ <color:#ffc933>near the houses that are</color>\nꖰ <color:#ffc933>on the lake</color>. Go get it!\n\n"
+    objectif:
+      1: Get 1 Water Wand
+  wikimineur:
+    astuce:
+      1: <color:#ffc933>/wiki mineur
+    message: '
+
+      ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutorial</color><color:#ffc933>]</color></b>
+
+      ꖰ Our axe is now nice and sharp,
+
+      ꖰ we can try out <color:#ffc933>your new pickaxe</color>!
+
+      ꖰ Use it to break
+
+      ꖰ <color:#ffc933>some stones</color>.
+
+
+      '
+    objectif:
+      1: Break 16 stone blocks <color:white>(%tutoriel_COBBLESTONE_value%/%tutoriel_COBBLESTONE_max%)</color>

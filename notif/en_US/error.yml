@@ -1,0 +1,367 @@
+profil:
+  loading: "Your profile is loading, try again in a few moments"
+badge:
+  unknown: The badge {badgename} doesn't exist
+bienvenue:
+  emptynewplayer: There are no new players to welcome right now
+biome:
+  cooldown: You can't change biome right now, you can change it on {time}
+  timeout: The biome change took too long and was cancelled
+chat:
+  already_in_chat: You are already in another chat!
+  mp:
+    no_one: No one has talked to you (sad :c)
+classe:
+  change_cooldown_active: You can't change class yet, you'll be able to change class on {date}!
+  item_rarity_required: Your class items must have the rarity {rarity} to unlock this skill
+  rune:
+    classe_level_required: You don't have the required class level to use a level {level} rune)!
+  skill_level_required: You must have at least class level {level} to unlock this skill
+  skill_points_required: You must have invested at least {cost} skill points to unlock this skill
+  skill_prerequisites_required: You must have unlocked the prerequisites of this skill to unlock it!
+  skill_unlocked_required: You must have at least {unlocked} unlocked skills to unlock this skill
+collection:
+  already_exists: The item wasn't added to your collection because a copy is already there
+  cannot_add: The item wasn't added to your collection because it can't be added to a collection
+  load_error: Unable to load your collection profile!
+  owner_forbidden: You can't add this item because it's in {owner}'s collection
+boutique:
+  already_has_sorcerer: You already have the <glyph:sorcier> rank
+  not_enough_credits: \nYou don't have enough <glyph:skygem> <color:#ff383b>to get this item</color>\n<click:open_url:'https://www.magicalsky.fr/boutique'><glyph:left_click> Click here to get some on [<color:#ffc933>our online shop</color>]</click>\n
+multiblock:
+  portal_notfound: You must own a portal multiblock to teleport to the dimension {dim}.\n<click:run_command:'/multiblocks'><glyph:left_click> You can see how to create it by [<color:#ffc933>clicking here</color>]</click>\n
+chunk:
+  error: An error occurred while analyzing the chunks
+  locked: This chunk is currently being analyzed, try again in a moment
+money:
+  pay:
+    self: "You can't send money to yourself"
+    invalid-amount: "The amount you entered is invalid"
+    insufficient-funds: "You don't have enough money. Current balance: <gold>{money}</gold>"
+command:
+  archimage_required: You must have the <glyph:archimage> rank <color:#ff383b>to use this command!</color> <click:run_command:'/boutique'><glyph:left_click> Click here to get it [<color:#ffc933>in the shop</color>]</click>
+  badcommand: 'Incorrect command, the command to use is: {command}'
+  cannot_use: You can't use this command!
+  cooldown: You must wait {time} more before doing this command again
+  error: An error occurred while using the command, please open a ticket
+  player_only: This command is reserved for players
+cooking:
+  not_owner: You are not the owner of this plant, come back when the player is no longer here!
+crate:
+  already:
+    open:
+      other: Someone is already opening this box, come back later or shift-click to skip the animation
+      you: You are already opening a box
+  givecrate:
+    unknown: The crate {crate} doesn't exist
+  keyinvalid: You don't have a {key} to open the box
+  not:
+    found: The crate {crate} wasn't found
+daily:
+  already_claimed: You already claimed your daily gift today, run the /daily command again tomorrow!
+  already_opening: You are already opening your daily!
+dimensionbeacon:
+  portail_dimensionbeacons: 'You must own a Qetzir portal multiblock on your island to teleport to the dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> You can see how to create it by [<color:#ffc933>clicking here</color>]</click>
+
+    '
+  terrainchasse: 'You must own a hunting ground portal multiblock on your island to teleport to the dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> You can see how to create it by [<color:#ffc933>clicking here</color>]</click>
+
+    '
+discord:
+  reward:
+    claimed: You already claimed your rewards!
+  unlinked: Your Discord account is already unlinked
+donjon:
+  admin:
+    not_in_session: \nThe player <white>{player}</white> <color:#ff383b>is not in a session or is not the owner of the dungeon.</color>\n<glyph:left_click>You can see the list of active sessions by <click:run_command:'/donjon admin list'>[clicking here]</click>\n
+  classe_level_required: You must have class level <white>{level}</white> to join this dungeon
+  command_forbidden: You can't use this command in a dungeon
+  cooldown: You must still wait <white>{cooldown}</white> before joining a new dungeon
+  daily_limit_reached: You have reached the daily limit of <white>{current}</white>/<white>{max}</white> dungeons
+  failed: You just failed the dungeon!
+  invite:
+    leave_required: You must leave your dungeon to accept an invitation
+    none: You don't have an active dungeon invitation
+    player_level_insufficient: The invited player doesn't have a sufficient class level to join you in the dungeon
+  max_players: You cannot be more than <white>{max}</white> players in the dungeon
+  no_instance_available: No dungeon instance is currently available to host your group
+  not_in_dungeon: You are not in a dungeon
+  old_portal_forbidden: You can't cross an old portal
+  player_left_cancelled: '{player} just left the dungeon so it has been cancelled'
+  projectile_returned: Your projectile crossed the portal and was returned to you!
+  session:
+    already_exists: You already have a session
+emoji:
+  notfound: The emoji doesn't exist
+enchant:
+  cannot_enchant: You can't enchant this item. You can get enchantments in the tool or class skill tree!
+event:
+  already_in_event: You are already in an event
+  already_in_queue: The event <white>{event}</white> is already waiting for players
+  already_joined: You are already in this event
+  already_spectator: You are already spectating the event <white>{event}</white>
+  already_started: The event <white>{event}</white> has already started
+  command_only_event: You can only use the command <white>/event</white> during the event
+  full: You can't join the event because it is full
+  no_saved_inventory: You don't have a saved inventory to retrieve! (and that's a good thing)
+  none_running: No event is currently in progress
+  not_accepting_players: The event isn't accepting players right now
+  not_enough_players: The event <white>{event}</white> hasn't reached the minimum number of players
+  not_found: The event <white>{event}</white> wasn't found
+  not_started: The event <white>{event}</white> hasn't started
+  player_not_in_event: The player <white>{player}</white> isn't in the event
+  specify_id: You must specify an event
+fishing:
+  only_insects_bait: You can only use insects as bait!
+fly:
+  cannot_in_world: You can't fly in this world
+  disabled: Fly mode is disabled!
+  no_fly: You don't have any fly time left!
+gift:
+  already_claimed: You already claimed your gift, do the command again tomorrow!
+  already_opening: You are already opening it!
+hdv:
+  max_history_reached: \nYou have reached the maximum number of items your history can hold <white>({max})</white>\n<click:run_command:'/ah history'><glyph:left_click> Click here to [<color:#ffc933>retrieve your expired items</color>]</click>\n
+  inventory_full: Your inventory is full
+  item_no_longer_available: The item is no longer available
+  no_price_specified: You didn't specify a sale price
+  not_enough_mcoins: You don't have enough <white><glyph:mcoin></white> to do this
+heal:
+  cooldown: You can't heal yet! The heal cooldown is 5 minutes
+home:
+  max_reached: \nYou have reached the maximum number of homes!\n<click:run_command:'/boutique'><glyph:left_click> You can get more by buying a rank [<color:#ffc933>in the shop</color>]</click>\n
+  already_exists: You already have a home named <white>{home}</white>! Use another name
+  invalid_name: 'Your home name is not valid. Example of a valid name: home1'
+  invalid_world: You can't create a home outside your island's world!
+  not_found: You weren't teleported because you don't have a home named <white>{home}</white>
+  specify_name: You must specify a home name to be teleported
+hopper:
+  chunk_attached_required: The Chunk Hopper must be attached to a chest
+ignore:
+  cannot_ignore_player: You can't ignore this player (nice try!)
+  not_available: <white>{name}</white> isn't available in private messages right now. Open a ticket instead if you have a problem!
+inventory:
+  full: Your inventory is full
+island:
+  recalc:
+    success: The island was successfully recalculated
+  already_have_island: You already have an island!
+  blueprint_invalid: Incorrect usage
+  coop:
+    already_in_team: The player <white>{player}</white> is already in coop with your island
+    cannot_self: You can't put yourself in coop with yourself!
+    cannot_self_uncoop: You can't remove yourself from coop with yourself!
+    max_reached: The island has already reached the maximum number of coop members
+  demote:
+    cannot_demote: The player can no longer be demoted
+    cannot_higher_rank: You can't demote players of a higher rank than yours
+    cannot_self: You can't demote yourself
+  full_cannot_join: The island you want to join has reached the maximum number of players. You can't join it
+  invite:
+    no_invitations: \nYou haven't received an island invitation.\n<click:run_command:'/is invite'><glyph:left_click> To invite a player to your island you can [<color:#ffc933>click here</color>]</click> or use the command <color:#ffc933>/is invite</color>\n
+    already_on_island: This player is already on your island... Do you really want them twice?
+    max_members_reached: You have reached the maximum number of people on your island
+    only_leader: Only the island leader can invite players to their island
+    owner_must_receive_invite: As an owner, you must receive an invitation to join another island
+  level:
+    required: Your island must be <white>at level {level}</white> to do this
+  location:
+    notfound: You are not on your island
+  not_owner: You are not the owner of the island
+  not_your_island: You must belong to this island to do this
+  notfound: You don't have an island
+  notyourisland: You are not a member of the island <white>{islandname}</white>
+  player_not_in_island: The player <white>{player}</white> is not a member of your island
+  promote:
+    above_your_rank: You can't promote a player above your own island rank
+    cannot_promote: The player <white>{player}</white> can't be promoted
+    cannot_self: You can't promote yourself! (No dictatorship here)
+  rank_required: You must have the rank <white>{rank}</white> to use this command
+  reset_kick: You have just been removed from the island because the owner reset it
+  reset_limit_reached: You have reached your reset limit
+  sorcier_required: \nYou must have the <white><glyph:sorcier></white> rank to use this island. \n<click:run_command:'/boutique'><white><glyph:left_click> Click here to access </white>[<color:#ffc933>our shop</color>]</click><white> and get it</white>\n
+  too_many_islands: There are too many islands to create a new one. Contact Lazerstricks by opening a ticket on our discord to fix this situation
+  transfer:
+    cannot_self: You can't transfer the island to yourself, that wouldn't be useful!
+    player_not_in_island: The player <white>{player}</white> is not a member of your island
+  usage_limit_reached: You have reached the maximum number of times you could use this island!
+item:
+  cannot_remove_class_or_job: You can't remove a job or class item this way
+  cuisinier_shears_required: You must use the Cook job's shears to retrieve these ingredients
+  hatnommoitem: You can't wear a Job or Class item as a hat
+  noitem: You don't have any item in your hand
+  nommoitem: You can't send a Job or Class item
+jobs:
+  limit_reached: \nYou have reached the maximum number of jobs you can equip at the same time.\n
+  cooldown_remove: You can't change job yet, you'll be able to change job on {date}!
+  not_found: The job {job} doesn't exist
+  skill_competences_required: You must have at least <white>{nb}</white> unlocked skills to unlock this skill
+  skill_level_required: You must have at least job level <white>{level}</white> to unlock this skill
+  skill_prerequisites: You must first unlock the prerequisites of this skill to get it
+  skill_pts_required: You must have at least <white>{pts}</white> skill points to unlock this skill
+  skill_rarity_required: You must have a tribal item of rarity <white>{rarity}</white> to unlock this skill
+  slot_removed: One of your jobs has been deactivated because your job limit was decreased
+kits:
+  already_claimed: You already claimed this kit! You'll be able to claim it again tomorrow
+  not_found: The kit <white>{kit}</white> doesn't exist
+  once_only: You already claimed this kit and can't claim it again
+leaderboard:
+  not_found: This leaderboard doesn't exist
+mail:
+  norecipient: You didn't specify a recipient
+multiblocks:
+  invalid_center: You can only place a multiblock center block at the location intended for it in the multiblock.\n<click:run_command:'/multiblocks'><glyph:left_click> You can [<color:#ffc933>click here</color>]</click> to check that your multiblock is correct\n
+  cannot_interact_outside_island: You can't interact with multiblocks placed outside islands
+  insufficient_rank: Your island rank isn't high enough to interact with the multiblock
+  no_upgrade_available: There is no upgrade available for your multiblock
+  no_useful_item: You don't have the required items to give to upgrade your multiblock
+  upgrade_air_required: The blocks around must be air for the multiblock to be upgraded
+niveau:
+  notinteger: 'The level must be a whole number (value given: {value})'
+number:
+  not:
+    negative: <dark_gray>[<red>✖<dark_gray>] The command doesn't accept negative values ({number})
+    number: <dark_gray>[<red>✖<dark_gray>] The command only accepts numbers ({number})
+parrainage:
+  accept:
+    denied: <white>{playername}</white> didn't invite you
+  already:
+    has_sponsor: <white>{playername}</white> already has a sponsor
+    invited: You have already sent an invitation to <white>{playername}</white>
+  decline:
+    denied: <white>{playername}</white> didn't invite you
+  invite:
+    self: You can't invite yourself
+  reward:
+    none: No reward available
+photo:
+  invalid_nexo: The nexo id is invalid
+  usage_add: 'Usage: /photo add <id nexo>'
+player:
+  notfound: The player <white>{player}</white> doesn't exist!
+  notplayer: You must be a player to use this command!
+  offline: <white>{playername}</white> is not online
+  player_required: A player is required as a parameter
+  unknown: <white>{playername}</white> could not be found
+propulsion:
+  missing_power: You must specify a value for the propulsion
+pub:
+  forbidden: You can't use /pub
+quest:
+  already_completed: You have already finished the quest!
+  not_started: You must have started the quest to be able to track it!
+regen:
+  cooldown: You are on cooldown, you'll be able to regenerate in <white>{time}</white> seconds
+sellchest:
+  near_error: You can't place a chest next to an automatic sell chest
+  place_error: You can't place an automatic chest next to other chests
+shop:
+  grade:
+    alchemist_only: This command is reserved for the <white><glyph:alchimiste></white> rank.
+  no_item: You don't have the matching item
+  no_quantity: You don't have any quantity
+  not_enough_credits: You don't have enough money to do this
+  not_enough_space: You don't have enough space in your inventory
+  sell_all_requires_grade: You must be <white><glyph:archimage></white> to sell all your items at once!
+shopjoueur:
+  cannot_double_chest: You can't turn a player shop into a double chest
+  cannot_edit_sign: You can't edit a shop's sign, right-click to buy or sell
+  cannot_trade_own_items: You can't buy or sell your own items
+  chest_empty: The chest is empty, come back later!
+  chest_items_identical: The items in the sell chest must be identical for the sell chest to work
+  not_enough_items: You don't have enough items to do this, you currently have <white>{nb}</white>
+  not_enough_space: There isn't enough space in the chest
+  not_enough_stock: There isn't enough stock
+  not_your_island: This isn't your island. You can only create a player shop on your own island
+  owner_not_enough_money: The owner doesn't have enough money
+  response_timeout: You took too long to respond
+  took_too_long: You took too long to respond
+slots:
+  noempty: Some item slots are not empty
+spawners:
+  block_conflict: You can't place this block here because it conflicts with a spawner
+  break_only_with_tool: You can only break spawners with the spawner pickaxe!
+  cannot_capture: You can't capture a mob in a spawner or a multiblock
+  cannot_place_offhand: You can't place a spawner with your off hand
+  does_not_exist: This no longer exists currently, open a ticket if you need it!
+  mob_cannot_be_captured: This mob can't be captured in this orb
+  need_spawner_in_hand: You must have a spawner in your hand
+  not_enough_crystal: You don't have enough crystals to create the spawner
+  not_enough_hearts: You don't have enough spawner hearts to create the spawner
+  not_enough_money: 'You don''t have enough <white><glyph:mcoin></white> in your island bank for this, you need: <white>{cost} <glyph:mcoin></white>'
+  not_found: Spawner not found
+  not_spawner_orb: This isn't a spawner orb
+  orb_already_linked: Your spawner orb is already linked to a mob
+  orb_mob_mismatch: The spawner orb doesn't match the mob
+  orb_required: You must have a spawner orb in your hand
+  spawner_level: Your spawner is at level {level}
+  upgrade_max: This upgrade is already at the maximum level
+tag:
+  title_limit_reached: \nYou have reached the equippable title limit!\n<click:run_command:'/boutique'><white><glyph:left_click> Click here to access [</white><color:#ffc933>our shop</color>]</click><white> and get more</white>\n
+teleport:
+  cancelled: \nYou moved and it cancelled your teleport. You can be <color:#ffc933>teleported instantly</color> by owning the <glyph:archimage> rank.\n<click:run_command:'/boutique'><white><glyph:left_click> You can get it by </white>[<color:#ffc933>clicking here</color>]</click><white>\n
+  already_in_progress: You already have a teleport in progress
+teleportation:
+  cannot_be_teleported_here: You can't be teleported here
+  cannot_request_self: You can't send a request to yourself
+  cannot_teleport_here: You can't teleport someone here
+  cannot_teleport_others: You can't teleport other players
+  invalid_coords: The specified coordinates are invalid
+  no_pending_request: You don't have any pending request
+  no_permission: You don't have permission to perform this action
+  no_request: You don't have any teleport request
+  player_not_connected: This player is not connected
+  request_cancelled: Your teleport request has been cancelled
+  request_cancelled_by_sender: <white>{player}</white> cancelled their teleport request
+  request_denied: Teleport request denied
+  request_expired: Your teleport request has expired
+  request_refused_by: <white>{target}</white> refused your request
+  self_request: You can't send a request to yourself
+  to_spawn_no_island: You were teleported to spawn because you don't have an island
+tutoriel:
+  notedit: Your tutorial scoreboard is already in this state
+upgradeisland:
+  cannot_interact_minecart: You can't interact with minecarts on MagicalSky
+  cobblegen_limit_reached: You have reached the maximum of <white>Cobble Generator Multiblocks</white> on your island
+  composter_limit_reached: You have reached the maximum of <white>Composter Multiblocks</white> on your island
+  crusher_limit_reached: You have reached the maximum of <white>Crusher Multiblocks</white> on your island
+  forge_limit_reached: You have reached the maximum of <white>Forge Multiblocks</white> on your island
+  furnace_limit_reached: You have reached the maximum of <white>Blast Furnace Multiblocks</white> on your island
+  limit_reached_entity: You have reached the maximum of <white>{entity}</white> on your island
+  max:
+    cactus: You have reached the <white>Cactus</white> limit on your island <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
+  max_observers: You have reached the maximum <white>Observers</white> on your island
+  minecart_limit_reached: You have reached the limit of <white>{max} minecarts</white> on your island
+  no_offerings: You don't have an item to give as an offering to the island in your inventory
+  piston_limit_reached: You have reached the maximum of <white>Pistons</white> on your island
+  required_island_level: Your island must be at least level <white>{level}</white>
+  required_message: 'You must have unlocked the following upgrades:'
+  sellchest_limit_reached: You have reached the maximum of <white>Sell Chests</white> on your island
+  shop_player_limit_reached: You have reached the maximum of <white>Player Shops</white> on your island
+  sniffer_limit_reached: You have reached the limit of <white>Sniffers</white> on your island
+  upgrade_max_level: You have reached the maximum level of <white>{name}</white>
+  upgrade_not_enough_money: You must have <white>{cost} <glyph:mcoin></white> to buy this upgrade
+  villager_limit_reached: You have reached the limit of <white>Villagers</white> on your island
+warp:
+  already_exists: A warp named <white>{warp}</white> already exists
+  delete_name_required: You must specify the name of the warp you want to delete
+  description:
+    timeout: Time's up, the warp description wasn't changed
+  max_reached: You have reached the maximum number of warps (<white>{max}</white>)
+  no_color_allowed: \nTo add colors to your warp name you must have the <glyph:archimage> rank.\n<click:run_command:'/boutique'><white><glyph:left_click> Click here to access [</white><color:#ffc933>our shop</color><white>]</click> and get it</white>\n
+  not_found: The specified warp doesn't exist
+  notfound: You don't have a warp
+  owner_not_found: This player doesn't own an island
+  owner_no_warp: This player doesn't have a warp on their island
+  rank_required: You don't have the required island rank to create a warp
+  rename:
+    timeout: Time's up, the warp name wasn't changed
+  set_name_required: You must specify a name to find your warp
+  unsafe_location: Your warp's location is too dangerous
+zone:
+  class_stuff_forbidden: You can't join this zone with your class gear so the fight stays fair
+  level_required: 'You don''t have the required level to join this zone. Required level: <white>{level}</white>'
