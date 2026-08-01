@@ -294,6 +294,7 @@ upgradeisland:
   crusher_limit_reached: Tu as atteint le maximum de <white>Multiblocks Broyeur</white> sur ton île
   forge_limit_reached: Tu as atteint le maximum de <white>Multiblocks Forge</white> sur ton île
   furnace_limit_reached: Tu as atteint le maximum de <white>Multiblocks Haut fourneau</white> sur ton île
+  limit_reached_entity_view: Tu as atteint le maximum de <white>{entity}</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   limit_reached_entity: Tu as atteint le maximum de <white>{entity}</white> sur ton île
   max:
     cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île ({value}/{value}
