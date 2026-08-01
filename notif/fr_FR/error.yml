@@ -294,6 +294,8 @@ upgradeisland:
   crusher_limit_reached: Tu as atteint le maximum de <white>Multiblocks Broyeur</white> sur ton île
   forge_limit_reached: Tu as atteint le maximum de <white>Multiblocks Forge</white> sur ton île
   furnace_limit_reached: Tu as atteint le maximum de <white>Multiblocks Haut fourneau</white> sur ton île
+  limit_reached_block_view: Tu as atteint le maximum de <white>{block}</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
+  limit_reached_entity_view: Tu as atteint le maximum de <white>{entity}</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   limit_reached_entity: Tu as atteint le maximum de <white>{entity}</white> sur ton île
   max:
     cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île ({value}/{value}
@@ -306,9 +308,11 @@ upgradeisland:
   sellchest_limit_reached: Tu as atteint le maximum de <white>Coffres de vente</white> sur ton île
   shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white> sur ton île
   sniffer_limit_reached: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île
+  sniffer_limit_reached_view: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   upgrade_max_level: Tu as atteint le niveau maximum de <white>{name}</white>
   upgrade_not_enough_money: Tu dois avoir <white>{cost} <glyph:mcoin></white> pour acheter cette amélioration
   villager_limit_reached: Tu as atteint la limite de <white>Villageois</white> sur ton île
+  villager_limit_reached_view: Tu as atteint la limite de <white>Villageois</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
 warp:
   already_exists: Le warp nommé <white>{warp}</white> existe déjà
   delete_name_required: Tu dois indiquer le nom du warp que tu veux supprimer
