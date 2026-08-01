@@ -1,3 +1,5 @@
 .idea
 scripts/*
 /requirements.txt
+!README.md
+*.md

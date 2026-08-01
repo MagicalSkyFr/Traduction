@@ -1,7 +1,7 @@
 chunk:
   finish: "L'analyse des chunks est terminée ({time})"
 cooldown:
-  reset: Le cooldown de {player} a été reset
+  reset: Le cooldown de {player} a été réinitialisé
 money:
   pay:
     sent: "Tu as envoyé <gold>{amount} MCoins</gold> à <gold>{player}</gold>."
@@ -54,7 +54,7 @@ island:
 item:
   on_head: L'objet est désormais sur ta tête !
 jobs:
-  cooldown_reset: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le cooldown de <white>{player}</white> a été reset
+  cooldown_reset: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le cooldown de <white>{player}</white> a été réinitialisé
   level_set_broadcast: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le joueur <white>{player}</white> a été mis au niveau <white>{level}</white> du métier <white>{job}</white>
   points_added: <sound:BLOCK_NOTE_BLOCK_BASS>Tu as ajouté <white>{points}</white> points de compétences
   slot_added_sender: Tu as ajouté un emplacement de métier au joueur <white>{player}</white>
@@ -63,7 +63,7 @@ jobs:
 leaderboard:
   refreshed: Le classement a été rafraîchi
 mail:
-  received: Tu as récupérer l'objet envoyé par <white>{playername}</white>
+  received: Tu as récupéré l'objet envoyé par <white>{playername}</white>
   sent: Tu as envoyé un objet dans la boîte mail de <white>{playername}</white>
 multiblocks:
   created: Félicitation, tu viens de créer un multiblock !

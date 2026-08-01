@@ -19,7 +19,7 @@ donjon:
   teleported: Tu viens d'être <color:#ffc933>téléporté</color>
   you_left: Tu viens de <color:#ffc933>quitter le donjon</color>
 chunk:
-  queue: "Les chunks a été ajoutée à la file d'attente (position {position})"
+  queue: "Les chunks ont été ajoutés à la file d'attente (position {position})"
   start: "L'analyse de {chunks} chunks commence"
 effect:
   nightvision_removed: Tu as <color:#ffc933>désactivé</color> l'effet Vision Nocturne
@@ -45,7 +45,7 @@ event:
   started: L'événement <color:#ffc933>{event}</color> a commencé
   thimble:
     rolled_dice: <color:#ffc933>{player}</color> vient de faire un dé à coudre !
-    too_slow_eliminated: <color:#ffc933>{player}</color a pris trop de temps pour jouer, il est éliminé !
+    too_slow_eliminated: <color:#ffc933>{player}</color> a pris trop de temps pour jouer, il est éliminé !
     your_turn: C'est à ton tour de <color:#ffc933>jouer</color>
 hdv:
   average_price_last_7_days: 'Le <color:#ffc933>prix moyen</color> de cet objet au cours des 7 derniers jours est de : <color:#ffc933>{price}</color> <glyph:mcoin> par unité'
