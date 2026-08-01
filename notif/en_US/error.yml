@@ -336,10 +336,11 @@ upgradeisland:
     cactus: You have reached the <white>Cactus</white> limit on your island <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   max_observers: You have reached the maximum <white>Observers</white> on your island
   minecart_limit_reached: You have reached the limit of <white>{max} minecarts</white> on your island
-  no_offerings: You don't have an item to give as an offering to the island in your inventory
+  no_levelblock: You don't have a level block to give to the island in your inventory
   piston_limit_reached: You have reached the maximum of <white>Pistons</white> on your island
   required_island_level: Your island must be at least level <white>{level}</white>
   required_message: 'You must have unlocked the following upgrades:'
+  ritual_not_available: This feature is not available yet
   sellchest_limit_reached: You have reached the maximum of <white>Sell Chests</white> on your island
   shop_player_limit_reached: You have reached the maximum of <white>Player Shops</white> on your island
   sniffer_limit_reached: You have reached the limit of <white>Sniffers</white> on your island
