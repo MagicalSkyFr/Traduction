@@ -65,7 +65,7 @@ calendar:
     claimed: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} a déjà été récupéré
     notclaim: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} n'a pas été récupérer à temps. Tu peux l’obtenir en utilisant un Dégriseur de cadeau
     notunlock: <dark_gray>[<red>✖<dark_gray>] Le jour {day} n'est pas passé
-    unlock: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé {command command=
+    unlock: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé
     unlocked: <dark_gray>[<red>✖<dark_gray>] Le jour {day} est déjà déverrouillé
   degriseur:
     unlock: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé
@@ -172,13 +172,13 @@ parrainage:
     header: '<color:#ffc933>Inspection : {playername}</color>'
     objectives:
       done: <color:#40ff70>✓ Tous les objectifs sont terminés</color>
-      header: <color:#ffc933>Objectifs en cours</bold></color>
+      header: <bold><color:#ffc933>Objectifs en cours</color></bold>
       progress: '<gray>- {objectif}: {progress}</gray>'
     referrals:
       empty: <color:#40ff70>Aucun objectif en cours</color>
       header: <color:#ffc933>Filleuls</color>
-      objective: <gray>- </gray><color:#ffc933>{objectif}</color> <gray>(&b{progress}</gray>)
-      player: <color:#ffc933>▶ </color><white>{player}<white>
+      objective: <gray>- </gray><color:#ffc933>{objectif}</color> <gray>({progress})</gray>
+      player: <color:#ffc933>▶ </color><white>{player}</white>
     rewards:
       objective: <white>- </white><color:#ffc933>{objectif}</color>
       title: <color:#40ff70>{count} récompense(s) disponible(s)</color>
@@ -186,7 +186,7 @@ parrainage:
       false: <color:#ff383b>Aucun parrain</color>
       true: '<color:#40ff70> Parrain : {parrainname}</color>'
   main:
-    claim_all: <click:run_command:/parrainage reward><hover:show_text:"<color:#ffc933>Récupère toutes les récompenses</color>">[<color:#ffc933>Tout récupérer</color>]</hover></click>
+    claim_all: <click:run_command:'/parrainage reward'><hover:show_text:"<color:#ffc933>Récupère toutes les récompenses</color>">[<color:#ffc933>Tout récupérer</color>]</hover></click>
     completed:
       objective: '{objectif}'
       title: Parrainages terminés ({count})
@@ -378,7 +378,7 @@ spawners:
 tag:
   tag_added: \n<glyph:gift_tchat> Le tag {tag} <white>a été ajouté à ton profil.</white>\n<click:run_command:'/tag'><glyph:left_click> <white>Clique ici pour ouvrir ton [</white><color:#ffc933>inventaire des tags</color><white>]</white></click>
 teleport:
-  cancelled: \n<glyph:cross_tchat> <color:#ff383b>Tu as bougé et cela a annulé te téléportation.</color> Tu peux être <color:#ffc933>téléporté directement</color> en possédant le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click> Tu peux l'obtenir en </white>[<color:#ffc933>cliquant ici</color>]</click><white>\n
+  cancelled: \n<glyph:cross_tchat> <color:#ff383b>Tu as bougé et cela a annulé ta téléportation.</color> Tu peux être <color:#ffc933>téléporté directement</color> en possédant le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click> Tu peux l'obtenir en </white>[<color:#ffc933>cliquant ici</color>]</click><white>\n
 teleportation:
   request_with_buttons: <glyph:information_tchat> <color:#ffc933>{sender}</color> souhaite que tu te téléportes vers lui.\n<color:#40ff70>[ACCEPTER]</color><click:run_command:'/tpaccept'><hover:show_text:'Clique pour accepter la téléportation'/></click> <color:#ff383b>[REFUSER]</color><click:run_command:'/tpdeny'><hover:show_text:'Clique pour refuser la téléportation'/></click>\n
 upgradeisland:
@@ -421,7 +421,7 @@ tutoriel:
 
       ꖰ dans <color:#ffc933>le challenge de tutoriel</color>. Il est très utile car
 
-      ꖰ il te donna des récompenses utiles, avec
+      ꖰ il te donnera des récompenses utiles, avec
 
       ꖰ par exemples <color:#ffc933>de nouveaux outils magiques</color> !
 
@@ -778,7 +778,7 @@ tutoriel:
     objectif:
       1: Avoir un multiblock portail du terrain
       2: <color:#ffc933>de chasse sur l'île </color><color:white>(/multiblocks)</color>
-  reset: La progression du tutoriel de {name} a été réinitialiser
+  reset: La progression du tutoriel de {name} a été réinitialisée
   shopcreate:
     astuce:
       1: <color:#ffc933>/wiki shopjoueur

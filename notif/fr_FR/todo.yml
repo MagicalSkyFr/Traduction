@@ -1,6 +1,6 @@
 classe:
   upgrade_station:
-    stat_added: "Ton arme à gagné +{value} de {stat}"
+    stat_added: "Ton arme a gagné +{value} de {stat}"
     config:
       error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"
     add_points: "Tu as ajouté {points} points d'amélioration à ton item"
@@ -25,8 +25,8 @@ classe:
   sort:
     add: <glyph:validation_tchat> <color:#40ff70> Tu viens d'ajouter le sort {skillname} sur ta baguette !
     max: <glyph:warning_tchat> <color:#ff383b> Tu as déjà le nombre maximal de sort sur ta baguette !
-    notremove: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas retiré ce sort
-    remove: <glyph:validation_tchat> <color:#40ff70> Tu viens de retiré le sort de ta baguette !
+    notremove: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas retirer ce sort
+    remove: <glyph:validation_tchat> <color:#40ff70> Tu viens de retirer le sort de ta baguette !
   sound:
     active: <green><bold> Son activée </bold>pour {name}</green>
     inactive: <red><bold> Son désactivé </bold>pour {name}</red>
@@ -34,22 +34,22 @@ dungeon:
   already:
     builder: Tu es déjà dans un session de donjon en création
     in: Tu es déjà dans un donjon
-  build: La session du donjon a été créer
-  builderror: 'Une erreur est survenir lors de la création du donjon : {error}, par prévention, celui çi a été annulé'
+  build: La session du donjon a été créée
+  builderror: 'Une erreur est survenue lors de la création du donjon : {error}, par prévention, celui-ci a été annulé'
   death: '{playername} a perdu une vie dans le donjon'
   global:
     end: Le donjon de {owner} vient de se finir !
   invite:
-    accept: Tu as rejoins le donjon !
+    accept: Tu as rejoint le donjon !
     acceptall: '{playername} a rejoint le donjon'
-    edit: Modification de la session détecté, le cooldown de création de la session est reinitialisé
+    edit: Modification de la session détectée, le cooldown de création de la session est réinitialisé
     refuse: Tu as refusé l'invitation au donjon
     refuseall: '{playername} a refusé l''invitation au donjon'
     remove: Tu as été éjecté du donjon
     removeall: '{playername} a été éjecté du donjon'
-    removeinvited: Ton invitation au donjon est révolu
+    removeinvited: Ton invitation au donjon a expiré
     send: Tu as été invité à rejoindre le donjon de {ownername}, fais /donjon pour accepter ou refuser
     sendall: '{playername} a été invité à rejoindre le donjon'
-  notifwhenstart: La session a été mis dans la queue, une notification te sera envoyé quand la session sera presque créer. Tu peux toujours ajouter des membres pendant ce temps.
+  notifwhenstart: La session a été mise dans la file d'attente, une notification te sera envoyée quand la session sera presque créée. Tu peux toujours ajouter des membres pendant ce temps.
   retarded: Toutes les instances de ce donjon sont prise, vous serez téléporter lorsqu'une place sera disponible, place {place}
-  startbuild: La session du donjon sera créer dans 30 secondes
+  startbuild: La session du donjon sera créée dans 30 secondes

@@ -3,7 +3,7 @@ profil:
 badge:
   unknown: Le badge {badgename} n'existe pas
 chunk:
-  error: Une erreur est survenu lors de l'analyse des chunks
+  error: Une erreur est survenue lors de l'analyse des chunks
   locked: Ce chunk est en cours d'analyse, réessaie dans un instant
 money:
   pay:
@@ -14,20 +14,20 @@ command:
   badcommand: 'Commande incorrecte, la commande à utiliser est : {command}'
   cannot_use: Tu ne peux pas utiliser cette commande !
   cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
-  error: Une erreur est survenu lors de l'utilisation de la commande, merci d'ouvrir un ticket
+  error: Une erreur est survenue lors de l'utilisation de la commande, merci d'ouvrir un ticket
   player_only: Cette commande est réservée aux joueurs
 cooking:
   not_owner: Tu n'es pas le propriétaire de cette plante, reviens quand le joueur n'y sera plus !
 crate:
   already:
     open:
-      other: Quelqu'un est déjà dans l'animation d'ouverture de cette box, reviens plus tard ou utilise le shift clic pour ne pas avoir d'animation
+      other: Quelqu'un ouvre déjà cette box, reviens plus tard ou fais un clic + shift pour passer l'animation
       you: Tu ouvres déjà une box
   givecrate:
     unknown: La crate {crate} n'existe pas
   keyinvalid: Tu n'as pas de {key} pour ouvrir la box
   not:
-    found: La box {crate} n'a pas été trouvé
+    found: La box {crate} n'a pas été trouvée
 daily:
   already_claimed: Tu as déjà récupéré ton cadeau du jour, effectue à nouveau la commande /daily demain !
   already_opening: Tu es déjà en ouverture de daily !
@@ -163,7 +163,7 @@ item:
   nommoitem: Tu ne peux pas envoyer un objet de Métier ou de Classe
 jobs:
   cooldown_remove: <color:#ff383b>Tu ne peux pas encore changer de métier, tu pourras changer de métier le {date} !</color>
-  not_found: Ce métier n'existe pas. {job}
+  not_found: Le métier {job} n'existe pas
   skill_competences_required: Tu dois avoir au moins <white>{nb}</white> compétences débloquées pour pouvoir débloquer cette compétence
   skill_level_required: Tu dois avoir au moins le niveau <white>{level}</white> de métier pour débloquer cette compétence
   skill_prerequisites: Tu dois avoir d'abord débloquer les prérequis de cette compétence pour l'obtenir
@@ -252,7 +252,7 @@ spawners:
   cannot_capture: Tu ne peux pas capturer un monstre dans un spawner ou un multiblock
   cannot_place_offhand: Tu ne peux pas poser de spawner avec ta seconde main
   does_not_exist: Cela n'existe plus actuellement, ouvre un ticket si tu en as besoin !
-  mob_cannot_be_captured: Ce monstre ne peut pas être capturé dans cette orbe pour faire ceci
+  mob_cannot_be_captured: Ce monstre ne peut pas être capturé dans cette orbe
   need_spawner_in_hand: Tu dois avoir un spawner dans ta main
   not_enough_crystal: Tu n'as pas assez de cristaux pour créer le spawner
   not_enough_hearts: Tu n'as pas assez de coeurs de spawner pour créer le spawner
@@ -296,7 +296,7 @@ upgradeisland:
   furnace_limit_reached: Tu as atteint le maximum de <white>Multiblocks Haut fourneau</white> sur ton île
   limit_reached_entity: Tu as atteint le maximum de <white>{entity}</white> sur ton île
   max:
-    cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île ({value}/{value}
+    cactus: Tu as atteint la limite de <white>Cactus</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   max_observers: Tu as atteint le maximum <white>d'Observateurs</white> sur ton île
   minecart_limit_reached: Tu as atteint la limite de <white>{max} minecarts</white> sur ton île
   no_offerings: Tu n'as pas d'item à donner en offrande à l'île dans ton inventaire
