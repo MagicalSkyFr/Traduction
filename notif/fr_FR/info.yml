@@ -1,12 +1,22 @@
 badge:
   edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color> a été modifié
+bienvenue:
+  view: Tu as souhaité la bienvenue à <color:#ffc933>{playername}</color> !
+boss:
+  damage: 'Vie actuelle du boss : <color:#ff383b>{health}</color> / <color:#ff383b>{maxhealth}</color>'
+  spawn: 'Un boss est apparu à cet endroit : <color:#ffc933>{localisation}</color>'
+classe:
+  change_cooldown: Tu pourras toujours <color:#ffc933>changer de classe</color> après un cooldown !
+  change_timer: Tu pourras changer de classe le <color:#ffc933>{time}</color>
 money:
   info: "Tu possèdes <gold>{money}</gold> <glyph:mcoin>"
 boutique:
+  credits_remaining: Il te reste <color:#ffc933>{credits}</color> <glyph:skygem>
   buy_credits: <sound:ENTITY_PLAYER_LEVELUP[volume=1.0,pitch=1.0,source=MASTER]> <white>{player}</white> vient d’acheter <color:#ffc933>{amount}</color> SkyGems <glyph:skygem> sur <click:open_url:'https://www.magicalsky.fr/boutique'><hover:show_text:'Ouvrir la boutique'><color:#ffc933>la boutique</color></hover></click>
 cooking:
   regen: Il reste {time} avant la regénération !
 discord:
+  linked: \nTes comptes en jeu et discord <color:#ffc933>sont liés</color> !\nTu peux les délier en <click:run_command:'/discord unlink'>[<color:#ffc933>cliquant ici</color>]</click>\n
   code: '\n Pour associer <color:#ffc933>ton compte Discord</color> à <color:#ffc933>ton compte Minecraft</color>, envoie <color:#ffc933>le code</color> au bot <color:#ffc933>{botname}</color>\nCode de vérification : <color:#ffc933>{code}</color>\n'
   nolink: Connecte toi avec <color:#ffc933>/discord link</color> pour récupérer des <color:#ffc933>récompenses uniques</color> !
 donjon:
@@ -24,6 +34,7 @@ chunk:
 effect:
   nightvision_removed: Tu as <color:#ffc933>désactivé</color> l'effet Vision Nocturne
 event:
+  already_has_inventory: Tu possèdes <color:#ffc933>un inventaire sauvegardé</color>. <color:#ff383b>Ton inventaire doit être vide ou tes objets seront supprimés. Aucun remboursement ne sera effectué</color><glyph:left_click> Tu peux récupérer ton inventaire en <click:run_command:'/event inventory'>[<color:#ffc933>cliquant ici</color>]</click>
   eliminated: <color:#ffc933>{player}</color> a été éliminé de l'événement
   finished: L'événement <color:#ffc933>{event}</color> est terminé, les gagnants sont <color:#ffc933>{winners}</color>
   finished_single_winner: L'événement <color:#ffc933>{event}</color> est terminé, le gagnant est <color:#ffc933>{winner}</color>
@@ -173,6 +184,7 @@ spawners:
 teleport:
   starting: Ne bouge pas pendant <color:#ffc933>{time} secondes</color> pour être téléporté
 teleportation:
+  request_with_buttons: <color:#ffc933>{sender}</color> souhaite que tu te téléportes vers lui.\n<color:#40ff70>[ACCEPTER]</color><click:run_command:'/tpaccept'><hover:show_text:'Clique pour accepter la téléportation'/></click> <color:#ff383b>[REFUSER]</color><click:run_command:'/tpdeny'><hover:show_text:'Clique pour refuser la téléportation'/></click>\n
   request_replaced: "Ta demande de téléportation envoyée à <color:#ffc933>{player}</color> a été annulée car une autre demande a été envoyée entre-temps"
   request_received: Tu as reçu une demande de téléportation de <color:#ffc933>{sender}</color>
 warp:
