@@ -24,12 +24,12 @@ collection:
   already_exists: L’objet n’a pas été ajouté dans ta collection car un exemplaire y est déjà
   cannot_add: L’objet n’a pas été ajouté dans ta collection car il ne peut pas être ajouté dans une collection
   load_error: Impossible de charger ton profil de collection !
-  owner_forbidden: <color:#ff383b>Tu ne peux pas ajouter cet objet car il est dans la collection de </color> {owner}
+  owner_forbidden: Tu ne peux pas ajouter cet objet car il est dans la collection de {owner}
 boutique:
-  already_has_sorcerer: <color:#ff383b>Tu possèdes déjà le grade</color> <glyph:sorcier>
-  not_enough_credits: \n<color:#ff383b>Tu n'as pas assez de</color> <glyph:skygem> <color:#ff383b>pour obtenir cet objet</color>\n<click:open_url:'https://www.magicalsky.fr/boutique'><glyph:left_click> Clique ici pour en obtenir sur [<color:#ffc933>notre boutique en ligne</color>]</click>\n
+  already_has_sorcerer: Tu possèdes déjà le grade <glyph:sorcier>
+  not_enough_credits: \nTu n'as pas assez de <glyph:skygem> <color:#ff383b>pour obtenir cet objet</color>\n<click:open_url:'https://www.magicalsky.fr/boutique'><glyph:left_click> Clique ici pour en obtenir sur [<color:#ffc933>notre boutique en ligne</color>]</click>\n
 multiblock:
-  portal_notfound: <color:#ff383b>Tu dois posséder un multiblock portail pour te téléporter dans la dimension {dim}.</color>\n<click:run_command:'/multiblocks'><glyph:left_click> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>\n
+  portal_notfound: Tu dois posséder un multiblock portail pour te téléporter dans la dimension {dim}.\n<click:run_command:'/multiblocks'><glyph:left_click> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>\n
 chunk:
   error: Une erreur est survenue lors de l'analyse des chunks
   locked: Ce chunk est en cours d'analyse, réessaie dans un instant
@@ -39,7 +39,7 @@ money:
     invalid-amount: "Le montant que tu as entré est invalide"
     insufficient-funds: "Tu n'as pas assez d'argent. Solde actuel : <gold>{money}</gold>"
 command:
-  archimage_required: <color:#ff383b>Tu dois avoir le grade</color> <glyph:archimage> <color:#ff383b>pour utiliser cette commande !</color> <click:run_command:'/boutique'><glyph:left_click> Clique ici pour l'obtenir [<color:#ffc933>dans la boutique</color>]</click>
+  archimage_required: Tu dois avoir le grade <glyph:archimage> <color:#ff383b>pour utiliser cette commande !</color> <click:run_command:'/boutique'><glyph:left_click> Clique ici pour l'obtenir [<color:#ffc933>dans la boutique</color>]</click>
   badcommand: 'Commande incorrecte, la commande à utiliser est : {command}'
   cannot_use: Tu ne peux pas utiliser cette commande !
   cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
@@ -77,7 +77,7 @@ discord:
   unlinked: Ton compte Discord est déjà délié
 donjon:
   admin:
-    not_in_session: \n<color:#ff383b>Le joueur</color> <white>{player}</white> <color:#ff383b>n'est pas dans une session ou n'est pas le propriétaire du donjon.</color>\n<glyph:left_click>Tu peux voir la liste des sessions actives en <click:run_command:'/donjon admin list'>[cliquant ici]</click>\n
+    not_in_session: \nLe joueur <white>{player}</white> <color:#ff383b>n'est pas dans une session ou n'est pas le propriétaire du donjon.</color>\n<glyph:left_click>Tu peux voir la liste des sessions actives en <click:run_command:'/donjon admin list'>[cliquant ici]</click>\n
   classe_level_required: Tu dois avoir le niveau de classe <white>{level}</white> pour rejoindre ce donjon
   command_forbidden: Tu ne peux pas utiliser cette commande en donjon
   cooldown: Tu dois encore attendre <white>{cooldown}</white> avant de pouvoir rejoindre un nouveau donjon
@@ -125,7 +125,7 @@ gift:
   already_claimed: Tu as déjà récupéré ton cadeau, refais la commande demain !
   already_opening: Tu es déjà en ouverture !
 hdv:
-  max_history_reached: \n<color:#ff383b>Tu as atteint le nombre maximum d'objets que peut contenir ton historique </color><white>({max})</white>\n<click:run_command:'/ah history'><glyph:left_click> Clique ici pour [<color:#ffc933>récupérer tes objets expirés</color>]</click>\n
+  max_history_reached: \nTu as atteint le nombre maximum d'objets que peut contenir ton historique <white>({max})</white>\n<click:run_command:'/ah history'><glyph:left_click> Clique ici pour [<color:#ffc933>récupérer tes objets expirés</color>]</click>\n
   inventory_full: Ton inventaire est plein
   item_no_longer_available: L'objet n'est plus disponible
   no_price_specified: Tu n'as pas indiqué de prix de vente
@@ -133,7 +133,7 @@ hdv:
 heal:
   cooldown: Tu ne peux pas encore te soigner ! Le délai de récupération du soin est de 5 minutes
 home:
-  max_reached: \n<color:#ff383b>Tu as atteint le nombre maximum de homes !</color>\n<click:run_command:'/boutique'><glyph:left_click> Tu peux en obtenir davantage en achetant un grade [<color:#ffc933>dans la boutique</color>]</click>\n
+  max_reached: \nTu as atteint le nombre maximum de homes !\n<click:run_command:'/boutique'><glyph:left_click> Tu peux en obtenir davantage en achetant un grade [<color:#ffc933>dans la boutique</color>]</click>\n
   already_exists: Tu as déjà un home nommé <white>{home}</white> ! Utilise un autre nom
   invalid_name: 'Ton nom de home n''est pas valide. Exemple de nom valide : home1'
   invalid_world: Tu ne peux pas créer de home en dehors du monde de ton île !
@@ -162,7 +162,7 @@ island:
     cannot_self: Tu ne peux pas te rétrograder toi même
   full_cannot_join: L'île que tu veux rejoindre a atteint le nombre de joueurs maximum. Tu ne peux donc pas la rejoindre
   invite:
-    no_invitations: \n<color:#ff383b>Tu n'as pas reçu d'invitation d'île.</color>\n<click:run_command:'/is invite'><glyph:left_click> Pour inviter un joueur sur ton île tu peux [<color:#ffc933>cliquer ici</color>]</click> ou faire la commande <color:#ffc933>/is invite</color>\n
+    no_invitations: \nTu n'as pas reçu d'invitation d'île.\n<click:run_command:'/is invite'><glyph:left_click> Pour inviter un joueur sur ton île tu peux [<color:#ffc933>cliquer ici</color>]</click> ou faire la commande <color:#ffc933>/is invite</color>\n
     already_on_island: Ce joueur est déjà sur ton île… Tu veux vraiment l'avoir en double ?
     max_members_reached: Tu as atteint le nombre maximum de personnes sur ton île
     only_leader: Seul le chef de l'île peut inviter des joueurs sur son île
@@ -196,8 +196,8 @@ item:
   noitem: Tu n'as aucun objet dans la main
   nommoitem: Tu ne peux pas envoyer un objet de Métier ou de Classe
 jobs:
-  limit_reached: \n<color:#ff383b>Tu as atteint le nombre maximum de métiers que tu peux équiper en même temps.</color>\n
-  cooldown_remove: <color:#ff383b>Tu ne peux pas encore changer de métier, tu pourras changer de métier le {date} !</color>
+  limit_reached: \nTu as atteint le nombre maximum de métiers que tu peux équiper en même temps.\n
+  cooldown_remove: Tu ne peux pas encore changer de métier, tu pourras changer de métier le {date} !
   not_found: Le métier {job} n'existe pas
   skill_competences_required: Tu dois avoir au moins <white>{nb}</white> compétences débloquées pour pouvoir débloquer cette compétence
   skill_level_required: Tu dois avoir au moins le niveau <white>{level}</white> de métier pour débloquer cette compétence
@@ -214,7 +214,7 @@ leaderboard:
 mail:
   norecipient: Tu n'as pas indiqué de destinataire
 multiblocks:
-  invalid_center: <color:#ff383b>Tu ne peux placer un bloc central de multiblock qu'à l'emplacement prévu dans le multiblock.</color>\n<click:run_command:'/multiblocks'><glyph:left_click> Tu peux [<color:#ffc933>cliquer ici</color>]</click> pour vérifier que ton multiblock est correct\n
+  invalid_center: Tu ne peux placer un bloc central de multiblock qu'à l'emplacement prévu dans le multiblock.\n<click:run_command:'/multiblocks'><glyph:left_click> Tu peux [<color:#ffc933>cliquer ici</color>]</click> pour vérifier que ton multiblock est correct\n
   cannot_interact_outside_island: Tu ne peux pas intéragir avec les multiblocks placés en dehors des îles
   insufficient_rank: Ton grade d'île n'est pas assez élevé pour interagir avec le multiblock
   no_upgrade_available: Il n'y a pas d'amélioration disponible pour ton multiblock
@@ -303,7 +303,7 @@ spawners:
 tag:
   title_limit_reached: \nTu as atteint la limite de titre équipable !\n<click:run_command:'/boutique'><white><glyph:left_click> Clique ici pour accéder à [</white><color:#ffc933>notre boutique</color>]</click><white> et en obtenir davantage</white>\n
 teleport:
-  cancelled: \n<color:#ff383b>Tu as bougé et cela a annulé ta téléportation.</color> Tu peux être <color:#ffc933>téléporté directement</color> en possédant le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click> Tu peux l'obtenir en </white>[<color:#ffc933>cliquant ici</color>]</click><white>\n
+  cancelled: \nTu as bougé et cela a annulé ta téléportation. Tu peux être <color:#ffc933>téléporté directement</color> en possédant le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click> Tu peux l'obtenir en </white>[<color:#ffc933>cliquant ici</color>]</click><white>\n
   already_in_progress: Tu as déjà une téléportation en cours
 teleportation:
   cannot_be_teleported_here: Tu ne peux pas être téléporté ici
