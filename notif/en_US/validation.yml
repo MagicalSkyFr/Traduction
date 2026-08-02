@@ -141,7 +141,7 @@ teleportation:
   tp_to_coords: You were teleported to coordinates <white>{x} {y} {z}</white>
   tp_to_player: You were teleported to <white>{target}</white>
 upgradeisland:
-  offering_done: The given resources have been converted into <white>{xp} experience</white> for your island
+  levelblock_given: The given resources have been converted into <white>{xp} experience</white> for your island
 warp:
   deleted: The warp <white>{warp}</white> has been deleted
   teleported: You were teleported to the warp <white>{warp}</white>

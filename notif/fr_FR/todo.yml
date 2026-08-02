@@ -1,3 +1,10 @@
+upgradeisland:
+  limit_reached_block_view: Tu as atteint le maximum de <white>{block}</white> sur ton île ({actual}/{max})
+  limit_reached_entity_view: Tu as atteint le maximum de <white>{entity}</white> sur ton île ({actual}/{max})
+  no_offrande: Tu n'as pas d'offrande dans ton inventaire
+  offrande_given: <glyph:validation_tchat> <color:#40ff70>Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white></color>
+  ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
+  ritual_on_cooldown: Tu dois attendre la fin du cooldown avant de lancer un nouveau rituel
 classe:
   upgrade_station:
     stat_added: "Ton arme a gagné +{value} de {stat}"
