@@ -28,6 +28,8 @@ donjon:
   player_left: <color:#ffc933>{player}</color> just left the dungeon
   teleported: You have just been <color:#ffc933>teleported</color>
   you_left: You just <color:#ffc933>left the dungeon</color>
+emoji:
+  click_to_copy: '<hover:show_text:''<gray>Copy to clipboard''><click:copy_to_clipboard:{text}><glyph:left_click> <gray>Click here to copy: <color:#ffc933>{text}</color></click></hover>'
 chunk:
   queue: "The chunks have been added to the queue (position {position})"
   start: "Analysis of {chunks} chunks is starting"

@@ -28,6 +28,8 @@ donjon:
   player_left: <color:#ffc933>{player}</color> vient de quitter le donjon
   teleported: Tu viens d'être <color:#ffc933>téléporté</color>
   you_left: Tu viens de <color:#ffc933>quitter le donjon</color>
+emoji:
+  click_to_copy: '<hover:show_text:''<gray>Copier dans le presse-papiers<\gray>''><click:copy_to_clipboard:{text}><glyph:left_click> <gray>Clique ici pour copier : <color:#ffc933>{text}</color></click></hover>'
 chunk:
   queue: "Les chunks ont été ajoutés à la file d'attente (position {position})"
   start: "L'analyse de {chunks} chunks commence"
