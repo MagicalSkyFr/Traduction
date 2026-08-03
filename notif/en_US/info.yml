@@ -4,7 +4,7 @@ bienvenue:
   view: You welcomed <color:#ffc933>{playername}</color>!
 boss:
   damage: 'Current boss health: <color:#ff383b>{health}</color> / <color:#ff383b>{maxhealth}</color>'
-  spawn: 'A boss has appeared at this location: <color:#ffc933>{localisation}</color>'
+  spawn: '{name} has appeared at this location: <color:#ffc933>{localisation}</color>'
 classe:
   change_cooldown: You will still be able to <color:#ffc933>change class</color> after a cooldown!
   change_timer: You will be able to change class on <color:#ffc933>{time}</color>
