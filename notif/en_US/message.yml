@@ -68,8 +68,6 @@ command:
   help_title: <gold>Help for the command /<yellow>{command}</yellow>
 discord:
   link: \n<click:open_url:'https://discord.gg/wntmDV6UV7'><glyph:left_click> Click here to access our [<color:#ffc933>discord server</color>]</click>\n
-emoji:
-  click_to_copy: '<click:copy_to_clipboard:{text}><gray>Click here to copy: <green>Copy</green></click>'
 event:
   queue_list: <color:#ffc933>{events}</color>
 fishing:
