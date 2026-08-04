@@ -1,5 +1,8 @@
 biome:
   change: Le biome de ton île est désormais {biomename}
+dungeon:
+  save:
+    success: "La map a été sauvegardé avec succès"
 boss:
   mini:
     defeated: Le boss {boss} a été vaincu !
