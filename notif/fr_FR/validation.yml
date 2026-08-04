@@ -10,6 +10,8 @@ boss:
 chat:
   join: Tu as rejoins le tchat <color:#ffc933>{id}</color>
   leave: Tu as quitté le tchat <color:#ffc933>{id}</color>
+tag:
+  tag_removed: Tu as retiré le tag {tag}
 classe:
   rune:
     points_added: Tu as transformé tes runes en <color:#ffc933>{amount}</color> <color:#40ff70>points de compétences</color>
