@@ -4,9 +4,6 @@ boss:
   mini:
     defeated: The boss {boss} has been defeated!
   defeated: 'The boss has been defeated! Here are the best players:'
-dungeon:
-  save:
-    success: "La map a été sauvegardé avec succès"
 chat:
   join: You joined the chat <color:#ffc933>{id}</color>
   leave: You left the chat <color:#ffc933>{id}</color>

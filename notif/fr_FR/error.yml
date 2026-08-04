@@ -366,3 +366,6 @@ warp:
 zone:
   class_stuff_forbidden: Tu ne peux pas rejoindre cette zone avec ton stuff de classe pour que le combat soit équitable
   level_required: 'Tu n''as pas le niveau requis pour rejoindre cette zone. Niveau requis : <white>{level}</white>'
+dungeon:
+  save:
+    error: "Une erreur est survenue pendant le chargement : {error}"
