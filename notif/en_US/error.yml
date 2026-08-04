@@ -4,6 +4,9 @@ badge:
   unknown: The badge {badgename} doesn't exist
 bienvenue:
   emptynewplayer: There are no new players to welcome right now
+dungeon:
+  save:
+    error: "Une erreur est survenue pendant le chargement : {error}"
 biome:
   cooldown: You can't change biome right now, you can change it on {time}
   timeout: The biome change took too long and was cancelled
