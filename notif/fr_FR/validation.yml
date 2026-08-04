@@ -5,7 +5,7 @@ dungeon:
     success: "La map a été sauvegardé avec succès"
 boss:
   mini:
-    defeated: Le boss {boss} a été vaincu !
+    defeated: '{boss} a été vaincu !'
   defeated: 'Le boss a été vaincu ! Voici les meilleurs joueurs :'
 chat:
   join: Tu as rejoins le tchat <color:#ffc933>{id}</color>
