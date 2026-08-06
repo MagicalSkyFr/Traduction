@@ -23,6 +23,24 @@ classe:
     active: <green><bold> Skill activated </bold>for {name}</green>
     inactive: <red><bold> Skill deactivated </bold>for {name}</red>
   sort:
+    fail:
+      profil_not_found: "Unable to cast this spell: profile not found."
+      no_competence_data: Unable to cast this spell right now.
+      wrong_level: Your skill level doesn't allow this spell.
+      not_unlocked: You haven't unlocked this spell.
+      not_active: This skill isn't active.
+      type_not_possible: This item can't cast this spell.
+      damage_ticks: You can't cast this spell right after being hit.
+      no_rarity: This item doesn't have a valid rarity for this spell.
+      level_requirement: You must be level {niveau_requis} (you are level {niveau_joueur}) to cast this spell.
+      chance_failed: The spell failed (bad luck).
+      wrong_world: This spell can't be used in this world.
+      no_mana: "Not enough mana: you're missing {mana_manquante} mana (required: {mana_requise})."
+      no_sort: No spell assigned to this action.
+      code: An error occurred while casting the spell.
+      on_cooldown: This spell is on cooldown, try again in {cooldown_restant}s.
+      no_data: Unable to cast this spell right now.
+      jobs_blocks: You can't cast this spell here.
     add: <glyph:validation_tchat> <color:#40ff70> You just added the spell {skillname} to your wand!
     max: <glyph:warning_tchat> <color:#ff383b> You already have the maximum number of spells on your wand!
     notremove: <glyph:warning_tchat> <color:#ff383b> You can't remove this spell
