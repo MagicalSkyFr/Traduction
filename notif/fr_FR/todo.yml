@@ -5,6 +5,7 @@ upgradeisland:
   offrande_given: <glyph:validation_tchat> <color:#40ff70>Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white></color>
   ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
   ritual_on_cooldown: Tu dois attendre la fin du cooldown avant de lancer un nouveau rituel
+
 classe:
   upgrade_station:
     stat_added: "Ton arme a gagné +{value} de {stat}"
@@ -30,6 +31,24 @@ classe:
     active: <green><bold> Compétence activée </bold>pour {name}</green>
     inactive: <red><bold> Compétence désactivé </bold>pour {name}</red>
   sort:
+    fail:
+      profil_not_found: "Impossible de lancer ce sort : profil introuvable."
+      no_competence_data : Impossible de lancer ce sort pour le moment.
+      wrong_level : Ton niveau de compétence ne permet pas ce sort.
+      not_unlocked: Tu n'as pas débloqué ce sort.
+      not_active: Cette compétence n'est pas active.
+      type_not_possible: Cet objet ne permet pas de lancer ce sort.
+      damage_ticks: Tu ne peux pas lancer ce sort juste après avoir été touché.
+      no_rarity: Cet objet n'a pas de rareté valide pour ce sort.
+      level_requirement: Tu dois être niveau {level_requirement} pour lancer ce sort.
+      chance_failed: Le sort a échoué (malchance).
+      wrong_world: Ce sort n'est pas utilisable dans ce monde.
+      no_mana: Mana insuffisante pour lancer ce sort.
+      no_sort: Aucun sort assigné à cette action.
+      code: Une erreur est survenue lors du lancement du sort.
+      on_cooldown: Ce sort est en recharge.
+      no_data: Impossible de lancer ce sort pour le moment.
+      jobs_blocks: Tu ne peux pas lancer ce sort ici.
     add: <glyph:validation_tchat> <color:#40ff70> Tu viens d'ajouter le sort {skillname} sur ta baguette !
     max: <glyph:warning_tchat> <color:#ff383b> Tu as déjà le nombre maximal de sort sur ta baguette !
     notremove: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas retirer ce sort
