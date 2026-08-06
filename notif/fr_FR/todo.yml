@@ -40,13 +40,13 @@ classe:
       type_not_possible: Cet objet ne permet pas de lancer ce sort.
       damage_ticks: Tu ne peux pas lancer ce sort juste après avoir été touché.
       no_rarity: Cet objet n'a pas de rareté valide pour ce sort.
-      level_requirement: Tu dois être niveau {level_requirement} pour lancer ce sort.
+      level_requirement: Tu dois être niveau {niveau_requis} (tu es niveau {niveau_joueur}) pour lancer ce sort.
       chance_failed: Le sort a échoué (malchance).
       wrong_world: Ce sort n'est pas utilisable dans ce monde.
-      no_mana: Mana insuffisante pour lancer ce sort.
+      no_mana: "Mana insuffisante : il te manque {mana_manquante} mana (requis : {mana_requise})."
       no_sort: Aucun sort assigné à cette action.
       code: Une erreur est survenue lors du lancement du sort.
-      on_cooldown: Ce sort est en recharge.
+      on_cooldown: Ce sort est en recharge, réessaie dans {cooldown_restant}s.
       no_data: Impossible de lancer ce sort pour le moment.
       jobs_blocks: Tu ne peux pas lancer ce sort ici.
     add: <glyph:validation_tchat> <color:#40ff70> Tu viens d'ajouter le sort {skillname} sur ta baguette !
