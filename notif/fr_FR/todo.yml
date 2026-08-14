@@ -7,6 +7,7 @@ upgradeisland:
   ritual_on_cooldown: Tu dois attendre la fin du cooldown avant de lancer un nouveau rituel
 
 classe:
+  level_requirement: Tu dois être niveau {niveau_requis} pour porter cet item (tu es niveau {niveau_joueur})
   upgrade_station:
     stat_added: "Ton arme a gagné +{value} de {stat}"
     config:
