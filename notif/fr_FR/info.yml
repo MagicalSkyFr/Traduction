@@ -19,6 +19,8 @@ discord:
   linked: \nTes comptes en jeu et discord <color:#ffc933>sont liés</color> !\nTu peux les délier en <click:run_command:'/discord unlink'>[<color:#ffc933>cliquant ici</color>]</click>\n
   code: '\n Pour associer <color:#ffc933>ton compte Discord</color> à <color:#ffc933>ton compte Minecraft</color>, envoie <color:#ffc933>le code</color> au bot <color:#ffc933>{botname}</color>\nCode de vérification : <color:#ffc933>{code}</color>\n'
   nolink: Connecte toi avec <color:#ffc933>/discord link</color> pour récupérer des <color:#ffc933>récompenses uniques</color> !
+upgradeisland:
+  island_level_up: Ton île est au niveau {level}
 donjon:
   invite:
     sent: <color:#ffc933>Ton invitation de donjon</color> a bien été envoyée
