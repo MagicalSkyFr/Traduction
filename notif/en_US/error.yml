@@ -334,10 +334,10 @@ upgradeisland:
   limit_reached_entity: You have reached the maximum of <white>{entity}</white> on your island
   max:
     cactus: You have reached the <white>Cactus</white> limit on your island <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
-  max_observers: You have reached the maximum <white>Observers</white> on your island
+  max_observers: You have reached the maximum <white>Observers</white> on your island <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   minecart_limit_reached: You have reached the limit of <white>{max} minecarts</white> on your island
   no_levelblock: You don't have a level block to give to the island in your inventory
-  piston_limit_reached: You have reached the maximum of <white>Pistons</white> on your island
+  piston_limit_reached: You have reached the maximum of <white>Pistons</white> on your island <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   required_island_level: Your island must be at least level <white>{level}</white>
   required_message: 'You must have unlocked the following upgrades:'
   ritual_not_available: This feature is not available yet
