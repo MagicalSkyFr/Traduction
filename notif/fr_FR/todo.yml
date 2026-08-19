@@ -19,25 +19,25 @@ classe:
     no_nbt: "Ce n'est pas un item de classe ou de métier"
   stats:
     armor:
-      change: "{slot} a changé, par conséquent tes points de vie a été mise à jour : {amount}"
+      change: "{slot} a changé, par conséquent tes points de vie ont été mis à jour : {amount}"
     hp:
-      change: "Ton arme en main a changé, par conséquent tes points de vies max ont été mis à jour : {amount}"
-      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vies maximal"
+      change: "Ton arme en main a changé, par conséquent tes points de vie max ont été mis à jour : {amount}"
+      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vie maximum"
     apply: Les statistiques de ta classe ont été appliquées
   armor_complete:
-    noskill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée
+    noskill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée</color>
     skill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !</color>
   armor_full_required: <glyph:warning_tchat> <color:#ff383b>Tu dois porter une armure intégrale pour profiter de la compétence bonus !</color>
   armor_missing: <glyph:warning_tchat> <color:#ff383b>Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure</color>
   notskilloffhand: <glyph:warning_tchat> <color:#ff383b> Tu ne peux lancer de sort si ton item de la deuxième main est aussi un item avec des compétences
   skill:
     active: <green><bold> Compétence activée </bold>pour {name}</green>
-    inactive: <red><bold> Compétence désactivé </bold>pour {name}</red>
+    inactive: <red><bold> Compétence désactivée </bold>pour {name}</red>
   sort:
     fail:
       profil_not_found: "Impossible de lancer ce sort : profil introuvable."
-      no_competence_data : Impossible de lancer ce sort pour le moment.
-      wrong_level : Ton niveau de compétence ne permet pas ce sort.
+      no_competence_data: Impossible de lancer ce sort pour le moment.
+      wrong_level: Ton niveau de compétence ne permet pas ce sort.
       not_unlocked: Tu n'as pas débloqué ce sort.
       not_active: Cette compétence n'est pas active.
       type_not_possible: Cet objet ne permet pas de lancer ce sort.
@@ -57,11 +57,11 @@ classe:
     notremove: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas retirer ce sort
     remove: <glyph:validation_tchat> <color:#40ff70> Tu viens de retirer le sort de ta baguette !
   sound:
-    active: <green><bold> Son activée </bold>pour {name}</green>
+    active: <green><bold> Son activé </bold>pour {name}</green>
     inactive: <red><bold> Son désactivé </bold>pour {name}</red>
 dungeon:
   already:
-    builder: Tu es déjà dans un session de donjon en création
+    builder: Tu es déjà dans une session de donjon en création
     in: Tu es déjà dans un donjon
   build: La session du donjon a été créée
   builderror: 'Une erreur est survenue lors de la création du donjon : {error}, par prévention, celui-ci a été annulé'
@@ -80,5 +80,5 @@ dungeon:
     send: Tu as été invité à rejoindre le donjon de {ownername}, fais /donjon pour accepter ou refuser
     sendall: '{playername} a été invité à rejoindre le donjon'
   notifwhenstart: La session a été mise dans la file d'attente, une notification te sera envoyée quand la session sera presque créée. Tu peux toujours ajouter des membres pendant ce temps.
-  retarded: Toutes les instances de ce donjon sont prise, vous serez téléporter lorsqu'une place sera disponible, place {place}
+  retarded: Toutes les instances de ce donjon sont prises, tu seras téléporté lorsqu'une place sera disponible, place {place}
   startbuild: La session du donjon sera créée dans 30 secondes

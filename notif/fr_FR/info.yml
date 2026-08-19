@@ -65,18 +65,18 @@ event:
 hdv:
   average_price_last_7_days: 'Le <color:#ffc933>prix moyen</color> de cet objet au cours des 7 derniers jours est de : <color:#ffc933>{price}</color> <glyph:mcoin> par unité'
   log:
-    additem: Tu viens de mettre en vente pour {price} <glyph:mcoin> l'article {itemstack}
-    buyitem: Tu as acheté à {seller} pour {price} <glyph:mcoin> à {time} l'article {itemstack}
+    additem: Tu viens de mettre en vente l'article {itemstack} pour {price} <glyph:mcoin>
+    buyitem: Tu as acheté l'article {itemstack} à {seller} pour {price} <glyph:mcoin> à {time}
     cancel: Tu as annulé le {time} la vente de l'article {itemstack}
     expireitem: La vente a expiré le {time} pour l'article {itemstack}
-    sellitem: Tu as vendu à {target} pour {price} <glyph:mcoin> à {time} l'article {itemstack}
+    sellitem: Tu as vendu l'article {itemstack} à {target} pour {price} <glyph:mcoin> à {time}
 ignore:
   ignored_by: <color:#ffc933>{name}</color> ignore tes messages à partir de maintenant
 information:
   accidental_obsidian: <color:#ffc933>Bloc d’obsidienne</color> créé sans faire exprès ? Fais un clic avec ton seau <color:#ffc933>sur l'obsidienne</color> pour obtenir à nouveau la lave !
   catch_insects: Tu peux obtenir <color:#ffc933>des insectes</color> en cassant des feuilles avec une <color:#ffc933>hache tribale</color>
   clickable_message: '{message} <color:#ffc933>[Clique ici]</color>'
-  combine_gem: Combine <color:#ffc933>9 fragment</color> dans un multiblock établi pour créer une <color:#ffc933>gemme magique</color>. C’est une ressource utilisée pour créer de nombreux <color:#ffc933>objets magiques !</color>
+  combine_gem: Combine <color:#ffc933>9 fragments</color> dans un multiblock établi pour créer une <color:#ffc933>gemme magique</color>. C’est une ressource utilisée pour créer de nombreux <color:#ffc933>objets magiques !</color>
   create_bolder_item: Tu veux créer un objet <color:#ffc933>encore plus puissant</color> ?
   create_stronger_item: Tu veux créer un objet encore plus puissant ?
   discover_potions: Fais <color:#ffc933>/crafts</color> pour les découvrir !
@@ -97,7 +97,7 @@ information:
   special_fish_intro: Tu peux pêcher des <color:#ffc933>poissons spéciaux</color> qui rapportent beaucoup d’argent !
   special_potions_intro: Il existe dans notre monde <color:#ffc933>des potions spéciales</color>.
   trees_dance: Les arbres adorent la danse.
-  tribal_fishing_instructions: Il te suffit d'obtenir <color:#ffc933>une canne à pêche tribale</color>,de faire un <color:#ffc933>clic droit dessus</color> quand tu es dans ton inventaire et de glisser dedans des insectes. Super facile !
+  tribal_fishing_instructions: Il te suffit d'obtenir <color:#ffc933>une canne à pêche tribale</color>, de faire un <color:#ffc933>clic droit dessus</color> quand tu es dans ton inventaire et de glisser dedans des insectes. Super facile !
   tribal_item_instructions: Crée un objet tribal en suivant les consignes dans le <color:#ffc933>/crafts</color>
   tutorial_quest_jobs: Avance dans la <color:#ffc933>quête de tutoriel de tous les métiers</color> pour voir celui qui te correspond le plus !
   unsure_which_job: Tu ne sais pas quel <color:#ffc933>métier choisir</color> ?
@@ -171,7 +171,7 @@ parrainage:
 quest:
   info: 'Info de la quête <color:#ffc933>{quest}</color> pour <color:#ffc933>{player}</color> : Complété : <color:#ffc933>{completed}</color> / État : <color:#ffc933>{state}</color>'
 sellchest:
-  profit: Tes <color:#ffc933>coffres automatiques</color> t'ont rapportés <color:#ffc933>{amount}</color> <glyph:mcoin> au cours des 10 dernières minutes
+  profit: Tes <color:#ffc933>coffres automatiques</color> t'ont rapporté <color:#ffc933>{amount}</color> <glyph:mcoin> au cours des 10 dernières minutes
 shopjoueur:
   ask_price: Quel est le prix {type} que tu souhaites définir pour l'objet ?
   chest_transaction: 'Récapitulatif de ton shop joueur : {location}{action} {amount} objets'

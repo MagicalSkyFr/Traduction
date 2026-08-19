@@ -10,12 +10,12 @@ biome:
 chat:
   already_in_chat: Tu es déjà dans un autre tchat !
   mp:
-    no_one: Personne ne t'as parlé (triste :c)
+    no_one: Personne ne t'a parlé (triste :c)
 classe:
   change_cooldown_active: Tu ne peux pas encore changer de classe, tu pourras changer de classe le {date} !
   item_rarity_required: Tes objets de classe doivent avoir la rareté {rarity} pour débloquer cette compétence
   rune:
-    classe_level_required: Tu n'as pas le niveau de classe requis pour utiliser une rune de niveau {level}) !
+    classe_level_required: Tu n'as pas le niveau de classe requis pour utiliser une rune de niveau {level} !
   skill_level_required: Tu dois avoir au moins le niveau {level} de classe pour débloquer cette compétence
   skill_points_required: Tu dois avoir déposé au moins {cost} points de compétence pour débloquer cette compétence
   skill_prerequisites_required: Tu dois avoir débloqué les prérequis de cette compétence pour pouvoir la débloquer !
@@ -91,7 +91,7 @@ donjon:
   no_instance_available: Aucune instance de donjon n'est actuellement disponible pour accueillir ton groupe
   not_in_dungeon: Tu n'es pas en donjon
   old_portal_forbidden: Tu ne peux pas traverser un ancien portail
-  player_left_cancelled: '{player} vient de quitter le donjon et il a donc été annulé'
+  player_left_cancelled: '{player} vient de quitter le donjon, celui-ci a donc été annulé'
   projectile_returned: Ton projectile a traversé le portail et t'a été retourné !
   session:
     already_exists: Tu as déjà une session
@@ -159,7 +159,7 @@ island:
   demote:
     cannot_demote: Le joueur ne peut plus être rétrogradé
     cannot_higher_rank: Tu ne peux pas rétrograder des joueurs d'un rang supérieur au tiens
-    cannot_self: Tu ne peux pas te rétrograder toi même
+    cannot_self: Tu ne peux pas te rétrograder toi-même
   full_cannot_join: L'île que tu veux rejoindre a atteint le nombre de joueurs maximum. Tu ne peux donc pas la rejoindre
   invite:
     no_invitations: \nTu n'as pas reçu d'invitation d'île.\n<click:run_command:'/is invite'><glyph:left_click> Pour inviter un joueur sur ton île tu peux [<color:#ffc933>cliquer ici</color>]</click> ou faire la commande <color:#ffc933>/is invite</color>\n
@@ -177,7 +177,7 @@ island:
   notyourisland: Tu n'es pas un membre de l'île <white>{islandname}</white>
   player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre de ton île
   promote:
-    above_your_rank: Tu ne peux pas vous promouvoir un joueur au-dessus de ton propre rang d'île
+    above_your_rank: Tu ne peux pas promouvoir un joueur au-dessus de ton propre rang d'île
     cannot_promote: Le joueur <white>{player}</white> ne peut pas être promu
     cannot_self: Tu ne peux pas te promouvoir toi-même ! (Pas de dictature ici)
   rank_required: Tu dois avoir le rang <white>{rank}</white> pour utiliser cette commande
@@ -201,7 +201,7 @@ jobs:
   not_found: Le métier {job} n'existe pas
   skill_competences_required: Tu dois avoir au moins <white>{nb}</white> compétences débloquées pour pouvoir débloquer cette compétence
   skill_level_required: Tu dois avoir au moins le niveau <white>{level}</white> de métier pour débloquer cette compétence
-  skill_prerequisites: Tu dois avoir d'abord débloquer les prérequis de cette compétence pour l'obtenir
+  skill_prerequisites: Tu dois avoir d'abord débloqué les prérequis de cette compétence pour l'obtenir
   skill_pts_required: Tu dois avoir au moins <white>{pts}</white> de points de compétence pour débloquer cette compétence
   skill_rarity_required: Tu dois avoir un objet tribal de la rareté <white>{rarity}</white> pour débloquer cette compétence
   slot_removed: Un de tes métiers a été désactivé car ta limite de métier a été diminuée
@@ -341,7 +341,7 @@ upgradeisland:
   no_levelblock: Tu n'as pas de bloc de niveau à donner à l'île dans ton inventaire
   piston_limit_reached: Tu as atteint le maximum de <white>Pistons</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   required_island_level: Ton île doit avoir au moins le niveau <white>{level}</white>
-  required_message: 'Tu dois avoir les débloqué améliorations suivantes :'
+  required_message: 'Tu dois avoir débloqué les améliorations suivantes :'
   ritual_not_available: Cette fonctionnalité n'est pas encore disponible
   sellchest_limit_reached: Tu as atteint le maximum de <white>Coffres de vente</white> sur ton île
   shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white> sur ton île

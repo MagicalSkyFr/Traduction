@@ -37,7 +37,7 @@ calendar:
   daily_claimed: <green>Tu as récupéré le cadeau du jour <white>{day}</white>. Reviens demain sur le bon chiffre pour obtenir une nouvelle récompense !
   day:
     claimed: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} a déjà été récupéré
-    notclaim: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} n'a pas été récupérer à temps. Tu peux l’obtenir en utilisant un Dégriseur de cadeau
+    notclaim: <dark_gray>[<red>✖<dark_gray>] Le cadeau du jour {day} n'a pas été récupéré à temps. Tu peux l’obtenir en utilisant un Dégriseur de cadeau
     notunlock: <dark_gray>[<red>✖<dark_gray>] Le jour {day} n'est pas passé
     unlock: <dark_gray>[<gold>✔<dark_gray>] Le jour {day} a été déverrouillé
     unlocked: <dark_gray>[<red>✖<dark_gray>] Le jour {day} est déjà déverrouillé
@@ -335,7 +335,7 @@ tutoriel:
 
       ꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b>
 
-      ꖰ Les challenges que tu as complété te font avancer
+      ꖰ Les challenges que tu as complétés te font avancer
 
       ꖰ dans <color:#ffc933>le challenge de tutoriel</color>. Il est très utile car
 
@@ -366,7 +366,7 @@ tutoriel:
 
       '
     objectif:
-      1: Complète l'étape 1 du <color:white>challenge tuto
+      1: Complète l'étape 2 du <color:white>challenge tuto
   challengepierre:
     astuce:
       1: <color:#ffc933>/wiki collection
@@ -555,19 +555,19 @@ tutoriel:
     astuce:
       1: <color:#ffc933>Tu peux obtenir la tunique du débutant
       2: <color:#ffc933>en complétant</color><color:white> le challenge de tutoriel 3
-    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Tu connais désormais tes premiers ennemis.\nꖰ Mais d'autres plus puissants t'attendent !\nꖰ <color:#ffc933>Equipe une tunique du débutant</color> pour\nꖰ être suffisament protégé.\n\n"
+    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Tu connais désormais tes premiers ennemis.\nꖰ Mais d'autres plus puissants t'attendent !\nꖰ <color:#ffc933>Équipe une tunique du débutant</color> pour\nꖰ être suffisamment protégé.\n\n"
     objectif:
-      1: Equipe une tunique du débutant
+      1: Équipe une tunique du débutant
   error:
     no_active_step: Tu as déjà fini le tutoriel !
   finish:
-    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color> </b>\nꖰ Bien, que de chemin parcourus. Tu es devenu \nꖰ assez renseigné pour te débrouiller tout seul.\nꖰ J'espère que tu auras beaucoup appris. \n\n \nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Si tu as peur de t'ennuyer sans mon super tuto\nꖰ tu peux faire la commande <color:#ffc933>/wiki objectif</color>.\nꖰ J'ai écris un guide avec de nombreux objectifs\nꖰ à accomplir ! Profite bien de cette aventure. \n\n"
+    message: "\nꗉ \nꖰ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color> </b>\nꖰ Bien, que de chemin parcouru. Tu es devenu \nꖰ assez renseigné pour te débrouiller tout seul.\nꖰ J'espère que tu auras beaucoup appris. \n\n \nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Si tu as peur de t'ennuyer sans mon super tuto\nꖰ tu peux faire la commande <color:#ffc933>/wiki objectif</color>.\nꖰ J'ai écrit un guide avec de nombreux objectifs\nꖰ à accomplir ! Profite bien de cette aventure. \n\n"
     objectif:
       1: Fin
   finish_dungeon:
     astuce:
       1: <color:#ffc933>/wiki donjon
-    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Tu sembles avoir du potentiel. Tu es près pour\nꖰ un nouveau défi. Traverse <color:#ffc933>le portail dans</color>\nꖰ <color:#ffc933>la grotte du terrain de chasse</color> ou utilise\nꖰ la commande <color:#ffc933>/donjon</color>. \n\n"
+    message: "\nꗊ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Tu sembles avoir du potentiel. Tu es prêt pour\nꖰ un nouveau défi. Traverse <color:#ffc933>le portail dans</color>\nꖰ <color:#ffc933>la grotte du terrain de chasse</color> ou utilise\nꖰ la commande <color:#ffc933>/donjon</color>. \n\n"
     objectif:
       1: Termine le donjon de
       2: <color:#ffc933>l'apprenti chasseur
@@ -775,7 +775,7 @@ tutoriel:
     astuce:
       1: '<color:#ffc933>Créer un warp : </color><color:white>/is setwarp nom'
       2: '<color:#ffc933>Plus d''informations : </color><color:white>/wiki iswarp'
-    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ L'hôtel des ventes est utile pour vendre\nꖰ des objets rares mais pas pour vendre\nꖰ en grande quantité. On va remédier à cela\nꖰ en créeant <color:#ffc933>un warp directement sur ton île</color> !\n\n"
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ L'hôtel des ventes est utile pour vendre\nꖰ des objets rares mais pas pour vendre\nꖰ en grande quantité. On va remédier à cela\nꖰ en créant <color:#ffc933>un warp directement sur ton île</color> !\n\n"
     objectif:
       1: Crée un warp d'île
   warpunlock:
@@ -787,7 +787,7 @@ tutoriel:
   water_stick:
     astuce:
       1: <color:#ffc933>/wiki magie
-    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Il existe en plus <color:#ffc933>des armes et des baguettes</color>\nꖰ <color:#ffc933>magiques</color> pour attaquer les monstres. J'en ai\nꖰ repéré une <color:#ffc933>près des maisons qui sont</color>\nꖰ <color:#ffc933>sur le lac</color>. Récupère-là !\n\n"
+    message: "\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Il existe en plus <color:#ffc933>des armes et des baguettes</color>\nꖰ <color:#ffc933>magiques</color> pour attaquer les monstres. J'en ai\nꖰ repéré une <color:#ffc933>près des maisons qui sont</color>\nꖰ <color:#ffc933>sur le lac</color>. Récupère-la !\n\n"
     objectif:
       1: Obtiens 1 Baguette d'eau
   wikimineur:
