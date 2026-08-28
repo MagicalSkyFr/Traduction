@@ -344,6 +344,7 @@ upgradeisland:
   sellchest_limit_reached: You have reached the maximum of <white>Sell Chests</white> on your island
   shop_player_limit_reached: You have reached the maximum of <white>Player Shops</white> on your island
   sniffer_limit_reached: You have reached the limit of <white>Sniffers</white> on your island
+  spawner_limit_reached: You have reached the maximum of <white>Spawner Multiblocks</white> on your island
   upgrade_max_level: You have reached the maximum level of <white>{name}</white>
   upgrade_not_enough_money: You must have <white>{cost} <glyph:mcoin></white> to buy this upgrade
   villager_limit_reached: You have reached the limit of <white>Villagers</white> on your island

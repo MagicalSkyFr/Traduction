@@ -347,6 +347,7 @@ upgradeisland:
   shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white> sur ton île
   sniffer_limit_reached: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île
   sniffer_limit_reached_view: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
+  spawner_limit_reached: Tu as atteint le maximum de <white>Multiblocks Spawner</white> sur ton île
   upgrade_max_level: Tu as atteint le niveau maximum de <white>{name}</white>
   upgrade_not_enough_money: Tu dois avoir <white>{cost} <glyph:mcoin></white> pour acheter cette amélioration
   villager_limit_reached: Tu as atteint la limite de <white>Villageois</white> sur ton île
