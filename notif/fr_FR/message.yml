@@ -49,6 +49,8 @@ calendar:
 challenge:
   completed: <sound:achievement.complete><glyph:gift_tchat> <color:#40ff70>Tu viens de compléter le challenge :</color> <color:#ffc933>{challenge}</color>
 chat:
+  staff:
+    message: <gold>[Staff Chat] {playername}</gold><gray>»</gray> <white>{message}</white>
   île:
     console: <white>%bskyblock_island_name%</white> <green>{playername}</green><gray> »</gray><white> {message}</white>
     message: <gray>[</gray><white>%bskyblock_rank%</white><gray>]</gray> <gold>{playername}</gold><gray> »</gray><white> {message}</white>
@@ -225,8 +227,6 @@ sentinelle:
   staff:
     hidden: Tu ne vois plus les messages Staff
     visible: Tu vois désormais les messages Staff
-  staff_chat:
-    message: '{message}'
   stats:
     integer: Un nombre est requis
     noarg: Un argument est requis
