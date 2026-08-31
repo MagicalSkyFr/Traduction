@@ -7,6 +7,10 @@ upgradeisland:
   ritual_on_cooldown: Tu dois attendre la fin du cooldown avant de lancer un nouveau rituel
 
 classe:
+  rarity:
+    info: "<gold>Rituel terminé ! Rareté obtenue : <white> {rarity}"
+    obtain: "<gray>Statistiques améliorées :"
+    obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
   notspell: "Ce n'est pas une baguette"
   armor:
     level_requirement: Tu dois être niveau {niveau_requis} pour porter cet item (tu es niveau {niveau_joueur})
