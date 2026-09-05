@@ -1,3 +1,9 @@
+afk:
+  client:
+    warning: "Tu vas être transféré sur le serveur AFK dans <gold>{seconds}</gold> secondes si tu restes inactif."
+    transfer: "Transfert vers le serveur AFK en cours..."
+  server:
+    return-hub: "Tu as été renvoyé vers le hub."
 badge:
   edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color> a été modifié
 bienvenue:
