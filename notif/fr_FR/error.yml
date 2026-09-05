@@ -75,6 +75,36 @@ discord:
   reward:
     claimed: Tu as déjà récupéré tes récompenses !
   unlinked: Ton compte Discord est déjà délié
+servercreation:
+  join:
+    error: Impossible de vous connecter : {reason}
+  admin:
+    create:
+      unknown-template: 'Template inconnu : ''{template}''. Templates disponibles : {available}'
+      error:
+        container-creation: 'Échec de création du conteneur : {detail}'
+        container-start: 'Échec de démarrage du conteneur : {detail}'
+        insufficient-memory: '{detail}'
+        no-port-available: 'Plus aucun port disponible pour ce template : {detail}'
+        ready-timeout: 'Le serveur n''est pas devenu prêt à temps : {detail}'
+        registration: 'Échec d''enregistrement du serveur : {detail}'
+        unexpected: Erreur inattendue lors de la création du serveur.
+    stop:
+      not-found: Aucun serveur actif avec le nom {name}
+      error: Erreur lors de l'arrêt du serveur {name}
+    join:
+      player-only: Seul un joueur peut utiliser cette commande.
+      not-found: Aucun serveur actif avec le nom {name}
+      unavailable: Le serveur {name} n'est plus disponible.
+      rejected: 'Connexion à {name} refusée par le serveur cible : {reason}'
+      error: 'Erreur lors de la connexion à {name} : {reason}'
+    lock:
+      not-found: Aucun serveur actif avec le nom {name}
+      invalid-status: 'Le serveur {name} n''est pas dans l''état RUNNING_ACCEPTING (statut actuel : {status}), impossible de le verrouiller.'
+    reload:
+      error: 'Échec du rechargement de la configuration, l''ancienne configuration reste active : {reason}'
+    health:
+      error: Erreur lors de la vérification de santé des serveurs.
 donjon:
   admin:
     not_in_session: \nLe joueur <white>{player}</white> <color:#ff383b>n'est pas dans une session ou n'est pas le propriétaire du donjon.</color>\n<glyph:left_click>Tu peux voir la liste des sessions actives en <click:run_command:'/donjon admin list'>[cliquant ici]</click>\n

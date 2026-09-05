@@ -1,6 +1,5 @@
 afk:
   client:
-    warning: "Tu vas être transféré sur le serveur AFK dans <gold>{seconds}</gold> secondes si tu restes inactif."
     transfer: "Transfert vers le serveur AFK en cours..."
   server:
     return-hub: "Tu as été renvoyé vers le hub."
@@ -8,6 +7,19 @@ badge:
   edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color> a été modifié
 bienvenue:
   view: Tu as souhaité la bienvenue à <color:#ffc933>{playername}</color> !
+servercreation:
+  lifecycle:
+    locked: Ce serveur va bientôt fermer (encore {remainingPlayers} joueur(s) connecté(s)).
+    kicked: Ce serveur temporaire a atteint sa durée de vie maximale.
+  join:
+    progress:
+      searching : Recherche d'un serveur disponible...
+      provisioning: Aucun serveur disponible, démarrage d'un nouveau serveur (cela peut prendre un moment)...
+      starting: Serveur démarré, finalisation en cours...
+      transferring : Transfert en cours...
+  admin:
+    health:
+      started: Vérification de la santé des serveurs en cours...
 boss:
   damage: 'Vie actuelle du boss : <color:#ff383b>{health}</color> / <color:#ff383b>{maxhealth}</color>'
   spawn: '{name} s''est éveillé pour 2 minutes à cet endroit : <color:#ffc933>{localisation}</color>'

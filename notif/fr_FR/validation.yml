@@ -1,3 +1,15 @@
+servercreation:
+  admin:
+    create:
+      success: 'Serveur créé avec succès : {name}'
+    stop:
+      success: Serveur {name} arrêté.
+    lock:
+      success: 'Serveur {name} verrouillé : il sera décommissionné dès que vide.'
+    reload:
+      success: 'Configuration rechargée : {count} template(s).'
+    health:
+      report: 'Santé des serveurs : {healthy} actif(s), {missing} introuvable(s) désenregistré(s), {stopped} arrêté(s) décommissionné(s).'
 biome:
   change: Le biome de ton île est désormais {biomename}
 dungeon:
