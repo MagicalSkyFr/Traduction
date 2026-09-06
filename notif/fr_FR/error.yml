@@ -1,3 +1,7 @@
+afk:
+  client:
+    not-ready: "Le module AFK n'est pas encore prêt, réessaie dans quelques secondes."
+    not-found: "Joueur introuvable ou hors ligne : <gold><player></gold>."
 profil:
   loading: "Le profil est en chargement, réessaie dans quelques instants"
 badge:

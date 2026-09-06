@@ -1,3 +1,7 @@
+afk:
+  client:
+    command:
+      send: "Transfert de <gold><player></gold> vers le serveur AFK déclenché."
 servercreation:
   admin:
     create:
