@@ -77,7 +77,7 @@ discord:
   unlinked: Ton compte Discord est déjà délié
 servercreation:
   join:
-    error: Impossible de vous connecter : {reason}
+    error: "Impossible de vous connecter : {reason}"
   admin:
     create:
       unknown-template: 'Template inconnu : ''{template}''. Templates disponibles : {available}'
