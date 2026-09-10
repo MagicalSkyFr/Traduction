@@ -2,6 +2,7 @@ afk:
   client:
     transfer: "Transfert vers le serveur AFK en cours..."
   server:
+    instance-recycled: "Transfert vers une autre instance AFK (recyclage de l'instance en cours)."
     return-hub: "Tu as été renvoyé vers le hub."
 badge:
   edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color> a été modifié

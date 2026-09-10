@@ -1,5 +1,7 @@
 afk:
   client:
+    command:
+      map-publish-error: ">Échec de la publication de la map : <white>{error}</white>"
     not-ready: "Le module AFK n'est pas encore prêt, réessaie dans quelques secondes."
     not-found: "Joueur introuvable ou hors ligne : <gold><player></gold>."
 profil:
