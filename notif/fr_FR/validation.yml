@@ -2,7 +2,7 @@ afk:
   client:
     command:
       map-published: "Map <white>{map}</white> publiée avec succès."
-      send: "Transfert de <gold><player></gold> vers le serveur AFK déclenché."
+      send: "Transfert de <gold>{player}</gold> vers le serveur AFK déclenché."
 servercreation:
   admin:
     create:
