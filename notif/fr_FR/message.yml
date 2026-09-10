@@ -51,7 +51,7 @@ challenge:
 chat:
   staff:
     message: <gold>[Staff Chat] {playername}</gold><gray>»</gray> <white>{message}</white>
-  île:
+  island:
     console: <white>%bskyblock_island_name%</white> <green>{playername}</green><gray> »</gray><white> {message}</white>
     message: <gray>[</gray><white>%bskyblock_rank%</white><gray>]</gray> <gold>{playername}</gold><gray> »</gray><white> {message}</white>
   global:
