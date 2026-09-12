@@ -1,3 +1,4 @@
+
 afk:
   client:
     command:
@@ -85,6 +86,10 @@ servercreation:
   join:
     error: "Impossible de vous connecter : {reason}"
   admin:
+    reduce-ttl:
+      not-found: "Aucun serveur enregistré nommé <white>{name}</white>."
+      invalid-status: "<white>{name}</white> n'accepte pas cette action (statut actuel : <white>{status}</white>)."
+      invalid-argument: "Réduction impossible pour <white>{name}</white> : {reason}"
     create:
       unknown-template: 'Template inconnu : ''{template}''. Templates disponibles : {available}'
       error:

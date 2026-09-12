@@ -5,6 +5,8 @@ afk:
       send: "Transfert de <gold>{player}</gold> vers le serveur AFK déclenché."
 servercreation:
   admin:
+    reduce-ttl:
+      success: "Durée de vie de <white>{name}</white> réduite à <white>{minutes} min</white>."
     create:
       success: 'Serveur créé avec succès : {name}'
     stop:
