@@ -113,6 +113,9 @@ quest:
   quest_item_found: You found the quest item!
 regen:
   healed: You have been healed <white>{amount}</white> hearts
+  combat:
+    started: You start regenerating
+    full: You have regenerated {amount} hearts
 shop:
   buy_success: You bought <white>{amount} {item}</white> for <white>{total} <glyph:mcoin></white>
   sell_success: <green>You sold <white>{amount} {item} </white>for <white>{total} <glyph:mcoin></white>

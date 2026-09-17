@@ -137,6 +137,9 @@ quest:
   quest_item_found: Tu as trouvé l'objet de quête !
 regen:
   healed: Tu as été régénéré de <white>{amount}</white> cœurs
+  combat:
+    started: Tu commences à te régénérer
+    full: Tu as régénéré {amount} cœurs
 shop:
   buy_success: Tu as acheté <white>{amount} {item}</white> pour <white>{total} <glyph:mcoin></white>
   sell_success: <green>Tu as vendu <white>{amount} {item} </white>pour <white>{total} <glyph:mcoin></white>
