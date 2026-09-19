@@ -1,4 +1,6 @@
 chat:
+  staff:
+    console: <gold>[Staff Chat] {playername}</gold><gray>»</gray> <white>{message}</white>
   log:
     send: <color:#ffc933>{sender}</color> → <white>{target}</white> <gray>»</gray> <white>{message}</white>
 classe:

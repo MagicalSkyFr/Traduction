@@ -1,3 +1,22 @@
+afk:
+  client:
+    command:
+      map-published: "Map <white>{map}</white> publiée avec succès."
+      send: "Transfert de <gold>{player}</gold> vers le serveur AFK déclenché."
+servercreation:
+  admin:
+    reduce-ttl:
+      success: "Durée de vie de <white>{name}</white> réduite à <white>{minutes} min</white>."
+    create:
+      success: 'Serveur créé avec succès : {name}'
+    stop:
+      success: Serveur {name} arrêté.
+    lock:
+      success: 'Serveur {name} verrouillé : il sera décommissionné dès que vide.'
+    reload:
+      success: 'Configuration rechargée : {count} template(s).'
+    health:
+      report: 'Santé des serveurs : {healthy} actif(s), {missing} introuvable(s) désenregistré(s), {stopped} arrêté(s) décommissionné(s).'
 biome:
   change: Le biome de ton île est désormais {biomename}
 dungeon:
@@ -10,7 +29,11 @@ boss:
 chat:
   join: Tu as rejoins le tchat <color:#ffc933>{id}</color>
   leave: Tu as quitté le tchat <color:#ffc933>{id}</color>
+tag:
+  tag_removed: Tu as retiré le tag {tag}
 classe:
+  conversion:
+    success: "L'item a été converti dans la nouvelle version !"
   rune:
     points_added: Tu as transformé tes runes en <color:#ffc933>{amount}</color> <color:#40ff70>points de compétences</color>
   selected: Tu viens de choisir la classe <white>{class}</white>
@@ -116,6 +139,9 @@ quest:
   quest_item_found: Tu as trouvé l'objet de quête !
 regen:
   healed: Tu as été régénéré de <white>{amount}</white> cœurs
+  combat:
+    started: Tu commences à te régénérer
+    full: Tu as régénéré {amount} cœurs
 shop:
   buy_success: Tu as acheté <white>{amount} {item}</white> pour <white>{total} <glyph:mcoin></white>
   sell_success: <green>Tu as vendu <white>{amount} {item} </white>pour <white>{total} <glyph:mcoin></white>

@@ -1,4 +1,10 @@
+servercreation:
+  admin:
+    join:
+      unexpected-status: '⚠ Ce serveur n''est pas dans l''état RUNNING_ACCEPTING (statut actuel : {status}) — la connexion peut échouer.'
 afk:
+  client:
+    warning: "Tu vas être transféré sur le serveur AFK dans <gold>{seconds}</gold> seconde(s) si tu restes inactif."
   teleport:
     teleport: Tu as été téléporté au spawn car tu étais AFK
     warning: Tu es considéré comme AFK. Clique ou bouge dans moins de 60 secondes pour ne pas être téléporté
