@@ -32,6 +32,8 @@ chat:
 tag:
   tag_removed: Tu as retiré le tag {tag}
 classe:
+  conversion:
+    success: "L'item a été converti dans la nouvelle version !"
   rune:
     points_added: Tu as transformé tes runes en <color:#ffc933>{amount}</color> <color:#40ff70>points de compétences</color>
   selected: Tu viens de choisir la classe <white>{class}</white>
