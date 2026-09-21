@@ -265,8 +265,8 @@ niveau:
   notinteger: 'Le niveau doit être un nombre entier (valeur donnée : {value})'
 number:
   not:
-    negative: <dark_gray>[<red>✖<dark_gray>] La commande n'accepte pas de valeur négative ({number})
-    number: <dark_gray>[<red>✖<dark_gray>] La commande n'accepte que des nombres ({number})
+    negative: La commande n'accepte pas de valeur négative ({number})
+    number: La commande n'accepte que des nombres ({number})
 parrainage:
   accept:
     denied: <white>{playername}</white> ne t’a pas invité
