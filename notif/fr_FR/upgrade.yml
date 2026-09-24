@@ -4,3 +4,5 @@ spawners:
   upgrade_success: 'Tu as amélioré <white>{type}</white> au niveau <white>{level}</white>'
 upgradeisland:
   upgrade_success: "Tu viens d'améliorer: <white>{name} (Lvl.{current} -> Lvl.{next})</white>"
+quest:
+  completed: 'Félicitations ! Tu as terminé la quête <white>{quest}</white> !'

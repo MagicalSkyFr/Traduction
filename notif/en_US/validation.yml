@@ -110,6 +110,10 @@ pub:
   disabled: You disabled the ads channel
   enabled: You enabled the ads channel
 quest:
+  admin:
+    complete: The current step of the quest <white>{quest}</white> has been completed for <white>{player}</white>.
+    reload: Configuration reloaded <gray>({warnings} warning(s))</gray>
+    reset: <white>{player}</white>'s progress on the quest <white>{quest}</white> has been reset.
   quest_item_found: You found the quest item!
 regen:
   healed: You have been healed <white>{amount}</white> hearts

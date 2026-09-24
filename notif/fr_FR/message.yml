@@ -224,6 +224,10 @@ pub:
   message: '{message}'
   separator: <dark_gray><strikethrough>------------------------------
   title: <color:#ffc933>Pub de {player} :</color>
+quest:
+  tuto:
+    casser_stone: 'Objectif : casse un bloc de stone.'
+    tuer_zombie: 'Objectif : tue un zombie.'
 reload:
   success: <dark_gray>[<color:#ff9f0f>Rechargement</color>] Les fichiers de configurations sont rechargés
 sentinelle:

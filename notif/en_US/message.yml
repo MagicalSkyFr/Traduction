@@ -134,6 +134,10 @@ pub:
   message: '{message}'
   separator: <dark_gray><strikethrough>------------------------------
   title: <color:#ffc933>Ad from {player}:</color>
+quest:
+  tuto:
+    casser_stone: 'Objective: break a stone block.'
+    tuer_zombie: 'Objective: kill a zombie.'
 reload:
   success: <dark_gray>[<color:#ff9f0f>Reload</color>] Configuration files have been reloaded
 sentinelle:

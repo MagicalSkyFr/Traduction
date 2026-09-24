@@ -252,8 +252,17 @@ propulsion:
 pub:
   forbidden: You can't use /pub
 quest:
+  admin:
+    player-offline: The player <white>{player}</white> isn't online.
+    reload-error: Failed to reload the configuration, check the console.
+    unknown-quest: The quest <white>{quest}</white> can't be found.
+    usage: 'Usage: <white>{usage}</white>'
   already_completed: You have already finished the quest!
+  menu:
+    unknown: The menu <white>{menu}</white> doesn't exist.
   not_started: You must have started the quest to be able to track it!
+  step:
+    locked: 'This step is locked: finish the previous step first.'
 regen:
   cooldown: You are on cooldown, you'll be able to regenerate in <white>{time}</white> seconds
 sellchest:

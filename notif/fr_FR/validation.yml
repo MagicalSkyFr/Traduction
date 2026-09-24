@@ -136,6 +136,10 @@ pub:
   disabled: Tu as désactivé le canal de pub
   enabled: Tu as activé le canal pub
 quest:
+  admin:
+    complete: L'étape en cours de la quête <white>{quest}</white> a été validée pour <white>{player}</white>.
+    reload: Configuration rechargée <gray>({warnings} avertissement(s))</gray>
+    reset: La progression de <white>{player}</white> sur la quête <white>{quest}</white> a été réinitialisée.
   quest_item_found: Tu as trouvé l'objet de quête !
 regen:
   healed: Tu as été régénéré de <white>{amount}</white> cœurs

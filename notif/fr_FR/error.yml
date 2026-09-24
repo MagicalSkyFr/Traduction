@@ -293,8 +293,17 @@ propulsion:
 pub:
   forbidden: Tu ne peux pas utiliser le /pub
 quest:
+  admin:
+    player-offline: Le joueur <white>{player}</white> n'est pas connecté.
+    reload-error: Échec du rechargement de la configuration, consulte la console.
+    unknown-quest: La quête <white>{quest}</white> est introuvable.
+    usage: 'Utilisation : <white>{usage}</white>'
   already_completed: Tu as déjà fini la quête !
+  menu:
+    unknown: Le menu <white>{menu}</white> n'existe pas.
   not_started: Tu dois avoir commencé la quête pour pouvoir la suivre !
+  step:
+    locked: 'Cette étape est verrouillée : termine d''abord l''étape précédente.'
 regen:
   cooldown: Tu es en cooldown, tu pourras te régénérer dans <white>{time}</white> secondes
 sellchest:
