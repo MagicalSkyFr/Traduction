@@ -140,6 +140,8 @@ quest:
     complete: L'étape en cours de la quête <white>{quest}</white> a été validée pour <white>{player}</white>.
     reload: Configuration rechargée <gray>({warnings} avertissement(s))</gray>
     reset: La progression de <white>{player}</white> sur la quête <white>{quest}</white> a été réinitialisée.
+    test: 'Étape de test créée pour <white>{player}</white> : <white>{action}</white> <white>{quantity}</white>x <white>{type}</white>.'
+    test-clear: L'étape de test de <white>{player}</white> a été retirée.
   quest_item_found: Tu as trouvé l'objet de quête !
 regen:
   healed: Tu as été régénéré de <white>{amount}</white> cœurs

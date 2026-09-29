@@ -114,6 +114,8 @@ quest:
     complete: The current step of the quest <white>{quest}</white> has been completed for <white>{player}</white>.
     reload: Configuration reloaded <gray>({warnings} warning(s))</gray>
     reset: <white>{player}</white>'s progress on the quest <white>{quest}</white> has been reset.
+    test: 'Test step created for <white>{player}</white>: <white>{action}</white> <white>{quantity}</white>x <white>{type}</white>.'
+    test-clear: <white>{player}</white>'s test step has been removed.
   quest_item_found: You found the quest item!
 regen:
   healed: You have been healed <white>{amount}</white> hearts

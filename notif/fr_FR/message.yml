@@ -225,6 +225,8 @@ pub:
   separator: <dark_gray><strikethrough>------------------------------
   title: <color:#ffc933>Pub de {player} :</color>
 quest:
+  test:
+    progress: 'Étape de test : <color:#ffc933>{current}</color>/<color:#ffc933>{quantity}</color>'
   tuto:
     casser_stone: 'Objectif : casse un bloc de stone.'
     tuer_zombie: 'Objectif : tue un zombie.'

@@ -296,6 +296,7 @@ quest:
   admin:
     player-offline: Le joueur <white>{player}</white> n'est pas connecté.
     reload-error: Échec du rechargement de la configuration, consulte la console.
+    unknown-goal: L'action d'objectif <white>{goal}</white> n'est pas enregistrée.
     unknown-quest: La quête <white>{quest}</white> est introuvable.
     usage: 'Utilisation : <white>{usage}</white>'
   already_completed: Tu as déjà fini la quête !

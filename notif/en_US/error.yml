@@ -255,6 +255,7 @@ quest:
   admin:
     player-offline: The player <white>{player}</white> isn't online.
     reload-error: Failed to reload the configuration, check the console.
+    unknown-goal: The goal action <white>{goal}</white> isn't registered.
     unknown-quest: The quest <white>{quest}</white> can't be found.
     usage: 'Usage: <white>{usage}</white>'
   already_completed: You have already finished the quest!
