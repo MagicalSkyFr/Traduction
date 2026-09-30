@@ -86,3 +86,18 @@ dungeon:
   notifwhenstart: La session a été mise dans la file d'attente, une notification te sera envoyée quand la session sera presque créée. Tu peux toujours ajouter des membres pendant ce temps.
   retarded: Toutes les instances de ce donjon sont prises, tu seras téléporté lorsqu'une place sera disponible, place {place}
   startbuild: La session du donjon sera créée dans 30 secondes
+island:
+  command:
+    has-island: "<red>Tu as déjà une île."
+    profile-loading: "<gray>Ton profil est en cours de chargement, réessaie dans un instant."
+  template:
+    chosen: "<green>Tu as choisi l'île {template}<green> !"
+    visit-unavailable: "<red>L'île {template}<red> ne peut pas être visitée pour le moment."
+    menu:
+      empty: "<red>Aucune île n'est disponible pour le moment."
+    save:
+      usage: "<red>Utilisation : {usage}"
+      invalid-id: "<red>Identifiant invalide : {id} (minuscules, chiffres, _ et -, 32 caractères max)."
+      unknown-world: "<red>Le monde {world} n'est pas chargé."
+      success: "<green>Le monde {world} est enregistré comme template {template}."
+      error: "<red>Impossible d'enregistrer la template {template} : {error}"
