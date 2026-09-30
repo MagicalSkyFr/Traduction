@@ -161,6 +161,10 @@ jobs:
   next_remove_in: Tu pourras retirer un autre métier dans <color:#ffc933>{days} jours</color>
   slot_added_target: Tu as <white>{slots}</white> emplacements de métier
   slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>Il te reste <white>{slots}</white> emplacements de métier vide
+  xp_event_end: L'événement XP est terminé, l'XP du métier <white>{job}</white> n'est plus multipliée (elle l'était par <white>x{multiplier}</white>)
+  xp_event_list: <white>{job}</white> <gray>»</gray> <color:#ffc933>x{multiplier}</color> <gray>(reste <white>{remaining}</white>)</gray>
+  xp_event_none: Aucun événement XP en cours
+  xp_event_start: <bold>Événement XP !</bold> L'XP du métier <color:#ffc933>{job}</color> est multipliée par <color:#ffc933>x{multiplier}</color> pendant <color:#ffc933>{hours}h</color> !
   xp_received: Tu as reçu <white>{xp}</white> expérience du métier <white>{job}</white>
 kick:
   broadcast: <color:#ffc933>{player}</color> vient d'expulser <color:#ffc933>{target}</color> de l'île

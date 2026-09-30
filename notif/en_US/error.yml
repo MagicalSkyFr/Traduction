@@ -205,6 +205,7 @@ jobs:
   skill_pts_required: You must have at least <white>{pts}</white> skill points to unlock this skill
   skill_rarity_required: You must have a tribal item of rarity <white>{rarity}</white> to unlock this skill
   slot_removed: One of your jobs has been deactivated because your job limit was decreased
+  xp_event_invalid: The multiplier must be an integer of at least <white>2</white> and the duration at least <white>1 hour</white>
 kits:
   already_claimed: You already claimed this kit! You'll be able to claim it again tomorrow
   not_found: The kit <white>{kit}</white> doesn't exist

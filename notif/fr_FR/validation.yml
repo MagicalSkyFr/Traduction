@@ -98,6 +98,7 @@ island:
 item:
   on_head: L'objet est désormais sur ta tête !
 jobs:
+  drop: "<sound:ENTITY_ITEM_PICKUP>Ton métier <white>{job}</white> t'a rapporté un objet bonus : <white>{amount}x {item}</white> !"
   cooldown_reset: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le cooldown de <white>{player}</white> a été réinitialisé
   level_set_broadcast: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Le joueur <white>{player}</white> a été mis au niveau <white>{level}</white> du métier <white>{job}</white>
   points_added: <sound:BLOCK_NOTE_BLOCK_BASS>Tu as ajouté <white>{points}</white> points de compétences

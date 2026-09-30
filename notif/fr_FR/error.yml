@@ -246,6 +246,7 @@ jobs:
   skill_pts_required: Tu dois avoir au moins <white>{pts}</white> de points de compétence pour débloquer cette compétence
   skill_rarity_required: Tu dois avoir un objet tribal de la rareté <white>{rarity}</white> pour débloquer cette compétence
   slot_removed: Un de tes métiers a été désactivé car ta limite de métier a été diminuée
+  xp_event_invalid: Le multiplicateur doit être un entier d'au moins <white>2</white> et la durée d'au moins <white>1 heure</white>
 kits:
   already_claimed: Tu as déjà récupéré ce kit ! Tu pourras le récupérer à nouveau demain
   not_found: Le kit <white>{kit}</white> n'existe pas

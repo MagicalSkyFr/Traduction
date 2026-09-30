@@ -140,6 +140,10 @@ jobs:
   next_remove_in: You will be able to remove another job in <color:#ffc933>{days} days</color>
   slot_added_target: You have <white>{slots}</white> job slots
   slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>You have <white>{slots}</white> empty job slots left
+  xp_event_end: The XP event is over, <white>{job}</white> job XP is no longer multiplied (it was <white>x{multiplier}</white>)
+  xp_event_list: <white>{job}</white> <gray>»</gray> <color:#ffc933>x{multiplier}</color> <gray>(<white>{remaining}</white> left)</gray>
+  xp_event_none: No XP event in progress
+  xp_event_start: <bold>XP Event!</bold> <color:#ffc933>{job}</color> job XP is multiplied by <color:#ffc933>x{multiplier}</color> for <color:#ffc933>{hours}h</color>!
   xp_received: You received <white>{xp}</white> experience from the job <white>{job}</white>
 kick:
   broadcast: <color:#ffc933>{player}</color> just kicked <color:#ffc933>{target}</color> from the island
