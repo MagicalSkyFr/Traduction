@@ -178,6 +178,26 @@ island:
     error: <dark_gray>[<red>✖<dark_gray>] <red>Ton île n'a pas pu être chargée. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
   teleport:
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>Impossible de te téléporter sur ton île pour le moment, réessaie dans un instant.
+  range:
+    leave: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas quitter l'île.
+  border:
+    enabled: <dark_gray>[<green>✔<dark_gray>] <green>Bordure des îles activée.
+    disabled: <dark_gray>[<green>✔<dark_gray>] <green>Bordure des îles désactivée, tu peux sortir des îles.
+  bank:
+    balance: "<dark_gray>[<gold>✔<dark_gray>] Solde de la banque de l'île : <color:#ffc933>{balance}</color>"
+    usage: '<dark_gray>[<red>✖<dark_gray>] <red>Utilisation : {usage}'
+    invalid-amount: <dark_gray>[<red>✖<dark_gray>] <red>Montant invalide, indique un nombre positif (ex. 1500 ou 12.50).
+    deposit:
+      success: "<dark_gray>[<green>✔<dark_gray>] <green>Tu as déposé <color:#ffc933>{amount}</color> dans la banque de l'île. Solde : <color:#ffc933>{balance}</color>"
+    withdraw:
+      success: "<dark_gray>[<green>✔<dark_gray>] <green>Tu as retiré <color:#ffc933>{amount}</color> de la banque de l'île. Solde : <color:#ffc933>{balance}</color>"
+    not-enough-money: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas assez d'argent pour déposer {amount}.
+    bank-not-enough: "<dark_gray>[<red>✖<dark_gray>] <red>La banque de l'île n'a pas assez d'argent (solde : {balance})."
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de faire cette opération.
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas d'île.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
+    unavailable: <dark_gray>[<red>✖<dark_gray>] <red>La banque est indisponible pour le moment.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Une erreur est survenue, ton argent est resté dans la banque. Merci d'ouvrir un ticket.
 jobs:
   archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1 supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la boutique</color>]</click>\n
   level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white> sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n

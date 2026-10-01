@@ -45,6 +45,10 @@ chunk:
 cooldown:
   reset: Le cooldown de {player} a été réinitialisé
 money:
+  admin:
+    add: "Tu as ajouté <color:#ffc933>{amount}</color> <glyph:mcoin> à <white>{player}</white>. Nouveau solde : <color:#ffc933>{money}</color> <glyph:mcoin>"
+    remove: "Tu as retiré <color:#ffc933>{amount}</color> <glyph:mcoin> à <white>{player}</white>. Nouveau solde : <color:#ffc933>{money}</color> <glyph:mcoin>"
+    set: "Le solde de <white>{player}</white> est maintenant de <color:#ffc933>{money}</color> <glyph:mcoin>"
   pay:
     sent: "Tu as envoyé <gold>{amount} MCoins</gold> à <gold>{player}</gold>."
     received: "Tu as reçu <gold>{amount} MCoins</gold> de la part de <gold>{player}</gold>."

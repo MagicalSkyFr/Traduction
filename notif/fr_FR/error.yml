@@ -41,7 +41,10 @@ chunk:
   error: Une erreur est survenue lors de l'analyse des chunks
   locked: Ce chunk est en cours d'analyse, réessaie dans un instant
 money:
+  invalid-amount: "Le montant <white>{amount}</white> est invalide (ex. 1500 ou 12.50)."
+  error: Une erreur est survenue, le solde n'a pas été modifié. Réessaie dans un instant.
   pay:
+    error: Une erreur est survenue pendant le paiement, ton argent n'a pas été débité. Réessaie dans un instant.
     self: "Tu ne peux pas t'envoyer de l'argent à toi-même"
     invalid-amount: "Le montant que tu as entré est invalide"
     insufficient-funds: "Tu n'as pas assez d'argent. Solde actuel : <gold>{money}</gold>"
