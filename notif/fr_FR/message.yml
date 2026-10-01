@@ -168,6 +168,16 @@ hdv:
   message: '{text}'
 information:
   msg: <white>{msg}</white>
+island:
+  create:
+    started: <gray>Création de ton île {template}<gray> en cours, un instant...
+    success: <dark_gray>[<green>✔<dark_gray>] <green>Ton île {template}<green> a été créée, bienvenue chez toi !
+    in-progress: <dark_gray>[<red>✖<dark_gray>] <red>Ton île est déjà en cours de création, patiente un instant.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Ton île {template}<red> n'a pas pu être créée. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
+  load:
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Ton île n'a pas pu être chargée. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
+  teleport:
+    unavailable: <dark_gray>[<red>✖<dark_gray>] <red>Impossible de te téléporter sur ton île pour le moment, réessaie dans un instant.
 jobs:
   archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1 supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la boutique</color>]</click>\n
   level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white> sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n

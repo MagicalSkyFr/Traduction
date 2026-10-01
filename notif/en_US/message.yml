@@ -78,6 +78,16 @@ hdv:
   message: '{text}'
 information:
   msg: <white>{msg}</white>
+island:
+  create:
+    started: <gray>Creating your island {template}<gray>, please wait...
+    success: <dark_gray>[<green>✔<dark_gray>] <green>Your island {template}<green> has been created, welcome home!
+    in-progress: <dark_gray>[<red>✖<dark_gray>] <red>Your island is already being created, please wait a moment.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Your island {template}<red> could not be created. <click:run_command:'/discord'><white>Open a ticket on [<color:#ffc933>our discord</color>]</white></click>
+  load:
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Your island could not be loaded. <click:run_command:'/discord'><white>Open a ticket on [<color:#ffc933>our discord</color>]</white></click>
+  teleport:
+    unavailable: <dark_gray>[<red>✖<dark_gray>] <red>You cannot be teleported to your island right now, try again in a moment.
 jobs:
   archimage: <click:run_command:'/boutique'>You can get <color:#ffc933>1 more</color> by getting the <glyph:archimage> rank in [<color:#ffc933>the shop</color>]</click>\n
   level_up: \n<glyph:up_tchat> You just reached level <white>{level}</white> in your job <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Click here to claim [<color:#ffc933>your reward</color>]</click>\n
