@@ -44,6 +44,12 @@ chunk:
   finish: "L'analyse des chunks est terminée ({time})"
 cooldown:
   reset: Le cooldown de {player} a été réinitialisé
+spawn:
+  teleport: "Tu as été téléporté au spawn."
+  gamemode:
+    self: "<green>Ton mode de jeu est maintenant : {mode}"
+    other: "<green>Le mode de jeu de {player} est maintenant : {mode}"
+    target: "<green>Ton mode de jeu a été changé en : {mode}"
 money:
   admin:
     add: "Tu as ajouté <color:#ffc933>{amount}</color> <glyph:mcoin> à <white>{player}</white>. Nouveau solde : <color:#ffc933>{money}</color> <glyph:mcoin>"

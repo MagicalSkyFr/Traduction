@@ -40,6 +40,12 @@ multiblock:
 chunk:
   error: Une erreur est survenue lors de l'analyse des chunks
   locked: Ce chunk est en cours d'analyse, réessaie dans un instant
+spawn:
+  world_missing: "Le spawn est indisponible pour le moment."
+  gamemode:
+    usage: "<red>Utilisation : /gamemode <mode> [joueur]"
+    unknown: "<red>Mode de jeu inconnu : {mode}"
+    player_not_found: "<red>Le joueur {player} n'est pas connecté."
 money:
   invalid-amount: "Le montant <white>{amount}</white> est invalide (ex. 1500 ou 12.50)."
   error: Une erreur est survenue, le solde n'a pas été modifié. Réessaie dans un instant.
