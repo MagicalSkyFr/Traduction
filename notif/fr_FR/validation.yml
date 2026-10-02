@@ -46,6 +46,8 @@ cooldown:
   reset: Le cooldown de {player} a été réinitialisé
 spawn:
   teleport: "Tu as été téléporté au spawn."
+  back:
+    teleport: "Tu es revenu à ta position d'avant le spawn."
   gamemode:
     self: "<green>Ton mode de jeu est maintenant : {mode}"
     other: "<green>Le mode de jeu de {player} est maintenant : {mode}"

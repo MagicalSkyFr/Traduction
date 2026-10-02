@@ -42,6 +42,8 @@ chunk:
   locked: Ce chunk est en cours d'analyse, réessaie dans un instant
 spawn:
   world_missing: "Le spawn est indisponible pour le moment."
+  back:
+    none: "Tu n'as aucune position où revenir."
   gamemode:
     usage: "<red>Utilisation : /gamemode <mode> [joueur]"
     unknown: "<red>Mode de jeu inconnu : {mode}"
