@@ -302,6 +302,14 @@ island:
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>Aucune île à afficher pour {player}.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Les informations de l'île n'ont pas pu être chargées.
+  bentobox:
+    import:
+      missing: "<dark_gray>[<red>✖<dark_gray>] <red>Données BentoBox introuvables : il faut les dossiers {database}/Island et {world}."
+      running: <dark_gray>[<red>✖<dark_gray>] <red>Un import BentoBox est déjà en cours.
+      started: "<gray>Import BentoBox lancé : {total} île(s) à importer..."
+      progress: "<gray>Import BentoBox : {processed}/{total} île(s) traitée(s)..."
+      done: "<dark_gray>[<green>✔<dark_gray>] <green>Import BentoBox terminé ({total} île(s)) : {imported} importée(s), {already} déjà présente(s), {conflicts} conflit(s), {failed} erreur(s) (voir la console)."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>L'import BentoBox a échoué : {error}"
 jobs:
   archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1 supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la boutique</color>]</click>\n
   level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white> sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n

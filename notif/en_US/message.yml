@@ -192,6 +192,14 @@ island:
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>No island to show for {player}.
     error: <dark_gray>[<red>✖<dark_gray>] <red>The island information could not be loaded.
+  bentobox:
+    import:
+      missing: "<dark_gray>[<red>✖<dark_gray>] <red>BentoBox data not found: the folders {database}/Island and {world} are required."
+      running: <dark_gray>[<red>✖<dark_gray>] <red>A BentoBox import is already running.
+      started: <gray>BentoBox import started: {total} island(s) to import...
+      progress: <gray>BentoBox import: {processed}/{total} island(s) processed...
+      done: "<dark_gray>[<green>✔<dark_gray>] <green>BentoBox import finished ({total} island(s)): {imported} imported, {already} already present, {conflicts} conflict(s), {failed} error(s) (see the console)."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>The BentoBox import failed: {error}"
 jobs:
   archimage: <click:run_command:'/boutique'>You can get <color:#ffc933>1 more</color> by getting the <glyph:archimage> rank in [<color:#ffc933>the shop</color>]</click>\n
   level_up: \n<glyph:up_tchat> You just reached level <white>{level}</white> in your job <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Click here to claim [<color:#ffc933>your reward</color>]</click>\n
