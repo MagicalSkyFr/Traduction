@@ -88,6 +88,110 @@ island:
     error: <dark_gray>[<red>✖<dark_gray>] <red>Your island could not be loaded. <click:run_command:'/discord'><white>Open a ticket on [<color:#ffc933>our discord</color>]</white></click>
   teleport:
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>You cannot be teleported to your island right now, try again in a moment.
+    falling: <dark_gray>[<red>✖<dark_gray>] <red>You cannot teleport while falling.
+    unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>This destination does not exist (anymore).
+  visit:
+    enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
+    exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."
+  flag:
+    denied: "<dark_gray>[<red>✖<dark_gray>] <red>You are not allowed to do this on this island: <color:#ffc933>{flag}</color>"
+    visit-denied: <dark_gray>[<red>✖<dark_gray>] <red>This island does not accept your visit.
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
+    edit:
+      no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to change this flag.
+      limit: <dark_gray>[<red>✖<dark_gray>] <red>This flag cannot go any further.
+  member:
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to manage {player}.
+    rank-limit: <dark_gray>[<red>✖<dark_gray>] <red>You cannot change {player}'s rank any further.
+    promoted: "<dark_gray>[<green>✔<dark_gray>] <green>{player} is now <color:#ffc933>{rank}</color> on the island."
+    demoted: "<dark_gray>[<green>✔<dark_gray>] <green>{player} is now <color:#ffc933>{rank}</color> on the island."
+    rank-changed: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} made you <color:#ffc933>{rank}</color> on the island."
+    joined: <dark_gray>[<green>✔<dark_gray>] <green>{player} joined the island, say welcome!
+    member-left: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} left the island.
+    left: <dark_gray>[<green>✔<dark_gray>] <green>You left {island}'s island.
+    owner-not-alone: <dark_gray>[<red>✖<dark_gray>] <red>You are the leader: you must be the only player of the island to leave it.
+    deleted: <dark_gray>[<green>✔<dark_gray>] <green>You left your island, it has been deleted. Type /is to create a new one.
+    in-progress: <dark_gray>[<red>✖<dark_gray>] <red>An action is already in progress, please wait a moment.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>An error occurred. <click:run_command:'/discord'><white>Open a ticket on [<color:#ffc933>our discord</color>]</white></click>
+  invite:
+    sent: <dark_gray>[<green>✔<dark_gray>] <green>Invitation sent to {player}, it expires in 5 minutes.
+    received: "<dark_gray>[<gold>✉<dark_gray>] <gold>{player} invites you to join {island}'s island!\n<click:run_command:'/is accept'><glyph:left_click> <white>Click here to [<green>accept</green>]</white></click>   <click:run_command:'/is deny'><glyph:left_click> <white>or here to [<red>deny</red>]</white></click>"
+    accepted: <dark_gray>[<green>✔<dark_gray>] <green>Welcome to {island}'s island! Type /is to go there.
+    denied: <dark_gray>[<green>✔<dark_gray>] <green>Invitation denied.
+    none: <dark_gray>[<red>✖<dark_gray>] <red>You have no pending invitation (it may have expired).
+    unavailable: <dark_gray>[<red>✖<dark_gray>] <red>This player cannot be invited right now.
+    already-has-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} already has an island.
+    banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} is banned from the island.
+    full: <dark_gray>[<red>✖<dark_gray>] <red>The island is full.
+  ban:
+    banned: <dark_gray>[<green>✔<dark_gray>] <green>{player} is now banned from the island.
+    unbanned: <dark_gray>[<green>✔<dark_gray>] <green>{player} is no longer banned from the island.
+    already-banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} is already banned from the island.
+    not-banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} is not banned from the island.
+    target: <dark_gray>[<red>✖<dark_gray>] <red>You have been banned from the island {island}<red>.
+    target-unbanned: <dark_gray>[<green>✔<dark_gray>] <green>You are no longer banned from the island {island}<green>.
+  expel:
+    expelled: <dark_gray>[<green>✔<dark_gray>] <green>{player} has been sent away from the island.
+    not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} is not on your island.
+    target: <dark_gray>[<red>✖<dark_gray>] <red>You have been sent away from the island {island}<red>.
+  kick:
+    kicked: <dark_gray>[<green>✔<dark_gray>] <green>{player} has been kicked from the island.
+    not-member: <dark_gray>[<red>✖<dark_gray>] <red>{player} is not part of the island.
+    target: <dark_gray>[<red>✖<dark_gray>] <red>You have been kicked from the island {island}<red>. Type /is to create your own island.
+    member-kicked: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} has been kicked from the island.
+  moderation:
+    member: <dark_gray>[<red>✖<dark_gray>] <red>{player} is part of the island: kick them first with /is kick.
+    protected: <dark_gray>[<red>✖<dark_gray>] <red>You cannot do that to {player}.
+    unknown-player: <dark_gray>[<red>✖<dark_gray>] <red>No player named {player} is known by the server.
+    usage: '<dark_gray>[<red>✖<dark_gray>] <red>Usage: {usage}'
+  coop:
+    added: <dark_gray>[<green>✔<dark_gray>] <green>{player} is now a coop of the island, as long as you both stay online.
+    removed: <dark_gray>[<green>✔<dark_gray>] <green>{player} is no longer a coop of the island.
+    already: <dark_gray>[<red>✖<dark_gray>] <red>{player} is already a coop of the island.
+    not-coop: <dark_gray>[<red>✖<dark_gray>] <red>{player} is not a coop of the island.
+    target: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} made you a coop of the island {island}<gold>: you can build there while you are both online.
+    target-removed: <dark_gray>[<gold>✔<dark_gray>] <gold>You are no longer a coop of the island {island}<gold>.
+    expired: <dark_gray>[<gold>✔<dark_gray>] <gold>Your coop on the island {island}<gold> has ended.
+  owner:
+    transferred: <dark_gray>[<green>✔<dark_gray>] <green>{player} is now the island leader. You are a Deputy.
+    offline: <dark_gray>[<red>✖<dark_gray>] <red>{player} must be online to become the leader.
+    changed: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} is the new island leader.
+    target: <dark_gray>[<gold>✔<dark_gray>] <gold>You are now the leader of the island {island}<gold>!
+  name:
+    renamed: <dark_gray>[<green>✔<dark_gray>] <green>The island is now called {island}<green>.
+    length: <dark_gray>[<red>✖<dark_gray>] <red>The name must be between {min} and {max} characters long.
+    forbidden: <dark_gray>[<red>✖<dark_gray>] <red>This name uses formatting that the leader's rank does not allow.
+  home:
+    set: "<dark_gray>[<green>✔<dark_gray>] <green>Home <color:#ffc933>{home}</color> saved ({count}/{max})."
+    deleted: "<dark_gray>[<green>✔<dark_gray>] <green>Home <color:#ffc933>{home}</color> deleted."
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to manage homes.
+    not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>You must be on your island to set a home.
+    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -.
+    limit: <dark_gray>[<red>✖<dark_gray>] <red>The island already has {max} home(s), the maximum for the leader's rank.
+    unknown: <dark_gray>[<red>✖<dark_gray>] <red>The home {home} does not exist.
+  warp:
+    set: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> created ({count}/{max}), visible in /is warps."
+    moved: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> moved here."
+    deleted: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> deleted."
+    enabled: "<dark_gray>[<green>✔<dark_gray>] <green>The warp <color:#ffc933>{warp}</color> is visible to visitors."
+    disabled: "<dark_gray>[<green>✔<dark_gray>] <green>The warp <color:#ffc933>{warp}</color> is hidden from visitors."
+    teleported: "<dark_gray>[<green>✔<dark_gray>] <green>Welcome to the warp <color:#ffc933>{warp}</color>!"
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to manage warps.
+    not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>You must be on your island to set a warp.
+    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -.
+    limit: <dark_gray>[<red>✖<dark_gray>] <red>The island already has {max} warp(s), the maximum for the leader's rank.
+    unknown: <dark_gray>[<red>✖<dark_gray>] <red>This warp does not exist or is no longer available.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>The warp is unavailable right now, try again in a moment.
+  info:
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>No island to show for {player}.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>The island information could not be loaded.
 jobs:
   archimage: <click:run_command:'/boutique'>You can get <color:#ffc933>1 more</color> by getting the <glyph:archimage> rank in [<color:#ffc933>the shop</color>]</click>\n
   level_up: \n<glyph:up_tchat> You just reached level <white>{level}</white> in your job <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Click here to claim [<color:#ffc933>your reward</color>]</click>\n

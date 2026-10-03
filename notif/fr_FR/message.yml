@@ -178,6 +178,11 @@ island:
     error: <dark_gray>[<red>✖<dark_gray>] <red>Ton île n'a pas pu être chargée. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
   teleport:
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>Impossible de te téléporter sur ton île pour le moment, réessaie dans un instant.
+    falling: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas te téléporter pendant une chute.
+    unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'existe pas (ou plus).
+  visit:
+    enter: "<gray>Bienvenue sur l'île <color:#ffc933>{island}</color><gray> !"
+    exit: "<gray>Tu quittes l'île <color:#ffc933>{island}</color><gray>."
   range:
     leave: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas quitter l'île.
   border:
@@ -198,6 +203,105 @@ island:
     island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>La banque est indisponible pour le moment.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Une erreur est survenue, ton argent est resté dans la banque. Merci d'ouvrir un ticket.
+  flag:
+    denied: "<dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas la permission sur cette île : <color:#ffc933>{flag}</color>"
+    visit-denied: <dark_gray>[<red>✖<dark_gray>] <red>Cette île n'accepte pas ta visite.
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas d'île.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
+    edit:
+      no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de modifier ce flag.
+      limit: <dark_gray>[<red>✖<dark_gray>] <red>Ce flag ne peut pas aller plus loin.
+  member:
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas d'île.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de gérer {player}.
+    rank-limit: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas changer davantage le rang de {player}.
+    promoted: "<dark_gray>[<green>✔<dark_gray>] <green>{player} est maintenant <color:#ffc933>{rank}</color> sur l'île."
+    demoted: "<dark_gray>[<green>✔<dark_gray>] <green>{player} est maintenant <color:#ffc933>{rank}</color> sur l'île."
+    rank-changed: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} t'a nommé <color:#ffc933>{rank}</color> sur l'île."
+    joined: <dark_gray>[<green>✔<dark_gray>] <green>{player} a rejoint l'île, souhaite-lui la bienvenue !
+    member-left: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} a quitté l'île.
+    left: <dark_gray>[<green>✔<dark_gray>] <green>Tu as quitté l'île de {island}.
+    owner-not-alone: <dark_gray>[<red>✖<dark_gray>] <red>Tu es le chef : tu dois être le seul joueur de l'île pour pouvoir la quitter.
+    deleted: <dark_gray>[<green>✔<dark_gray>] <green>Tu as quitté ton île, elle a été supprimée. Tape /is pour en créer une nouvelle.
+    in-progress: <dark_gray>[<red>✖<dark_gray>] <red>Une action est déjà en cours, patiente un instant.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Une erreur est survenue. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
+  invite:
+    sent: <dark_gray>[<green>✔<dark_gray>] <green>Invitation envoyée à {player}, elle expire dans 5 minutes.
+    received: "<dark_gray>[<gold>✉<dark_gray>] <gold>{player} t'invite à rejoindre l'île de {island} !\n<click:run_command:'/is accept'><glyph:left_click> <white>Clique ici pour [<green>accepter</green>]</white></click>   <click:run_command:'/is deny'><glyph:left_click> <white>ou ici pour [<red>refuser</red>]</white></click>"
+    accepted: <dark_gray>[<green>✔<dark_gray>] <green>Bienvenue sur l'île de {island} ! Tape /is pour t'y rendre.
+    denied: <dark_gray>[<green>✔<dark_gray>] <green>Invitation refusée.
+    none: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as aucune invitation en attente (elle a peut-être expiré).
+    unavailable: <dark_gray>[<red>✖<dark_gray>] <red>Ce joueur ne peut pas être invité pour le moment.
+    already-has-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} a déjà une île.
+    banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} est banni de l'île.
+    full: <dark_gray>[<red>✖<dark_gray>] <red>L'île est complète.
+  ban:
+    banned: <dark_gray>[<green>✔<dark_gray>] <green>{player} est maintenant banni de l'île.
+    unbanned: <dark_gray>[<green>✔<dark_gray>] <green>{player} n'est plus banni de l'île.
+    already-banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} est déjà banni de l'île.
+    not-banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'est pas banni de l'île.
+    target: <dark_gray>[<red>✖<dark_gray>] <red>Tu as été banni de l'île {island}<red>.
+    target-unbanned: <dark_gray>[<green>✔<dark_gray>] <green>Tu n'es plus banni de l'île {island}<green>.
+  expel:
+    expelled: <dark_gray>[<green>✔<dark_gray>] <green>{player} a été renvoyé de l'île.
+    not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'est pas sur ton île.
+    target: <dark_gray>[<red>✖<dark_gray>] <red>Tu as été renvoyé de l'île {island}<red>.
+  kick:
+    kicked: <dark_gray>[<green>✔<dark_gray>] <green>{player} a été exclu de l'île.
+    not-member: <dark_gray>[<red>✖<dark_gray>] <red>{player} ne fait pas partie de l'île.
+    target: <dark_gray>[<red>✖<dark_gray>] <red>Tu as été exclu de l'île {island}<red>. Tape /is pour créer ta propre île.
+    member-kicked: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} a été exclu de l'île.
+  moderation:
+    member: <dark_gray>[<red>✖<dark_gray>] <red>{player} fait partie de l'île : exclus-le d'abord avec /is kick.
+    protected: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas faire ça à {player}.
+    unknown-player: <dark_gray>[<red>✖<dark_gray>] <red>Aucun joueur nommé {player} n'est connu du serveur.
+    usage: '<dark_gray>[<red>✖<dark_gray>] <red>Utilisation : {usage}'
+  coop:
+    added: <dark_gray>[<green>✔<dark_gray>] <green>{player} est maintenant coop de l'île, tant que vous restez connectés.
+    removed: <dark_gray>[<green>✔<dark_gray>] <green>{player} n'est plus coop de l'île.
+    already: <dark_gray>[<red>✖<dark_gray>] <red>{player} est déjà coop de l'île.
+    not-coop: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'est pas coop de l'île.
+    target: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} t'a fait coop de l'île {island}<gold> : tu peux y construire tant que vous êtes connectés.
+    target-removed: <dark_gray>[<gold>✔<dark_gray>] <gold>Tu n'es plus coop de l'île {island}<gold>.
+    expired: <dark_gray>[<gold>✔<dark_gray>] <gold>Ton coop sur l'île {island}<gold> a pris fin.
+  owner:
+    transferred: <dark_gray>[<green>✔<dark_gray>] <green>{player} est maintenant le chef de l'île. Tu es Adjoint.
+    offline: <dark_gray>[<red>✖<dark_gray>] <red>{player} doit être connecté pour devenir chef.
+    changed: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} est le nouveau chef de l'île.
+    target: <dark_gray>[<gold>✔<dark_gray>] <gold>Tu es maintenant le chef de l'île {island}<gold> !
+  name:
+    renamed: <dark_gray>[<green>✔<dark_gray>] <green>L'île s'appelle maintenant {island}<green>.
+    length: <dark_gray>[<red>✖<dark_gray>] <red>Le nom doit faire entre {min} et {max} caractères.
+    forbidden: <dark_gray>[<red>✖<dark_gray>] <red>Ce nom utilise une mise en forme que le grade du chef ne permet pas.
+  home:
+    set: "<dark_gray>[<green>✔<dark_gray>] <green>Home <color:#ffc933>{home}</color> enregistré ({count}/{max})."
+    deleted: "<dark_gray>[<green>✔<dark_gray>] <green>Home <color:#ffc933>{home}</color> supprimé."
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas d'île.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de gérer les homes.
+    not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu dois être sur ton île pour y placer un home.
+    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus.
+    limit: <dark_gray>[<red>✖<dark_gray>] <red>L'île a déjà {max} home(s), le maximum pour le grade du chef.
+    unknown: <dark_gray>[<red>✖<dark_gray>] <red>Le home {home} n'existe pas.
+  warp:
+    set: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> créé ({count}/{max}), visible dans /is warps."
+    moved: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> déplacé ici."
+    deleted: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> supprimé."
+    enabled: "<dark_gray>[<green>✔<dark_gray>] <green>Le warp <color:#ffc933>{warp}</color> est visible par les visiteurs."
+    disabled: "<dark_gray>[<green>✔<dark_gray>] <green>Le warp <color:#ffc933>{warp}</color> est caché aux visiteurs."
+    teleported: "<dark_gray>[<green>✔<dark_gray>] <green>Bienvenue au warp <color:#ffc933>{warp}</color> !"
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu n'as pas d'île.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de gérer les warps.
+    not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu dois être sur ton île pour y placer un warp.
+    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus.
+    limit: <dark_gray>[<red>✖<dark_gray>] <red>L'île a déjà {max} warp(s), le maximum pour le grade du chef.
+    unknown: <dark_gray>[<red>✖<dark_gray>] <red>Ce warp n'existe pas ou n'est plus disponible.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Le warp est indisponible pour le moment, réessaie dans un instant.
+  info:
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>Aucune île à afficher pour {player}.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>Les informations de l'île n'ont pas pu être chargées.
 jobs:
   archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1 supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la boutique</color>]</click>\n
   level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white> sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n
