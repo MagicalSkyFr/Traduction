@@ -222,7 +222,7 @@ island:
     joined: <dark_gray>[<green>✔<dark_gray>] <green>{player} a rejoint l'île, souhaite-lui la bienvenue !
     member-left: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} a quitté l'île.
     left: <dark_gray>[<green>✔<dark_gray>] <green>Tu as quitté l'île de {island}.
-    owner-not-alone: <dark_gray>[<red>✖<dark_gray>] <red>Tu es le chef : tu dois être le seul joueur de l'île pour pouvoir la quitter.
+    owner-not-alone: "<dark_gray>[<red>✖<dark_gray>] <red>Tu es le chef : tu dois être le seul joueur de l'île pour pouvoir la quitter."
     deleted: <dark_gray>[<green>✔<dark_gray>] <green>Tu as quitté ton île, elle a été supprimée. Tape /is pour en créer une nouvelle.
     in-progress: <dark_gray>[<red>✖<dark_gray>] <red>Une action est déjà en cours, patiente un instant.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Une erreur est survenue. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
@@ -253,7 +253,7 @@ island:
     target: <dark_gray>[<red>✖<dark_gray>] <red>Tu as été exclu de l'île {island}<red>. Tape /is pour créer ta propre île.
     member-kicked: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} a été exclu de l'île.
   moderation:
-    member: <dark_gray>[<red>✖<dark_gray>] <red>{player} fait partie de l'île : exclus-le d'abord avec /is kick.
+    member: "<dark_gray>[<red>✖<dark_gray>] <red>{player} fait partie de l'île : exclus-le d'abord avec /is kick."
     protected: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas faire ça à {player}.
     unknown-player: <dark_gray>[<red>✖<dark_gray>] <red>Aucun joueur nommé {player} n'est connu du serveur.
     usage: '<dark_gray>[<red>✖<dark_gray>] <red>Utilisation : {usage}'
@@ -262,7 +262,7 @@ island:
     removed: <dark_gray>[<green>✔<dark_gray>] <green>{player} n'est plus coop de l'île.
     already: <dark_gray>[<red>✖<dark_gray>] <red>{player} est déjà coop de l'île.
     not-coop: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'est pas coop de l'île.
-    target: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} t'a fait coop de l'île {island}<gold> : tu peux y construire tant que vous êtes connectés.
+    target: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} t'a fait coop de l'île {island}<gold> : tu peux y construire tant que vous êtes connectés."
     target-removed: <dark_gray>[<gold>✔<dark_gray>] <gold>Tu n'es plus coop de l'île {island}<gold>.
     expired: <dark_gray>[<gold>✔<dark_gray>] <gold>Ton coop sur l'île {island}<gold> a pris fin.
   owner:
@@ -281,7 +281,7 @@ island:
     island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
     no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de gérer les homes.
     not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu dois être sur ton île pour y placer un home.
-    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus.
+    invalid-name: "<dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus."
     limit: <dark_gray>[<red>✖<dark_gray>] <red>L'île a déjà {max} home(s), le maximum pour le grade du chef.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>Le home {home} n'existe pas.
   warp:
@@ -295,7 +295,7 @@ island:
     island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Les données de ton île sont en cours de chargement, réessaie dans un instant.
     no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Ton rang sur l'île ne te permet pas de gérer les warps.
     not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>Tu dois être sur ton île pour y placer un warp.
-    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus.
+    invalid-name: "<dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus."
     limit: <dark_gray>[<red>✖<dark_gray>] <red>L'île a déjà {max} warp(s), le maximum pour le grade du chef.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>Ce warp n'existe pas ou n'est plus disponible.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Le warp est indisponible pour le moment, réessaie dans un instant.
