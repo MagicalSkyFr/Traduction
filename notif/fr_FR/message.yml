@@ -194,6 +194,12 @@ island:
       busy: "<dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est chargée (ou en cours de suppression) : le benchmark ne se lance que sur une île déchargée."
       other-server: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est ouverte sur un autre serveur.
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Le benchmark de l'île de {target} a échoué après {done} chargement(s) (voir la console)."
+      all:
+        started: "<gray>Benchmark de toutes les îles lancé : {total} île(s) à charger ({parallel} à la fois), {skipped} ignorée(s) car déjà chargée(s)..."
+        load-progress: "<gray>Benchmark : {done}/{total} île(s) chargée(s)..."
+        unload-progress: "<gray>Benchmark : {done}/{total} île(s) déchargée(s)..."
+        done: "<dark_gray>[<green>✔<dark_gray>] <green>Benchmark de toutes les îles terminé : {loaded}/{total} île(s) chargée(s) puis déchargée(s), {skipped} ignorée(s), {load-failed} échec(s) de chargement, {unload-failed} de déchargement.\n<gray>Chargement : <white>{load-total}</white> ms au total, <white>{load-min}</white> / <white>{load-avg}</white> / <white>{load-max}</white> ms par île (min / moy / max), tick max <white>{load-tick-max}</white> ms, <white>{load-slow-ticks}</white> tick(s) de plus de 50 ms\n<gray>Mémoire utilisée une fois tout chargé : <white>{heap}</white> Mo\n<gray>Déchargement : <white>{unload-total}</white> ms au total, <white>{unload-min}</white> / <white>{unload-avg}</white> / <white>{unload-max}</white> ms par île (min / moy / max), tick max <white>{unload-tick-max}</white> ms, <white>{unload-slow-ticks}</white> tick(s) de plus de 50 ms"
+        error: "<dark_gray>[<red>✖<dark_gray>] <red>Le benchmark de toutes les îles a échoué (voir la console)."
   visit:
     enter: "<gray>Bienvenue sur l'île <color:#ffc933>{island}</color><gray> !"
     exit: "<gray>Tu quittes l'île <color:#ffc933>{island}</color><gray>."

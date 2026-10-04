@@ -101,9 +101,15 @@ island:
       progress: "<gray>Benchmark: {done}/{count} load(s) done..."
       done: "<dark_gray>[<green>✔<dark_gray>] <green>Benchmark of the island of {target} finished ({done} load(s)):\n<gray>Load: <white>{load-min}</white> / <white>{load-avg}</white> / <white>{load-max}</white> ms (min / avg / max)\n<gray>Unload: <white>{unload-min}</white> / <white>{unload-avg}</white> / <white>{unload-max}</white> ms (min / avg / max)\n<gray>Longest tick: <white>{tick-max}</white> ms, ticks over 50 ms: <white>{slow-ticks}</white>"
       running: <dark_gray>[<red>✖<dark_gray>] <red>A benchmark is already running.
-      busy: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is loaded (or being deleted): the benchmark only runs on an unloaded island.
+      busy: "<dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is loaded (or being deleted): the benchmark only runs on an unloaded island."
       other-server: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is open on another server.
       error: "<dark_gray>[<red>✖<dark_gray>] <red>The benchmark of the island of {target} failed after {done} load(s) (see the console)."
+      all:
+        started: "<gray>Benchmark of every island started: {total} island(s) to load ({parallel} at a time), {skipped} skipped because already loaded..."
+        load-progress: "<gray>Benchmark: {done}/{total} island(s) loaded..."
+        unload-progress: "<gray>Benchmark: {done}/{total} island(s) unloaded..."
+        done: "<dark_gray>[<green>✔<dark_gray>] <green>Benchmark of every island finished: {loaded}/{total} island(s) loaded then unloaded, {skipped} skipped, {load-failed} load failure(s), {unload-failed} unload failure(s).\n<gray>Load: <white>{load-total}</white> ms in total, <white>{load-min}</white> / <white>{load-avg}</white> / <white>{load-max}</white> ms per island (min / avg / max), longest tick <white>{load-tick-max}</white> ms, <white>{load-slow-ticks}</white> tick(s) over 50 ms\n<gray>Memory used once everything is loaded: <white>{heap}</white> MB\n<gray>Unload: <white>{unload-total}</white> ms in total, <white>{unload-min}</white> / <white>{unload-avg}</white> / <white>{unload-max}</white> ms per island (min / avg / max), longest tick <white>{unload-tick-max}</white> ms, <white>{unload-slow-ticks}</white> tick(s) over 50 ms"
+        error: "<dark_gray>[<red>✖<dark_gray>] <red>The benchmark of every island failed (see the console)."
   visit:
     enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
     exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."
