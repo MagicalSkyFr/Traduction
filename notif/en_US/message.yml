@@ -91,7 +91,16 @@ island:
     falling: <dark_gray>[<red>✖<dark_gray>] <red>You cannot teleport while falling.
     unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>This destination does not exist (anymore).
     other-server: <dark_gray>[<red>✖<dark_gray>] <red>This island is currently open on another server, try again in a moment.
+    locked: <dark_gray>[<red>✖<dark_gray>] <red>This island has been locked by an administrator.
+  lock:
+    evicted: <dark_gray>[<red>✖<dark_gray>] <red>This island has just been locked by an administrator, you have been sent back to spawn.
   admin:
+    lock:
+      locked: <dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>is locked: only administrators can go there.
+      unlocked: <dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>is unlocked.
+      already-locked: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is already locked.
+      not-locked: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is not locked.
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not change the lock of the island of {target} (see the console)."
     tp:
       teleported: <dark_gray>[<green>✔<dark_gray>] <green>Teleported to the island of <white>{target}</white>.
       no-island: <dark_gray>[<red>✖<dark_gray>] <white>{target}</white> <red>has no island.
@@ -110,6 +119,22 @@ island:
         unload-progress: "<gray>Benchmark: {done}/{total} island(s) unloaded..."
         done: "<dark_gray>[<green>✔<dark_gray>] <green>Benchmark of every island finished: {loaded}/{total} island(s) loaded then unloaded, {skipped} skipped, {load-failed} load failure(s), {unload-failed} unload failure(s).\n<gray>Load: <white>{load-total}</white> ms in total, <white>{load-min}</white> / <white>{load-avg}</white> / <white>{load-max}</white> ms per island (min / avg / max), longest tick <white>{load-tick-max}</white> ms, <white>{load-slow-ticks}</white> tick(s) over 50 ms\n<gray>Memory used once everything is loaded: <white>{heap}</white> MB\n<gray>Unload: <white>{unload-total}</white> ms in total, <white>{unload-min}</white> / <white>{unload-avg}</white> / <white>{unload-max}</white> ms per island (min / avg / max), longest tick <white>{unload-tick-max}</white> ms, <white>{unload-slow-ticks}</white> tick(s) over 50 ms"
         error: "<dark_gray>[<red>✖<dark_gray>] <red>The benchmark of every island failed (see the console)."
+    info:
+      header: "<dark_gray>[<gold>ℹ<dark_gray>] <gold>Island <white>{island}</white> <gray>(leader: <white>{owner}</white>)\n<gray>UUID: <white>{uuid}</white>"
+      loaded: "<gray>World <white>{world}</white> <green>loaded</green> on this server: <white>{players}</white> player(s), <white>{chunks}</white> chunk(s), <white>{entities}</white> entit(y/ies), <white>{tile-entities}</white> tile entit(y/ies)"
+      unloaded: "<gray>World <white>{world}</white> <red>not loaded</red> on this server."
+      size: "<gray>Size stored in MongoDB: <white>{size}</white>"
+      size-unknown: "<gray>Size stored in MongoDB: <red>unknown</red> (world missing or unreadable)."
+      timings: "<gray>Latest operations on this server (newest first):"
+      timings-empty: "<gray>No operation measured on this server since it started."
+      timing:
+        load: "<dark_gray> - <gray>{time} <green>Load</green> in <white>{duration}</white> ms"
+        load-failed: "<dark_gray> - <gray>{time} <red>Load failed</red> after <white>{duration}</white> ms"
+        save: "<dark_gray> - <gray>{time} <aqua>Save</aqua> in <white>{duration}</white> ms"
+        save-failed: "<dark_gray> - <gray>{time} <red>Save failed</red> after <white>{duration}</white> ms"
+        unload: "<dark_gray> - <gray>{time} <yellow>Unload</yellow> in <white>{duration}</white> ms"
+        unload-failed: "<dark_gray> - <gray>{time} <red>Unload failed</red> after <white>{duration}</white> ms"
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not read the island info of {target} (see the console)."
   visit:
     enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
     exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."

@@ -181,7 +181,16 @@ island:
     falling: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas te téléporter pendant une chute.
     unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'existe pas (ou plus).
     other-server: <dark_gray>[<red>✖<dark_gray>] <red>Cette île est actuellement ouverte sur un autre serveur, réessaie dans un instant.
+    locked: <dark_gray>[<red>✖<dark_gray>] <red>Cette île a été verrouillée par un administrateur.
+  lock:
+    evicted: <dark_gray>[<red>✖<dark_gray>] <red>Cette île vient d'être verrouillée par un administrateur, tu as été renvoyé au spawn.
   admin:
+    lock:
+      locked: "<dark_gray>[<green>✔<dark_gray>] <green>L'île de <white>{target}</white> <green>est verrouillée : seuls les administrateurs peuvent y aller."
+      unlocked: <dark_gray>[<green>✔<dark_gray>] <green>L'île de <white>{target}</white> <green>est déverrouillée.
+      already-locked: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est déjà verrouillée.
+      not-locked: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>n'est pas verrouillée.
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de modifier le verrou de l'île de {target} (voir la console)."
     tp:
       teleported: <dark_gray>[<green>✔<dark_gray>] <green>Téléporté sur l'île de <white>{target}</white>.
       no-island: <dark_gray>[<red>✖<dark_gray>] <white>{target}</white> <red>n'a pas d'île.
@@ -200,6 +209,22 @@ island:
         unload-progress: "<gray>Benchmark : {done}/{total} île(s) déchargée(s)..."
         done: "<dark_gray>[<green>✔<dark_gray>] <green>Benchmark de toutes les îles terminé : {loaded}/{total} île(s) chargée(s) puis déchargée(s), {skipped} ignorée(s), {load-failed} échec(s) de chargement, {unload-failed} de déchargement.\n<gray>Chargement : <white>{load-total}</white> ms au total, <white>{load-min}</white> / <white>{load-avg}</white> / <white>{load-max}</white> ms par île (min / moy / max), tick max <white>{load-tick-max}</white> ms, <white>{load-slow-ticks}</white> tick(s) de plus de 50 ms\n<gray>Mémoire utilisée une fois tout chargé : <white>{heap}</white> Mo\n<gray>Déchargement : <white>{unload-total}</white> ms au total, <white>{unload-min}</white> / <white>{unload-avg}</white> / <white>{unload-max}</white> ms par île (min / moy / max), tick max <white>{unload-tick-max}</white> ms, <white>{unload-slow-ticks}</white> tick(s) de plus de 50 ms"
         error: "<dark_gray>[<red>✖<dark_gray>] <red>Le benchmark de toutes les îles a échoué (voir la console)."
+    info:
+      header: "<dark_gray>[<gold>ℹ<dark_gray>] <gold>Île <white>{island}</white> <gray>(chef : <white>{owner}</white>)\n<gray>UUID : <white>{uuid}</white>"
+      loaded: "<gray>Monde <white>{world}</white> <green>chargé</green> sur ce serveur : <white>{players}</white> joueur(s), <white>{chunks}</white> chunk(s), <white>{entities}</white> entité(s), <white>{tile-entities}</white> tile entity(s)"
+      unloaded: "<gray>Monde <white>{world}</white> <red>non chargé</red> sur ce serveur."
+      size: "<gray>Taille stockée dans MongoDB : <white>{size}</white>"
+      size-unknown: "<gray>Taille stockée dans MongoDB : <red>inconnue</red> (monde introuvable ou illisible)."
+      timings: "<gray>Dernières opérations sur ce serveur (de la plus récente à la plus ancienne) :"
+      timings-empty: "<gray>Aucune opération mesurée sur ce serveur depuis son démarrage."
+      timing:
+        load: "<dark_gray> - <gray>{time} <green>Chargement</green> en <white>{duration}</white> ms"
+        load-failed: "<dark_gray> - <gray>{time} <red>Échec du chargement</red> après <white>{duration}</white> ms"
+        save: "<dark_gray> - <gray>{time} <aqua>Sauvegarde</aqua> en <white>{duration}</white> ms"
+        save-failed: "<dark_gray> - <gray>{time} <red>Échec de la sauvegarde</red> après <white>{duration}</white> ms"
+        unload: "<dark_gray> - <gray>{time} <yellow>Déchargement</yellow> en <white>{duration}</white> ms"
+        unload-failed: "<dark_gray> - <gray>{time} <red>Échec du déchargement</red> après <white>{duration}</white> ms"
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de lire les informations de l'île de {target} (voir la console)."
   visit:
     enter: "<gray>Bienvenue sur l'île <color:#ffc933>{island}</color><gray> !"
     exit: "<gray>Tu quittes l'île <color:#ffc933>{island}</color><gray>."
