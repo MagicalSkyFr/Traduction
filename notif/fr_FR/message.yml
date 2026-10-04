@@ -180,6 +180,12 @@ island:
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>Impossible de te téléporter sur ton île pour le moment, réessaie dans un instant.
     falling: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas te téléporter pendant une chute.
     unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'existe pas (ou plus).
+    other-server: <dark_gray>[<red>✖<dark_gray>] <red>Cette île est actuellement ouverte sur un autre serveur, réessaie dans un instant.
+  admin:
+    tp:
+      teleported: <dark_gray>[<green>✔<dark_gray>] <green>Téléporté sur l'île de <white>{target}</white>.
+      no-island: <dark_gray>[<red>✖<dark_gray>] <white>{target}</white> <red>n'a pas d'île.
+      unknown-island: <dark_gray>[<red>✖<dark_gray>] <red>Aucune île ne porte l'UUID <white>{target}</white>.
   visit:
     enter: "<gray>Bienvenue sur l'île <color:#ffc933>{island}</color><gray> !"
     exit: "<gray>Tu quittes l'île <color:#ffc933>{island}</color><gray>."
@@ -298,6 +304,7 @@ island:
     invalid-name: "<dark_gray>[<red>✖<dark_gray>] <red>Nom invalide : un seul mot de 16 lettres, chiffres, _ ou - au plus."
     limit: <dark_gray>[<red>✖<dark_gray>] <red>L'île a déjà {max} warp(s), le maximum pour le grade du chef.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>Ce warp n'existe pas ou n'est plus disponible.
+    no-public-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'a pas d'île avec des warps publics.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Le warp est indisponible pour le moment, réessaie dans un instant.
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>Aucune île à afficher pour {player}.

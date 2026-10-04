@@ -90,6 +90,12 @@ island:
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>You cannot be teleported to your island right now, try again in a moment.
     falling: <dark_gray>[<red>✖<dark_gray>] <red>You cannot teleport while falling.
     unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>This destination does not exist (anymore).
+    other-server: <dark_gray>[<red>✖<dark_gray>] <red>This island is currently open on another server, try again in a moment.
+  admin:
+    tp:
+      teleported: <dark_gray>[<green>✔<dark_gray>] <green>Teleported to the island of <white>{target}</white>.
+      no-island: <dark_gray>[<red>✖<dark_gray>] <white>{target}</white> <red>has no island.
+      unknown-island: <dark_gray>[<red>✖<dark_gray>] <red>No island has the UUID <white>{target}</white>.
   visit:
     enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
     exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."
@@ -188,6 +194,7 @@ island:
     invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -.
     limit: <dark_gray>[<red>✖<dark_gray>] <red>The island already has {max} warp(s), the maximum for the leader's rank.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>This warp does not exist or is no longer available.
+    no-public-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} has no island with public warps.
     error: <dark_gray>[<red>✖<dark_gray>] <red>The warp is unavailable right now, try again in a moment.
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>No island to show for {player}.
