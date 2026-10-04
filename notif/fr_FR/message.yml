@@ -191,7 +191,7 @@ island:
       progress: "<gray>Benchmark : {done}/{count} chargement(s) terminé(s)..."
       done: "<dark_gray>[<green>✔<dark_gray>] <green>Benchmark de l'île de {target} terminé ({done} chargement(s)) :\n<gray>Chargement : <white>{load-min}</white> / <white>{load-avg}</white> / <white>{load-max}</white> ms (min / moy / max)\n<gray>Déchargement : <white>{unload-min}</white> / <white>{unload-avg}</white> / <white>{unload-max}</white> ms (min / moy / max)\n<gray>Tick le plus long : <white>{tick-max}</white> ms, ticks de plus de 50 ms : <white>{slow-ticks}</white>"
       running: <dark_gray>[<red>✖<dark_gray>] <red>Un benchmark est déjà en cours.
-      busy: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est chargée (ou en cours de suppression) : le benchmark ne se lance que sur une île déchargée.
+      busy: "<dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est chargée (ou en cours de suppression) : le benchmark ne se lance que sur une île déchargée."
       other-server: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est ouverte sur un autre serveur.
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Le benchmark de l'île de {target} a échoué après {done} chargement(s) (voir la console)."
   visit:
