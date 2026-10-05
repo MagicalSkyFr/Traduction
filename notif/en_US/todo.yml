@@ -38,7 +38,7 @@ classe:
       no_mana: "Not enough mana: you're missing {mana_manquante} mana (required: {mana_requise})."
       no_sort: No spell assigned to this action.
       code: An error occurred while casting the spell.
-      on_cooldown: This spell is on cooldown, try again in {cooldown_restant}s.
+      on_cooldown: The spell {sort} is on cooldown, try again in {cooldown_restant}s.
       no_data: Unable to cast this spell right now.
       jobs_blocks: You can't cast this spell here.
     add: <glyph:validation_tchat> <color:#40ff70> You just added the spell {skillname} to your wand!

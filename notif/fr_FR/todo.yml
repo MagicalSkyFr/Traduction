@@ -53,7 +53,7 @@ classe:
       no_mana: "Mana insuffisante : il te manque {mana_manquante} mana (requis : {mana_requise})."
       no_sort: Aucun sort assigné à cette action.
       code: Une erreur est survenue lors du lancement du sort.
-      on_cooldown: Ce sort est en recharge, réessaie dans {cooldown_restant}s.
+      on_cooldown: Le sort {sort} est en recharge, réessaie dans {cooldown_restant}s.
       no_data: Impossible de lancer ce sort pour le moment.
       jobs_blocks: Tu ne peux pas lancer ce sort ici.
     add: <glyph:validation_tchat> <color:#40ff70> Tu viens d'ajouter le sort {skillname} sur ta baguette !
