@@ -182,6 +182,7 @@ island:
     unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'existe pas (ou plus).
     other-server: <dark_gray>[<red>✖<dark_gray>] <red>Cette île est actuellement ouverte sur un autre serveur, réessaie dans un instant.
     locked: <dark_gray>[<red>✖<dark_gray>] <red>Cette île a été verrouillée par un administrateur.
+    unsafe: <dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'est pas sûre (il faut 2 blocs d'air), téléportation annulée.
   lock:
     evicted: <dark_gray>[<red>✖<dark_gray>] <red>Cette île vient d'être verrouillée par un administrateur, tu as été renvoyé au spawn.
   admin:
@@ -191,6 +192,11 @@ island:
       already-locked: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est déjà verrouillée.
       not-locked: <dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>n'est pas verrouillée.
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de modifier le verrou de l'île de {target} (voir la console)."
+    settings:
+      not-on-island: "<dark_gray>[<red>✖<dark_gray>] <red>Tu dois être sur une île chargée pour modifier ses flags."
+    testrank:
+      set: "<dark_gray>[<green>✔<dark_gray>] <green>Rang simulé : <white>{rank}</white><green>. Les protections te traitent avec ce rang sur toutes les îles (permission de contournement ignorée). <gray>/isadmin testrank off<green> pour arrêter."
+      cleared: <dark_gray>[<green>✔<dark_gray>] <green>Simulation de rang arrêtée, ton vrai rang s'applique à nouveau.
     tp:
       teleported: <dark_gray>[<green>✔<dark_gray>] <green>Téléporté sur l'île de <white>{target}</white>.
       no-island: <dark_gray>[<red>✖<dark_gray>] <white>{target}</white> <red>n'a pas d'île.
@@ -345,6 +351,11 @@ island:
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>Ce warp n'existe pas ou n'est plus disponible.
     no-public-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'a pas d'île avec des warps publics.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Le warp est indisponible pour le moment, réessaie dans un instant.
+    unsafe: <dark_gray>[<red>✖<dark_gray>] <red>Le warp <color:#ffc933>{warp}</color> est obstrué (il faut 2 blocs d'air), préviens les membres de l'île.
+    edited: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> modifié."
+    name-length: "<dark_gray>[<red>✖<dark_gray>] <red>Le nom du warp doit faire entre {min} et {max} caractères."
+    description-length: "<dark_gray>[<red>✖<dark_gray>] <red>La description du warp doit faire {max} caractères au plus."
+    forbidden-format: "<dark_gray>[<red>✖<dark_gray>] <red>Cette mise en forme n'est pas permise par le grade du chef de l'île."
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>Aucune île à afficher pour {player}.
     error: <dark_gray>[<red>✖<dark_gray>] <red>Les informations de l'île n'ont pas pu être chargées.

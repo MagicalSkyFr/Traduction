@@ -92,6 +92,7 @@ island:
     unknown-destination: <dark_gray>[<red>✖<dark_gray>] <red>This destination does not exist (anymore).
     other-server: <dark_gray>[<red>✖<dark_gray>] <red>This island is currently open on another server, try again in a moment.
     locked: <dark_gray>[<red>✖<dark_gray>] <red>This island has been locked by an administrator.
+    unsafe: <dark_gray>[<red>✖<dark_gray>] <red>This destination is not safe (2 blocks of air are needed), teleport cancelled.
   lock:
     evicted: <dark_gray>[<red>✖<dark_gray>] <red>This island has just been locked by an administrator, you have been sent back to spawn.
   admin:
@@ -101,6 +102,11 @@ island:
       already-locked: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is already locked.
       not-locked: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is not locked.
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not change the lock of the island of {target} (see the console)."
+    settings:
+      not-on-island: "<dark_gray>[<red>✖<dark_gray>] <red>You must be on a loaded island to edit its flags."
+    testrank:
+      set: "<dark_gray>[<green>✔<dark_gray>] <green>Simulated rank: <white>{rank}</white><green>. Protections treat you with this rank on every island (bypass permission ignored). <gray>/isadmin testrank off<green> to stop."
+      cleared: <dark_gray>[<green>✔<dark_gray>] <green>Rank simulation stopped, your real rank applies again.
     tp:
       teleported: <dark_gray>[<green>✔<dark_gray>] <green>Teleported to the island of <white>{target}</white>.
       no-island: <dark_gray>[<red>✖<dark_gray>] <white>{target}</white> <red>has no island.
@@ -235,6 +241,11 @@ island:
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>This warp does not exist or is no longer available.
     no-public-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} has no island with public warps.
     error: <dark_gray>[<red>✖<dark_gray>] <red>The warp is unavailable right now, try again in a moment.
+    unsafe: <dark_gray>[<red>✖<dark_gray>] <red>The warp <color:#ffc933>{warp}</color> is obstructed (2 blocks of air are needed), tell the island members.
+    edited: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> edited."
+    name-length: "<dark_gray>[<red>✖<dark_gray>] <red>The warp name must be between {min} and {max} characters long."
+    description-length: "<dark_gray>[<red>✖<dark_gray>] <red>The warp description must be at most {max} characters long."
+    forbidden-format: "<dark_gray>[<red>✖<dark_gray>] <red>This formatting is not allowed by the island leader's rank."
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>No island to show for {player}.
     error: <dark_gray>[<red>✖<dark_gray>] <red>The island information could not be loaded.
