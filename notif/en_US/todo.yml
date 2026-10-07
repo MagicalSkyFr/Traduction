@@ -1,4 +1,11 @@
 classe:
+  rarity:
+    info: "<gold>Ritual complete! Rarity obtained: <white> {rarity}"
+    obtain: "<gray>Improved stats:"
+    obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
+  notspell: "This isn't a wand"
+  armor:
+    level_requirement: You must be level {niveau_requis} to wear this item (you are level {niveau_joueur})
   upgrade_station:
     stat_added: "Your weapon gained +{value} {stat}"
     config:
@@ -6,6 +13,8 @@ classe:
     add_points: "You added {points} upgrade points to your item"
     no_item: "You don't have any upgradeable item in your main hand"
     no_nbt: "This isn't a class or job item"
+    busy: "<glyph:warning_tchat> <color:#ff383b>The upgrade station is already in use</color>"
+    ritual_cancelled: "<glyph:warning_tchat> <color:#ff383b>The ritual has been cancelled</color>"
   stats:
     armor:
       change: "{slot} has changed, so your health points have been updated: {amount}"
@@ -41,6 +50,11 @@ classe:
       on_cooldown: The spell {sort} is on cooldown, try again in {cooldown_restant}s.
       no_data: Unable to cast this spell right now.
       jobs_blocks: You can't cast this spell here.
+      rarity_requirement: This item's rarity is too low to cast the spell {sort}.
+      power_requirement: This item's power is too low to cast the spell {sort}.
+    already_unlocked: "<glyph:warning_tchat> <color:#ff383b>You have already unlocked this spell</color>"
+    unlocked:
+      baton_eau: "<glyph:validation_tchat> <color:#40ff70>You just unlocked the spell <white>{sort}</white>!</color>"
     add: <glyph:validation_tchat> <color:#40ff70> You just added the spell {skillname} to your wand!
     max: <glyph:warning_tchat> <color:#ff383b> You already have the maximum number of spells on your wand!
     notremove: <glyph:warning_tchat> <color:#ff383b> You can't remove this spell
@@ -48,6 +62,16 @@ classe:
   sound:
     active: <green><bold> Sound activated </bold>for {name}</green>
     inactive: <red><bold> Sound deactivated </bold>for {name}</red>
+command:
+  badnumber: "<white>{value}</white> isn't a valid number"
+  badstat: "The stat <white>{stat}</white> doesn't exist"
+  playeronly: This command can only be run by a player
+  noitem: You must hold an item in your main hand
+profile:
+  loading: Your profile is loading, try again in a moment
+jobs:
+  skill_points_required: You must have invested at least {cost} skill points to unlock this skill
+  skill_prerequisites_required: You must have unlocked the prerequisites of this skill to unlock it!
 dungeon:
   already:
     builder: You are already in a dungeon session being created
