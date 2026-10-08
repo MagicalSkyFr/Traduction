@@ -37,6 +37,23 @@ classe:
   rune:
     points_added: Tu as transformé tes runes en <color:#ffc933>{amount}</color> <color:#40ff70>points de compétences</color>
   selected: Tu viens de choisir la classe <white>{class}</white>
+  upgrade_station:
+    stat_added: "Ton arme a gagné +{value} de <white>{stat}</white>"
+    add_points: "Tu as ajouté <white>{points}</white> points d'amélioration à ton objet"
+  stats:
+    apply: Les statistiques de ta classe ont été appliquées
+  armor_complete:
+    noskill: Ton armure est intégralement équipée</color>
+    skill: Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !</color>
+  skill:
+    active: Compétence activée </bold>pour {name}
+    inactive: Compétence désactivée </bold>pour {name}
+  sort:
+    add: Tu viens d'ajouter le sort <white>{skillname}</white> sur ta baguette.
+    remove: Tu viens de retirer le sort de ta baguette.
+  sound:
+    active: Son activé </bold>pour <white>{name}</white>
+    inactive: Son désactivé </bold>pour <white>{name}</white>
 collection:
   added: \nL'objet a été ajouté à ta collection\n<click:run_command:'/collection'><glyph:left_click> Clique ici pour voir [<color:#ffc933>tes collections</color>]</click>\n
   item_removed: Tu as supprimé l'objet {item} de la collection {collection} de <white>{owner}</white>
@@ -107,6 +124,10 @@ island:
     added: Tu es désormais en coop sur l'île de <color:#ffc933>{island}</color>
     added_broadcast: <white>{player}</white> est maintenant en coop sur ton île
   reset_success: L'île a été réinitialisée
+  template:
+    chosen: "Tu as choisi l'île <white>{template}</white> !"
+    save:
+      success: "Le monde <white>{world}</white> est enregistré en tant que template <white>{template}</white>."
 item:
   on_head: L'objet est désormais sur ta tête !
 jobs:
@@ -190,6 +211,8 @@ teleportation:
   tp_to_player: Tu as été téléporté vers <white>{target}</white>
 upgradeisland:
   levelblock_given: Les ressources données ont été converties en <white>{xp} expérience</white> pour ton île
+  offrande_given: Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white></color>
+
 warp:
   deleted: Le warp <white>{warp}</white> a été supprimé
   teleported: Tu as été téléporté au warp <white>{warp}</white>

@@ -13,5 +13,10 @@ badge:
     max: Tu as atteint la limite de badges équipables
 challenge:
   almost_finished: Tu as presque complété un challenge, assure-toi d'avoir assez d'espace dans ton inventaire pour obtenir tes récompenses !
+classe:
+  armor_full_required: Tu dois porter une armure intégrale pour profiter de la compétence bonus !</color>
+  notskilloffhand: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas lancer de sort si ton objet de la deuxième main est aussi un objet avec des compétences
+  sort: 
+    max: Tu as déjà le nombre maximal de sort sur ta baguette.
 spawners:
   break_warning: Attention, si tu casses un spawner sans pioche à spawner, celui-ci va disparaître ! Si tu souhaites tout de même continuer, recasse ce bloc

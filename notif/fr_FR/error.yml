@@ -27,6 +27,35 @@ classe:
   skill_points_required: Tu dois avoir déposé au moins {cost} points de compétence pour débloquer cette compétence
   skill_prerequisites_required: Tu dois avoir débloqué les prérequis de cette compétence pour pouvoir la débloquer !
   skill_unlocked_required: Tu dois avoir au moins {unlocked} compétences débloquées pour pouvoir débloquer cette compétence
+  notspell: "Ce n'est pas une baguette"
+  armor:
+    level_requirement: Tu dois être niveau <white>{niveau_requis}</white> pour porter cet item. Tu es niveau <white>{niveau_joueur}</white> actuellement.
+  upgrade_station:
+    config:
+      error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"
+  upgrade_station:
+    no_item: "Tu n'as aucun objet améliorable dans ta main principale"
+    no_nbt: "Ce n'est pas un objet de classe ou de métier"
+  sort:
+    fail:
+      profil_not_found: "Impossible de lancer ce sort : profil introuvable."
+      no_competence_data: Impossible de lancer ce sort pour le moment.
+      wrong_level: Ton niveau de compétence ne permet pas de lancer ce sort.
+      not_unlocked: Tu n'as pas débloqué ce sort.
+      not_active: Cette compétence n'est pas active.
+      type_not_possible: Cet objet ne permet pas de lancer ce sort.
+      damage_ticks: Tu ne peux pas lancer ce sort juste après avoir été touché.
+      no_rarity: Cet objet n'a pas de rareté valide pour ce sort.
+      level_requirement: Tu dois être niveau <white>{niveau_requis}</white> pour lancer ce sort. Tu es niveau <white>{niveau_joueur}</white>
+      chance_failed: Le sort a échoué (malchance).
+      wrong_world: Ce sort n'est pas utilisable dans ce monde.
+      no_mana: "Il te manque <white>{mana_manquante}</white> mana <glyph:mana> pour lancer ce sort. Requis : <white>{mana_requise}</white>  <glyph:mana>."
+      no_sort: Aucun sort assigné à cette action.
+      code: Une erreur est survenue lors du lancement du sort.
+      on_cooldown: Le sort <white>{sort}</white> est en recharge, réessaie dans <white>{cooldown_restant}</white>s.
+      no_data: Impossible de lancer ce sort pour le moment.
+      jobs_blocks: Tu ne peux pas lancer ce sort ici.
+    notremove: Tu ne peux pas retirer ce sort.
 collection:
   already_exists: L’objet n’a pas été ajouté dans ta collection car un exemplaire y est déjà
   cannot_add: L’objet n’a pas été ajouté dans ta collection car il ne peut pas être ajouté dans une collection
@@ -241,6 +270,18 @@ island:
     cannot_self: Tu ne peux pas te transférer l'île à toi même car cela ne servirait à rien !
     player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre de ton île
   usage_limit_reached: Tu as atteint le nombre de fois maximum où tu pouvais utiliser cette île !
+  command:
+    has-island: "Tu as déjà une île."
+    profile-loading: "Ton profil est en cours de chargement, réessaie dans un instant."
+  template:
+    visit-unavailable: "L'île <white>{template}</white> ne peut pas être visitée pour le moment."
+    menu:
+      empty: "Aucune île n'est disponible pour le moment."
+    save:
+      usage: "Utilisation : <white>{usage}</white>"
+      invalid-id: "Identifiant invalide : <white>{id}</white> (minuscules, chiffres, _ et -, 32 caractères max)."
+      unknown-world: "Le monde <white>{world}</white> n'est pas chargé."
+      error: "Impossible d'enregistrer la template <white>{template}</white> : {error}"
 item:
   cannot_remove_class_or_job: Tu ne peux retirer de cette façon un objet de métier ou de classe
   cuisinier_shears_required: Tu dois utiliser la cisaille du métier de Cuisinier pour récupérer ces ingrédients
@@ -415,6 +456,10 @@ upgradeisland:
   upgrade_not_enough_money: Tu dois avoir <white>{cost} <glyph:mcoin></white> pour acheter cette amélioration
   villager_limit_reached: Tu as atteint la limite de <white>Villageois</white> sur ton île
   villager_limit_reached_view: Tu as atteint la limite de <white>Villageois</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
+  limit_reached_block_view: Tu as atteint le maximum de <white>{block}</white> sur ton île ({actual}/{max})
+  limit_reached_entity_view: Tu as atteint le maximum de <white>{entity}</white> sur ton île ({actual}/{max})
+  no_offrande: Tu n'as pas d'offrande dans ton inventaire
+  ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
 warp:
   already_exists: Le warp nommé <white>{warp}</white> existe déjà
   delete_name_required: Tu dois indiquer le nom du warp que tu veux supprimer

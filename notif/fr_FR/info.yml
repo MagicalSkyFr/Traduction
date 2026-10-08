@@ -27,6 +27,17 @@ boss:
 classe:
   change_cooldown: Tu pourras toujours <color:#ffc933>changer de classe</color> après un cooldown !
   change_timer: Tu pourras changer de classe le <color:#ffc933>{time}</color>
+  rarity:
+    info: "Rituel terminé ! Rareté obtenue : <white> {rarity}"
+  stats:
+    armor:
+      change: "<white>{slot}</white> a changé, par conséquent tes points de vie sont passés à <white>{amount}</white>"
+    hp:
+      change: "Ton arme en main a changé, par conséquent tes points de vie max ont été mis à jour : <white>{amount}</white>"
+      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vie maximum
+  armor_missing: Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure</color>
+  sort:
+    add: Tu viens d'ajouter le sort <white>{skillname}</white> sur ta baguette.
 money:
   info: "Tu possèdes <gold>{money}</gold> <glyph:mcoin>"
 boutique:
@@ -40,6 +51,7 @@ discord:
   nolink: Connecte toi avec <color:#ffc933>/discord link</color> pour récupérer des <color:#ffc933>récompenses uniques</color> !
 upgradeisland:
   island_level_up: Ton île est au niveau {level}
+  ritual_on_cooldown: Tu dois attendre la fin du délai de récupération avant de lancer un nouveau rituel
 donjon:
   invite:
     sent: <color:#ffc933>Ton invitation de donjon</color> a bien été envoyée
