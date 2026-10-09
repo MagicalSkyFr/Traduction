@@ -34,8 +34,8 @@ classe:
       change: "<white>{slot}</white> a changé, par conséquent tes points de vie sont passés à <white>{amount}</white>"
     hp:
       change: "Ton arme en main a changé, par conséquent tes points de vie max ont été mis à jour : <white>{amount}</white>"
-      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vie maximum
-  armor_missing: Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure</color>
+      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vie maximum"
+  armor_missing: Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure
 money:
   info: "Tu possèdes <gold>{money}</gold> <glyph:mcoin>"
 boutique:
