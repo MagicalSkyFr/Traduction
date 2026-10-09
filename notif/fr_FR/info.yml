@@ -36,8 +36,6 @@ classe:
       change: "Ton arme en main a changé, par conséquent tes points de vie max ont été mis à jour : <white>{amount}</white>"
       remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vie maximum
   armor_missing: Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure</color>
-  sort:
-    add: Tu viens d'ajouter le sort <white>{skillname}</white> sur ta baguette.
 money:
   info: "Tu possèdes <gold>{money}</gold> <glyph:mcoin>"
 boutique:
@@ -159,7 +157,6 @@ island:
     self: Tu as quitté l'île
     broadcast: <color:#ffc933>{player}</color> a quitté l'île
   player_is_member: Le joueur <white>{player}</white> est membre de ton île
-  player_not_in_island: Le joueur <white>{player}</white> n'est pas un membre de ton île
   promote:
     broadcast: <white>{player}</white> a maintenant le rang de <white>{rank}</white>
   transfer:

@@ -33,7 +33,6 @@ classe:
   upgrade_station:
     config:
       error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"
-  upgrade_station:
     no_item: "Tu n'as aucun objet améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un objet de classe ou de métier"
   sort:
@@ -55,7 +54,14 @@ classe:
       on_cooldown: Le sort <white>{sort}</white> est en recharge, réessaie dans <white>{cooldown_restant}</white>s.
       no_data: Impossible de lancer ce sort pour le moment.
       jobs_blocks: Tu ne peux pas lancer ce sort ici.
+      rarity_requirement: La rareté de cet objet est insuffisante pour lancer le sort <white>{sort}</white>.
+      power_requirement: La puissance de cet objet est insuffisante pour lancer le sort <white>{sort}</white>.
+    already_unlocked: "Tu as déjà débloqué ce sort"
     notremove: Tu ne peux pas retirer ce sort.
+  upgrade_station:
+    busy: "La station d'amélioration est déjà en cours d'utilisation</color>"
+profile:
+  loading: Ton profil est en cours de chargement, réessaie dans un instant
 collection:
   already_exists: L’objet n’a pas été ajouté dans ta collection car un exemplaire y est déjà
   cannot_add: L’objet n’a pas été ajouté dans ta collection car il ne peut pas être ajouté dans une collection
@@ -86,6 +92,10 @@ money:
     invalid-amount: "Le montant que tu as entré est invalide"
     insufficient-funds: "Tu n'as pas assez d'argent. Solde actuel : <gold>{money}</gold>"
 command:
+  badnumber: "<white>{value}</white> n'est pas un nombre valide"
+  badstat: "La statistique <white>{stat}</white> n'existe pas"
+  playeronly: Cette commande ne peut être exécutée que par un joueur
+  noitem: Tu dois tenir un objet dans ta main principale
   archimage_required: Tu dois avoir le grade <glyph:archimage> <color:#ff383b>pour utiliser cette commande !</color> <click:run_command:'/boutique'><glyph:left_click> Clique ici pour l'obtenir [<color:#ffc933>dans la boutique</color>]</click>
   badcommand: 'Commande incorrecte, la commande à utiliser est : {command}'
   cannot_use: Tu ne peux pas utiliser cette commande !
@@ -296,6 +306,8 @@ jobs:
   skill_level_required: Tu dois avoir au moins le niveau <white>{level}</white> de métier pour débloquer cette compétence
   skill_prerequisites: Tu dois avoir d'abord débloqué les prérequis de cette compétence pour l'obtenir
   skill_pts_required: Tu dois avoir au moins <white>{pts}</white> de points de compétence pour débloquer cette compétence
+  skill_points_required: Tu dois avoir déposé au moins <white>{cost}</white> points de compétence pour débloquer cette compétence
+  skill_prerequisites_required: Tu dois avoir débloqué les prérequis de cette compétence pour pouvoir la débloquer
   skill_rarity_required: Tu dois avoir un objet tribal de la rareté <white>{rarity}</white> pour débloquer cette compétence
   slot_removed: Un de tes métiers a été désactivé car ta limite de métier a été diminuée
   xp_event_invalid: Le multiplicateur doit être un entier d'au moins <white>2</white> et la durée d'au moins <white>1 heure</white>
@@ -443,10 +455,11 @@ upgradeisland:
   max_observers: Tu as atteint le maximum <white>d'Observateurs</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   minecart_limit_reached: Tu as atteint la limite de <white>{max} minecarts</white> sur ton île
   no_levelblock: Tu n'as pas de bloc de niveau à donner à l'île dans ton inventaire
+  no_offrande: Tu n'as pas d'offrande dans ton inventaire
   piston_limit_reached: Tu as atteint le maximum de <white>Pistons</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   required_island_level: Ton île doit avoir au moins le niveau <white>{level}</white>
   required_message: 'Tu dois avoir débloqué les améliorations suivantes :'
-  ritual_not_available: Cette fonctionnalité n'est pas encore disponible
+  ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
   sellchest_limit_reached: Tu as atteint le maximum de <white>Coffres de vente</white> sur ton île
   shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white> sur ton île
   sniffer_limit_reached: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île
@@ -456,10 +469,6 @@ upgradeisland:
   upgrade_not_enough_money: Tu dois avoir <white>{cost} <glyph:mcoin></white> pour acheter cette amélioration
   villager_limit_reached: Tu as atteint la limite de <white>Villageois</white> sur ton île
   villager_limit_reached_view: Tu as atteint la limite de <white>Villageois</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
-  limit_reached_block_view: Tu as atteint le maximum de <white>{block}</white> sur ton île ({actual}/{max})
-  limit_reached_entity_view: Tu as atteint le maximum de <white>{entity}</white> sur ton île ({actual}/{max})
-  no_offrande: Tu n'as pas d'offrande dans ton inventaire
-  ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
 warp:
   already_exists: Le warp nommé <white>{warp}</white> existe déjà
   delete_name_required: Tu dois indiquer le nom du warp que tu veux supprimer

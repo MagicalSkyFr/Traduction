@@ -54,6 +54,13 @@ classe:
   sound:
     active: Son activé </bold>pour <white>{name}</white>
     inactive: Son désactivé </bold>pour <white>{name}</white>
+  rarity:
+    obtain: "Statistiques améliorées :"
+    obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
+  upgrade_station:
+    ritual_cancelled: "Le rituel a été annulé</color>"
+    unlocked:
+      baton_eau: "Tu viens de débloquer le sort <white>{sort}</white></color>"
 collection:
   added: \nL'objet a été ajouté à ta collection\n<click:run_command:'/collection'><glyph:left_click> Clique ici pour voir [<color:#ffc933>tes collections</color>]</click>\n
   item_removed: Tu as supprimé l'objet {item} de la collection {collection} de <white>{owner}</white>
@@ -118,8 +125,6 @@ ignore:
   now_ignoring: Tu ignores désormais <white>{player}</white>
 island:
   creation_in_progress: Création de l'île... <click:run_command:'/is reset'><glyph:left_click> Tu peux remettre à zéro ton île avec un certain délai en [<color:#ffc933>cliquant ici</color>]</click>\n
-  join:
-    broadcast: <color:#ffc933>{player}</color> a rejoint l'île
   coop:
     added: Tu es désormais en coop sur l'île de <color:#ffc933>{island}</color>
     added_broadcast: <white>{player}</white> est maintenant en coop sur ton île
