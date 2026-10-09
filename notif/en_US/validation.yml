@@ -8,6 +8,8 @@ chat:
   join: You joined the chat <color:#ffc933>{id}</color>
   leave: You left the chat <color:#ffc933>{id}</color>
 classe:
+  conversion:
+    success: "The item has been converted to the new version!"
   rune:
     points_added: You turned your runes into <color:#ffc933>{amount}</color> <color:#40ff70>skill points</color>
   selected: You just chose the class <white>{class}</white>

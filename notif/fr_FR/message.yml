@@ -170,6 +170,13 @@ hdv:
   message: '{text}'
 information:
   msg: <white>{msg}</white>
+jobs:
+  archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1 supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la boutique</color>]</click>\n
+  level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white> sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n
+  staff:
+    lookup:
+      1: Jobs de {player}
+      2: 'Job : {job}, Level : {level}, xp : {xp}, status : {status}'
 mythicspawner:
   broadcast: <color:#ffc933>{msgSpawn}</color>
 noel:

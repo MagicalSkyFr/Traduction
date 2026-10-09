@@ -1,3 +1,85 @@
+upgradeisland:
+  limit_reached_block_view: Tu as atteint le maximum de <white>{block}</white> sur ton île ({actual}/{max})
+  limit_reached_entity_view: Tu as atteint le maximum de <white>{entity}</white> sur ton île ({actual}/{max})
+  no_offrande: Tu n'as pas d'offrande dans ton inventaire
+  offrande_given: <glyph:validation_tchat> <color:#40ff70>Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white></color>
+  ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
+  ritual_on_cooldown: Tu dois attendre la fin du cooldown avant de lancer un nouveau rituel
+
+classe:
+  rarity:
+    info: "<gold>Rituel terminé ! Rareté obtenue : <white> {rarity}"
+    obtain: "<gray>Statistiques améliorées :"
+    obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
+  notspell: "Ce n'est pas une baguette"
+  armor:
+    level_requirement: Tu dois être niveau {niveau_requis} pour porter cet item (tu es niveau {niveau_joueur})
+  upgrade_station:
+    stat_added: "Ton arme a gagné +{value} de {stat}"
+    config:
+      error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"
+    add_points: "Tu as ajouté {points} points d'amélioration à ton item"
+    no_item: "Tu n'as aucun item améliorable dans ta main principale"
+    no_nbt: "Ce n'est pas un item de classe ou de métier"
+    busy: "<glyph:warning_tchat> <color:#ff383b>La station d'amélioration est déjà en cours d'utilisation</color>"
+    ritual_cancelled: "<glyph:warning_tchat> <color:#ff383b>Le rituel a été annulé</color>"
+  stats:
+    armor:
+      change: "{slot} a changé, par conséquent tes points de vie ont été mis à jour : {amount}"
+    hp:
+      change: "Ton arme en main a changé, par conséquent tes points de vie max ont été mis à jour : {amount}"
+      remove: "Tu n'as plus d'arme avec des statistiques d'HP dans ta main, tu as donc perdu {amount} points de vie maximum"
+    apply: Les statistiques de ta classe ont été appliquées
+  armor_complete:
+    noskill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée</color>
+    skill: <glyph:validation_tchat> <color:#40ff70>Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !</color>
+  armor_full_required: <glyph:warning_tchat> <color:#ff383b>Tu dois porter une armure intégrale pour profiter de la compétence bonus !</color>
+  armor_missing: <glyph:warning_tchat> <color:#ff383b>Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure</color>
+  notskilloffhand: <glyph:warning_tchat> <color:#ff383b> Tu ne peux lancer de sort si ton item de la deuxième main est aussi un item avec des compétences
+  skill:
+    active: <green><bold> Compétence activée </bold>pour {name}</green>
+    inactive: <red><bold> Compétence désactivée </bold>pour {name}</red>
+  sort:
+    fail:
+      profil_not_found: "Impossible de lancer ce sort : profil introuvable."
+      no_competence_data: Impossible de lancer ce sort pour le moment.
+      wrong_level: Ton niveau de compétence ne permet pas ce sort.
+      not_unlocked: Tu n'as pas débloqué ce sort.
+      not_active: Cette compétence n'est pas active.
+      type_not_possible: Cet objet ne permet pas de lancer ce sort.
+      damage_ticks: Tu ne peux pas lancer ce sort juste après avoir été touché.
+      no_rarity: Cet objet n'a pas de rareté valide pour ce sort.
+      level_requirement: Tu dois être niveau {niveau_requis} (tu es niveau {niveau_joueur}) pour lancer ce sort.
+      chance_failed: Le sort a échoué (malchance).
+      wrong_world: Ce sort n'est pas utilisable dans ce monde.
+      no_mana: "Mana insuffisante : il te manque {mana_manquante} mana (requis : {mana_requise})."
+      no_sort: Aucun sort assigné à cette action.
+      code: Une erreur est survenue lors du lancement du sort.
+      on_cooldown: Le sort {sort} est en recharge, réessaie dans {cooldown_restant}s.
+      no_data: Impossible de lancer ce sort pour le moment.
+      jobs_blocks: Tu ne peux pas lancer ce sort ici.
+      rarity_requirement: La rareté de cet objet est insuffisante pour lancer le sort {sort}.
+      power_requirement: La puissance de cet objet est insuffisante pour lancer le sort {sort}.
+    already_unlocked: "<glyph:warning_tchat> <color:#ff383b>Tu as déjà débloqué ce sort</color>"
+    unlocked:
+      baton_eau: "<glyph:validation_tchat> <color:#40ff70>Tu viens de débloquer le sort <white>{sort}</white> !</color>"
+    add: <glyph:validation_tchat> <color:#40ff70> Tu viens d'ajouter le sort {skillname} sur ta baguette !
+    max: <glyph:warning_tchat> <color:#ff383b> Tu as déjà le nombre maximal de sort sur ta baguette !
+    notremove: <glyph:warning_tchat> <color:#ff383b> Tu ne peux pas retirer ce sort
+    remove: <glyph:validation_tchat> <color:#40ff70> Tu viens de retirer le sort de ta baguette !
+  sound:
+    active: <green><bold> Son activé </bold>pour {name}</green>
+    inactive: <red><bold> Son désactivé </bold>pour {name}</red>
+command:
+  badnumber: "<white>{value}</white> n'est pas un nombre valide"
+  badstat: "La statistique <white>{stat}</white> n'existe pas"
+  playeronly: Cette commande ne peut être exécutée que par un joueur
+  noitem: Tu dois tenir un item dans ta main principale
+profile:
+  loading: Ton profil est en cours de chargement, réessaie dans un instant
+jobs:
+  skill_points_required: Tu dois avoir déposé au moins {cost} points de compétence pour débloquer cette compétence
+  skill_prerequisites_required: Tu dois avoir débloqué les prérequis de cette compétence pour pouvoir la débloquer !
 dungeon:
   already:
     builder: Tu es déjà dans une session de donjon en création
@@ -23,6 +105,20 @@ dungeon:
   startbuild: La session du donjon sera créée dans 30 secondes
 #todo
 island:
+  command:
+    has-island: "<red>Tu as déjà une île."
+    profile-loading: "<gray>Ton profil est en cours de chargement, réessaie dans un instant."
+  template:
+    chosen: "<green>Tu as choisi l'île {template}<green> !"
+    visit-unavailable: "<red>L'île {template}<red> ne peut pas être visitée pour le moment."
+    menu:
+      empty: "<red>Aucune île n'est disponible pour le moment."
+    save:
+      usage: "<red>Utilisation : {usage}"
+      invalid-id: "<red>Identifiant invalide : {id} (minuscules, chiffres, _ et -, 32 caractères max)."
+      unknown-world: "<red>Le monde {world} n'est pas chargé."
+      success: "<green>Le monde {world} est enregistré comme template {template}."
+      error: "<red>Impossible d'enregistrer la template {template} : {error}"
   create:
     started: <gray>Création de ton île {template}<gray> en cours, un instant...
     success: <dark_gray>[<green>✔<dark_gray>] <green>Ton île {template}<green> a été créée, bienvenue chez toi !
@@ -221,10 +317,3 @@ island:
       progress: "<gray>Import BentoBox : {processed}/{total} île(s) traitée(s)..."
       done: "<dark_gray>[<green>✔<dark_gray>] <green>Import BentoBox terminé ({total} île(s)) : {imported} importée(s), {already} déjà présente(s), {conflicts} conflit(s), {failed} erreur(s) (voir la console)."
       error: "<dark_gray>[<red>✖<dark_gray>] <red>L'import BentoBox a échoué : {error}"
-jobs:
-  archimage: <click:run_command:'/boutique'>Tu peux en obtenir <color:#ffc933>1 supplémentaire</color> en obtenant le grade <glyph:archimage> dans [<color:#ffc933>la boutique</color>]</click>\n
-  level_up: \n<glyph:up_tchat> Tu viens d'atteindre le niveau <white>{level}</white> sur ton métier <white>{job}</white>.\n<click:run_command:'/recompense'><glyph:left_click> Clique ici pour récupérer [<color:#ffc933>ta récompense</color>]</click>\n
-  staff:
-    lookup:
-      1: Jobs de {player}
-      2: 'Job : {job}, Level : {level}, xp : {xp}, status : {status}'
