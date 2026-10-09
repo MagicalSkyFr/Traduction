@@ -370,6 +370,20 @@ quest:
   not_started: Tu dois avoir commencé la quête pour pouvoir la suivre !
   step:
     locked: 'Cette étape est verrouillée : termine d''abord l''étape précédente.'
+recompense:
+  potion:
+    cancelled: L'utilisation de la potion est annulée
+    multiplier_active: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu as déjà un multiplicateur actif !
+    job_inactive: <sound:ITEM_ARMOR_EQUIP_GENERIC>Ton métier <white>{job}</white> est inactif !
+    level_required: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu dois être au niveau <white>{level}</white> pour utiliser cette potion !
+    class_booster_disabled: Les potions de boost d'expérience de classe sont temporairement désactivées
+  donjon_disabled: Les clés de donjon bonus sont temporairement désactivées
+  shop:
+    boost_active: Tu as déjà un boost de vente actif pour ce métier
+  menu:
+    no_profile: <sound:ITEM_ARMOR_EQUIP_GENERIC>Ton profil n'est pas encore chargé, réessaie dans un instant
+    job_not_initialized: <sound:ITEM_ARMOR_EQUIP_GENERIC>Ton métier <white>{job}</white> n'est pas initialisé !
+    no_island: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu ne possèdes pas d'île !
 regen:
   cooldown: Tu es en cooldown, tu pourras te régénérer dans <white>{time}</white> secondes
 sellchest:

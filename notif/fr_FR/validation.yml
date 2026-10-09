@@ -182,6 +182,15 @@ quest:
     test: 'Étape de test créée pour <white>{player}</white> : <white>{action}</white> <white>{quantity}</white>x <white>{type}</white>.'
     test-clear: L'étape de test de <white>{player}</white> a été retirée.
   quest_item_found: Tu as trouvé l'objet de quête !
+recompense:
+  potion:
+    job_boost: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu as gagné un bonus d'expérience <white>x{boost}</white> pour le métier <white>{job}</white> pendant <white>{minutes} min</white> !
+    job_xp: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu viens de gagner <white>{xp}</white> d'expérience du métier <white>{job}</white> !
+    class_xp: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu viens de gagner <white>{xp}</white> d'expérience de classe !
+  shop:
+    boost: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu as gagné un bonus de vente de <white>+{boost}%</white> pour le métier <white>{job}</white> pendant <white>{minutes} min</white> !
+  moneybag: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu viens de gagner <white>{money}</white> MCoins !
+  island_xp: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu viens de gagner <white>{xp}</white> d'expérience pour ton île !
 regen:
   healed: Tu as été régénéré de <white>{amount}</white> cœurs
   combat:

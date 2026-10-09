@@ -202,6 +202,11 @@ parrainage:
     header: '<white>Récompense : {objectif}</white>'
 quest:
   info: 'Info de la quête <color:#ffc933>{quest}</color> pour <color:#ffc933>{player}</color> : Complété : <color:#ffc933>{completed}</color> / État : <color:#ffc933>{state}</color>'
+recompense:
+  potion:
+    confirm: Clique dans les <color:#ffc933>5 secondes</color> pour consommer ta potion
+  shop:
+    boost_ended: Le boost de vente du métier <white>{job}</white> est terminé
 sellchest:
   profit: Tes <color:#ffc933>coffres automatiques</color> t'ont rapporté <color:#ffc933>{amount}</color> <glyph:mcoin> au cours des 10 dernières minutes
 shopjoueur:
