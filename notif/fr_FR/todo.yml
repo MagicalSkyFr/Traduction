@@ -1,29 +1,3 @@
-classe:
-  rarity:
-    obtain: "<gray>Statistiques améliorées :"
-    obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
-  upgrade_station:
-    busy: "<glyph:warning_tchat> <color:#ff383b>La station d'amélioration est déjà en cours d'utilisation</color>"
-    ritual_cancelled: "<glyph:warning_tchat> <color:#ff383b>Le rituel a été annulé</color>"
-  sort:
-    fail:
-      rarity_requirement: La rareté de cet objet est insuffisante pour lancer le sort {sort}.
-      power_requirement: La puissance de cet objet est insuffisante pour lancer le sort {sort}.
-    already_unlocked: "<glyph:warning_tchat> <color:#ff383b>Tu as déjà débloqué ce sort</color>"
-    unlocked:
-      baton_eau: "<glyph:validation_tchat> <color:#40ff70>Tu viens de débloquer le sort <white>{sort}</white> !</color>"
-command:
-  badnumber: "<white>{value}</white> n'est pas un nombre valide"
-  badstat: "La statistique <white>{stat}</white> n'existe pas"
-  playeronly: Cette commande ne peut être exécutée que par un joueur
-  noitem: Tu dois tenir un item dans ta main principale
-profile:
-  loading: Ton profil est en cours de chargement, réessaie dans un instant
-jobs:
-  skill_points_required: Tu dois avoir déposé au moins {cost} points de compétence pour débloquer cette compétence
-  skill_prerequisites_required: Tu dois avoir débloqué les prérequis de cette compétence pour pouvoir la débloquer !
-
-
 dungeon:
   already:
     builder: Tu es déjà dans une session de donjon en création
