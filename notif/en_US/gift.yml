@@ -5,6 +5,8 @@ discord:
     claim: \nYou just claimed your rewards!\n・Tag {tag}\n・Wumpus plushie\n
 daily:
   claimed: Congratulations, you just claimed your Daily!
+  monthly_claimed: Well done, you completed 4 weeks in a row and claimed your special gift!
+  weekly_claimed: Congratulations, you just claimed the weekly bonus!
 gift:
   claimed: You just claimed your gift!
 parrainage:

@@ -5,6 +5,8 @@ discord:
     claim: \nTu viens de récupérer tes récompenses !\n・Tag {tag}\n・Peluche de Wumpus\n
 daily:
   claimed: Félicitations, tu viens de récupérer ton Daily !
+  monthly_claimed: Bravo, tu as validé 4 semaines d'affilée et récupéré ton cadeau spécial !
+  weekly_claimed: Félicitations, tu viens de récupérer le bonus de la semaine !
 gift:
   claimed: Tu viens de récupérer ton cadeau !
 parrainage:
