@@ -38,13 +38,16 @@ classe:
     points_added: Tu as transformé tes runes en <color:#ffc933>{amount}</color> <color:#40ff70>points de compétences</color>
   selected: Tu viens de choisir la classe <white>{class}</white>
   upgrade_station:
+    ritual_cancelled: "Le rituel a été annulé"
+    unlocked:
+      baton_eau: "Tu viens de débloquer le sort <white>{sort}</white>"
     stat_added: "Ton arme a gagné +{value} de <white>{stat}</white>"
     add_points: "Tu as ajouté <white>{points}</white> points d'amélioration à ton objet"
   stats:
     apply: Les statistiques de ta classe ont été appliquées
   armor_complete:
-    noskill: Ton armure est intégralement équipée</color>
-    skill: Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !</color>
+    noskill: Ton armure est intégralement équipée
+    skill: Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !
   skill:
     active: Compétence activée </bold>pour {name}
     inactive: Compétence désactivée </bold>pour {name}
@@ -57,10 +60,6 @@ classe:
   rarity:
     obtain: "Statistiques améliorées :"
     obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
-  upgrade_station:
-    ritual_cancelled: "Le rituel a été annulé</color>"
-    unlocked:
-      baton_eau: "Tu viens de débloquer le sort <white>{sort}</white></color>"
 collection:
   added: \nL'objet a été ajouté à ta collection\n<click:run_command:'/collection'><glyph:left_click> Clique ici pour voir [<color:#ffc933>tes collections</color>]</click>\n
   item_removed: Tu as supprimé l'objet {item} de la collection {collection} de <white>{owner}</white>
@@ -175,6 +174,7 @@ pub:
   disabled: Tu as désactivé le canal de pub
   enabled: Tu as activé le canal pub
 quest:
+  tracked: "Quête active : <white>{quest}</white>"
   admin:
     complete: L'étape en cours de la quête <white>{quest}</white> a été validée pour <white>{player}</white>.
     reload: Configuration rechargée <gray>({warnings} avertissement(s))</gray>

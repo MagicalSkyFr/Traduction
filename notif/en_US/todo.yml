@@ -95,3 +95,7 @@ dungeon:
   notifwhenstart: The session has been placed in the queue, you will be notified when the session is about to be created. You can still add members during this time.
   retarded: All instances of this dungeon are taken, you will be teleported when a spot is available, spot {place}
   startbuild: The dungeon session will be created in 30 seconds
+quest:
+  quest:
+    locked: "<dark_gray>[<red>✖<dark_gray>] <red>This quest is locked, finish first: <white>{quests}</white>"
+    tracked: "<dark_gray>[<green>✔<dark_gray>] <green>Active quest: <white>{quest}</white>"

@@ -35,6 +35,7 @@ classe:
       error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"
     no_item: "Tu n'as aucun objet améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un objet de classe ou de métier"
+    busy: "La station d'amélioration est déjà en cours d'utilisation"
   sort:
     fail:
       profil_not_found: "Impossible de lancer ce sort : profil introuvable."
@@ -58,8 +59,6 @@ classe:
       power_requirement: La puissance de cet objet est insuffisante pour lancer le sort <white>{sort}</white>.
     already_unlocked: "Tu as déjà débloqué ce sort"
     notremove: Tu ne peux pas retirer ce sort.
-  upgrade_station:
-    busy: "La station d'amélioration est déjà en cours d'utilisation</color>"
 profile:
   loading: Ton profil est en cours de chargement, réessaie dans un instant
 collection:
@@ -358,6 +357,8 @@ propulsion:
 pub:
   forbidden: Tu ne peux pas utiliser le /pub
 quest:
+  quest:
+    locked: "Cette quête est verrouillée, termine d'abord : <white>{quests}</white>"
   admin:
     player-offline: Le joueur <white>{player}</white> n'est pas connecté.
     reload-error: Échec du rechargement de la configuration, consulte la console.
