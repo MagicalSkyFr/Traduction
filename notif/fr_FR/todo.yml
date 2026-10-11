@@ -85,6 +85,16 @@ island:
         unload: "<dark_gray> - <gray>{time} <yellow>Déchargement</yellow> en <white>{duration}</white> ms"
         unload-failed: "<dark_gray> - <gray>{time} <red>Échec du déchargement</red> après <white>{duration}</white> ms"
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de lire les informations de l'île de {target} (voir la console)."
+    history:
+      header: "<dark_gray>[<gold>ℹ<dark_gray>] <gold>Historique de l'île de <white>{target}</white> <gray>(page {page}/{pages})"
+      line: "<dark_gray> - {line}"
+      empty: "<gray>Aucun événement dans l'historique de cette île."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de lire l'historique de l'île de {target} (voir la console)."
+    range:
+      set: "<dark_gray>[<green>✔<dark_gray>] <green>Le rayon de l'île de <white>{target}</white> <green>est maintenant de <white>{range}</white> <green>blocs."
+      unchanged: "<dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>a déjà un rayon de {range} blocs."
+      invalid: "<dark_gray>[<red>✖<dark_gray>] <red>Le rayon doit être compris entre {min} et {max} blocs."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de modifier la taille de l'île de {target} (voir la console)."
   visit:
     enter: "<gray>Bienvenue sur l'île <color:#ffc933>{island}</color><gray> !"
     exit: "<gray>Tu quittes l'île <color:#ffc933>{island}</color><gray>."

@@ -141,6 +141,16 @@ island:
         unload: "<dark_gray> - <gray>{time} <yellow>Unload</yellow> in <white>{duration}</white> ms"
         unload-failed: "<dark_gray> - <gray>{time} <red>Unload failed</red> after <white>{duration}</white> ms"
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not read the island info of {target} (see the console)."
+    history:
+      header: "<dark_gray>[<gold>ℹ<dark_gray>] <gold>History of the island of <white>{target}</white> <gray>(page {page}/{pages})"
+      line: "<dark_gray> - {line}"
+      empty: "<gray>No event in the history of this island."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not read the history of the island of {target} (see the console)."
+    range:
+      set: "<dark_gray>[<green>✔<dark_gray>] <green>The range of the island of <white>{target}</white> <green>is now <white>{range}</white> <green>blocks."
+      unchanged: "<dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>already has a range of {range} blocks."
+      invalid: "<dark_gray>[<red>✖<dark_gray>] <red>The range must be between {min} and {max} blocks."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not change the size of the island of {target} (see the console)."
   visit:
     enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
     exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."
