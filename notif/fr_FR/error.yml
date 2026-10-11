@@ -30,6 +30,8 @@ classe:
   notspell: "Ce n'est pas une baguette"
   armor:
     level_requirement: Tu dois être niveau <white>{niveau_requis}</white> pour porter cet item. Tu es niveau <white>{niveau_joueur}</white> actuellement.
+  region:
+    level_requirement: Tu dois être niveau <white>{niveau_requis}</white> pour entrer dans cette zone. Tu es niveau <white>{niveau_joueur}</white> actuellement.
   upgrade_station:
     config:
       error: "Une erreur est survenue lors de la configuration de la station d'amélioration : {error}"

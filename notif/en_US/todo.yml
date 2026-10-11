@@ -6,6 +6,8 @@ classe:
   notspell: "This isn't a wand"
   armor:
     level_requirement: You must be level {niveau_requis} to wear this item (you are level {niveau_joueur})
+  region:
+    level_requirement: You must be level {niveau_requis} to enter this area (you are level {niveau_joueur})
   upgrade_station:
     stat_added: "Your weapon gained +{value} {stat}"
     config:
