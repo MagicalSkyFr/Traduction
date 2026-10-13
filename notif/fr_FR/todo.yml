@@ -37,6 +37,7 @@ island:
     other-server: <dark_gray>[<red>✖<dark_gray>] <red>Cette île est actuellement ouverte sur un autre serveur, réessaie dans un instant.
     locked: <dark_gray>[<red>✖<dark_gray>] <red>Cette île a été verrouillée par un administrateur.
     unsafe: <dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'est pas sûre (il faut 2 blocs d'air), téléportation annulée.
+    transfer-failed: <dark_gray>[<red>✖<dark_gray>] <red>Impossible de t'envoyer sur le serveur de cette île, réessaie dans un instant.
   lock:
     evicted: <dark_gray>[<red>✖<dark_gray>] <red>Cette île vient d'être verrouillée par un administrateur, tu as été renvoyé au spawn.
   admin:
@@ -95,6 +96,12 @@ island:
       unchanged: "<dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>a déjà un rayon de {range} blocs."
       invalid: "<dark_gray>[<red>✖<dark_gray>] <red>Le rayon doit être compris entre {min} et {max} blocs."
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de modifier la taille de l'île de {target} (voir la console)."
+    forceload:
+      loaded: "<dark_gray>[<green>✔<dark_gray>] <green>L'île de <white>{target}</white> <green>est chargée ici pour {minutes} minutes."
+      extended: "<dark_gray>[<green>✔<dark_gray>] <green>L'île de <white>{target}</white> <green>reste chargée ici {minutes} minutes de plus."
+      busy: "<dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est en cours de suppression."
+      other-server: "<dark_gray>[<red>✖<dark_gray>] <red>L'île de <white>{target}</white> <red>est déjà chargée sur le serveur <white>{server}</white><red>."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de charger l'île de {target} (voir la console)."
   visit:
     enter: "<gray>Bienvenue sur l'île <color:#ffc933>{island}</color><gray> !"
     exit: "<gray>Tu quittes l'île <color:#ffc933>{island}</color><gray>."
@@ -160,6 +167,7 @@ island:
   expel:
     expelled: <dark_gray>[<green>✔<dark_gray>] <green>{player} a été renvoyé de l'île.
     not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} n'est pas sur ton île.
+    other-server: <dark_gray>[<red>✖<dark_gray>] <red>{player} est sur un autre serveur, il ne peut pas être sur ton île ici.
     target: <dark_gray>[<red>✖<dark_gray>] <red>Tu as été renvoyé de l'île {island}<red>.
   kick:
     not-member: <dark_gray>[<red>✖<dark_gray>] <red>{player} ne fait pas partie de l'île.
@@ -228,3 +236,42 @@ island:
       progress: "<gray>Import BentoBox : {processed}/{total} île(s) traitée(s)..."
       done: "<dark_gray>[<green>✔<dark_gray>] <green>Import BentoBox terminé ({total} île(s)) : {imported} importée(s), {already} déjà présente(s), {conflicts} conflit(s), {failed} erreur(s) (voir la console)."
       error: "<dark_gray>[<red>✖<dark_gray>] <red>L'import BentoBox a échoué : {error}"
+  location:
+    not_your_island: Tu dois appartenir à cette île pour la recalculer
+hdv:
+  noitem: Tu dois tenir un objet dans ta main principale
+jobs:
+  config_reload_error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de recharger metiers.conf, l'ancienne configuration est conservée (voir la console)."
+  config_reloaded: "<dark_gray>[<green>✔<dark_gray>] <green>metiers.conf rechargé : <white>{entries}</white> <green>entrée(s), <white>{warnings}</white> <green>avertissement(s)."
+money:
+  admin:
+    invalid-amount: "Le montant <white>{amount}</white> est invalide (ex. 1500 ou 12.50)."
+    error: Une erreur est survenue, le solde n'a pas été modifié (voir la console).
+propulsion:
+  propulseur_given: Tu as reçu un propulseur
+sentinelle:
+  lookup:
+    profile: '{profile}'
+  staff_chat:
+    message: '<gold>[Staff Chat]</gold> <white>{message}</white>'
+  unmute:
+    player_unmute:
+      staff:
+        title: <aqua>{player}</aqua><white> a été démute</white>
+        by: '<white>•  Par: </white><gold>{staff}</gold>'
+        reason: '<white>•  Motif: </white><gold>{reason}</gold>'
+spawners:
+  received_only_one_per_slot: Tu ne peux déposer qu'un seul spawner par emplacement, le surplus t'a été rendu
+stats:
+  regenerate:
+    success: "<dark_gray>[<green>✔<dark_gray>] <green>stats.conf a été régénéré depuis le CSV et le plugin rechargé."
+    error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de régénérer stats.conf (voir la console)."
+tutoriel:
+  error:
+    no_active_step: Tu n'as aucune étape de tutoriel en cours
+  reset: La progression du tutoriel de <white>{name}</white> a été réinitialisée
+  start: Le tutoriel est réactivé
+  stop: Le tutoriel est désactivé, fais <white>/tuto start</white> pour le reprendre
+upgradeisland:
+  ritual_result: Le rituel <white>{ritual}</white> t'a octroyé <color:#ffc933>+{amount}</color> <white>{stat}</white>
+  ritual_station_busy: Un rituel est déjà en cours sur cette station, patiente un instant

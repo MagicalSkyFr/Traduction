@@ -93,11 +93,12 @@ island:
     other-server: <dark_gray>[<red>✖<dark_gray>] <red>This island is currently open on another server, try again in a moment.
     locked: <dark_gray>[<red>✖<dark_gray>] <red>This island has been locked by an administrator.
     unsafe: <dark_gray>[<red>✖<dark_gray>] <red>This destination is not safe (2 blocks of air are needed), teleport cancelled.
+    transfer-failed: <dark_gray>[<red>✖<dark_gray>] <red>You could not be sent to the server of this island, try again in a moment.
   lock:
     evicted: <dark_gray>[<red>✖<dark_gray>] <red>This island has just been locked by an administrator, you have been sent back to spawn.
   admin:
     lock:
-      locked: <dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>is locked: only administrators can go there.
+      locked: "<dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>is locked: only administrators can go there."
       unlocked: <dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>is unlocked.
       already-locked: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is already locked.
       not-locked: <dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is not locked.
@@ -151,6 +152,12 @@ island:
       unchanged: "<dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>already has a range of {range} blocks."
       invalid: "<dark_gray>[<red>✖<dark_gray>] <red>The range must be between {min} and {max} blocks."
       error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not change the size of the island of {target} (see the console)."
+    forceload:
+      loaded: "<dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>is loaded here for {minutes} minutes."
+      extended: "<dark_gray>[<green>✔<dark_gray>] <green>The island of <white>{target}</white> <green>stays loaded here for {minutes} more minutes."
+      busy: "<dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is being deleted."
+      other-server: "<dark_gray>[<red>✖<dark_gray>] <red>The island of <white>{target}</white> <red>is already loaded on the server <white>{server}</white><red>."
+      error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not load the island of {target} (see the console)."
   visit:
     enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
     exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."
@@ -173,7 +180,7 @@ island:
     joined: <dark_gray>[<green>✔<dark_gray>] <green>{player} joined the island, say welcome!
     member-left: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} left the island.
     left: <dark_gray>[<green>✔<dark_gray>] <green>You left {island}'s island.
-    owner-not-alone: <dark_gray>[<red>✖<dark_gray>] <red>You are the leader: you must be the only player of the island to leave it.
+    owner-not-alone: "<dark_gray>[<red>✖<dark_gray>] <red>You are the leader: you must be the only player of the island to leave it."
     deleted: <dark_gray>[<green>✔<dark_gray>] <green>You left your island, it has been deleted. Type /is to create a new one.
     in-progress: <dark_gray>[<red>✖<dark_gray>] <red>An action is already in progress, please wait a moment.
     error: <dark_gray>[<red>✖<dark_gray>] <red>An error occurred. <click:run_command:'/discord'><white>Open a ticket on [<color:#ffc933>our discord</color>]</white></click>
@@ -197,6 +204,7 @@ island:
   expel:
     expelled: <dark_gray>[<green>✔<dark_gray>] <green>{player} has been sent away from the island.
     not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} is not on your island.
+    other-server: <dark_gray>[<red>✖<dark_gray>] <red>{player} is on another server, they cannot be on your island here.
     target: <dark_gray>[<red>✖<dark_gray>] <red>You have been sent away from the island {island}<red>.
   kick:
     kicked: <dark_gray>[<green>✔<dark_gray>] <green>{player} has been kicked from the island.
@@ -204,7 +212,7 @@ island:
     target: <dark_gray>[<red>✖<dark_gray>] <red>You have been kicked from the island {island}<red>. Type /is to create your own island.
     member-kicked: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} has been kicked from the island.
   moderation:
-    member: <dark_gray>[<red>✖<dark_gray>] <red>{player} is part of the island: kick them first with /is kick.
+    member: "<dark_gray>[<red>✖<dark_gray>] <red>{player} is part of the island: kick them first with /is kick."
     protected: <dark_gray>[<red>✖<dark_gray>] <red>You cannot do that to {player}.
     unknown-player: <dark_gray>[<red>✖<dark_gray>] <red>No player named {player} is known by the server.
     usage: '<dark_gray>[<red>✖<dark_gray>] <red>Usage: {usage}'
@@ -213,7 +221,7 @@ island:
     removed: <dark_gray>[<green>✔<dark_gray>] <green>{player} is no longer a coop of the island.
     already: <dark_gray>[<red>✖<dark_gray>] <red>{player} is already a coop of the island.
     not-coop: <dark_gray>[<red>✖<dark_gray>] <red>{player} is not a coop of the island.
-    target: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} made you a coop of the island {island}<gold>: you can build there while you are both online.
+    target: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} made you a coop of the island {island}<gold>: you can build there while you are both online."
     target-removed: <dark_gray>[<gold>✔<dark_gray>] <gold>You are no longer a coop of the island {island}<gold>.
     expired: <dark_gray>[<gold>✔<dark_gray>] <gold>Your coop on the island {island}<gold> has ended.
   owner:
@@ -232,7 +240,7 @@ island:
     island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
     no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to manage homes.
     not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>You must be on your island to set a home.
-    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -.
+    invalid-name: "<dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -."
     limit: <dark_gray>[<red>✖<dark_gray>] <red>The island already has {max} home(s), the maximum for the leader's rank.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>The home {home} does not exist.
   warp:
@@ -246,7 +254,7 @@ island:
     island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
     no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to manage warps.
     not-on-island: <dark_gray>[<red>✖<dark_gray>] <red>You must be on your island to set a warp.
-    invalid-name: <dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -.
+    invalid-name: "<dark_gray>[<red>✖<dark_gray>] <red>Invalid name: a single word of up to 16 letters, digits, _ or -."
     limit: <dark_gray>[<red>✖<dark_gray>] <red>The island already has {max} warp(s), the maximum for the leader's rank.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>This warp does not exist or is no longer available.
     no-public-island: <dark_gray>[<red>✖<dark_gray>] <red>{player} has no island with public warps.
@@ -263,8 +271,8 @@ island:
     import:
       missing: "<dark_gray>[<red>✖<dark_gray>] <red>BentoBox data not found: the folders {database}/Island and {world} are required."
       running: <dark_gray>[<red>✖<dark_gray>] <red>A BentoBox import is already running.
-      started: <gray>BentoBox import started: {total} island(s) to import...
-      progress: <gray>BentoBox import: {processed}/{total} island(s) processed...
+      started: "<gray>BentoBox import started: {total} island(s) to import..."
+      progress: "<gray>BentoBox import: {processed}/{total} island(s) processed..."
       done: "<dark_gray>[<green>✔<dark_gray>] <green>BentoBox import finished ({total} island(s)): {imported} imported, {already} already present, {conflicts} conflict(s), {failed} error(s) (see the console)."
       error: "<dark_gray>[<red>✖<dark_gray>] <red>The BentoBox import failed: {error}"
 jobs:
