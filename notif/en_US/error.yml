@@ -45,6 +45,7 @@ command:
   cooldown: You must wait {time} more before doing this command again
   error: An error occurred while using the command, please open a ticket
   player_only: This command is reserved for players
+  unknown_player: "<dark_gray>[<red>✖<dark_gray>] <red>No player named {player} is known by the server."
 cooking:
   not_owner: You are not the owner of this plant, come back when the player is no longer here!
 crate:

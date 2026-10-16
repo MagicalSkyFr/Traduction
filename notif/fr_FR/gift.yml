@@ -12,3 +12,6 @@ gift:
 parrainage:
   reward:
     success: '&aRécompense obtenue : <white>{reward}</white>'
+quest:
+  reward:
+    received: <green>+ {quantity} {item}
