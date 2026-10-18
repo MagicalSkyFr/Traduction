@@ -992,3 +992,8 @@ tutoriel:
   tutoriel_qetzir_5: '<sound:ENTITY_EXPERIENCE_ORB_PICKUP[volume=1.0,pitch=1.0,source=MASTER]>\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Et si je te disais qu''il nous reste de supers\nꖰ multiblocks à découvrir ? Le multiblock générateur\nꖰ à cobble génère automatiquement des minerais.\nꖰ On va en créer un !\n'
   tutoriel_qetzir_6: '<sound:ENTITY_EXPERIENCE_ORB_PICKUP[volume=1.0,pitch=1.0,source=MASTER]>\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Farm les spawners un à un c''est pénible. J''ai un\nꖰ dernier multiblock pour toi : le multiblock à\nꖰ spawner ! Tu peux y mettre plusieurs spawners\nꖰ et tout tuer d''un coup. Super pratique !\n'
   tutoriel_qetzir_7: '<sound:ENTITY_EXPERIENCE_ORB_PICKUP[volume=1.0,pitch=1.0,source=MASTER]>\nꗉ <b><color:#ffc933>[</color><color:#2bfff4>Tutoriel</color><color:#ffc933>]</color></b> \nꖰ Et bien je crois que tu connais les\nꖰ fonctionnalités importantes, je te libère de mon\nꖰ tutoriel ! Merci d''avoir été un bon apprenti. Mais\nꖰ ce monde est très vaste, continue à explorer !\n'
+regen:
+  healed: <glyph:validation_tchat> <color:#40ff70>Tu as été régénéré de </color><white>{amount}</white> <glyph:hp>
+  combat:
+    started: <glyph:validation_tchat> <color:#40ff70>Tu commences à te régénérer</white>
+    full: <glyph:validation_tchat> <color:#40ff70>Tu as régénéré <white>{amount}</white> <glyph:hp>

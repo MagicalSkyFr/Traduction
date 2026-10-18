@@ -49,8 +49,8 @@ classe:
     noskill: Ton armure est intégralement équipée
     skill: Ton armure est intégralement équipée, tu bénéficies de la compétence {skill} en bonus !
   skill:
-    active: Compétence activée </bold>pour {name}
-    inactive: Compétence désactivée </bold>pour {name}
+    active: Compétence <white>{name}</white> activée
+    inactive: Compétence <white>{name}</white> désactivée
   sort:
     add: Tu viens d'ajouter le sort <white>{skillname}</white> sur ta baguette.
     remove: Tu viens de retirer le sort de ta baguette.
@@ -191,11 +191,6 @@ recompense:
     boost: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu as gagné un bonus de vente de <white>+{boost}%</white> pour le métier <white>{job}</white> pendant <white>{minutes} min</white> !
   moneybag: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu viens de gagner <white>{money}</white> MCoins !
   island_xp: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu viens de gagner <white>{xp}</white> d'expérience pour ton île !
-regen:
-  healed: Tu as été régénéré de <white>{amount}</white> cœurs
-  combat:
-    started: Tu commences à te régénérer
-    full: Tu as régénéré {amount} cœurs
 shop:
   buy_success: Tu as acheté <white>{amount} {item}</white> pour <white>{total} <glyph:mcoin></white>
   sell_success: <green>Tu as vendu <white>{amount} {item} </white>pour <white>{total} <glyph:mcoin></white>
@@ -226,7 +221,6 @@ teleportation:
 upgradeisland:
   levelblock_given: Les ressources données ont été converties en <white>{xp} expérience</white> pour ton île
   offrande_given: Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white>
-
 warp:
   deleted: Le warp <white>{warp}</white> a été supprimé
   teleported: Tu as été téléporté au warp <white>{warp}</white>
