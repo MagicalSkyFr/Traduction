@@ -82,7 +82,6 @@ money:
     set: "Le solde de <white>{player}</white> est maintenant de <color:#ffc933>{money}</color> <glyph:mcoin>"
   pay:
     sent: "Tu as envoyé <gold>{amount} MCoins</gold> à <gold>{player}</gold>."
-    received: "Tu as reçu <gold>{amount} MCoins</gold> de la part de <gold>{player}</gold>."
 crate:
   givecrate:
     success: Tu as reçu une crate !
@@ -226,7 +225,7 @@ teleportation:
   tp_to_player: Tu as été téléporté vers <white>{target}</white>
 upgradeisland:
   levelblock_given: Les ressources données ont été converties en <white>{xp} expérience</white> pour ton île
-  offrande_given: Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white></color>
+  offrande_given: Tu viens de donner des offrandes à ton île pour <white>{xp} xp</white>
 
 warp:
   deleted: Le warp <white>{warp}</white> a été supprimé
