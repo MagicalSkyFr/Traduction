@@ -103,6 +103,7 @@ command:
   cooldown: Tu dois attendre encore {time} avant de pouvoir faire à nouveau cette commande
   error: Une erreur est survenue lors de l'utilisation de la commande, merci d'ouvrir un ticket
   player_only: Cette commande est réservée aux joueurs
+  unknown_player: "Aucun joueur nommé {player} n'est connu du serveur."
 cooking:
   not_owner: Tu n'es pas le propriétaire de cette plante, reviens quand le joueur n'y sera plus !
 crate:
