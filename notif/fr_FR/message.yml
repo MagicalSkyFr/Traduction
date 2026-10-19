@@ -995,5 +995,5 @@ tutoriel:
 regen:
   healed: <glyph:validation_tchat> <color:#40ff70>Tu as été régénéré de </color><white>{amount}</white> <glyph:hp>
   combat:
-    started: <glyph:validation_tchat> <color:#40ff70>Tu commences à te régénérer</white>
+    started: <glyph:validation_tchat> <color:#40ff70>Tu commences à te régénérer</color>
     full: <glyph:validation_tchat> <color:#40ff70>Tu as régénéré <white>{amount}</white> <glyph:hp>
