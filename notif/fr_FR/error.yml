@@ -77,6 +77,20 @@ chunk:
   error: Une erreur est survenue lors de l'analyse des chunks
   locked: Ce chunk est en cours d'analyse, réessaie dans un instant
 spawn:
+  condense:
+    nothing: "Tu n'as rien à compacter."
+  feed:
+    usage: "Utilisation : /feed [joueur]"
+  enderchest:
+    usage: "Utilisation : /enderchest [joueur]"
+  invsee:
+    usage: "Utilisation : /invsee <joueur> (pas toi-même)"
+  offline:
+    error: "Impossible de lire ou d'enregistrer les données de <white>{player}</white><red> (voir la console)."
+    outdated: "Les données de <white>{player}</white> <red>datent d'une ancienne version du serveur : il doit se reconnecter une fois avant de pouvoir être modifié."
+  hat:
+    empty: "Tu dois tenir un objet dans ta main principale."
+  player_not_found: "Aucun joueur nommé <white>{player}</white> <red>n'est connu du serveur."
   world_missing: "Le spawn est indisponible pour le moment."
   back:
     none: "Tu n'as aucune position où revenir."

@@ -68,9 +68,17 @@ chunk:
 cooldown:
   reset: Le cooldown de {player} a été réinitialisé
 spawn:
+  feed:
+    self: "<green>Tu as été rassasié."
+    other: "<white>{player}</white> <green>a été rassasié."
+    target: "Tu as été rassasié par un membre de l'équipe."
+  condense:
+    success: "Ton inventaire a été compacté : <white>{amount}</white> <green>objet(s) obtenu(s)."
+  hat:
+      success: "Tu portes maintenant cet objet sur la tête."
   teleport: "Tu as été téléporté au spawn."
   back:
-    teleport: "Tu es revenu à ta position d'avant le spawn."
+    teleport: "Tu es revenu à ta position précédente."
   gamemode:
     self: "<green>Ton mode de jeu est maintenant : {mode}"
     other: "<green>Le mode de jeu de {player} est maintenant : {mode}"

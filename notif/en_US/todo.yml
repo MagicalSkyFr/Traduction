@@ -101,3 +101,23 @@ quest:
   quest:
     locked: "<dark_gray>[<red>✖<dark_gray>] <red>This quest is locked, finish first: <white>{quests}</white>"
     tracked: "<dark_gray>[<green>✔<dark_gray>] <green>Active quest: <white>{quest}</white>"
+spawn:
+  player_not_found: "<dark_gray>[<red>✖<dark_gray>] <red>No player named <white>{player}</white> <red>is known to the server."
+  hat:
+    success: "<dark_gray>[<green>✔<dark_gray>] <green>You are now wearing this item on your head."
+    empty: "<dark_gray>[<red>✖<dark_gray>] <red>You must hold an item in your main hand."
+  condense:
+    success: "<dark_gray>[<green>✔<dark_gray>] <green>Your inventory has been condensed: <white>{amount}</white> <green>item(s) obtained."
+    nothing: "<dark_gray>[<red>✖<dark_gray>] <red>You have nothing to condense."
+  feed:
+    usage: "<dark_gray>[<red>✖<dark_gray>] <red>Usage: /feed [player]"
+    self: "<dark_gray>[<green>✔<dark_gray>] <green>You have been fed."
+    other: "<dark_gray>[<green>✔<dark_gray>] <white>{player}</white> <green>has been fed."
+    target: "<dark_gray>[<green>✔<dark_gray>] <green>You have been fed by a staff member."
+  enderchest:
+    usage: "<dark_gray>[<red>✖<dark_gray>] <red>Usage: /enderchest [player]"
+  invsee:
+    usage: "<dark_gray>[<red>✖<dark_gray>] <red>Usage: /invsee <player> (not yourself)"
+  offline:
+    error: "<dark_gray>[<red>✖<dark_gray>] <red>Could not read or save the data of <white>{player}</white><red> (see the console)."
+    outdated: "<dark_gray>[<red>✖<dark_gray>] <red>The data of <white>{player}</white> <red>comes from an older server version: they must log in once before it can be edited."
