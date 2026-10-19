@@ -23,6 +23,9 @@ dungeon:
   startbuild: La session du donjon sera créée dans 30 secondes
 #todo
 island:
+  search:
+    too-short: "<dark_gray>[<red>✖<dark_gray>] <red>Tape au moins {min} caractères pour rechercher une île."
+    not-found: "<dark_gray>[<red>✖<dark_gray>] <red>Cette île n'existe plus."
   create:
     started: <gray>Création de ton île {template}<gray> en cours, un instant...
     success: <dark_gray>[<green>✔<dark_gray>] <green>Ton île {template}<green> a été créée, bienvenue chez toi !

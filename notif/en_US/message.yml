@@ -264,6 +264,9 @@ island:
     name-length: "<dark_gray>[<red>✖<dark_gray>] <red>The warp name must be between {min} and {max} characters long."
     description-length: "<dark_gray>[<red>✖<dark_gray>] <red>The warp description must be at most {max} characters long."
     forbidden-format: "<dark_gray>[<red>✖<dark_gray>] <red>This formatting is not allowed by the island leader's rank."
+  search:
+    too-short: "<dark_gray>[<red>✖<dark_gray>] <red>Type at least {min} characters to search for an island."
+    not-found: "<dark_gray>[<red>✖<dark_gray>] <red>This island no longer exists."
   info:
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>No island to show for {player}.
     error: <dark_gray>[<red>✖<dark_gray>] <red>The island information could not be loaded.
