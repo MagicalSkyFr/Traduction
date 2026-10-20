@@ -27,6 +27,8 @@ boss:
 classe:
   change_cooldown: Tu pourras toujours <color:#ffc933>changer de classe</color> après un cooldown !
   change_timer: Tu pourras changer de classe le <color:#ffc933>{time}</color>
+  competence:
+    activation: "Compétence <color:#ffc933>{competence}</color> (niveau <white>{niveau}</white>) activée !"
   rarity:
     info: "Rituel terminé ! Rareté obtenue : <white> {rarity}"
   stats:
@@ -38,7 +40,6 @@ classe:
   armor_missing: Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure
 money:
   info: "Tu possèdes <gold>{money}</gold> <glyph:mcoin>"
-money:
   pay:
     received: "Tu as reçu <gold>{amount} MCoins</gold> de la part de <gold>{player}</gold>."
 boutique:
@@ -220,7 +221,8 @@ shopjoueur:
   sold_items: Tu viens de vendre <white>{amount} objets</white>
 spawners:
   inventory_taken: <color:#ffc933>{player}</color> est dans l'inventaire du spawner. Plus qu'à attendre...
-  must_use_hunter_weapon: <red>Tu dois utiliser l'arme du métier <white>chasseur</white> pour faire ceci
+  must_use_hunter_weapon: <red>Tu dois tenir une arme du métier <white>chasseur</white> pour frapper ce mob
+  no_hunter_job: <red>Tu dois avoir le métier <white>chasseur</white> actif pour frapper ce mob
   orb_full: <color:#ffc933>Ton orbe à spawner est pleine</color> ! Fais <color:#ffc933>un clic droit en tenant l'orbe à spawner</color> et en ayant dans ton inventaire <color:#ffc933>{nb} coeurs de spawner, 1 {name} et 1 orbe à spawner remplie</color>
   other_in_inventory: <white>{player}</white> est dans l'inventaire du spawner
   spawner_in_use: Le spawner est actuellement utilisé par <color:#ffc933>{player}</color>

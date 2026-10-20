@@ -223,6 +223,7 @@ event:
   player_not_in_event: Le joueur <white>{player}</white> n'est pas dans l'événement
   specify_id: Tu dois spécifier un événement
 fishing:
+  no_fisherman_rod: "Tu dois avoir une canne à pêche du métier Pêcheur dans ton inventaire pour choisir un appât."
   only_insects_bait: Tu ne peux utiliser que des insectes comme appât !
 fly:
   cannot_in_world: Tu ne peux pas voler dans ce monde
