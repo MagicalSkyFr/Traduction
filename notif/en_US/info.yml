@@ -8,6 +8,8 @@ boss:
 classe:
   change_cooldown: You will still be able to <color:#ffc933>change class</color> after a cooldown!
   change_timer: You will be able to change class on <color:#ffc933>{time}</color>
+  competence:
+    activation: "Skill <color:#ffc933>{competence}</color> (level <white>{niveau}</white>) activated!"
 money:
   info: "You have <gold>{money}</gold> <glyph:mcoin>"
 boutique:

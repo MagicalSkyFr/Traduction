@@ -27,6 +27,8 @@ boss:
 classe:
   change_cooldown: Tu pourras toujours <color:#ffc933>changer de classe</color> après un cooldown !
   change_timer: Tu pourras changer de classe le <color:#ffc933>{time}</color>
+  competence:
+    activation: "Compétence <color:#ffc933>{competence}</color> (niveau <white>{niveau}</white>) activée !"
   rarity:
     info: "Rituel terminé ! Rareté obtenue : <white> {rarity}"
   stats:
@@ -38,7 +40,6 @@ classe:
   armor_missing: Ton armure n'est pas intégralement équipée, équipe toi d'un set d'armure pour bénéficier des compétences sur ton armure
 money:
   info: "Tu possèdes <gold>{money}</gold> <glyph:mcoin>"
-money:
   pay:
     received: "Tu as reçu <gold>{amount} MCoins</gold> de la part de <gold>{player}</gold>."
 boutique:
