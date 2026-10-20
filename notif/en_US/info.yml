@@ -182,7 +182,8 @@ shopjoueur:
   sold_items: You just sold <white>{amount} items</white>
 spawners:
   inventory_taken: <color:#ffc933>{player}</color> is in the spawner's inventory. Just wait...
-  must_use_hunter_weapon: <red>You must use the <white>hunter</white> job's weapon to do this
+  must_use_hunter_weapon: <red>You must hold a <white>hunter</white> job weapon to hit this mob
+  no_hunter_job: <red>You must have the <white>hunter</white> job active to hit this mob
   orb_full: <color:#ffc933>Your spawner orb is full</color>! Right-click <color:#ffc933>while holding the spawner orb</color> and having in your inventory <color:#ffc933>{nb} spawner hearts, 1 {name} and 1 filled spawner orb</color>
   other_in_inventory: <white>{player}</white> is in the spawner's inventory
   spawner_in_use: The spawner is currently being used by <color:#ffc933>{player}</color>
