@@ -30,7 +30,7 @@ classe:
   competence:
     activation: "Compétence <color:#ffc933>{competence}</color> (niveau <white>{niveau}</white>) activée !"
   cuisinier:
-    gold_item: "Ta cisaille a fait briller l'ingrédient : tu obtiens un <color:#ffc933>item doré</color> !"
+    gold_item: "Ta cisaille a fait transformé l'ingrédient : tu obtiens un <color:#ffc933>objet doré</color> !"
   rarity:
     info: "Rituel terminé ! Rareté obtenue : <white> {rarity}"
   stats:
