@@ -10,6 +10,8 @@ classe:
   change_timer: You will be able to change class on <color:#ffc933>{time}</color>
   competence:
     activation: "Skill <color:#ffc933>{competence}</color> (level <white>{niveau}</white>) activated!"
+  cuisinier:
+    gold_item: "Your shears made the ingredient shine: you got a <color:#ffc933>golden item</color>!"
 money:
   info: "You have <gold>{money}</gold> <glyph:mcoin>"
 boutique:
