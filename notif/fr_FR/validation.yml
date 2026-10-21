@@ -41,7 +41,6 @@ classe:
     ritual_cancelled: "Le rituel a été annulé"
     unlocked:
       baton_eau: "Tu viens de débloquer le sort <white>{sort}</white>"
-    stat_added: "Ton arme a gagné +{value} de <white>{stat}</white>"
     add_points: "Tu as ajouté <white>{points}</white> points d'amélioration à ton objet"
   stats:
     apply: Les statistiques de ta classe ont été appliquées
