@@ -12,6 +12,3 @@ gift:
 parrainage:
   reward:
     success: '&aRécompense obtenue : <white>{reward}</white>'
-quest:
-  reward:
-    received: '\nRécompense de quête obtenue : <gold>{quantity}</gold><white> {item}</white>\n'
