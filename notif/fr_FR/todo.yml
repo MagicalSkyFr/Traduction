@@ -275,6 +275,3 @@ tutoriel:
   reset: La progression du tutoriel de <white>{name}</white> a été réinitialisée
   start: Le tutoriel est réactivé
   stop: Le tutoriel est désactivé, fais <white>/tuto start</white> pour le reprendre
-upgradeisland:
-  ritual_result: Le rituel <white>{ritual}</white> t'a octroyé <color:#ffc933>+{amount}</color> <white>{stat}</white>
-  ritual_station_busy: Un rituel est déjà en cours sur cette station, patiente un instant
