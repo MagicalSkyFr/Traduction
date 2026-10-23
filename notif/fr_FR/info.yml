@@ -173,11 +173,15 @@ item:
   drop: <gray>・ <white>{name} x {amount}
   fullinventory: Ton inventaire est rempli, des objets ont été mis dans<color:#ffc933> ta boite au lettre</color>
 jobs:
+  already_unlocked: Tu as déjà débloqué le métier <white>{job}</white>
   can_add_job: Tu peux ajouter un autre métier !
   level_set: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Ton niveau de <white>{job}</white> a été modifié au niveau <white>{level}</white>
   next_remove_in: Tu pourras retirer un autre métier dans <color:#ffc933>{days} jours</color>
+  setjob_done: "<white>{player}</white> : le métier <white>{job}</white> a été modifié"
+  setjob_unchanged: "<white>{player}</white> : le métier <white>{job}</white> est déjà dans cet état"
   slot_added_target: Tu as <white>{slots}</white> emplacements de métier
   slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>Il te reste <white>{slots}</white> emplacements de métier vide
+  unlocked: <sound:ENTITY_PLAYER_LEVELUP>Tu as débloqué le métier <color:#ffc933>{job}</color> !
   xp_event_end: L'événement XP est terminé, l'XP du métier <white>{job}</white> n'est plus multipliée (elle l'était par <white>x{multiplier}</white>)
   xp_event_list: <white>{job}</white> <gray>»</gray> <color:#ffc933>x{multiplier}</color> <gray>(reste <white>{remaining}</white>)</gray>
   xp_event_none: Aucun événement XP en cours
