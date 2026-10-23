@@ -311,7 +311,7 @@ island:
       error: "Impossible d'enregistrer la template <white>{template}</white> : {error}"
 item:
   cannot_remove_class_or_job: Tu ne peux retirer de cette façon un objet de métier ou de classe
-  cuisinier_shears_required: Tu dois utiliser la cisaille du métier de Cuisinier pour récupérer ces ingrédients
+  cuisinier_shears_required: Tu dois utiliser l''outil magique du métier lié pour récupérer ces ingrédients
   hatnommoitem: Tu ne peux pas mettre en chapeau un objet de Métier ou de Classe
   noitem: Tu n'as aucun objet dans la main
   nommoitem: Tu ne peux pas envoyer un objet de Métier ou de Classe
