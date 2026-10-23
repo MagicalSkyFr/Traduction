@@ -139,11 +139,15 @@ item:
   drop: <gray>・ <white>{name} x {amount}
   fullinventory: Your inventory is full, items have been placed in <color:#ffc933> your mailbox</color>
 jobs:
+  already_unlocked: You have already unlocked the <white>{job}</white> job
   can_add_job: You can add another job!
   level_set: <sound:ENTITY_EXPERIENCE_ORB_PICKUP>Your <white>{job}</white> level has been changed to level <white>{level}</white>
   next_remove_in: You will be able to remove another job in <color:#ffc933>{days} days</color>
+  setjob_done: <white>{player}</white>: the <white>{job}</white> job has been updated
+  setjob_unchanged: <white>{player}</white>: the <white>{job}</white> job is already in that state
   slot_added_target: You have <white>{slots}</white> job slots
   slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>You have <white>{slots}</white> empty job slots left
+  unlocked: <sound:ENTITY_PLAYER_LEVELUP>You unlocked the <color:#ffc933>{job}</color> job!
   xp_event_end: The XP event is over, <white>{job}</white> job XP is no longer multiplied (it was <white>x{multiplier}</white>)
   xp_event_list: <white>{job}</white> <gray>»</gray> <color:#ffc933>x{multiplier}</color> <gray>(<white>{remaining}</white> left)</gray>
   xp_event_none: No XP event in progress
