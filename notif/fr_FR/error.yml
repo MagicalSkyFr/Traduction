@@ -396,6 +396,7 @@ recompense:
     job_inactive: <sound:ITEM_ARMOR_EQUIP_GENERIC>Ton métier <white>{job}</white> est inactif !
     level_required: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu dois être au niveau <white>{level}</white> pour utiliser cette potion !
     class_booster_disabled: Les potions de boost d'expérience de classe sont temporairement désactivées
+    class_potion_unavailable: Cette potion de classe n'est pas disponible pour l'instant
   donjon_disabled: Les clés de donjon bonus sont temporairement désactivées
   shop:
     boost_active: Tu as déjà un boost de vente actif pour ce métier
