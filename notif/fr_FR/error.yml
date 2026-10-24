@@ -493,7 +493,7 @@ upgradeisland:
   piston_limit_reached: Tu as atteint le maximum de <white>Pistons</white> sur ton île <gray>(<white>{actual}</white>/<white>{max}</white>)</gray>
   required_island_level: Ton île doit avoir au moins le niveau <white>{level}</white>
   required_message: 'Tu dois avoir débloqué les améliorations suivantes :'
-  ritual_not_available: Aucun rituel n'est disponible pour le moment sur ton île
+  ritual_not_available: Ton île n'a pas assez <white>d'expérience d''île</white> ou il manque <white>des MCoins dans ta banque d''île</white> pour lancer un rituel
   sellchest_limit_reached: Tu as atteint le maximum de <white>Coffres de vente</white> sur ton île
   shop_player_limit_reached: Tu as atteint le maximum de <white>Shop joueur</white> sur ton île
   sniffer_limit_reached: Tu as atteint la limite de <white>Reniffleurs</white> sur ton île
