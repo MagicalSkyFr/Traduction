@@ -55,6 +55,9 @@ chat:
     console: <white>%bskyblock_island_name%</white> <green>{playername}</green><gray> »</gray><white> {message}</white>
     message: <gray>[</gray><white>%bskyblock_rank%</white><gray>]</gray> <gold>{playername}</gold><gray> »</gray><white> {message}</white>
   global:
+    lobby:
+      message: '<white>%profil_prefix%</white> <color:%profil_color%>{playername}</color><gray> »</gray><white> {message}</white>'
+      console: <gold>{playername}</gold><gray> »</gray><white> {message}</white>
     afk:
       message: '<white>%profil_prefix%</white> <click:suggest_command:''/msg {playername} ''><color:%profil_color%>{playername}</color></click><gray> »</gray><white> {message}</white>'
       console: <gold>{playername}</gold><gray> »</gray><white> {message}</white>
