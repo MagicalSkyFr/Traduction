@@ -118,7 +118,7 @@ information:
   create_stronger_item: Tu veux créer un objet encore plus puissant ?
   discover_potions: Fais <color:#ffc933>/crafts</color> pour les découvrir !
   gem_fragment_obtained: Tu viens d’obtenir un <color:#ffc933>fragment de gemme magique</color> !
-  improve_generator: Tu peux obtenir de <color:#ffc933>meilleurs minerais</color> dans ton générateur en utilisant la commande <color:#ffc933>/is gen</color> !
+  improve_generator: Tu peux obtenir de <color:#ffc933>meilleurs minerais</color> dans ton générateur en utilisant la commande <color:#ffc933>/is level</color> !
   improvement_reward: <color:#ffc933>Tu t’améliores</color> ! Pour célébrer cela une récompense t’attend, tu peux l'obtenir en utilisant la commande <color:#ffc933>/recompense</color> !
   island_leader_reward: Ton île a gagné un niveau ! Si tu es le chef de l'île <color:#ffc933>une récompense t’attend</color>. Tu peux l'obtenir grâce à la commande <color:#ffc933>/recompense</color>
   kill_dimension_monsters: Tu veux tuer des <color:#ffc933>monstres de dimension</color> directement sur ton île ?
