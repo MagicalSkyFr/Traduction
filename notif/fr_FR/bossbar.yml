@@ -4,4 +4,4 @@ classe:
   bossbar:
     level: <white>Classe {class} | Niveau <bold>{level}</bold>
 jobs:
-  bar: <white>Jobs {jobs} | Niveau <bold>{level}</bold>
+  bar: <white>Jobs {jobs} | Niveau <bold>{level}</bold> | <white>{xp}</white> <gray>/</gray> <white>{exp}</white>
