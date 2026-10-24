@@ -97,6 +97,7 @@ crate:
   removed: La box {crate} a été supprimée
   reward:
     gain: Tu as gagné <white>x{amount}</color> de {name}
+    won: Tu as gagné <white>{reward}</white> dans la box {crate}
 discord:
   sync: Ton compte Discord est maintenant synchronisé
   unlink: Ton compte Discord est maintenant délié

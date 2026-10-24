@@ -32,6 +32,7 @@ crate:
   removed: The crate {crate} has been removed
   reward:
     gain: You won <white>x{amount}</color> of {name}
+    won: You won <white>{reward}</white> from the {crate} box
 discord:
   sync: Your Discord account is now synced
   unlink: Your Discord account is now unlinked
