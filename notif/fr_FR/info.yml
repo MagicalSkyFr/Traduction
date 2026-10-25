@@ -193,6 +193,9 @@ kick:
 mail:
   item: \nTu as reçu un objet de <color:#ffc933>{playername}</color> dans <color:#ffc933>ta boîte mail</color>.\n<click:run_command:'/mail'><glyph:left_click> Tu peux cliquer ici pour ouvrir [<color:#ffc933>ta boîte mail</color>]</click>\n
 multiblocks:
+  cinematic_core_last: "Le bloc central ({core}) doit être posé <color:#ffc933>en dernier</color> ! Il est repéré par des particules."
+  cinematic_core_placed: "Voilà le bloc central : {core}. Pense à le poser <color:#ffc933>en dernier</color> !"
+  cinematic_resources: "Voici les ressources nécessaires :\n{resources}"
   destroyed: Tu as détruit ton multiblock
   upgrade_progress: 'Progression de l''amélioration : {progress}/{total}'
 parrainage:
