@@ -46,7 +46,7 @@ money:
     received: "Tu as reçu <gold>{amount} MCoins</gold> de la part de <gold>{player}</gold>."
 boutique:
   credits_remaining: Il te reste <color:#ffc933>{credits}</color> <glyph:skygem>
-  buy_credits: <sound:ENTITY_PLAYER_LEVELUP[volume=1.0,pitch=1.0,source=MASTER]> <white>{player}</white> vient d’acheter <color:#ffc933>{amount}</color> SkyGems <glyph:skygem> sur <click:open_url:'https://www.magicalsky.fr/boutique'><hover:show_text:'Ouvrir la boutique'><color:#ffc933>la boutique</color></hover></click>
+  buy_credits: <white>{player}</white> vient d’acheter <color:#ffc933>{amount}</color> SkyGems <glyph:skygem> sur <click:open_url:'https://www.magicalsky.fr/boutique'><hover:show_text:'Ouvrir la boutique'><color:#ffc933>la boutique</color></hover></click>
 cooking:
   regen: Il reste {time} avant la regénération !
 discord:
