@@ -54,8 +54,8 @@ classe:
     add: Tu viens d'ajouter le sort <white>{skillname}</white> sur ta baguette.
     remove: Tu viens de retirer le sort de ta baguette.
   sound:
-    active: Son activé </bold>pour <white>{name}</white>
-    inactive: Son désactivé </bold>pour <white>{name}</white>
+    active: Son activé pour <white>{name}</white>
+    inactive: Son désactivé pour <white>{name}</white>
   rarity:
     obtain: "Statistiques améliorées :"
     obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
