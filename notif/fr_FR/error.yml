@@ -19,6 +19,8 @@ chat:
   mp:
     no_one: Personne ne t'a parlé (triste :c)
 classe:
+  enchant:
+      blocked: Tu ne peux pas enchanter des items de Classe ou de Métier !
   change_cooldown_active: Tu ne peux pas encore changer de classe, tu pourras changer de classe le {date} !
   item_rarity_required: Tes objets de classe doivent avoir la rareté {rarity} pour débloquer cette compétence
   rune:
