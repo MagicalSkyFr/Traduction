@@ -377,6 +377,8 @@ propulsion:
 pub:
   forbidden: Tu ne peux pas utiliser le /pub
 quest:
+  inventory:
+    missing: "Reviens me voir quand tu auras tout apporté : {items}"
   quest:
     locked: "Cette quête est verrouillée, termine d'abord : <white>{quests}</white>"
   admin:
