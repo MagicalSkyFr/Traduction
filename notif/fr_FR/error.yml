@@ -483,6 +483,7 @@ teleportation:
 tutoriel:
   notedit: Ton scoreboard de tutoriel est déjà dans cet état
 upgradeisland:
+  profil_loading: Ton profil est en chargement, reessaye d'ici peu !
   cannot_interact_minecart: Tu ne peux pas interagir avec les minecarts sur MagicalSky
   cobblegen_limit_reached: Tu as atteint le maximum de <white>Multiblocks Générateur à cobble</white> sur ton île
   composter_limit_reached: Tu as atteint le maximum de <white>Multiblocks Composteur</white> sur ton île
