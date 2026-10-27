@@ -32,6 +32,9 @@ chat:
 tag:
   tag_removed: Tu as retiré le tag {tag}
 classe:
+  message:
+    active: Message d'activation activé pour <white>{name}</white>
+    inactive: Message d'activation désactivé pour <white>{name}</white>
   conversion:
     success: "L'item a été converti dans la nouvelle version !"
   rune:
