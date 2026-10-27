@@ -389,6 +389,10 @@ quest:
   not_started: Tu dois avoir commencé la quête pour pouvoir la suivre !
   step:
     locked: 'Cette étape est verrouillée : termine d''abord l''étape précédente.'
+regencrop:
+  break:
+    denied: "Tu ne peux casser <color:#ffc933>seulement les cultures</color> ici"
+    immature: "Cette culture n'est pas encore mûre, <color:#ffc933>patiente un peu</color>"
 recompense:
   potion:
     cancelled: L'utilisation de la potion est annulée
