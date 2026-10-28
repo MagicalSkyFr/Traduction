@@ -146,6 +146,11 @@ dimensionbeacon:
     <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
 
     '
+  farmaria: 'Tu dois posséder un multiblock portail de Farmaria sur ton île pour te téléporter dans la dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
+
+    '
 discord:
   reward:
     claimed: Tu as déjà récupéré tes récompenses !
