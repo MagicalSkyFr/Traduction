@@ -442,6 +442,7 @@ shopjoueur:
   not_your_island: Ce n'est pas ton île. Tu ne peux créer un shop de joueur que sur ton île
   owner_not_enough_money: Le propriétaire n'a pas assez d'argent
   response_timeout: Tu as pris trop de temps à répondre
+  shop_loading: Ce shop est en cours de chargement, réessaie dans un instant
   took_too_long: Tu as pris trop de temps pour répondre
 slots:
   noempty: Des emplacements d’objets ne sont pas vides

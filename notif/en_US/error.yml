@@ -308,6 +308,7 @@ shopjoueur:
   not_your_island: This isn't your island. You can only create a player shop on your own island
   owner_not_enough_money: The owner doesn't have enough money
   response_timeout: You took too long to respond
+  shop_loading: This shop is still loading, try again in a moment
   took_too_long: You took too long to respond
 slots:
   noempty: Some item slots are not empty

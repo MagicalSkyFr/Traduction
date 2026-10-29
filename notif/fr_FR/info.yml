@@ -229,6 +229,8 @@ shopjoueur:
   ask_price: Quel est le prix {type} que tu souhaites définir pour l'objet ?
   chest_transaction: 'Récapitulatif de ton shop joueur : {location}{action} {amount} objets'
   enter_amount: Indique dans le chat combien d'objets tu souhaites <color:#ffc933>{action}</color>
+  help_buy: 'Prix : <white>{price} <glyph:mcoin></white> par objet. Stock disponible : <white>{stock}</white>. Écris un nombre dans le chat pour acheter'
+  help_sell: 'Prix : <white>{price} <glyph:mcoin></white> par objet. Écris un nombre dans le chat pour vendre ce nombre d''objets de ton inventaire'
   sell_chest_remove: Ce coffre est <color:#ffc933>un coffre de vente</color>. Pour le retirer, casse-le de nouveau <color:#ffc933>dans les 5 secondes</color>
   sold_items: Tu viens de vendre <white>{amount} objets</white>
 spawners:

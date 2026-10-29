@@ -190,6 +190,8 @@ shopjoueur:
   ask_price: What {type} price do you want to set for the item?
   chest_transaction: 'Summary of your player shop: {location}{action} {amount} items'
   enter_amount: Type in chat how many items you want to <color:#ffc933>{action}</color>
+  help_buy: 'Price: <white>{price} <glyph:mcoin></white> per item. Available stock: <white>{stock}</white>. Type a number in chat to buy'
+  help_sell: 'Price: <white>{price} <glyph:mcoin></white> per item. Type a number in chat to sell that many items from your inventory'
   sell_chest_remove: This chest is <color:#ffc933>a sell chest</color>. To remove it, break it again <color:#ffc933>within 5 seconds</color>
   sold_items: You just sold <white>{amount} items</white>
 spawners:
