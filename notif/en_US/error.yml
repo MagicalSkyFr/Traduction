@@ -72,6 +72,11 @@ dimensionbeacon:
     <click:run_command:''/multiblocks''><glyph:left_click><white> You can see how to create it by [<color:#ffc933>clicking here</color>]</click>
 
     '
+  farmaria: 'You must own a Farmaria portal multiblock on your island to teleport to the dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> You can see how to create it by [<color:#ffc933>clicking here</color>]</click>
+
+    '
 discord:
   reward:
     claimed: You already claimed your rewards!
@@ -190,6 +195,18 @@ island:
     cannot_self: You can't transfer the island to yourself, that wouldn't be useful!
     player_not_in_island: The player <white>{player}</white> is not a member of your island
   usage_limit_reached: You have reached the maximum number of times you could use this island!
+  command:
+    has-island: "You already have an island."
+    profile-loading: "Your profile is still loading, try again in a moment."
+  template:
+    visit-unavailable: "The island <white>{template}</white> can't be visited right now."
+    menu:
+      empty: "No island is available right now."
+    save:
+      usage: "Usage: <white>{usage}</white>"
+      invalid-id: "Invalid identifier: <white>{id}</white> (lowercase letters, digits, _ and -, 32 characters max)."
+      unknown-world: "The world <white>{world}</white> isn't loaded."
+      error: "Couldn't save the template <white>{template}</white>: {error}"
 item:
   cannot_remove_class_or_job: You can't remove a job or class item this way
   cuisinier_shears_required: You must use the Cook job's shears to retrieve these ingredients

@@ -19,6 +19,8 @@ chat:
   mp:
     no_one: Personne ne t'a parlé (triste :c)
 classe:
+  enchant:
+      blocked: Tu ne peux pas enchanter des items de Classe ou de Métier !
   change_cooldown_active: Tu ne peux pas encore changer de classe, tu pourras changer de classe le {date} !
   item_rarity_required: Tes objets de classe doivent avoir la rareté {rarity} pour débloquer cette compétence
   rune:
@@ -140,6 +142,11 @@ dimensionbeacon:
 
     '
   terrainchasse: 'Tu dois posséder un multiblock portail du terrain de chasse sur ton île pour te téléporter dans la dimension {dim}.
+
+    <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
+
+    '
+  farmaria: 'Tu dois posséder un multiblock portail de Farmaria sur ton île pour te téléporter dans la dimension {dim}.
 
     <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
 
@@ -375,6 +382,8 @@ propulsion:
 pub:
   forbidden: Tu ne peux pas utiliser le /pub
 quest:
+  inventory:
+    missing: "Reviens me voir quand tu auras tout apporté : {items}"
   quest:
     locked: "Cette quête est verrouillée, termine d'abord : <white>{quests}</white>"
   admin:
@@ -389,6 +398,10 @@ quest:
   not_started: Tu dois avoir commencé la quête pour pouvoir la suivre !
   step:
     locked: 'Cette étape est verrouillée : termine d''abord l''étape précédente.'
+regencrop:
+  break:
+    denied: "Tu ne peux casser <color:#ffc933>seulement les cultures</color> ici"
+    immature: "Cette culture n'est pas encore mûre, <color:#ffc933>patiente un peu</color>"
 recompense:
   potion:
     cancelled: L'utilisation de la potion est annulée
@@ -475,6 +488,7 @@ teleportation:
 tutoriel:
   notedit: Ton scoreboard de tutoriel est déjà dans cet état
 upgradeisland:
+  profil_loading: Ton profil est en chargement, reessaye d'ici peu !
   cannot_interact_minecart: Tu ne peux pas interagir avec les minecarts sur MagicalSky
   cobblegen_limit_reached: Tu as atteint le maximum de <white>Multiblocks Générateur à cobble</white> sur ton île
   composter_limit_reached: Tu as atteint le maximum de <white>Multiblocks Composteur</white> sur ton île

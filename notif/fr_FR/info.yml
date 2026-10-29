@@ -179,6 +179,7 @@ jobs:
   next_remove_in: Tu pourras retirer un autre métier dans <color:#ffc933>{days} jours</color>
   setjob_done: "<white>{player}</white> : le métier <white>{job}</white> a été modifié"
   setjob_unchanged: "<white>{player}</white> : le métier <white>{job}</white> est déjà dans cet état"
+  silk_touch_no_xp: "Toucher de soie est activé : tu ne gagnes pas d'XP de mineur avec cet outil."
   slot_added_target: Tu as <white>{slots}</white> emplacements de métier
   slot_remaining: <sound:ENTITY_PLAYER_LEVELUP>Il te reste <white>{slots}</white> emplacements de métier vide
   unlocked: <sound:ENTITY_PLAYER_LEVELUP>Tu as débloqué le métier <color:#ffc933>{job}</color> !

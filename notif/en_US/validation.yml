@@ -65,6 +65,10 @@ ignore:
   no_longer_ignoring: You no longer ignore <color:#ffc933>{player}</color>
   now_ignoring: You are now ignoring <white>{player}</white>
 island:
+  template:
+    chosen: "You chose the island <white>{template}</white>!"
+    save:
+      success: "The world <white>{world}</white> has been saved as the template <white>{template}</white>."
   creation_in_progress: Creating the island... <click:run_command:'/is reset'><glyph:left_click> You can reset your island, with a certain delay, by [<color:#ffc933>clicking here</color>]</click>\n
   join:
     broadcast: <color:#ffc933>{player}</color> joined the island

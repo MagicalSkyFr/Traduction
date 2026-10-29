@@ -79,6 +79,26 @@ hdv:
 information:
   msg: <white>{msg}</white>
 island:
+  range:
+    leave: <dark_gray>[<red>✖<dark_gray>] <red>You can't leave the island.
+  border:
+    enabled: <dark_gray>[<green>✔<dark_gray>] <green>Island border enabled.
+    disabled: <dark_gray>[<green>✔<dark_gray>] <green>Island border disabled, you can leave the islands.
+  bank:
+    balance: "<dark_gray>[<gold>✔<dark_gray>] Island bank balance: <color:#ffc933>{balance}</color>"
+    usage: '<dark_gray>[<red>✖<dark_gray>] <red>Usage: {usage}'
+    invalid-amount: <dark_gray>[<red>✖<dark_gray>] <red>Invalid amount, enter a positive number (e.g. 1500 or 12.50).
+    deposit:
+      success: "<dark_gray>[<green>✔<dark_gray>] <green>You deposited <color:#ffc933>{amount}</color> into the island bank. Balance: <color:#ffc933>{balance}</color>"
+    withdraw:
+      success: "<dark_gray>[<green>✔<dark_gray>] <green>You withdrew <color:#ffc933>{amount}</color> from the island bank. Balance: <color:#ffc933>{balance}</color>"
+    not-enough-money: <dark_gray>[<red>✖<dark_gray>] <red>You don't have enough money to deposit {amount}.
+    bank-not-enough: "<dark_gray>[<red>✖<dark_gray>] <red>The island bank doesn't have enough money (balance: {balance})."
+    no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank doesn't allow you to do this.
+    no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
+    island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is still loading, try again in a moment.
+    unavailable: <dark_gray>[<red>✖<dark_gray>] <red>The bank is currently unavailable.
+    error: <dark_gray>[<red>✖<dark_gray>] <red>An error occurred, your money stayed in the bank. Please open a ticket.
   create:
     started: <gray>Creating your island {template}<gray>, please wait...
     success: <dark_gray>[<green>✔<dark_gray>] <green>Your island {template}<green> has been created, welcome home!
