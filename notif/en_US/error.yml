@@ -226,8 +226,10 @@ jobs:
   xp_event_invalid: The multiplier must be an integer of at least <white>2</white> and the duration at least <white>1 hour</white>
 kits:
   already_claimed: You already claimed this kit! You'll be able to claim it again tomorrow
+  claimed: You claimed the kit <white>{kit}</white>!
   not_found: The kit <white>{kit}</white> doesn't exist
   once_only: You already claimed this kit and can't claim it again
+  profile_loading: Your profile is still loading, try again in a few seconds
 leaderboard:
   not_found: This leaderboard doesn't exist
 mail:

@@ -339,6 +339,7 @@ kits:
   already_claimed: Tu as déjà récupéré ce kit ! Tu pourras le récupérer à nouveau demain
   not_found: Le kit <white>{kit}</white> n'existe pas
   once_only: Tu as déjà récupéré ce kit et tu ne peux pas le récupérer à nouveau
+  profile_loading: Ton profil est en cours de chargement, réessaie dans quelques secondes
 leaderboard:
   not_found: Ce classement n'existe pas
 mail:
