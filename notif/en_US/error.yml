@@ -262,6 +262,7 @@ parrainage:
 photo:
   invalid_nexo: The nexo id is invalid
   usage_add: 'Usage: /photo add <id nexo>'
+  profile_loading: Your profile is still loading, try again in a moment
 player:
   notfound: The player <white>{player}</white> doesn't exist!
   notplayer: You must be a player to use this command!

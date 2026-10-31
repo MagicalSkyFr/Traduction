@@ -372,6 +372,7 @@ parrainage:
 photo:
   invalid_nexo: L'id nexo est invalide
   usage_add: 'Usage: /photo add <id nexo>'
+  profile_loading: Ton profil est en cours de chargement, réessaie dans un instant
 player:
   notfound: Le joueur <white>{player}</white> n'existe pas !
   notplayer: Vous devez être un joueur pour utiliser cette commande !
