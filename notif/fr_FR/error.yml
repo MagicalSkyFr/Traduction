@@ -40,6 +40,7 @@ classe:
     no_item: "Tu n'as aucun objet améliorable dans ta main principale"
     no_nbt: "Ce n'est pas un objet de classe ou de métier"
     busy: "La station d'amélioration est déjà en cours d'utilisation"
+    max_points: "Cet objet ne peut pas dépasser <white>{max}</white> points d'amélioration (il en a déjà <white>{current}</white>). Tes objets n'ont pas été consommés."
   sort:
     fail:
       profil_not_found: "Impossible de lancer ce sort : profil introuvable."

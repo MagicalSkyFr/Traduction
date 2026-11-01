@@ -20,6 +20,8 @@ classe:
   skill_points_required: You must have invested at least {cost} skill points to unlock this skill
   skill_prerequisites_required: You must have unlocked the prerequisites of this skill to unlock it!
   skill_unlocked_required: You must have at least {unlocked} unlocked skills to unlock this skill
+  upgrade_station:
+    max_points: "This item can't exceed <white>{max}</white> upgrade points (it already has <white>{current}</white>). Your items were not consumed."
 collection:
   already_exists: The item wasn't added to your collection because a copy is already there
   cannot_add: The item wasn't added to your collection because it can't be added to a collection
