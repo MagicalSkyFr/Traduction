@@ -62,6 +62,8 @@ classe:
   rarity:
     obtain: "Statistiques améliorées :"
     obtain_stat: "{glyph} <white>{stat} <green>+{amount}"
+kits:
+  claimed: Tu as récupéré le kit <white>{kit}</white> !
 collection:
   added: \nL'objet a été ajouté à ta collection\n<click:run_command:'/collection'><glyph:left_click> Clique ici pour voir [<color:#ffc933>tes collections</color>]</click>\n
   item_removed: Tu as supprimé l'objet {item} de la collection {collection} de <white>{owner}</white>

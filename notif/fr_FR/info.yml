@@ -29,6 +29,7 @@ classe:
   change_timer: Tu pourras changer de classe le <color:#ffc933>{time}</color>
   competence:
     activation: "Compétence <color:#ffc933>{competence}</color> (niveau <white>{niveau}</white>) activée !"
+    rarity_requirement: "Ton objet est de rareté {rarete_actuelle} : la compétence <color:#ffc933>{competence}</color> demande la rareté {rarete_requise}."
   cuisinier:
     gold_item: "Ta cisaille a fait transformé l'ingrédient : tu obtiens un <color:#ffc933>objet doré</color> !"
   rarity:

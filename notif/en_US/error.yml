@@ -20,6 +20,8 @@ classe:
   skill_points_required: You must have invested at least {cost} skill points to unlock this skill
   skill_prerequisites_required: You must have unlocked the prerequisites of this skill to unlock it!
   skill_unlocked_required: You must have at least {unlocked} unlocked skills to unlock this skill
+  upgrade_station:
+    max_points: "This item can't exceed <white>{max}</white> upgrade points (it already has <white>{current}</white>). Your items were not consumed."
 collection:
   already_exists: The item wasn't added to your collection because a copy is already there
   cannot_add: The item wasn't added to your collection because it can't be added to a collection
@@ -226,8 +228,10 @@ jobs:
   xp_event_invalid: The multiplier must be an integer of at least <white>2</white> and the duration at least <white>1 hour</white>
 kits:
   already_claimed: You already claimed this kit! You'll be able to claim it again tomorrow
+  claimed: You claimed the kit <white>{kit}</white>!
   not_found: The kit <white>{kit}</white> doesn't exist
   once_only: You already claimed this kit and can't claim it again
+  profile_loading: Your profile is still loading, try again in a few seconds
 leaderboard:
   not_found: This leaderboard doesn't exist
 mail:
@@ -260,6 +264,7 @@ parrainage:
 photo:
   invalid_nexo: The nexo id is invalid
   usage_add: 'Usage: /photo add <id nexo>'
+  profile_loading: Your profile is still loading, try again in a moment
 player:
   notfound: The player <white>{player}</white> doesn't exist!
   notplayer: You must be a player to use this command!
