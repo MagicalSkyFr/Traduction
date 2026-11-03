@@ -188,7 +188,7 @@ quest:
 sellchest:
   profit: Your <color:#ffc933>automatic chests</color> earned you <color:#ffc933>{amount}</color> <glyph:mcoin> over the last 10 minutes
 shopjoueur:
-  ask_price: What {type} price do you want to set for the item?
+  ask_price: What {type} price do you want to set for the item? (up to 2 decimals allowed)
   chest_transaction: 'Summary of your player shop: {location}{action} {amount} items'
   enter_amount: Type in chat how many items you want to <color:#ffc933>{action}</color>
   help_buy: 'Price: <white>{price} <glyph:mcoin></white> per item. Available stock: <white>{stock}</white>. Type a number in chat to buy'

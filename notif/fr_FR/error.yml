@@ -358,6 +358,7 @@ number:
   not:
     negative: La commande n'accepte pas de valeur négative ({number})
     number: La commande n'accepte que des nombres ({number})
+  too_many_decimals: Le nombre accepte 2 décimales maximum ({number})
 parrainage:
   accept:
     denied: <white>{playername}</white> ne t’a pas invité
