@@ -20,6 +20,8 @@ chunk:
   finish: "Chunk analysis is complete ({time})"
 cooldown:
   reset: "{player}'s cooldown has been reset"
+craft:
+  tracked: You are now tracking <white>{count}x {item}</white> on your scoreboard.
 money:
   pay:
     sent: "You sent <gold>{amount} MCoins</gold> to <gold>{player}</gold>."

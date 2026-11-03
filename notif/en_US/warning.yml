@@ -7,5 +7,7 @@ badge:
     max: You have reached the equippable badge limit
 challenge:
   almost_finished: You've almost completed a challenge, make sure you have enough inventory space to get your rewards!
+craft:
+  nottracked: You are not tracking the recipe <white>{item}</white>.
 spawners:
   break_warning: Warning, if you break a spawner without a spawner pickaxe, it will disappear! If you still want to continue, break this block again
