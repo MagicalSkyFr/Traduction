@@ -112,7 +112,7 @@ ignore:
   ignored_by: <color:#ffc933>{name}</color> ignore tes messages à partir de maintenant
 information:
   accidental_obsidian: <color:#ffc933>Bloc d’obsidienne</color> créé sans faire exprès ? Fais un clic avec ton seau <color:#ffc933>sur l'obsidienne</color> pour obtenir à nouveau la lave !
-  catch_insects: Tu peux obtenir <color:#ffc933>des insectes</color> en cassant des feuilles avec une <color:#ffc933>hache tribale</color>
+  catch_insects: Tu peux obtenir <color:#ffc933>des insectes</color> en cassant des feuilles avec une <color:#ffc933>hache magique</color>
   clickable_message: '{message} <color:#ffc933>[Clique ici]</color>'
   combine_gem: Combine <color:#ffc933>9 fragments</color> dans un multiblock établi pour créer une <color:#ffc933>gemme magique</color>. C’est une ressource utilisée pour créer de nombreux <color:#ffc933>objets magiques !</color>
   create_bolder_item: Tu veux créer un objet <color:#ffc933>encore plus puissant</color> ?
@@ -124,7 +124,7 @@ information:
   island_leader_reward: Ton île a gagné un niveau ! Si tu es le chef de l'île <color:#ffc933>une récompense t’attend</color>. Tu peux l'obtenir grâce à la commande <color:#ffc933>/recompense</color>
   kill_dimension_monsters: Tu veux tuer des <color:#ffc933>monstres de dimension</color> directement sur ton île ?
   level_5_reached: <color:#ffc933>Niveau 5</color> atteint ! Et ils en sont où les autres ? Va jeter un oeil en faisant la commande <color:#ffc933>/classement</color>
-  multiblock_info: Pour obtenir d’autres informations sur la création des <color:#ffc933>multiblock</color> tu peux utiliser la commande <color:#ffc933>/multiblock</color> !
+  multiblock_info: Pour obtenir d’autres informations sur la création des <color:#ffc933>multiblock</color> tu peux utiliser la commande <color:#ffc933>/multiblocks</color> !
   rare_item_found: C’est quoi ça ? On dirait que c’est <color:#ffc933>rare</color>, je suis sûr que ça se vend bien !
   reset_island_command: Tu peux <color:#ffc933>remettre à zéro ton île</color> à tout moment en utilisant la commande <color:#ffc933>/is reset</color>
   sneak_help: Tu veux que tes arbres poussent plus vite ? Utilise le <color:#ffc933>sneak - desneak</color> à côté d’eux pour les aider à pousser !
@@ -132,11 +132,11 @@ information:
   spawner_multiblock_bonus: Tu peux bénéficier de <color:#ffc933>plus d’améliorations</color> en plaçant ton spawner dans un <color:#ffc933>multiblock à spawner</color> ! <click:run_command:'/multiblocks'><glyph:left_click> Clique ici pour voir [<color:#ffc933>les multiblocks</color>]</click>
   spawner_open_chest: Tu peux faire un clic droit sur ton spawner pour ouvrir <color:#ffc933>son stockage</color>
   special_crafts_intro: Il existe de nombreux <color:#ffc933>crafts spéciaux</color> sur le serveur.
-  special_fish_intro: Tu peux pêcher des <color:#ffc933>poissons spéciaux</color> qui rapportent beaucoup d’argent !
+  special_fish_intro: Tu peux pêcher des <color:#ffc933>poissons magiques</color> qui rapportent beaucoup d’argent !
   special_potions_intro: Il existe dans notre monde <color:#ffc933>des potions spéciales</color>.
   trees_dance: Les arbres adorent la danse.
-  tribal_fishing_instructions: Il te suffit d'obtenir <color:#ffc933>une canne à pêche tribale</color>, de faire un <color:#ffc933>clic droit dessus</color> quand tu es dans ton inventaire et de glisser dedans des insectes. Super facile !
-  tribal_item_instructions: Crée un objet tribal en suivant les consignes dans le <color:#ffc933>/crafts</color>
+  tribal_fishing_instructions: Il te suffit d'obtenir <color:#ffc933>une canne à pêche magique</color>, de faire un <color:#ffc933>clic droit dessus</color> quand tu es dans ton inventaire et de glisser dedans des insectes. Super facile !
+  tribal_item_instructions: Crée un objet magique en suivant les consignes dans le <color:#ffc933>/crafts</color>
   tutorial_quest_jobs: Avance dans la <color:#ffc933>quête de tutoriel de tous les métiers</color> pour voir celui qui te correspond le plus !
   unsure_which_job: Tu ne sais pas quel <color:#ffc933>métier choisir</color> ?
   view_crafts_command: <click:run_command:'/crafts'><glyph:left_click> Tu peux les retrouver en [<color:#ffc933>cliquant ici</color>]</click>
