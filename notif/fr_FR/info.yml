@@ -8,6 +8,10 @@ badge:
   edit: Le badge <color:#ffc933>{badgename}</color> de <color:#ffc933>{playername}</color> a été modifié
 bienvenue:
   view: Tu as souhaité la bienvenue à <color:#ffc933>{playername}</color> !
+craft:
+  norecipe: "Aucune recette suivie : fais un clic droit sur une recette dans le livre de recettes."
+  untracked: Tu ne suis plus <white>{item}</white> dans ton scoreboard.
+  untracked.all: Tu ne suis plus aucune recette dans ton scoreboard.
 servercreation:
   lifecycle:
     locked: Ce serveur va bientôt fermer (encore {remainingPlayers} joueur(s) connecté(s)).
@@ -227,7 +231,7 @@ recompense:
 sellchest:
   profit: Tes <color:#ffc933>coffres automatiques</color> t'ont rapporté <color:#ffc933>{amount}</color> <glyph:mcoin> au cours des 10 dernières minutes
 shopjoueur:
-  ask_price: Quel est le prix {type} que tu souhaites définir pour l'objet ?
+  ask_price: Quel est le prix {type} que tu souhaites définir pour l'objet ? (2 décimales maximum)
   chest_transaction: 'Récapitulatif de ton shop joueur : {location}{action} {amount} objets'
   enter_amount: Indique dans le chat combien d'objets tu souhaites <color:#ffc933>{action}</color>
   help_buy: 'Prix : <white>{price} <glyph:mcoin></white> par objet. Stock disponible : <white>{stock}</white>. Écris un nombre dans le chat pour acheter'

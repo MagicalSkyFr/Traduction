@@ -13,6 +13,10 @@ classe:
     rarity_requirement: "Your item has {rarete_actuelle} rarity: the <color:#ffc933>{competence}</color> skill requires {rarete_requise} rarity."
   cuisinier:
     gold_item: "Your shears made the ingredient shine: you got a <color:#ffc933>golden item</color>!"
+craft:
+  norecipe: "No tracked recipe: right-click a recipe in the recipe book."
+  untracked: You are no longer tracking <white>{item}</white> on your scoreboard.
+  untracked.all: You are no longer tracking any recipe on your scoreboard.
 money:
   info: "You have <gold>{money}</gold> <glyph:mcoin>"
 boutique:
@@ -188,7 +192,7 @@ quest:
 sellchest:
   profit: Your <color:#ffc933>automatic chests</color> earned you <color:#ffc933>{amount}</color> <glyph:mcoin> over the last 10 minutes
 shopjoueur:
-  ask_price: What {type} price do you want to set for the item?
+  ask_price: What {type} price do you want to set for the item? (up to 2 decimals allowed)
   chest_transaction: 'Summary of your player shop: {location}{action} {amount} items'
   enter_amount: Type in chat how many items you want to <color:#ffc933>{action}</color>
   help_buy: 'Price: <white>{price} <glyph:mcoin></white> per item. Available stock: <white>{stock}</white>. Type a number in chat to buy'

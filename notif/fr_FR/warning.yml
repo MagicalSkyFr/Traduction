@@ -1,3 +1,5 @@
+craft:
+  nottracked: Tu ne suis pas la recette <white>{item}</white>.
 servercreation:
   admin:
     join:

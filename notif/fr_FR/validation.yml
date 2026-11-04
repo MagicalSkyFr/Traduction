@@ -3,6 +3,8 @@ afk:
     command:
       map-published: "Map <white>{map}</white> publiée avec succès."
       send: "Transfert de <gold>{player}</gold> vers le serveur AFK déclenché."
+craft:
+  tracked: Tu suis maintenant <white>{count}x {item}</white> dans ton scoreboard.
 servercreation:
   admin:
     reduce-ttl:
