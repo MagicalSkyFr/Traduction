@@ -118,6 +118,9 @@ event:
   already_started: The event <white>{event}</white> has already started
   command_only_event: You can only use the command <white>/event</white> during the event
   full: You can't join the event because it is full
+  inventory_check_failed: Unable to check your inventory, please try again in a moment
+  inventory_restore_failed: Unable to restore your inventory, please try again in a moment
+  inventory_save_failed: Your inventory could not be saved, you are not joining the event
   no_saved_inventory: You don't have a saved inventory to retrieve! (and that's a good thing)
   none_running: No event is currently in progress
   not_accepting_players: The event isn't accepting players right now

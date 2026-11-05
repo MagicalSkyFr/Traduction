@@ -122,6 +122,7 @@ emoji:
   added_to_player: L'émoji <white>{emogi}</white> a été ajouté au joueur <white>{player}</white>
   removed_from_player: L'émoji <white>{emogi}</white> a été retiré au joueur <white>{player}</white>
 event:
+  queue_started: L'événement <white>{event}</white> est lancé
   removed_life: Tu as retiré une vie à <white>{player}</white>
 fly:
   enabled: <green>Tu as activé le mode fly !

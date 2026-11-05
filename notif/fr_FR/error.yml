@@ -225,6 +225,9 @@ event:
   already_started: L'événement <white>{event}</white> est déjà lancé
   command_only_event: Tu ne peux utiliser que la commande <white>/event</white> pendant l'événement
   full: Tu ne peux pas rejoindre l'événement car il est plein
+  inventory_check_failed: Impossible de vérifier ton inventaire, réessaie dans un instant
+  inventory_restore_failed: Impossible de récupérer ton inventaire, réessaie dans un instant
+  inventory_save_failed: Ton inventaire n'a pas pu être sauvegardé, tu ne rejoins pas l'événement
   no_saved_inventory: Tu n'as pas d'inventaire sauvegardé à récupérer ! (et c'est tant mieux)
   none_running: Aucun événement n'est actuellement en cours
   not_accepting_players: L'événement n'accepte pas de joueur pour l'instant

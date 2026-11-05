@@ -50,6 +50,7 @@ event:
   finished: The event <color:#ffc933>{event}</color> is over, the winners are <color:#ffc933>{winners}</color>
   finished_single_winner: The event <color:#ffc933>{event}</color> is over, the winner is <color:#ffc933>{winner}</color>
   gained_life: <color:#ffc933>{player}</color> gained a life
+  inventory_saved: Your inventory has been saved
   joined: You just joined the event <color:#ffc933>{event}</color>
   last_two: There are 2 players remaining, sudden death is activated!
   left: You left the event <color:#ffc933>{event}</color>
