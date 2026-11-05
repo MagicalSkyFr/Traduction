@@ -69,6 +69,7 @@ classe:
 profile:
   loading: Ton profil est en cours de chargement, réessaie dans un instant
 collection:
+  profile_loading: Ton profil de collection est en cours de chargement, réessaie dans quelques secondes
   already_exists: L’objet n’a pas été ajouté dans ta collection car un exemplaire y est déjà
   cannot_add: L’objet n’a pas été ajouté dans ta collection car il ne peut pas être ajouté dans une collection
   load_error: Impossible de charger ton profil de collection !
@@ -371,6 +372,7 @@ parrainage:
     denied: <white>{playername}</white> ne t’a pas invité
   invite:
     self: Tu ne peux pas t’inviter toi-même
+  profile_loading: Ton profil de parrainage est en cours de chargement, réessaie dans quelques secondes
   reward:
     none: Aucune récompense disponible
 photo:

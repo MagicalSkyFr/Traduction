@@ -25,6 +25,7 @@ classe:
   upgrade_station:
     max_points: "This item can't exceed <white>{max}</white> upgrade points (it already has <white>{current}</white>). Your items were not consumed."
 collection:
+  profile_loading: Your collection profile is still loading, try again in a few seconds
   already_exists: The item wasn't added to your collection because a copy is already there
   cannot_add: The item wasn't added to your collection because it can't be added to a collection
   load_error: Unable to load your collection profile!
@@ -262,6 +263,7 @@ parrainage:
     denied: <white>{playername}</white> didn't invite you
   invite:
     self: You can't invite yourself
+  profile_loading: Your sponsorship profile is still loading, try again in a few seconds
   reward:
     none: No reward available
 photo:
