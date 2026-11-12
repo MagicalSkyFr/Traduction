@@ -24,6 +24,8 @@ classe:
   enchant:
       blocked: Tu ne peux pas enchanter des items de Classe ou de Métier !
   change_cooldown_active: Tu ne peux pas encore changer de classe, tu pourras changer de classe le {date} !
+  conversion:
+    error: "La conversion vers <white>{item}</white> a échoué : l'objet n'est pas configuré. Ton item n'a pas été modifié, préviens le staff."
   item_rarity_required: Tes objets de classe doivent avoir la rareté {rarity} pour débloquer cette compétence
   rune:
     classe_level_required: Tu n'as pas le niveau de classe requis pour utiliser une rune de niveau {level} !
@@ -140,6 +142,8 @@ daily:
   already_claimed: Tu as déjà récupéré ton cadeau du jour, effectue à nouveau la commande /daily demain !
   already_opening: Tu es déjà en ouverture de daily !
 dimensionbeacon:
+  checking: "<dark_gray>[<color:#ffc933>…<dark_gray>] <white>Vérification de ton île en cours, tu vas être envoyé sur son serveur."
+  error: "<dark_gray>[<red>✖<dark_gray>] <red>Impossible de vérifier ton île pour le moment, réessaie dans un instant."
   portail_dimensionbeacons: 'Tu dois posséder un multiblock portail de Qetzir sur ton île pour te téléporter dans la dimension {dim}.
 
     <click:run_command:''/multiblocks''><glyph:left_click><white> Tu peux voir comment le créer en [<color:#ffc933>cliquant ici</color>]</click>
@@ -163,6 +167,13 @@ servercreation:
   join:
     error: "Impossible de vous connecter : {reason}"
   admin:
+    maintenance:
+      unknown-template: "Template inconnu : <white>{template}</white>."
+      no-instance: "Aucun serveur actif pour le template <white>{template}</white>."
+    memory:
+      unknown-template: "Template inconnu : <white>{template}</white>."
+      invalid: "Taille invalide (exemples : <white>3G</white>, <white>2560M</white>) : <white>{heap}</white> <white>{limit}</white>"
+      too-small: "La limite du conteneur doit dépasser le tas (<white>{heap}</white>) : précisez une limite plus grande."
     reduce-ttl:
       not-found: "Aucun serveur enregistré nommé <white>{name}</white>."
       invalid-status: "<white>{name}</white> n'accepte pas cette action (statut actuel : <white>{status}</white>)."
@@ -208,6 +219,7 @@ donjon:
   max_players: Vous ne pouvez être plus de <white>{max}</white> joueurs dans le donjon
   no_instance_available: Aucune instance de donjon n'est actuellement disponible pour accueillir ton groupe
   not_in_dungeon: Tu n'es pas en donjon
+  unavailable_here: Les donjons se jouent uniquement sur le serveur de spawn
   old_portal_forbidden: Tu ne peux pas traverser un ancien portail
   player_left_cancelled: '{player} vient de quitter le donjon, celui-ci a donc été annulé'
   projectile_returned: Ton projectile a traversé le portail et t'a été retourné !
@@ -414,6 +426,7 @@ regencrop:
     denied: "Tu ne peux casser <color:#ffc933>seulement les cultures</color> ici"
     immature: "Cette culture n'est pas encore mûre, <color:#ffc933>patiente un peu</color>"
 recompense:
+  profile_loading: Tes récompenses sont en cours de chargement, réessaie dans quelques secondes
   potion:
     cancelled: L'utilisation de la potion est annulée
     multiplier_active: <sound:ITEM_ARMOR_EQUIP_GENERIC>Tu as déjà un multiplicateur actif !
@@ -478,6 +491,7 @@ spawners:
 tag:
   title_limit_reached: \nTu as atteint la limite de titre équipable !\n<click:run_command:'/boutique'><white><glyph:left_click> Clique ici pour accéder à [</white><color:#ffc933>notre boutique</color>]</click><white> et en obtenir davantage</white>\n
 teleport:
+  unavailable: "<dark_gray>[<red>✖<dark_gray>] <red>Cette destination n'est pas disponible pour le moment."
   cancelled: \nTu as bougé et cela a annulé ta téléportation. Tu peux être <color:#ffc933>téléporté directement</color> en possédant le grade <glyph:archimage>.\n<click:run_command:'/boutique'><white><glyph:left_click> Tu peux l'obtenir en </white>[<color:#ffc933>cliquant ici</color>]</click><white>\n
   already_in_progress: Tu as déjà une téléportation en cours
 teleportation:
@@ -496,7 +510,9 @@ teleportation:
   request_expired: Ta demande de téléportation a expiré
   request_refused_by: <white>{target}</white> a refusé ta demande
   self_request: Tu ne peux pas t'envoyer une demande à toi-même
+  target_gone: Le joueur que tu voulais rejoindre n'est plus là
   to_spawn_no_island: Tu as été téléporté au spawn car tu n'as pas d'île
+  transfer_failed: Le transfert vers l'autre serveur a échoué, réessaye dans un instant
 tutoriel:
   notedit: Ton scoreboard de tutoriel est déjà dans cet état
 upgradeisland:
@@ -554,3 +570,6 @@ dungeon:
       error: "Une erreur esr survenue : {error}"
   save:
     error: "Une erreur est survenue pendant le chargement : {error}"
+
+challenge:
+  profile_loading: Tes challenges sont en cours de chargement, réessaie dans quelques secondes

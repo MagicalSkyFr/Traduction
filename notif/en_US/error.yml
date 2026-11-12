@@ -15,6 +15,8 @@ chat:
     no_one: No one has talked to you (sad :c)
 classe:
   change_cooldown_active: You can't change class yet, you'll be able to change class on {date}!
+  conversion:
+    error: "Conversion to <white>{item}</white> failed: the item is not configured. Your item was not changed, please tell the staff."
   item_rarity_required: Your class items must have the rarity {rarity} to unlock this skill
   rune:
     classe_level_required: You don't have the required class level to use a level {level} rune)!
@@ -67,6 +69,8 @@ daily:
   already_claimed: You already claimed your daily gift today, run the /daily command again tomorrow!
   already_opening: You are already opening your daily!
 dimensionbeacon:
+  checking: "<dark_gray>[<color:#ffc933>…<dark_gray>] <white>Checking your island, you are being sent to its server."
+  error: "<dark_gray>[<red>✖<dark_gray>] <red>Unable to check your island right now, try again in a moment."
   portail_dimensionbeacons: 'You must own a Qetzir portal multiblock on your island to teleport to the dimension {dim}.
 
     <click:run_command:''/multiblocks''><glyph:left_click><white> You can see how to create it by [<color:#ffc933>clicking here</color>]</click>
@@ -101,6 +105,7 @@ donjon:
   max_players: You cannot be more than <white>{max}</white> players in the dungeon
   no_instance_available: No dungeon instance is currently available to host your group
   not_in_dungeon: You are not in a dungeon
+  unavailable_here: Dungeons can only be played on the spawn server
   old_portal_forbidden: You can't cross an old portal
   player_left_cancelled: '{player} just left the dungeon so it has been cancelled'
   projectile_returned: Your projectile crossed the portal and was returned to you!
@@ -345,7 +350,19 @@ spawners:
   upgrade_max: This upgrade is already at the maximum level
 tag:
   title_limit_reached: \nYou have reached the equippable title limit!\n<click:run_command:'/boutique'><white><glyph:left_click> Click here to access [</white><color:#ffc933>our shop</color>]</click><white> and get more</white>\n
+servercreation:
+  join:
+    error: "Unable to connect: {reason}"
+  admin:
+    maintenance:
+      unknown-template: "Unknown template: <white>{template}</white>."
+      no-instance: "No active server for the template <white>{template}</white>."
+    memory:
+      unknown-template: "Unknown template: <white>{template}</white>."
+      invalid: "Invalid size (examples: <white>3G</white>, <white>2560M</white>): <white>{heap}</white> <white>{limit}</white>"
+      too-small: "The container limit must exceed the heap (<white>{heap}</white>): give a larger limit."
 teleport:
+  unavailable: "<dark_gray>[<red>✖<dark_gray>] <red>This destination is not available right now."
   cancelled: \nYou moved and it cancelled your teleport. You can be <color:#ffc933>teleported instantly</color> by owning the <glyph:archimage> rank.\n<click:run_command:'/boutique'><white><glyph:left_click> You can get it by </white>[<color:#ffc933>clicking here</color>]</click><white>\n
   already_in_progress: You already have a teleport in progress
 teleportation:
@@ -364,7 +381,9 @@ teleportation:
   request_expired: Your teleport request has expired
   request_refused_by: <white>{target}</white> refused your request
   self_request: You can't send a request to yourself
+  target_gone: The player you wanted to join is no longer there
   to_spawn_no_island: You were teleported to spawn because you don't have an island
+  transfer_failed: The transfer to the other server failed, please try again in a moment
 tutoriel:
   notedit: Your tutorial scoreboard is already in this state
 upgradeisland:
@@ -410,3 +429,9 @@ warp:
 zone:
   class_stuff_forbidden: You can't join this zone with your class gear so the fight stays fair
   level_required: 'You don''t have the required level to join this zone. Required level: <white>{level}</white>'
+
+recompense:
+  profile_loading: Your rewards are still loading, try again in a few seconds
+
+challenge:
+  profile_loading: Your challenges are still loading, try again in a few seconds

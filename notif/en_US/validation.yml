@@ -1,5 +1,11 @@
 biome:
   change: Your island's biome is now {biomename}
+servercreation:
+  admin:
+    maintenance:
+      success: "Maintenance started for the template <white>{template}</white>: <white>{count}</white> server(s) locked, shutting down in <white>{minutes} min</white>."
+    memory:
+      success: "RAM of the template <white>{template}</white> updated: heap <white>{heap}</white>, container limit <white>{limit}</white> (next instances, until the next reload)."
 boss:
   mini:
     defeated: The boss {boss} has been defeated!

@@ -7,6 +7,10 @@ craft:
   tracked: Tu suis maintenant <white>{count}x {item}</white> dans ton scoreboard.
 servercreation:
   admin:
+    maintenance:
+      success: "Maintenance du template <white>{template}</white> lancée : <white>{count}</white> serveur(s) verrouillé(s), arrêt dans <white>{minutes} min</white>."
+    memory:
+      success: "RAM du template <white>{template}</white> modifiée : tas <white>{heap}</white>, limite du conteneur <white>{limit}</white> (prochaines instances, jusqu'au prochain reload)."
     reduce-ttl:
       success: "Durée de vie de <white>{name}</white> réduite à <white>{minutes} min</white>."
     create:

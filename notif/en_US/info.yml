@@ -200,6 +200,17 @@ shopjoueur:
   help_sell: 'Price: <white>{price} <glyph:mcoin></white> per item. Type a number in chat to sell that many items from your inventory'
   sell_chest_remove: This chest is <color:#ffc933>a sell chest</color>. To remove it, break it again <color:#ffc933>within 5 seconds</color>
   sold_items: You just sold <white>{amount} items</white>
+servercreation:
+  lifecycle:
+    locked: This server will close soon ({remainingPlayers} player(s) still connected).
+    kicked: This temporary server has reached its maximum lifetime.
+    maintenance: Maintenance in progress: this server will restart in <color:#ffc933>{minutes} minute(s)</color>.
+  join:
+    progress:
+      searching: Looking for an available server...
+      provisioning: No server available, starting a new one (this may take a moment)...
+      starting: Server started, finalizing...
+      transferring: Transferring you to the other server...
 spawners:
   inventory_taken: <color:#ffc933>{player}</color> is in the spawner's inventory. Just wait...
   must_use_hunter_weapon: <red>You must hold a <white>hunter</white> job weapon to hit this mob

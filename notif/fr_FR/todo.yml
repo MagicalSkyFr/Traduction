@@ -33,6 +33,8 @@ island:
     error: <dark_gray>[<red>✖<dark_gray>] <red>Ton île {template}<red> n'a pas pu être créée. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
   load:
     error: <dark_gray>[<red>✖<dark_gray>] <red>Ton île n'a pas pu être chargée. <click:run_command:'/discord'><white>Crée un ticket sur [<color:#ffc933>notre discord</color>]</white></click>
+  client:
+    go-to-island: "<dark_gray>[<red>✖<dark_gray>] <red>Rends-toi sur ton île pour faire ça (<gold>/is<red>)."
   teleport:
     unavailable: <dark_gray>[<red>✖<dark_gray>] <red>Impossible de te téléporter sur ton île pour le moment, réessaie dans un instant.
     falling: <dark_gray>[<red>✖<dark_gray>] <red>Tu ne peux pas te téléporter pendant une chute.

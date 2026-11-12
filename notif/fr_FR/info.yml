@@ -16,6 +16,7 @@ servercreation:
   lifecycle:
     locked: Ce serveur va bientôt fermer (encore {remainingPlayers} joueur(s) connecté(s)).
     kicked: Ce serveur temporaire a atteint sa durée de vie maximale.
+    maintenance: "Maintenance en cours : ce serveur va redémarrer dans <color:#ffc933>{minutes} minute(s)</color>."
   join:
     progress:
       searching : Recherche d'un serveur disponible...
