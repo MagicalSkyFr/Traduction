@@ -222,7 +222,7 @@ island:
       error: "Couldn't save the template <white>{template}</white>: {error}"
 item:
   cannot_remove_class_or_job: You can't remove a job or class item this way
-  cuisinier_shears_required: You must use the Cook job's shears to retrieve these ingredients
+  cuisinier_shears_required: You must use the magic tool of the {tool} job to retrieve these ingredients
   hatnommoitem: You can't wear a Job or Class item as a hat
   noitem: You don't have any item in your hand
   nommoitem: You can't send a Job or Class item
