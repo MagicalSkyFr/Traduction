@@ -182,6 +182,9 @@ island:
     enter: "<gray>Welcome to the island <color:#ffc933>{island}</color><gray>!"
     exit: "<gray>You are leaving the island <color:#ffc933>{island}</color><gray>."
   flag:
+    changed-enabled: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} enabled the setting <color:#ffc933>{flag}</color>."
+    changed-disabled: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} disabled the setting <color:#ffc933>{flag}</color>."
+    changed-rank: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} set the setting <color:#ffc933>{flag}</color> to rank <color:#ffc933>{rank}</color>."
     denied: "<dark_gray>[<red>✖<dark_gray>] <red>You are not allowed to do this on this island: <color:#ffc933>{flag}</color>"
     visit-denied: <dark_gray>[<red>✖<dark_gray>] <red>This island does not accept your visit.
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
@@ -189,7 +192,11 @@ island:
     edit:
       no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to change this flag.
       limit: <dark_gray>[<red>✖<dark_gray>] <red>This flag cannot go any further.
+      enabled: "<dark_gray>[<green>✔<dark_gray>] <green>Setting <color:#ffc933>{flag}</color> enabled."
+      disabled: "<dark_gray>[<green>✔<dark_gray>] <green>Setting <color:#ffc933>{flag}</color> disabled."
+      rank: "<dark_gray>[<green>✔<dark_gray>] <green>Setting <color:#ffc933>{flag}</color>: required rank <color:#ffc933>{rank}</color>."
   member:
+    rank-changed-others: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} made {target} <color:#ffc933>{rank}</color> on the island.
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
     island-loading: <dark_gray>[<red>✖<dark_gray>] <red>Your island data is loading, try again in a moment.
     no-permission: <dark_gray>[<red>✖<dark_gray>] <red>Your island rank does not allow you to manage {player}.
@@ -205,6 +212,7 @@ island:
     in-progress: <dark_gray>[<red>✖<dark_gray>] <red>An action is already in progress, please wait a moment.
     error: <dark_gray>[<red>✖<dark_gray>] <red>An error occurred. <click:run_command:'/discord'><white>Open a ticket on [<color:#ffc933>our discord</color>]</white></click>
   invite:
+    broadcast: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} invited {target} to the island.
     sent: <dark_gray>[<green>✔<dark_gray>] <green>Invitation sent to {player}, it expires in 5 minutes.
     received: "<dark_gray>[<gold>✉<dark_gray>] <gold>{player} invites you to join {island}'s island!\n<click:run_command:'/is accept'><glyph:left_click> <white>Click here to [<green>accept</green>]</white></click>   <click:run_command:'/is deny'><glyph:left_click> <white>or here to [<red>deny</red>]</white></click>"
     accepted: <dark_gray>[<green>✔<dark_gray>] <green>Welcome to {island}'s island! Type /is to go there.
@@ -215,6 +223,8 @@ island:
     banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} is banned from the island.
     full: <dark_gray>[<red>✖<dark_gray>] <red>The island is full.
   ban:
+    broadcast: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} banned {target} from the island.
+    unbanned-broadcast: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} unbanned {target}.
     banned: <dark_gray>[<green>✔<dark_gray>] <green>{player} is now banned from the island.
     unbanned: <dark_gray>[<green>✔<dark_gray>] <green>{player} is no longer banned from the island.
     already-banned: <dark_gray>[<red>✖<dark_gray>] <red>{player} is already banned from the island.
@@ -250,10 +260,13 @@ island:
     changed: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} is the new island leader.
     target: <dark_gray>[<gold>✔<dark_gray>] <gold>You are now the leader of the island {island}<gold>!
   name:
+    broadcast: <dark_gray>[<gold>✔<dark_gray>] <gold>{player} renamed the island to {island}<gold>.
     renamed: <dark_gray>[<green>✔<dark_gray>] <green>The island is now called {island}<green>.
     length: <dark_gray>[<red>✖<dark_gray>] <red>The name must be between {min} and {max} characters long.
     forbidden: <dark_gray>[<red>✖<dark_gray>] <red>This name uses formatting that the leader's rank does not allow.
   home:
+    set-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} saved the home <color:#ffc933>{home}</color>."
+    deleted-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} deleted the home <color:#ffc933>{home}</color>."
     set: "<dark_gray>[<green>✔<dark_gray>] <green>Home <color:#ffc933>{home}</color> saved ({count}/{max})."
     deleted: "<dark_gray>[<green>✔<dark_gray>] <green>Home <color:#ffc933>{home}</color> deleted."
     no-island: <dark_gray>[<red>✖<dark_gray>] <red>You don't have an island.
@@ -264,6 +277,12 @@ island:
     limit: <dark_gray>[<red>✖<dark_gray>] <red>The island already has {max} home(s), the maximum for the leader's rank.
     unknown: <dark_gray>[<red>✖<dark_gray>] <red>The home {home} does not exist.
   warp:
+    set-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} created the warp <color:#ffc933>{warp}</color>."
+    moved-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} moved the warp <color:#ffc933>{warp}</color>."
+    deleted-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} deleted the warp <color:#ffc933>{warp}</color>."
+    enabled-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} made the warp <color:#ffc933>{warp}</color> visible to visitors."
+    disabled-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} hid the warp <color:#ffc933>{warp}</color> from visitors."
+    edited-broadcast: "<dark_gray>[<gold>✔<dark_gray>] <gold>{player} edited the warp <color:#ffc933>{warp}</color>."
     set: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> created ({count}/{max}), visible in /is warps."
     moved: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> moved here."
     deleted: "<dark_gray>[<green>✔<dark_gray>] <green>Warp <color:#ffc933>{warp}</color> deleted."
